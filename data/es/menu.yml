@@ -790,7 +790,7 @@ items:
     pvp_terraza: 5€
 
   - nombre: 🍉 Limonada de Sandía y Menta
-    prioridad: true
+    disponible: false
     imagen: images/carta/270.jpg
     imagen_pequenya: images/carta/270_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
@@ -890,6 +890,7 @@ items:
     pvp_terraza: 6€
 
   - nombre: EmocionaTé
+    disponible: false
     imagen: images/carta/313.jpg
     imagen_pequenya: images/carta/313_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
@@ -1199,7 +1200,7 @@ items:
     pvp_terraza: 8€
 
   - nombre: 🍉 Vodka Patilla 
-    prioridad: true
+    disponible: false
     imagen: images/carta/194.jpg
     imagen_pequenya: images/carta/194_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1274,6 +1275,7 @@ items:
     pvp_terraza: 9€
 
   - nombre: Puro Perú
+    disponible: false
     imagen: images/carta/386.jpg
     imagen_pequenya: images/carta/386_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1585,7 +1587,7 @@ items:
     pvp_terraza: 5€
 
   - nombre: Spritz Cherry Blossom 🍒
-    prioridad: true
+    disponible: false
     imagen: images/carta/348.jpg
     imagen_pequenya: images/carta/348_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
@@ -1850,20 +1852,6 @@ items:
     edul_gr:
     pvp_local: 9€
     pvp_terraza: 9,50€
-
-  - nombre: Gin Maremoto (Con Espuma de Pomelo...)
-    imagen: images/carta/364.jpg
-    imagen_pequenya: images/carta/364_small.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Tanqueray Ten, Fever Tree y Espuma de Pomelo, lima, Agua de Azahar y Clara de huevo pasteurizada
-    alergenos: "*Huevo*"
-    txt_aclaraciones: Uno de nuestras elaboraciones más populares
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 7%
-    vol_ml: 290 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
 
   - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana 🍏)
     prioridad: true
@@ -2563,7 +2551,7 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: 🍒 Gewürztraminer & Cherries
-    prioridad: true
+    disponible: false
     imagen: images/carta/300.jpg
     imagen_pequenya: images/carta/300_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2751,21 +2739,6 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,50€
-
-  - nombre: Master`s Green Apple & Schweppes tonic
-    prioridad: true
-    imagen: images/carta/357.jpg
-    imagen_pequenya: images/carta/357_small.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Receta original de Master`s gin con un sutil toque de manzana.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 7,50%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
 
   - nombre: Aviation & Fever tree
     prioridad: true 
