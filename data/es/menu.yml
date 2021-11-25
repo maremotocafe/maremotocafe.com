@@ -101,7 +101,7 @@ items:
   #   pvp_local: 6€
   #   pvp_terraza: 6,50€
 
-  - nombre: Bloody Mary Free
+  - nombre: Bloody Mary Free 🍎
     imagen: images/carta/42.jpg
     imagen_pequenya: images/carta/42_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
@@ -125,7 +125,7 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Café Bombón Limón
+  - nombre: Café Bombón Limón 🍋
     imagen: images/carta/301.jpg
     imagen_pequenya: images/carta/301_small.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
@@ -153,7 +153,7 @@ items:
     pvp_local: 2,75€
     pvp_terraza: 3,25€
 
-  - nombre: Capuccino Clásico
+  - nombre: Capuccino Clásico ☕
     imagen: images/carta/132.jpg
     imagen_pequenya: images/carta/132_small.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
@@ -169,7 +169,7 @@ items:
     pvp_local: 2,25€
     pvp_terraza: 2,75€
 
-  - nombre: Capuccino de Canela
+  - nombre: Capuccino de Canela ☕
     imagen: images/carta/103.jpg
     imagen_pequenya: images/carta/103_small.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
@@ -185,7 +185,7 @@ items:
     pvp_local: 2,50€
     pvp_terraza: 3€
 
-  - nombre: Frapuccino
+  - nombre: Frapuccino ❄
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés Fríos"]
@@ -200,7 +200,7 @@ items:
     pvp_terraza: 3,25€
 
 
-  - nombre: Frappé de Baileys
+  - nombre: Frappé de Baileys ❄
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
@@ -214,7 +214,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Pu-erh Cítricos
+  - nombre: Pu-erh Cítricos ☕
     imagen: images/carta/296.jpg
     imagen_pequenya: images/carta/296_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -230,7 +230,7 @@ items:
 
 
 
-  - nombre: Té de Frutas del Bosque
+  - nombre: Té de Frutas del Bosque ☕
     imagen: images/carta/192.jpg
     imagen_pequenya: images/carta/192_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -246,7 +246,7 @@ items:
 
 
 
-  - nombre: Capuccino Sabor
+  - nombre: Capuccino Sabor ☕
     imagen: images/carta/102.jpg
     imagen_pequenya: images/carta/102_small.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
@@ -265,7 +265,7 @@ items:
     pvp_local: 2,50€
     pvp_terraza: 3€
 
-  - nombre: Bombón Licor
+  - nombre: Bombón Licor ☕
     imagen: images/carta/370.jpg
     imagen_pequenya: images/carta/370_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
@@ -279,7 +279,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Bombón Licor Limón
+  - nombre: Bombón Licor Limón 🍋 ☕
     imagen: images/carta/302.jpg
     imagen_pequenya: images/carta/302_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
@@ -293,7 +293,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Irlandés
+  - nombre: Irlandés ☕
     imagen: images/carta/282.jpg
     imagen_pequenya: images/carta/282_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
@@ -307,7 +307,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Coffee Licor
+  - nombre: Coffee Licor ☕
     imagen: images/carta/310.jpg
     imagen_pequenya: images/carta/310_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
@@ -321,7 +321,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Coffee Cream
+  - nombre: Coffee Cream ☕
     imagen: images/carta/309.jpg
     imagen_pequenya: images/carta/309_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
@@ -335,7 +335,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25%
 
-  - nombre: Quemadillo de Rón
+  - nombre: Quemadillo de Rón ☕
     imagen: images/carta/387.jpg
     imagen_pequenya: images/carta/387_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
@@ -349,7 +349,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Mexican Coffee
+  - nombre: Mexican Coffee ☕
     imagen: images/carta/2a.jpg
     imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
@@ -363,7 +363,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Frappé al Caramelo
+  - nombre: Frappé al Caramelo ❄
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés Fríos"]
@@ -377,7 +377,7 @@ items:
     pvp_local: 2,75€
     pvp_terraza: 3,25€
 
-  - nombre: Frappé Rón Cream
+  - nombre: Frappé Rón Cream ❄
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
@@ -391,7 +391,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Frappé Mozart
+  - nombre: Frappé Mozart ❄
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
@@ -405,7 +405,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Frappé Crema Catalana
+  - nombre: Frappé Crema Catalana ❄
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
@@ -419,7 +419,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Hierbas de Ibiza
+  - nombre: Hierbas de Ibiza ☕
     imagen: images/carta/294.jpg
     imagen_pequenya: images/carta/294_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -433,7 +433,7 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Digestiva
+  - nombre: Digestiva ☕
     imagen: images/carta/293.jpg
     imagen_pequenya: images/carta/293_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -447,7 +447,7 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Touareg
+  - nombre: Touareg ☕
     imagen: images/carta/298.jpg
     imagen_pequenya: images/carta/298_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -461,7 +461,7 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Pasión Prohibida
+  - nombre: Pasión Prohibida ☕
     imagen: images/carta/291.jpg
     imagen_pequenya: images/carta/291_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -475,7 +475,7 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Taj Majal
+  - nombre: Taj Majal ☕
     imagen: images/carta/288.jpg
     imagen_pequenya: images/carta/288_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -489,7 +489,7 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Caribe
+  - nombre: Caribe ☕
     imagen: images/carta/289.jpg
     imagen_pequenya: images/carta/289_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -503,7 +503,7 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Relax
+  - nombre: Relax ☕
     imagen: images/carta/292.jpg
     imagen_pequenya: images/carta/292_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -517,7 +517,7 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Sueños de Chocolate
+  - nombre: Sueños de Chocolate ☕
     imagen: images/carta/297.jpg
     imagen_pequenya: images/carta/297_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -531,7 +531,7 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Té Indian Almond
+  - nombre: Té Indian Almond ☕
     imagen: images/carta/393.jpg
     imagen_pequenya: images/carta/393_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -539,7 +539,7 @@ items:
     alergenos:
     txt_aclaraciones: Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración
 
-  - nombre: Té Mojito Iced
+  - nombre: Té Mojito Iced ❄
     imagen: images/carta/319.jpg
     imagen_pequenya: images/carta/319_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -553,7 +553,7 @@ items:
     pvp_local: 2,75€
     pvp_terraza: 3,25€
 
-  - nombre: Té Chai con Leche de Soja
+  - nombre: Té Chai con Leche de Soja ❄
     imagen: images/carta/280.jpg
     imagen_pequenya: images/carta/280_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
@@ -567,7 +567,7 @@ items:
     pvp_local: 2,75€
     pvp_terraza: 3,25€
 
-  - nombre: Batidos de Sabores
+  - nombre: Batidos de Sabores 🍓🍌
     imagen: images/carta/5a.jpg
     imagen_pequenya: images/carta/5a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Batidos"]
@@ -733,7 +733,7 @@ items:
     pvp_local: 4€
     pvp_terraza: 4,50€
 
-  - nombre: Granizado de Limón Casero
+  - nombre: Granizado de Limón Casero 🍋
     imagen: images/carta/258.jpg
     imagen_pequenya: images/carta/258_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos" , "Granizados"]
@@ -747,7 +747,7 @@ items:
     pvp_local: 2,75€
     pvp_terraza: 3,25€
 
-  - nombre: Granizado de Naranja y Menta
+  - nombre: Granizado de Naranja y Menta 🍊
     imagen: images/carta/198.jpg
     imagen_pequenya: images/carta/198_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos" , "Granizados"]
@@ -789,7 +789,7 @@ items:
     pvp_local: 4,50€
     pvp_terraza: 5€
 
-  - nombre: 🍉 Limonada de Sandía y Menta
+  - nombre: 🍉 Limonada de Sandía y Menta (fuera de temporada)
     disponible: false
     imagen: images/carta/270.jpg
     imagen_pequenya: images/carta/270_small.jpg
@@ -860,7 +860,7 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: 🍊 Shin Tonic
+  - nombre: Shin Tonic
     imagen: images/carta/63.jpg
     imagen_pequenya: images/carta/63_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
@@ -1199,7 +1199,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍉 Vodka Patilla 
+  - nombre: 🍉 Vodka Patilla (fuera de temporada)
     disponible: false
     imagen: images/carta/194.jpg
     imagen_pequenya: images/carta/194_small.jpg
@@ -1245,7 +1245,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Donde Dije DHigo
+  - nombre: Donde Dije DHigo (fuera de temporada)
     disponible: false
     imagen: images/carta/273.jpg
     imagen_pequenya: images/carta/273_small.jpg
@@ -1274,7 +1274,7 @@ items:
     pvp_local: 8,50€
     pvp_terraza: 9€
 
-  - nombre: Puro Perú
+  - nombre: Puro Perú (fuera de temporada)
     disponible: false
     imagen: images/carta/386.jpg
     imagen_pequenya: images/carta/386_small.jpg
@@ -1586,21 +1586,6 @@ items:
     pvp_local: 4,5€
     pvp_terraza: 5€
 
-  - nombre: Spritz Cherry Blossom 🍒
-    disponible: false
-    imagen: images/carta/348.jpg
-    imagen_pequenya: images/carta/348_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
-    ingredientes: Vermout del Professore Bianco, proseco Cinzano, y Mixer Cherry Blossom Thomas Henrry.
-    alergenos: "*Sulfitos*"
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,60%
-    vol_ml: 210 ml
-    edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,5€
-
   - nombre: Garibaldi Fizz
     imagen: images/carta/284.jpg
     imagen_pequenya: images/carta/284_small.jpg
@@ -1769,21 +1754,7 @@ items:
     pvp_local: 6€
     pvp_terraza: 6,50€
 
-  - nombre: Vodka Berry
-    imagen: images/carta/211.jpg
-    imagen_pequenya: images/carta/211_small.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Vodka Finlandia infusionado con Frambuesas & Tonica Royal Bliss Berry Sensation.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
-
-  - nombre: Finlandia & Schweppes Hibiscus
+  - nombre: Finlandia & Schweppes Hibiscus 🌺 
     imagen: images/carta/finlandiahibiscus.jpg
     imagen_pequenya: images/carta/finlandiahibiscus_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1868,7 +1839,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Gin Pasión & Schweppes Premium Toque de Lima (Ginebras Infusionadas)
+  - nombre: Gin Pasión & Schweppes Premium Toque de Lima 🌺 (Ginebras Infusionadas)
     imagen: images/carta/ginpasion.jpg
     imagen_pequenya: images/carta/ginpasion_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1876,20 +1847,6 @@ items:
     alergenos:
     txt_aclaraciones:
     txt_temporal:
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
-
-  - nombre: Gin Blue Curaçao & Schweppes Premium Toque de Lima
-    imagen: images/carta/321.jpg
-    imagen_pequenya: images/carta/321_small.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Ginebra Ampersand infusionada con Lima, limón, Naranja, Pomelo, lemongrass, Jenjibre y flor de Malva.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
@@ -1924,7 +1881,8 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,50€
 
-  - nombre: Tanqueray Flor de Sevilla & 1724 tonic water
+  - nombre: Tanqueray Flor de Sevilla & 1724 tonic water 🍊
+    prioridad: true
     imagen: images/carta/352.jpg
     imagen_pequenya: images/carta/352_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1938,7 +1896,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Gin.Za & Schweppes Premium Toque de Lima
+  - nombre: Gin.Za & Schweppes Premium Toque de Lima 🍑 🍋
     imagen: images/carta/246.jpg
     imagen_pequenya: images/carta/246_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1995,7 +1953,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Hendrick's & Schweppes Pimienta Rosa
+  - nombre: Hendrick's & Schweppes Pimienta Rosa 🥒
     imagen: images/carta/320.jpg
     imagen_pequenya: images/carta/320_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2093,7 +2051,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Tanqueray Rangpur & Schweppes Premium Toque de Lima
+  - nombre: Tanqueray Rangpur & Schweppes Premium Toque de Lima 🍋
     imagen: images/carta/256.jpg
     imagen_pequenya: images/carta/256_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2107,7 +2065,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Voortrekker & 1724 tonic water
+  - nombre: Voortrekker & 1724 tonic water 🍊
     imagen: images/carta/238.jpg
     imagen_pequenya: images/carta/238_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2135,7 +2093,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Nordest & Fever Tree
+  - nombre: Nordest & Fever Tree 🍇
     imagen: images/carta/237.jpg
     imagen_pequenya: images/carta/237_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2149,7 +2107,7 @@ items:
     pvp_local: 7,5€
     pvp_terraza: 8€
 
-  - nombre: Cubical & Fever
+  - nombre: Cubical & Fever 🍋
     imagen: images/carta/257.jpg
     imagen_pequenya: images/carta/257_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2219,7 +2177,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Ish Limed & Schweppes Premium Toque de Lima
+  - nombre: Ish Limed & Schweppes Premium Toque de Lima 🍋
     imagen: images/carta/231.jpg
     imagen_pequenya: images/carta/231_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2276,20 +2234,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Ford`s Gin & Fever Tre
-    imagen: images/carta/254.jpg
-    imagen_pequenya: images/carta/254_small.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra clásica británica con marcados aromas a enebro y lavanda picante.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
-
   - nombre: Gin del Professore Monsieur & Fever Tree
     imagen: images/carta/220.jpg
     imagen_pequenya: images/carta/220_small.jpg
@@ -2332,7 +2276,7 @@ items:
     pvp_local: 8,50€
     pvp_terraza: 9€
 
-  - nombre: Gordon`s Pink & 1724 tonic water
+  - nombre: Gordon`s Pink & 1724 tonic water 🍓
     imagen: images/carta/229.jpg
     imagen_pequenya: images/carta/229_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2346,7 +2290,7 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,50€
 
-  - nombre: Puerto de Indias & 1724 tonic water
+  - nombre: Puerto de Indias & 1724 tonic water 🍓
     imagen: images/carta/puertoindias.jpg
     imagen_pequenya: images/carta/puertoindias.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2374,7 +2318,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Proof 13 & 1724 tonic water
+  - nombre: Proof 13 & 1724 tonic water 
     imagen: images/carta/222.jpg
     imagen_pequenya: images/carta/222_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2388,7 +2332,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Brockman`s & Fever Tree
+  - nombre: Brockman`s & Fever Tree 
     imagen: images/carta/252.jpg
     imagen_pequenya: images/carta/252_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2402,34 +2346,34 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Carta de Bocadillos
+  - nombre: Carta de Bocadillos 🌭
     imagen: images/carta/1b.jpg
     imagen_pequenya: images/carta/b1.jpg
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
-  - nombre: Carta de Sándwiches
+  - nombre: Carta de Sándwiches 🥪
     imagen: images/carta/1s.jpg
     imagen_pequenya: images/carta/s1.jpg
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
 
-  - nombre: Carta de Focaccias
+  - nombre: Carta de Focaccias 🍕
     imagen: images/carta/1f.jpg
     imagen_pequenya: images/carta/f1.jpg
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
 
-  - nombre: Almuerzos
+  - nombre: Almuerzos 🍳 🥓
     imagen: images/carta/almuerzos.jpg
     imagen_pequenya: images/carta/almuerzospq.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
-  - nombre: Zumos Naturales
+  - nombre: Zumos Naturales 🍊🍏🥕🍎
     imagen: images/carta/1z.jpg
     imagen_pequenya: images/carta/z1.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
-  - nombre: Cookies Caseras
+  - nombre: Cookies Caseras 🍪
     imagen: images/carta/1c.jpg
     imagen_pequenya: images/carta/150.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
@@ -2550,7 +2494,7 @@ items:
     pvp_local: 6,00€
     pvp_terraza: 6,50€
 
-  - nombre: 🍒 Gewürztraminer & Cherries
+  - nombre: 🍒 Gewürztraminer & Cherries (fuera de temporada)
     disponible: false
     imagen: images/carta/300.jpg
     imagen_pequenya: images/carta/300_small.jpg
@@ -2725,21 +2669,6 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Citadelle Old Tow & 1724 tonic water
-    priridad: true
-    imagen: images/carta/356.jpg
-    imagen_pequenya: images/carta/356_small.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra francesa con un toque de barrica.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,50%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
-
   - nombre: Aviation & Fever tree
     prioridad: true 
     imagen: images/carta/358.jpg
@@ -2770,20 +2699,6 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Modernesian & Schweppes Toque de lima
-    prioridad: true 
-    imagen: images/carta/360.jpg
-    imagen_pequenya: images/carta/360_small.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra con toque mediterraneo
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 7,50%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
 
   - nombre: Old Memories
     imagen: images/carta/361.jpg
