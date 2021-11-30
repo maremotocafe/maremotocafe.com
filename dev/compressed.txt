@@ -462,3 +462,5 @@ static/images/carta/cookies caseras.jpg
 static/images/carta/desayunos.jpg
 static/images/carta/muffins.jpg
 static/images/carta/tarta.jpg
+static/images/carta/Carraskiko.jpg
+static/images/carta/Italicus Rosolio.jpg

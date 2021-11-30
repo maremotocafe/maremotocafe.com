@@ -2738,3 +2738,30 @@ items:
     txt_aclaraciones:
     pvp_local: 1€
     pvp_terraza: 1€
+
+  - nombre: Carraskiko 🆕
+    imagen: images/carta/Carraskiko.jpg
+    imagen_pequenya: images/carta/Carraskiko_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    ingredientes: Cinzano Bianco, Italicus, Sirope de Melocotón en vino y Angostura de Naranja.
+    alergenos: Sulfitos
+    txt_aclaraciones: Este Cocktail es el hermano mayor de nuestro vermut preparado finalista de la III Ruta Cinzano de Zaragoza.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 
+    vol_ml: 220 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Italicus Rosolio 🆕
+    imagen: images/carta/Italicus Rosolio.jpg
+    imagen_pequenya: images/carta/Italicus Rosolio_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    ingredientes: Italicus Rosolio, Proseco, Brocheta de olivas y twist de limón.
+    alergenos: Sulfitos
+    txt_aclaraciones: Excelente aperitivo apto para cualquier hora del dia.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    edul_gr:
+    pvp_local: 6,50€
+    pvp_terraza: 7€
