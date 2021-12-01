@@ -16,15 +16,12 @@
       {{ range .tarjetas }}
       <div class="col-sm-6 text-center wow fadeInUp" data-wow-duration="500ms">
         <div class="block">
-          <div class="icon-box">
-            {{ with .icono }}<i class="{{ . }}"></i>{{ end }}
-          </div>
           <div class="content text-center">
-            <h3>{{ .titulo }}</h3>
+            <h3>{{ with .icono }}<i class="{{ . }}"></i>{{ end }} {{ .titulo }}</h3>
             <p>{{ .texto | markdownify }}</p>
             <a target="_blank" rel="noreferrer" href="{{ .link }}" role="button" class="btn btn-block btn-shadow">
-              <img class="mr-1" src="images/glovo.jpg"/>
-              <span class="ml-1">{{ $data.glovo.texto_boton }}</span>
+              <span class="mr-2">{{ $data.glovo.texto_boton }}</span>
+              <img class="ml-2" src="images/glovo.jpg"/>
             </a>
           </div>
         </div>
