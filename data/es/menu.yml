@@ -1216,6 +1216,7 @@ items:
 
   - nombre: 🍈 Rock Melón (Fuera de temporada)
     prioridad: false
+    disponible: false
     imagen: images/carta/104.jpg
     imagen_pequenya: images/carta/104_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2754,8 +2755,8 @@ items:
 
   - nombre: Tangerine Vintage 🍊🆕
     prioridad: true
-    imagen: images/carta/tangerine.jpeg
-    imagen_pequenya: images/carta/tangerine_small.jpeg
+    imagen: images/carta/tangerine.jpg
+    imagen_pequenya: images/carta/tangerine_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: JB Botanico, Zumo de mandarina, Sirope de frambuesa, Te de Vainilla y Pedro Ximenez.
     alergenos: "*Sulfitos*"
@@ -2769,8 +2770,8 @@ items:
 
   - nombre: Jengi 🎄🆕
     prioridad: true
-    imagen: images/carta/jengi.jpeg
-    imagen_pequenya: images/carta/jengi_small.jpeg
+    imagen: images/carta/jengi.jpg
+    imagen_pequenya: images/carta/jengi_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Calvados, Zumo de manzana Nat, Crema de Castañas, Fireball, Nata y Clara huevo .
     alergenos: "*Huevo y Lacteos*"
