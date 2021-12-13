@@ -1214,8 +1214,8 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍈 Rock Melón 
-    prioridad: true
+  - nombre: 🍈 Rock Melón (Fuera de temporada)
+    prioridad: false
     imagen: images/carta/104.jpg
     imagen_pequenya: images/carta/104_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1767,20 +1767,6 @@ items:
     edul_gr:
     pvp_local: 7,50€
     pvp_terraza: 8€
-
-  - nombre: Belvedere Mediterraneo & Fever Tree Mediterranean
-    imagen: images/carta/belvedere.jpg
-    imagen_pequenya: images/carta/belvedere_small.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Infusionado con Romero.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
 
   - nombre: Ciroc & Schweppes Pimienta Rosa
     imagen: images/carta/251.jpg
@@ -2765,3 +2751,34 @@ items:
     edul_gr:
     pvp_local: 6,50€
     pvp_terraza: 7€
+
+  - nombre: Tangerine Vintage 🍊🆕
+    prioridad: true
+    imagen: images/carta/tangerine.jpeg
+    imagen_pequenya: images/carta/tangerine_small.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: JB Botanico, Zumo de mandarina, Sirope de frambuesa, Te de Vainilla y Pedro Ximenez.
+    alergenos: "*Sulfitos*"
+    txt_aclaraciones: Cocktail de temporada!
+    txt_temporal: Disponible de Octubre a Marzo.
+    grad_alcoholica:
+    vol_ml:
+    edul_gr:
+    pvp_local: 7,5€
+    pvp_terraza: 8€ 
+
+  - nombre: Jengi 🎄🆕
+    prioridad: true
+    imagen: images/carta/jengi.jpeg
+    imagen_pequenya: images/carta/jengi_small.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Calvados, Zumo de manzana Nat, Crema de Castañas, Fireball, Nata y Clara huevo .
+    alergenos: "*Huevo y Lacteos*"
+    txt_aclaraciones: Cocktail Navideño🎄 ¡Con galleta de jengibre incluida!
+    txt_temporal: Disponible Diciembre y Enero.
+    grad_alcoholica:
+    vol_ml:
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€ 
+

@@ -464,3 +464,5 @@ static/images/carta/muffins.jpg
 static/images/carta/tarta.jpg
 static/images/carta/Carraskiko.jpg
 static/images/carta/Italicus Rosolio.jpg
+static/images/carta/jengi.jpeg
+static/images/carta/tangerine.jpeg
