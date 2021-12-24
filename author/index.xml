@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Maremoto Café and Cocktail</title>
+    <link>http://maremotocafe.com/author/</link>
+    <description>Recent content in Authors on Maremoto Café and Cocktail</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>copyright &amp;copy; 2019 [gethugothemes](https://gethugothemes.com) all right reserved</copyright>
+    
+	<atom:link href="http://maremotocafe.com/author/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>John Doe</title>
+      <link>http://maremotocafe.com/author/john-doe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://maremotocafe.com/author/john-doe/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida.</description>
+    </item>
+    
+    <item>
+      <title>Mark Dinn</title>
+      <link>http://maremotocafe.com/author/mark-dinn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://maremotocafe.com/author/mark-dinn/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida.</description>
+    </item>
+    
+  </channel>
+</rss>
