@@ -2357,6 +2357,7 @@ items:
 
   - nombre: Desayunos
     imagen: desayunos.jpg
+    imagen: desayunos_small.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
     alergenos:
     txt_aclaraciones:
