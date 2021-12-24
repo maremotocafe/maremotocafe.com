@@ -120,12 +120,23 @@
   {{"<!-- Menu items -->" | safeHTML}}
   <div id="menu-items" class="d-none">
     {{/* Iterating the items to add them to the site. */}}
+    {{ $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") }}
     {{ range $i, $item := $items }}
+      {{ $image := resources.Get (printf "carta/%s" .imagen) }}
       <figure class="col-lg-4 shuffle-item" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
         <div class="menu-block mb-4">
-          <a class="open-popup-{{ if .standalone }}standalone{{ else }}inline{{ end }}" href="{{ if .standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
+          <a class="open-popup-{{ if .standalone }}standalone{{ else }}inline{{ end }}" href="{{ if .standalone }}{{ $image.RelPermalink }}{{ else }}#carta-img{{ $i }}{{ end }}">
             {{ if ne .disponible false }}
-            <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
+
+              {{ if .imagen_pequenya }}
+                {{/* Overridden automatic preview */}}
+                <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
+              {{ else if (and (ne $image nil) (in $processableFormats $image.MediaType.SubType)) }}
+                <img class="lozad img-fluid" data-src="{{ ($image.Fit "465x350 jpg q100 Box").RelPermalink }}" alt="{{ .nombre }}">
+              {{ else }}
+                {{/* Unprocessable image */}}
+                <img class="lozad img-fluid" data-src="{{ $image.RelPermalink }}" alt="{{ .nombre }}">
+              {{ end }}
             {{ end }}
             <div class="caption">
               <span>{{ .nombre }}</span>
@@ -144,7 +155,8 @@
         {{ if not .standalone }}
         <div class="popup-content">
           <div class="popup-img">
-            <img class="lozad" data-src="{{ .imagen | relURL }}" alt="{{ .nombre }}">
+            {{ $image := resources.Get (printf "carta/%s" .imagen) }}
+            <img class="lozad" data-src="{{ $image.RelPermalink }}" alt="{{ .nombre }}">
           </div>
           <div class="popup-details">
             <h1>{{ .nombre }}</h1>

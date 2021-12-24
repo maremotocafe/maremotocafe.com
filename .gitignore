@@ -1,4 +1,4 @@
 .DS_Store
-static/images/carta/*.png
-static/images/carta/*.psd
-/out
+/assets/carta/*.psd
+/.hugo_build.lock
+/resources
