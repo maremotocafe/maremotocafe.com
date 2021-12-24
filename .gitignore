@@ -2,3 +2,4 @@
 static/images/carta/*.png
 static/images/carta/*.psd
 /out
+/.hugo_build.lock
