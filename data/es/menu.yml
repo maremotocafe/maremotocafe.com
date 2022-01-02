@@ -2172,23 +2172,22 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Carta de Bocadillos 🌭
-    imagen: .jpg
-    imagen_pequenya: .jpg
+    imagen: 2a.jpg
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Sándwiches 🥪
-    imagen: .jpg
-    imagen_pequenya: .jpg
+    imagen: 2a.jpg
+    imagen_pequenya: 2a.jpg
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Focaccias 🍕
-    imagen: .jpg
-    imagen_pequenya: .jpg
+    imagen: 2a.jpg
+    imagen_pequenya: 2a.jpg
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Almuerzos 🍳 🥓
-    imagen: .jpg
-    imagen_pequenya: .jpg
+    imagen: 2a.jpg
+    imagen_pequenya: 2a.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Zumos Naturales 🍊🍏🥕🍎
@@ -2197,8 +2196,8 @@ items:
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Cookies Caseras 🍪
-    imagen: .jpg
-    imagen_pequenya: .jpg
+    imagen: 2a.jpg
+    imagen_pequenya: 2a.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Café + Churros + Zumo Natural
@@ -2219,12 +2218,12 @@ items:
     pvp_terraza: 4,15€
 
   - nombre:  Café + Croissant Mixto
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 2,95€
+    pvp_terraza: 3,35€
 
   - nombre: Café + Croissant Plancha + Zumo Natural
     imagen: 329.jpg
@@ -2245,12 +2244,12 @@ items:
     pvp_terraza: Cappuccino Clásico 2,70€ Cappuccino Sabor 3€
 
   - nombre: Sándwich Mixto + Cañita/Agua
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local: 3,25€
-    pvp_terraza: 3,65€
+    pvp_local: 3,50€
+    pvp_terraza: 3,90€
 
   - nombre: Sándwich Mixto + Zumo Natural
     imagen: 334.jpg
@@ -2261,12 +2260,12 @@ items:
     pvp_terraza: 4,15€
 
   - nombre: Sándwich Mixto con Tomate + Zumo Natural
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 4,25€
+    pvp_terraza: 4,65€
 
   - nombre: Café + Repostería + Zumo Natural
     imagen: 332.jpg
@@ -2285,12 +2284,12 @@ items:
     pvp_terraza: 4,15€
 
   - nombre: Café + Cookie Casera
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local: 1,80€
-    pvp_terraza: 2,20€
+    pvp_local: 2€
+    pvp_terraza: 2,40€
 
   - nombre: Zape
     imagen: 283.jpg
@@ -2357,7 +2356,6 @@ items:
 
   - nombre: Desayunos
     imagen: 2a.jpg
-    imagen: 2a.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
     alergenos:
     txt_aclaraciones:
@@ -2373,40 +2371,40 @@ items:
     pvp_terraza:
 
   - nombre: Bocatín + Cañita
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 2.75€
+    pvp_terraza: 3,15€
 
   - nombre: Bocatín + Refresco
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 2,95€
+    pvp_terraza: 3,35€
 
   - nombre: Café + Repostería
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 2,25€
+    pvp_terraza: 2,65€
 
   - nombre: Café + Churros
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 2,10€
+    pvp_terraza: 2,50€
 
   - nombre: Café + tartaleta
     prioridad: true
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
@@ -2414,28 +2412,28 @@ items:
     pvp_terraza: 3,90
 
   - nombre: Chocolate con Churros
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 2,60€
+    pvp_terraza: 3€
 
   - nombre: Café + Croissant Plancha
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 2,25€
+    pvp_terraza: 2,65€
 
   - nombre: Café + Bizcocho Casero
-    imagen: .jpg
+    imagen: 2a.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 2,40€
+    pvp_terraza: 2,80€
 
   - nombre: Gordon`s Crips Cucumber & Schweppes tonic
     prioridad: true
@@ -2527,8 +2525,8 @@ items:
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local: 1€
-    pvp_terraza: 1€
+    pvp_local: 1,25€
+    pvp_terraza: 1,25€
 
   - nombre: Carraskiko 🆕
     imagen: Carraskiko.jpg
