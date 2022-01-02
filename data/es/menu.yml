@@ -879,8 +879,8 @@ items:
     grad_alcoholica: 13,70%
     vol_ml: 135 ml aprox.
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,5€
+    pvp_terraza: 7€
 
   - nombre: Mojito Sabor
     imagen: 202.jpg
@@ -892,8 +892,8 @@ items:
     grad_alcoholica: 10,60%
     vol_ml: 175 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,5€
 
   - nombre: Mojito Moreno
     imagen: 275.jpg
@@ -918,8 +918,8 @@ items:
     grad_alcoholica: 14%
     vol_ml: 185 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Mint Julep
     imagen: 279.jpg
@@ -957,8 +957,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Gin Smash Basil
     imagen: 277.jpg
@@ -970,8 +970,8 @@ items:
     grad_alcoholica: 15%
     vol_ml: 150 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Caipiroska
     imagen: 269.jpg
@@ -983,8 +983,8 @@ items:
     grad_alcoholica: 18,90%
     vol_ml: 100 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,50€
+    pvp_terraza: 7€
 
   - nombre: Caipiroska Sabor
     imagen: 195.jpg
@@ -996,8 +996,8 @@ items:
     grad_alcoholica: 13,30%
     vol_ml: 140 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,50€
 
   - nombre: Caipiroska Black
     imagen: 266.jpg
@@ -1022,8 +1022,8 @@ items:
     grad_alcoholica: 12%
     vol_ml: 165 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Caipirinha
     imagen: 268.jpg
@@ -1035,8 +1035,8 @@ items:
     grad_alcoholica: 15,50%
     vol_ml: 110 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,50€
+    pvp_terraza: 7€
 
   - nombre: Caipirinha de Naranja y Piña
     imagen: 267.jpg
@@ -1048,8 +1048,8 @@ items:
     grad_alcoholica: 10,80%
     vol_ml: 140ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7,50€
+    pvp_terraza: 8€
 
   - nombre: Whisky Sour
     imagen: 395.jpg
@@ -1061,8 +1061,8 @@ items:
     grad_alcoholica: 18,60%
     vol_ml: 145 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Pisco Sour
     imagen: 384.jpg
@@ -1074,8 +1074,8 @@ items:
     grad_alcoholica: 14,40%
     vol_ml: 175 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Dark Soul
     imagen: 308.jpg
@@ -1185,8 +1185,8 @@ items:
     grad_alcoholica: 8,80%
     vol_ml: 225 ml
     edul_gr:
-    pvp_local: 8,50€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    pvp_terraza: 9,5€
 
   - nombre: Puro Perú (fuera de temporada)
     disponible: false
@@ -1225,8 +1225,8 @@ items:
     grad_alcoholica: 10%
     vol_ml: 125 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Refujito de Ágave
     imagen: 200.jpg
@@ -1251,8 +1251,8 @@ items:
     grad_alcoholica: 11,25%
     vol_ml: 155 ml
     edul_gr:
-    pvp_local: 8,50€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    pvp_terraza: 9,5€
 
   - nombre: Around the World (Fuera de temporada)
     disponible: false
@@ -1293,8 +1293,8 @@ items:
     grad_alcoholica: 7,40%
     vol_ml: 320 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€s
+    pvp_local: 7€
+    pvp_terraza: 7,5€
 
   - nombre: Piña Colada
     imagen: 304.jpg
@@ -1306,8 +1306,8 @@ items:
     grad_alcoholica: 6%
     vol_ml: 350 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,5€
 
   - nombre: Chestnut Touch
     imagen: 307.jpg
@@ -1319,8 +1319,8 @@ items:
     grad_alcoholica: 8,50%
     vol_ml: 315 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,50€
 
   - nombre: Pomada Menorquina
     imagen: 385.jpg
@@ -1332,8 +1332,8 @@ items:
     grad_alcoholica: 5,75%
     vol_ml: 330 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,5€
 
   - nombre: New Orleans Fizz
     imagen: 306.jpg
@@ -1345,8 +1345,8 @@ items:
     grad_alcoholica: 6,20%
     vol_ml: 300ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Margarita Blue Frozeen
     imagen: 303.jpg
@@ -1358,8 +1358,8 @@ items:
     grad_alcoholica: 6%
     vol_ml: 270 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,5€
+    pvp_terraza: 7€
 
   - nombre: Green Station
     imagen: 377.jpg
@@ -1371,8 +1371,8 @@ items:
     grad_alcoholica: 7%
     vol_ml: 235 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,5€
 
   - nombre: Sangría Jamaicana
     imagen: 325.jpg
@@ -1384,8 +1384,8 @@ items:
     grad_alcoholica: 11,30%
     vol_ml: 235 ml
     edul_gr:
-    pvp_local: 6.5€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,5€
 
   - nombre: Singapure Sling
     imagen: 326.jpg
@@ -1397,8 +1397,8 @@ items:
     grad_alcoholica: 9,60%
     vol_ml: 220 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Tom Collins
     imagen: 322.jpg
@@ -1410,8 +1410,8 @@ items:
     grad_alcoholica: 7,40%
     vol_ml: 290 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Sex on the Beach
     imagen: 203.jpg
@@ -1423,8 +1423,8 @@ items:
     grad_alcoholica: 12,90%
     vol_ml: 155 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,5€
 
   - nombre: Destornillador
     imagen: 324.jpg
@@ -1449,8 +1449,8 @@ items:
     grad_alcoholica: 9%
     vol_ml: 220 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
+    pvp_local: 8€
+    pvp_terraza: 8,50€
 
   - nombre: Cold Green Chilli Peppers
     imagen: 264.jpg
@@ -1462,8 +1462,8 @@ items:
     grad_alcoholica: 12,80%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,50€
+    pvp_terraza: 9€
 
   - nombre:  Aperol Spritz
     imagen: 260.jpg
@@ -1488,8 +1488,8 @@ items:
     grad_alcoholica: 4%
     vol_ml: 315 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,50€
 
   - nombre: Aperoni Gin
     imagen: 367.jpg
@@ -1514,8 +1514,8 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 215 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,50€
 
   - nombre: Margarita Clásica
     imagen: 199.jpg
@@ -1527,8 +1527,8 @@ items:
     grad_alcoholica: 24%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 7€
+    pvp_terraza: 7,50€
 
   - nombre: Cosmopolitan
     imagen: 372.jpg
@@ -1540,8 +1540,8 @@ items:
     grad_alcoholica: 23%
     vol_ml: 110 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,5€
+    pvp_terraza: 7€
 
   - nombre: Daiquiri
     imagen: 373.jpg
@@ -1553,8 +1553,8 @@ items:
     grad_alcoholica: 20%
     vol_ml: 140 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,50€
+    pvp_terraza: 7€
 
   - nombre: Alexander
     imagen: 210.jpg
@@ -1566,8 +1566,8 @@ items:
     grad_alcoholica: 19,80%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,50€
+    pvp_terraza: 7€
 
   - nombre: Black Russian
     imagen: 369.jpg
@@ -1579,8 +1579,8 @@ items:
     grad_alcoholica: 30%
     vol_ml: 85 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,50€
 
   - nombre: Manhatan
     imagen: 349.jpg
@@ -1592,8 +1592,8 @@ items:
     grad_alcoholica: 29%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Gin Fizz
     imagen: 376.jpg
@@ -1605,8 +1605,8 @@ items:
     grad_alcoholica: 13,50%
     vol_ml: 150 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,50€
 
   - nombre: Dry Martini
     imagen: 374.jpg
@@ -1618,8 +1618,8 @@ items:
     grad_alcoholica: 28,40%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,50€
 
   - nombre: Espresso Martini
     imagen: 350.jpg
@@ -1631,8 +1631,8 @@ items:
     grad_alcoholica: 14,50%
     vol_ml: 110 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,5€
+    pvp_terraza: 7€
 
   - nombre: Finlandia & Schweppes Hibiscus 🌺 
     imagen: finlandiahibiscus.jpg
@@ -1670,8 +1670,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Crystal Head & Schweppes Premium Toque de Lima.
     imagen: 249.jpg
@@ -1806,7 +1806,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Hendrick's & Schweppes Pimienta Rosa 🥒
+  - nombre: Hendrick's & Schweppes Toque de Lima 🥒
     imagen: 320.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1816,8 +1816,8 @@ items:
     grad_alcoholica: 8,80%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Pink & 1724 tonic water
     imagen: 239.jpg
@@ -1855,8 +1855,8 @@ items:
     grad_alcoholica: 9,20%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Ginbraltar & Fever Tree
     imagen: 245.jpg
@@ -1868,8 +1868,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Ginbraltar Citrus & Schweppes Premium Toque de Lima
     imagen: 224.jpg
@@ -1881,8 +1881,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Tanqueray Ten & Fever Tree
     imagen: 262.jpg
@@ -1959,8 +1959,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7.50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Bloom & 1724 tonic water
     imagen: 213.jpg
@@ -2051,8 +2051,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Gin Mare & Fever Tree Mediterranean
     imagen: 221.jpg
@@ -2064,8 +2064,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Gin del Professore Monsieur & Fever Tree
     imagen: 220.jpg
@@ -2168,8 +2168,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Carta de Bocadillos 🌭
     imagen: 2a.jpg
@@ -2291,19 +2291,6 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,40€
 
-  - nombre: Zape
-    imagen: 283.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Cinzano Bianco infusionado con Romero Y Albahaca, Zumo de Pomelo, Bonanto, Sirope de Romero y Soda.
-    alergenos: "*Sulfitos*"
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 6,25%
-    vol_ml: 190 ml
-    edul_gr:
-    pvp_local: 6,00€
-    pvp_terraza: 6,50€
-
   - nombre: 🍒 Gewürztraminer & Cherries (fuera de temporada)
     disponible: false
     imagen: 300.jpg
@@ -2315,8 +2302,8 @@ items:
     grad_alcoholica: 3,50%
     vol_ml: 185 ml
     edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,50€
 
   - nombre: Gin Roku
     imagen: 323.jpg
@@ -2342,8 +2329,8 @@ items:
     grad_alcoholica: No disponible
     vol_ml:
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8,50€
+    pvp_terraza: 9€
 
   - nombre: Café o té + Tarta del día
     prioridad: true
@@ -2502,8 +2489,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Grazie Mille
     prioridad: true 
