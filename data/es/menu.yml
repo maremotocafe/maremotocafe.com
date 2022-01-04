@@ -228,8 +228,8 @@ items:
     grad_alcoholica: 0%
     vol_ml: 200ml
     edul_gr:
-    pvp_local: 2,75€
-    pvp_terraza: 3,25€
+    pvp_local: 3,25€
+    pvp_terraza: 3,75€
 
   - nombre: Capuccino Sabor ☕
     imagen: 102.jpg
@@ -502,6 +502,8 @@ items:
     ingredientes: Reconfortante bebida caliente a base de Té Chai y Leche de Almendra o la leche que prefieras.
     alergenos:
     txt_aclaraciones: Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración
+    pvp_local: 2,75€
+    pvp_terraza: 3,25€
 
   - nombre: Té Mojito Iced ❄
     imagen: 319.jpg
@@ -513,8 +515,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 15 gr de Azúcar
-    pvp_local: 2,75€
-    pvp_terraza: 3,25€
+    pvp_local: 3,25€
+    pvp_terraza: 3,75€
 
   - nombre: Té Chai con Leche de Soja ❄
     imagen: 280.jpg
@@ -526,8 +528,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr: 10gr de Azúcar
-    pvp_local: 2,75€
-    pvp_terraza: 3,25€
+    pvp_local: 3,25€
+    pvp_terraza: 3,75€
 
   - nombre: Batidos de Sabores 🍓🍌
     imagen: 5a.jpg
@@ -546,8 +548,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 3,75€
-    pvp_terraza: 4,25€
+    pvp_local: 4€
+    pvp_terraza: 4,50€
 
   - nombre: Smoothies de Frutas (Con leche)
     imagen: 388.jpg
@@ -561,8 +563,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 3,50€
-    pvp_terraza: 4€
+    pvp_local: 4€
+    pvp_terraza: 4,5€
 
   - nombre: Smoothies de Fruta (Sin Lacteos)
     imagen: 389.jpg
@@ -575,8 +577,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 3,50€
-    pvp_terraza: 4€
+    pvp_local: 4€
+    pvp_terraza: 4,5€
 
   - nombre: Smoothies Sabores Combinados
     imagen: 392.jpg
@@ -590,8 +592,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 3,50€
-    pvp_terraza: 4€
+    pvp_local: 4€
+    pvp_terraza: 4,5€
 
   - nombre: Smoothie Leche Merengada
     imagen: 390.jpg
@@ -603,8 +605,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 3,50€
-    pvp_terraza: 4€
+    pvp_local: 4€
+    pvp_terraza: 4,5€
 
   - nombre: Smoothie Premium Estambul
     imagen: 375.jpg
@@ -694,8 +696,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 2,75€
-    pvp_terraza: 3,25€
+    pvp_local: 2,90€
+    pvp_terraza: 3,40€
 
   - nombre: Granizado de Naranja y Menta 🍊
     imagen: 198.jpg
@@ -707,8 +709,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 2,75€
-    pvp_terraza: 3,25€
+    pvp_local: 2,90€
+    pvp_terraza: 3,40€
 
   - nombre: Granizado de Café
     imagen: 197.jpg
@@ -720,8 +722,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 2,75€
-    pvp_terraza: 3,25€
+    pvp_local: 2,90€
+    pvp_terraza: 3,40€
 
   - nombre: Limonada de Jengigre y Pomelo
     imagen: 272.jpg
@@ -733,8 +735,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 15gr de Azúcar Integral de caña
-    pvp_local: 4,50€
-    pvp_terraza: 5€
+    pvp_local: 5,25€
+    pvp_terraza: 5,75€
 
   - nombre: 🍉 Limonada de Sandía y Menta (fuera de temporada)
     disponible: false
@@ -747,8 +749,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 10gr de Azúcar Integral de caña
-    pvp_local: 4,50€
-    pvp_terraza: 5€
+    pvp_local: 5,25€
+    pvp_terraza: 5,75€
 
   - nombre: Limonada Mr Smith
     imagen: 299.jpg
@@ -760,8 +762,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 0 gr
-    pvp_local: 4,5€
-    pvp_terraza: 5€
+    pvp_local: 5,25€
+    pvp_terraza: 5,75€
 
   - nombre: San Francisco
     imagen: 317.jpg
@@ -799,8 +801,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 22gr
-    pvp_local: 5,50€
-    pvp_terraza: 6€
+    pvp_local: 6,5€
+    pvp_terraza: 7€
 
   - nombre: Shin Tonic
     imagen: 63.jpg
@@ -812,8 +814,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,5€
+    pvp_terraza: 7€
 
   - nombre: Frescor Cálido (Fuera de Temporada)
     disponible: false
@@ -866,8 +868,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 0gr
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,5€
+    pvp_terraza: 7€
 
   - nombre: Mojito Clásico
     imagen: 201.jpg
@@ -1647,7 +1649,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Ciroc & Schweppes Pimienta Rosa
+  - nombre: Ciroc & Schweppes Toque de Lima
     imagen: 251.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Con brocheta de Uva y twist de Pomelo.
@@ -1660,7 +1662,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Grey Goose & Schweppes Pimienta Rosa
+  - nombre: Grey Goose & Schweppes Toque de Lima
     imagen: greygoose.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Con twist de Lima.
@@ -1673,7 +1675,7 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
-  - nombre: Crystal Head & Schweppes Premium Toque de Lima.
+  - nombre: Crystal Head & Schweppes Toque de Lima.
     imagen: 249.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Con Bitter de Pomelo y twist de Pomelo.
@@ -1700,7 +1702,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Gin Pasión & Schweppes Premium Toque de Lima 🌺 (Ginebras Infusionadas)
+  - nombre: Gin Pasión & Schweppes Toque de Lima 🌺 (Ginebras Infusionadas)
     imagen: ginpasion.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Ginebra Ampersand infusionada con Mora, Grosella, Fresa e Hibisco & Schweppes Premium Toque de Lima
@@ -1713,7 +1715,7 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,50€
 
-  - nombre: Gin Red Temptation.
+  - nombre: Gin Red Temptation & Toque de Lima.
     imagen: ginpasion.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Ginebra Ampersand infusionada con Hibisco, escaramujo, Lemongrass y Rosas
@@ -1726,7 +1728,7 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,50€
 
-  - nombre: Xoringer & Schweppes Premium Toque de Lima
+  - nombre: Xoringer & Schweppes Toque de Lima
     imagen: xoringer.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1753,7 +1755,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Gin.Za & Schweppes Premium Toque de Lima 🍑 🍋
+  - nombre: Gin.Za & Schweppes Toque de Lima 🍑 🍋
     imagen: 246.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1776,8 +1778,8 @@ items:
     grad_alcoholica: 8,40%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: June & 1724 tonic water 🍑
     prioridad: true
@@ -1790,8 +1792,8 @@ items:
     grad_alcoholica: 5,60%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Bulldog & Fever Tree
     imagen: 215.jpg
@@ -1816,8 +1818,8 @@ items:
     grad_alcoholica: 8,80%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Pink & 1724 tonic water
     imagen: 239.jpg
@@ -1842,8 +1844,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Citadelle & 1724 tonic water
     imagen: 248.jpg
@@ -1920,10 +1922,10 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
-  - nombre: Magellan & Schweppes Pimienta Rosa
+  - nombre: Magellan & Schweppes Toque de Lima
     imagen: 235.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1946,10 +1948,10 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,5€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
-  - nombre: Cubical & Fever 🍋
+  - nombre: Cubical & Fever Tree 🍋
     imagen: 257.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1985,10 +1987,10 @@ items:
     grad_alcoholica: 8,30%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
-  - nombre: Mombasa & Schweppes Pimienta Rosa
+  - nombre: Mombasa & Schweppes Toque de Lima
     imagen: 236.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -2001,7 +2003,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Ish & Schweppes Pimienta Rosa
+  - nombre: Ish & Schweppes Toque de Lima
     imagen: 232.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -2014,7 +2016,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Ish Limed & Schweppes Premium Toque de Lima 🍋
+  - nombre: Ish Limed & Schweppes Toque de Lima 🍋
     imagen: 231.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -2155,8 +2157,8 @@ items:
     grad_alcoholica: 6%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Brockman`s & Fever Tree 
     imagen: 252.jpg
@@ -2172,22 +2174,19 @@ items:
     pvp_terraza: 9€
 
   - nombre: Carta de Bocadillos 🌭
-    imagen: 2a.jpg
+    imagen: bocadillos.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Sándwiches 🥪
-    imagen: 2a.jpg
-    imagen_pequenya: 2a.jpg
+    imagen: sándwiches.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Focaccias 🍕
-    imagen: 2a.jpg
-    imagen_pequenya: 2a.jpg
+    imagen: focaccias.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Almuerzos 🍳 🥓
-    imagen: 2a.jpg
-    imagen_pequenya: 2a.jpg
+    imagen: almuerzos.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Zumos Naturales 🍊🍏🥕🍎
@@ -2305,7 +2304,7 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,50€
 
-  - nombre: Gin Roku
+  - nombre: Gin Roku & Schweppes Toque de Lima
     imagen: 323.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -2342,7 +2341,7 @@ items:
     pvp_terraza: 4,35€
 
   - nombre: Desayunos
-    imagen: 2a.jpg
+    imagen: desayunos.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
     alergenos:
     txt_aclaraciones:
@@ -2436,7 +2435,7 @@ items:
     pvp_local: 6,50€
     pvp_terraza: 7€
 
-  - nombre: Harbour gin & Schweppes toque de lima
+  - nombre: Harbour gin & Schweppes Toque de Lima
     prioridad: true 
     imagen: 355.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2464,7 +2463,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Gin Raw & Schweppes toque de lima 
+  - nombre: Gin Raw & Schweppes Toque de Lima 
     prioridad: true 
     imagen: 359.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
