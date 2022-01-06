@@ -2190,13 +2190,11 @@ items:
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Zumos Naturales 🍊🍏🥕🍎
-    imagen: z1.jpg
-    imagen_pequenya: z1.jpg
+    imagen: Zumos.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
-  - nombre: Cookies Caseras 🍪
-    imagen: 2a.jpg
-    imagen_pequenya: 2a.jpg
+  - nombre: Repostería Casera 🍪
+    imagen: Repostería.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Café + Churros + Zumo Natural
