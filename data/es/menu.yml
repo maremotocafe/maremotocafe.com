@@ -2505,7 +2505,7 @@ items:
 
   - nombre: Cookies
     prioridad: true
-    imagen: cookies caseras.jpg
+    imagen: cookies.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
