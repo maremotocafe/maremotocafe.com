@@ -2180,7 +2180,7 @@ items:
 
   - nombre: Carta de Sándwiches 🥪
     imagen: sándwiches.png
-    Imagen_pequenya: sándwiches_small.png
+    imagen_pequenya: sándwiches_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Focaccias 🍕
