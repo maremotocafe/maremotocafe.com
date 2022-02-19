@@ -2175,32 +2175,32 @@ items:
 
   - nombre: Carta de Bocadillos 🌭
     imagen: bocadillos.png
-    imagen pequenya: bocadillos_small.png
+    imagen_pequenya: bocadillos_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Sándwiches 🥪
     imagen: sándwiches.png
-    Imagen pequenya: sándwiches_small.png
+    Imagen_pequenya: sándwiches_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Focaccias 🍕
     imagen: focaccias.png
-    imagen pequenya: focaccias_small.png
+    imagen_pequenya: focaccias_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Almuerzos 🍳 🥓
     imagen: almuerzos.png
-    imagen pequenya: almuerzos_small.png
+    imagen_pequenya: almuerzos_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Zumos Naturales 🍊🍏🥕🍎
     imagen: Zumos.png
-    imagen pequenya: zumos_small.png
+    imagen_pequenya: zumos_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Repostería Casera 🍪
     imagen: Repostería.png
-    imagen pequenya: Repostería_small.png
+    imagen_pequenya: Repostería_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Café + Churros + Zumo Natural
