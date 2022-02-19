@@ -1017,7 +1017,7 @@ items:
   - nombre: Moskow Mule
     imagen: 263.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
-    ingredientes: Vodka Finlandia, Zumo de Lima, Sirope de Ágave y Giger Beer
+    ingredientes: Vodka Finlandia, Zumo de Lima, Sirope de Ágave y Ginger Beer
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
@@ -2175,26 +2175,32 @@ items:
 
   - nombre: Carta de Bocadillos 🌭
     imagen: bocadillos.png
+    imagen pequenya: bocadillos_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Sándwiches 🥪
     imagen: sándwiches.png
+    Imagen pequenya: sándwiches_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Focaccias 🍕
     imagen: focaccias.png
+    imagen pequenya: focaccias_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Almuerzos 🍳 🥓
     imagen: almuerzos.png
+    imagen pequenya: almuerzos_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Zumos Naturales 🍊🍏🥕🍎
     imagen: Zumos.png
+    imagen pequenya: zumos_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Repostería Casera 🍪
     imagen: Repostería.png
+    imagen pequenya: Repostería_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Café + Churros + Zumo Natural
@@ -2340,6 +2346,7 @@ items:
 
   - nombre: Desayunos
     imagen: desayunos.png
+    imagen_pequenya: desayunos_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
     alergenos:
     txt_aclaraciones:
@@ -2388,7 +2395,7 @@ items:
 
   - nombre: Café + tartaleta
     prioridad: true
-    imagen: 2a.jpg
+    imagen: Tartaleta.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
@@ -2505,7 +2512,7 @@ items:
 
   - nombre: Cookies
     prioridad: true
-    imagen: cookies.png
+    imagen: cookiescaseras.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
@@ -2551,16 +2558,24 @@ items:
     pvp_local: 7,5€
     pvp_terraza: 8€ 
 
-  - nombre: Jengi 🎄🆕
+  - nombre: Jengi 
     prioridad: true
     imagen: jengi.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Calvados, Zumo de manzana Nat, Crema de Castañas, Fireball, Nata y Clara huevo .
     alergenos: "*Huevo y Lacteos*"
-    txt_aclaraciones: Cocktail Navideño🎄 ¡Con galleta de jengibre incluida!
-    txt_temporal: Disponible Diciembre y Enero.
+    txt_aclaraciones: ¡Con galleta de jengibre incluida!
+    txt_temporal: Disponible de Diciembre a Abril.
     grad_alcoholica:
     vol_ml:
     edul_gr:
     pvp_local: 8,5€
-    pvp_terraza: 9€ 
+    pvp_terraza: 9€
+
+  - nombre: Focaccias + Refresco o Cerveza
+    imagen: focaciaoferta.png
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones:
+    pvp_local: 5€
+    pvp_terraza: 5,50€ 
