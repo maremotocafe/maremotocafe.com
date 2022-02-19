@@ -2395,7 +2395,7 @@ items:
 
   - nombre: Café + tartaleta
     prioridad: true
-    imagen: Tartaleta.jpg
+    imagen: Tartaleta.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
@@ -2573,7 +2573,7 @@ items:
     pvp_terraza: 9€
 
   - nombre: Focaccias + Refresco o Cerveza
-    imagen: focaciaoferta.png
+    imagen: focacciaoferta.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
