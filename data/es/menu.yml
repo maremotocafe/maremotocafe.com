@@ -2579,3 +2579,12 @@ items:
     txt_aclaraciones:
     pvp_local: 5€
     pvp_terraza: 5,50€ 
+
+  - nombre: Outlet Gin Maremoto
+    prioridad: true
+    imagen: outletgin.png
+    categorias: ["Ofertas Destacadas" , "Noche" , "Tarde"]
+    alergenos:
+    txt_aclaraciones:
+    pvp_local: 6,50€
+    pvp_terraza: 7€
