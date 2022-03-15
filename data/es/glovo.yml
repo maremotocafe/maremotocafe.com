@@ -1,13 +1,23 @@
 enable: true
 title: Encuéntranos en Glovo
-texto_boton: Visitar página
 tarjetas:
+- icono: las la-users
+  titulo: ¿Quieres trabajar con nosotros?
+  link: "mailto:maremotocafe@hotmail.com"
+  texto: ¡Próxima incorporación de personal para diferentes puestos!
+  texto_boton: Déjanos tu curriculum en maremotocafe@hotmail.com
+  imagen_boton:
+
 - icono: las la-cocktail
   titulo: Cocktails & Drinks
   link: "https://glovoapp.com/en/zar/store/maremoto-drinks-cocktails/"
   texto: ¡Te llevamos tu cocktail a casa!
+  texto_boton: Visitar página
+  imagen_boton: images/glovo.jpg
 
 - icono: las la-bacon
   titulo: Desayunos
   link: "https://glovoapp.com/en/zar/store/maremoto/"
   texto: ¡Desayuno a domicilio!
+  texto_boton: Visitar página
+  imagen_boton: images/glovo.jpg

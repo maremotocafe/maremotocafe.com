@@ -20,8 +20,10 @@
             <h3>{{ with .icono }}<i class="{{ . }}"></i>{{ end }} {{ .titulo }}</h3>
             <p>{{ .texto | markdownify }}</p>
             <a target="_blank" rel="noreferrer" href="{{ .link }}" role="button" class="btn btn-block btn-shadow">
-              <span class="mr-2">{{ $data.glovo.texto_boton }}</span>
-              <img class="ml-2" src="images/glovo.jpg"/>
+              <span class="mr-2">{{ .texto_boton }}</span>
+              {{ with .imagen_boton }}
+                <img class="ml-2" src="{{ . }}"/>
+              {{ end }}
             </a>
           </div>
         </div>
