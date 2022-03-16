@@ -620,9 +620,9 @@ a:hover {
 }
 
 /*=================================================================
-  Glovo section
+  Intro section
 ==================================================================*/
-.glovo .block {
+.intro .block {
   background: #242930;
   padding: 30px;
   border-bottom: 2px solid transparent;
@@ -630,12 +630,9 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.glovo .block:hover {
-  border-bottom: 2px solid #afbac4;
-}
-
-.glovo .block .icon-box h3 {
-  color: #afbac4;
+.intro .btn:hover,
+.intro .btn:focus {
+  color: #1d2024 !important;
 }
 
 .glovo .btn:hover,
@@ -644,11 +641,17 @@ a:hover {
   color: #1d2024 !important;
 }
 
-.glovo .btn img {
-  width: 30px;
+.intro .btn img {
+  width: 25px;
 }
 
-.glovo .btn span {
+@media only screen and (max-width: 200px) {
+  .intro .btn img {
+    display: none !important;
+  }
+}
+
+.intro .btn span {
   font-size: 1.1rem;
 }
 
