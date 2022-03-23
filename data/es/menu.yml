@@ -531,17 +531,17 @@ items:
     pvp_local: 3,25€
     pvp_terraza: 3,75€
 
-  - nombre: Batidos de Sabores 🍓🍌
+  - nombre: Batidos de Sabores. 🆕 ¡Nuevos Sabores!
     imagen: 5a.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Batidos"]
     ingredientes: Leche, Fruta liofilizada, fructosa y Hielo.
     alergenos: "*Leche*"
     txt_aclaraciones: >
-     A elegir entre Fresa, Plátano, Chocolate, Vainilla o Avellana.
+     A elegir entre Fresa, Plátano, Chocolate, Chocolate Blanco, Vainilla, Naranja con Canela, Café y Caramelo
 
-     Sin Guten ni Colorantes artificiales.€s
+     Sin Guten ni Colorantes artificiales.
 
-     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de su batido.
+     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de tu batido.
 
      Todos los Batidos incluyen Nata y Toppings, si no desea Nata comuniqueló a su camarero.
     txt_temporal: Disponible todo el año.
