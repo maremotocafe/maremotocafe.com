@@ -2329,7 +2329,7 @@ items:
 
   - nombre: Café o té + Tarta del día
     prioridad: true
-    imagen: tarta.jpg
+    imagen: tarta.png
     categorias: ["Ofertas Destacadas" , "Día" , "Tarde"]
     alergenos:
     txt_aclaraciones: Oferta Válida de 7 a 22:30h
