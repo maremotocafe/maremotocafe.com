@@ -831,20 +831,6 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: EmocionaTé
-    disponible: false
-    imagen: 313.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
-    ingredientes: Te rojo, Limón, Zumo Natural de Manzana Granny Smith, Srhub de Frambuesa, Sirope de Manzana caramelizada y Ginger beer.
-    alergenos: "*Sulfitos*"
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 0%
-    vol_ml:
-    edul_gr: 22gr
-    pvp_local: 6€
-    pvp_terraza: 6,50€
-
   - nombre: Jalamango
     imagen: 315.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
@@ -857,19 +843,6 @@ items:
     edul_gr: 0 gr
     pvp_local: 6€
     pvp_terraza: 6,50€
-
-  - nombre: Santa Romeria
-    imagen: 20.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
-    ingredientes: Elaborado con método de maceracion rápida en sifón de espuma. Zumo de Pomelo Natural, Datil Medjool, Romero fresco y CO2
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 0%
-    vol_ml:
-    edul_gr: 0gr
-    pvp_local: 6,5€
-    pvp_terraza: 7€
 
   - nombre: Mojito Clásico
     imagen: 201.jpg
@@ -1190,20 +1163,6 @@ items:
     pvp_local: 9€
     pvp_terraza: 9,5€
 
-  - nombre: Puro Perú (fuera de temporada)
-    disponible: false
-    imagen: 386.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Pisco Quebranta, Sirope de Hierbaluisa y Jengibre, Arándanos frescos, Sirope de Manzana Caramelizada con Canela, 1724 tonic water y Espuma de Manzana, Albahaca y Cardamomo.
-    alergenos: "*Huevo*"
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,70%
-    vol_ml: 245 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
-
   - nombre: The First Cocktail
     imagen: 285.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1467,7 +1426,7 @@ items:
     pvp_local: 8,50€
     pvp_terraza: 9€
 
-  - nombre:  Aperol Spritz
+  - nombre: Aperol Spritz
     imagen: 260.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Aperol, proseco Cinzano y Soda
@@ -1715,19 +1674,6 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,50€
 
-  - nombre: Gin Red Temptation & Toque de Lima.
-    imagen: ginpasion.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Ginebra Ampersand infusionada con Hibisco, escaramujo, Lemongrass y Rosas
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
-
   - nombre: Xoringer & Schweppes Toque de Lima
     imagen: xoringer.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1776,20 +1722,6 @@ items:
     txt_aclaraciones: Versión superpremium de Larios. Gran expresión de Enebro y matices mediterraneos.
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 8,40%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
-
-  - nombre: June & 1724 tonic water 🍑
-    prioridad: true
-    imagen: 233.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Elixir frances clasificado como licor de ginebra por su baja graduación, macerado con flor de vid. Sabor cálido y elegante.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 5,60%
     vol_ml: 250 ml
     edul_gr:
     pvp_local: 8€
@@ -1913,6 +1845,7 @@ items:
     pvp_terraza: 8€
 
   - nombre: Voortrekker & 1724 tonic water 🍊
+    prioridad: true
     imagen: 238.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1926,6 +1859,7 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Magellan & Schweppes Toque de Lima
+    prioridad: true
     imagen: 235.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1964,19 +1898,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Bloom & 1724 tonic water
-    imagen: 213.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra inglesa de textura floral única con agradable "deje" dulce y cítrico.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
-
   - nombre: Sipsmith & Fever Tree
     imagen: 241.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2004,6 +1925,7 @@ items:
     pvp_terraza: 8€
 
   - nombre: Ish & Schweppes Toque de Lima
+    prioridad: true
     imagen: 232.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -2017,6 +1939,7 @@ items:
     pvp_terraza: 8€
 
   - nombre: Ish Limed & Schweppes Toque de Lima 🍋
+    prioridad: true
     imagen: 231.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -2380,48 +2303,6 @@ items:
     pvp_local: 2,60€
     pvp_terraza: 3€
 
-
-  - nombre: Gordon`s Crips Cucumber & Schweppes tonic
-    prioridad: true
-    imagen: 354.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra inglesa elaborada con pepino entre otros botánicos.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 7,50%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
-
-  - nombre: Harbour gin & Schweppes Toque de Lima
-    prioridad: true 
-    imagen: 355.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra elaborada con botánicos del delta del Ebro.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
-
-  - nombre: Aviation & Fever tree
-    prioridad: true 
-    imagen: 358.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra americana de corte clásico.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
 
   - nombre: Gin Raw & Schweppes Toque de Lima 
     prioridad: true 
