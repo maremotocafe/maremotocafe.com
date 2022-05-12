@@ -2116,21 +2116,6 @@ items:
     imagen_pequenya: almuerzos_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
-  - nombre: Tostada de Guacamole, Brie, Cherry y Nueces.🥑
-    imagen: tostadabrie.png
-    imagen_pequenya: tostadabrie_small.png
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-
-  - nombre: Tostada de Jamón, Huevo y Tomate.🥚🍅
-    imagen: tostadajamon.png
-    imagen_pequenya: tostadajamon_small.png
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-
-  - nombre: Tostada de Salmón, Philadelphia y Anchoas.
-    imagen: tostadasalmon.png
-    imagen_pequenya: tostadasalmon_small.png
-    categorias: ["Desayunos, Almuerzos y Zumos"] 
-
   - nombre: Zumos Naturales 🍊🍏🥕🍎
     imagen: Zumos.png
     imagen_pequenya: zumos_small.png
@@ -2439,3 +2424,18 @@ items:
     txt_aclaraciones:
     pvp_local: 6,50€
     pvp_terraza: 7€
+
+  - nombre: Tostada de Guacamole, Brie, Cherry y Nueces.🥑
+    imagen: tostadabrie.png
+    imagen_pequenya: tostadabrie_small.png
+    categorias: ["Desayunos, Almuerzos y Zumos"]
+
+  - nombre: Tostada de Jamón, Huevo y Tomate.🥚🍅
+    imagen: tostadajamon.png
+    imagen_pequenya: tostadajamon_small.png
+    categorias: ["Desayunos, Almuerzos y Zumos"]
+
+  - nombre: Tostada de Salmón, Philadelphia y Anchoas.
+    imagen: tostadasalmon.png
+    imagen_pequenya: tostadasalmon_small.png
+    categorias: ["Desayunos, Almuerzos y Zumos"] 
