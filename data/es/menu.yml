@@ -2427,15 +2427,15 @@ items:
 
   - nombre: Tostada de Guacamole, Brie, Cherry y Nueces.🥑
     imagen: tostadabrie.png
-    imagen_pequenya: tostadabrie_small.png
+    imagen_pequenya: 
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Tostada de Jamón, Huevo y Tomate.🥚🍅
     imagen: tostadajamon.png
-    imagen_pequenya: tostadajamon_small.png
+    imagen_pequenya: 
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Tostada de Salmón, Philadelphia y Anchoas.
     imagen: tostadasalmon.png
-    imagen_pequenya: tostadasalmon_small.png
+    imagen_pequenya:
     categorias: ["Desayunos, Almuerzos y Zumos"] 
