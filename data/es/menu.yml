@@ -1081,6 +1081,7 @@ items:
 
   - nombre: El Viejo Santa Claus (fuera de temporada)
     prioridad: false
+    disponible: false
     imagen: 38.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Inspirado en la Navidad pero disponible todo el año.
@@ -2397,6 +2398,7 @@ items:
 
   - nombre: Jengi (fuera de temporada)
     prioridad: false
+    disponible: false
     imagen: jengi.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Calvados, Zumo de manzana Nat, Crema de Castañas, Fireball, Nata y Clara huevo .
