@@ -738,8 +738,8 @@ items:
     pvp_local: 5,25€
     pvp_terraza: 5,75€
 
-  - nombre: 🍉 Limonada de Sandía y Menta (fuera de temporada)
-    disponible: false
+  - nombre: 🍉 Limonada de Sandía y Menta 
+    disponible: true
     imagen: 270.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
@@ -1066,7 +1066,7 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: 🍒 Grandma's Cherry (Fuera de temporada)
-    disponible: false
+    disponible: true
     imagen: 287.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sirope homemade de Cerezas, Cerezas frescas, Marrasquino, Azúcar, Tónica 1724 y Bitter de Naranja.
@@ -1079,7 +1079,8 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: El Viejo Santa Claus
+  - nombre: El Viejo Santa Claus (fuera de temporada)
+    prioridad: false
     imagen: 38.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Inspirado en la Navidad pero disponible todo el año.
@@ -1092,8 +1093,8 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍉 Vodka Patilla (fuera de temporada)
-    disponible: false
+  - nombre: 🍉 Vodka Patilla 
+    disponible: true
     imagen: 194.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sandía fresca, Zumo de Lima, Sirope de Romero, Azúcar, Pimienta Negra y bitter de Lima.
@@ -1106,9 +1107,9 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍈 Rock Melón (Fuera de temporada)
-    prioridad: false
-    disponible: false
+  - nombre: 🍈 Rock Melón
+    prioridad: true
+    disponible: true
     imagen: 104.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Gin licor Proof 13, Puré de Melón Cantalupo Natural, Sirope de Hierbaluisa y Jengibre, Zumo de Naranja Natural, Zumo de Lima y Puré de Calabaza especiada.
@@ -2209,8 +2210,8 @@ items:
     pvp_local: 2€ + Zumo 3,75€
     pvp_terraza: 2,40€ + Zumo 4.15€
 
-  - nombre: 🍒 Gewürztraminer & Cherries (fuera de temporada)
-    disponible: false
+  - nombre: 🍒 Gewürztraminer & Cherries
+    disponible: true
     imagen: 300.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda .
