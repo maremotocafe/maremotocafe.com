@@ -1065,7 +1065,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: 🍒 Grandma's Cherry (Fuera de temporada)
+  - nombre: 🍒 Grandma's Cherry 
     disponible: true
     imagen: 287.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
