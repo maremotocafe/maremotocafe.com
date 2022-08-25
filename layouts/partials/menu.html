@@ -123,6 +123,9 @@
     {{ $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") }}
     {{ range $i, $item := $items }}
       {{ $image := resources.Get (printf "carta/%s" .imagen) }}
+      {{ if eq $image nil }}
+        {{ errorf "ERROR: La imagen '%s' no existe" .imagen }}
+      {{ end }}
       <figure class="col-lg-4 shuffle-item" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
         <div class="menu-block mb-4">
           <a class="open-popup-{{ if .standalone }}standalone{{ else }}inline{{ end }}" href="{{ if .standalone }}{{ $image.RelPermalink }}{{ else }}#carta-img{{ $i }}{{ end }}">

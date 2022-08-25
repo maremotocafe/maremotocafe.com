@@ -791,7 +791,7 @@ items:
     pvp_local: 5€
     pvp_terraza: 5,50€
 
-  - nombre: Virgin Colada.
+  - nombre: Virgin Colada
     imagen: 394.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Piña, Zumo de Lima, Puré de coco, Azúcar y Nata.
