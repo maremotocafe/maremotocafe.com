@@ -16,11 +16,7 @@
 {{ if ne .children nil }}
 <div class="menu-filter {{ if ne .level "1" }}d-none{{ end }}" filter-level="{{ .level }}" {{ with .parent }}filter-parent="{{ md5 . }}"{{ end }}>
   {{ with .message }}
-  <div class="step-msg">
-    <h3>{{ with $data.message_prefix }}{{ . }}{{ else }}{{ i18n "step" }} {{ $data.level }}:{{ end }}</h3>
-
-    <p>{{ . }}</p>
-  </div>
+  <h3 class="step-msg"><span class="step-colored">{{ with $data.message_prefix }}{{ . }}{{ else }}{{ i18n "step" }} {{ $data.level }}:{{ end }}</span> {{ . }}</h3>
   {{ end }}
 
   <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">

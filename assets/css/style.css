@@ -749,17 +749,14 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.menu-filter > .step-msg > h3 {
-  font-weight: 800;
-  color: #3c9fb4;
-  display: inline;
+.menu-filter > .step-msg {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 800 !important;
 }
 
-.menu-filter > .step-msg > p {
-  color: #fff;
-  font-weight: 800;
-  font-size: 25px;
-  display: inline;
+.step-colored {
+  color: #3c9fb4;
 }
 
 .menu-filter > .btn-group {
