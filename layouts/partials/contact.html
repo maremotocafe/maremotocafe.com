@@ -23,7 +23,7 @@
           {{ range $contact.contact_details }}
           <div class="con-info clearfix">
             <i class="{{ .icon }}"></i>
-            <span>{{ .info }}</span>
+            <span>{{ .info | markdownify }}</span>
           </div>
           {{ end }}
         </div>

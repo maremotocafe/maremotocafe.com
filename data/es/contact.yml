@@ -9,10 +9,10 @@ help_txt: "Si no se abrió tu cliente de correo es posible que necesites configu
 
 contact_details:
   - icon: las la-map-marker
-    info: "Cesáreo Alierta Nº 20 50008 Zaragoza"
+    info: "Dirección: Cesáreo Alierta Nº 20 50008 Zaragoza"
     
   - icon: las la-phone
-    info: "Tlf 976231990"
+    info: "Teléfono: [976 23 19 90](tel:+34976231990)"
     
   - icon: las la-envelope
-    info: "Email: maremotocafe@hotmail.com"
+    info: "Email: [maremotocafe@hotmail.com](mailto:maremotocafe@hotmail.com)"
