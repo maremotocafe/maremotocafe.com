@@ -18,6 +18,7 @@
   {{ with .message }}
   <div class="step-msg">
     <h3>{{ with $data.message_prefix }}{{ . }}{{ else }}{{ i18n "step" }} {{ $data.level }}:{{ end }}</h3>
+
     <p>{{ . }}</p>
   </div>
   {{ end }}
