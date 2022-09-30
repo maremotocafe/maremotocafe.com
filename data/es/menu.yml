@@ -738,8 +738,8 @@ items:
     pvp_local: 5,25€
     pvp_terraza: 5,75€
 
-  - nombre: 🍉 Limonada de Sandía y Menta 
-    disponible: true
+  - nombre: 🍉 Limonada de Sandía y Menta (Fuera de temporada)
+    disponible: false
     imagen: 270.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
@@ -1065,8 +1065,8 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: 🍒 Grandma's Cherry 
-    disponible: true
+  - nombre: 🍒 Grandma's Cherry (Fuera de temporada)
+    disponible: false
     imagen: 287.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sirope homemade de Cerezas, Cerezas frescas, Marrasquino, Azúcar, Tónica 1724 y Bitter de Naranja.
@@ -1094,8 +1094,8 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍉 Vodka Patilla 
-    disponible: true
+  - nombre: 🍉 Vodka Patilla (Fuera de temporada)
+    disponible: false
     imagen: 194.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sandía fresca, Zumo de Lima, Sirope de Romero, Azúcar, Pimienta Negra y bitter de Lima.
@@ -1108,9 +1108,9 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍈 Rock Melón
-    prioridad: true
-    disponible: true
+  - nombre: 🍈 Rock Melón (Fuera de temporada)
+    prioridad: false
+    disponible: false
     imagen: 104.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Gin licor Proof 13, Puré de Melón Cantalupo Natural, Sirope de Hierbaluisa y Jengibre, Zumo de Naranja Natural, Zumo de Lima y Puré de Calabaza especiada.
@@ -2441,4 +2441,48 @@ items:
   - nombre: Tostada de Salmón, Philadelphia y Anchoas.
     imagen: tostadasalmon.png
     imagen_pequenya:
-    categorias: ["Desayunos, Almuerzos y Zumos"] 
+    categorias: ["Desayunos, Almuerzos y Zumos"]
+
+  - nombre: Dewars Summer 🌞 🆕
+    disponible: true
+    imagen: dewarssummer.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Dewars Caribbean, Piña asada, Menta y Mixer de Pomelo.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Dewars Spring 🌺 🆕
+    disponible: true
+    imagen: dewarsspring.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Dewars French Smooth, Sirope de flores y Semilla de Cilantro, Zumo de Manzana, Ginger Ale y Espuma de Manzana Albahaca y Cardamomo. 
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 
+    vol_ml:
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€
+
+  - nombre: Dewars Autunm 🍁 🆕
+    disponible: true
+    imagen: dewarsautunm.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Dewars 12 años, Manzana caramelizada, Calabaza especiada y Ginger Ale.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€  
+
+
