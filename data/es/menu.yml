@@ -2211,8 +2211,8 @@ items:
     pvp_local: 2€ + Zumo 3,75€
     pvp_terraza: 2,40€ + Zumo 4.15€
 
-  - nombre: 🍒 Gewürztraminer & Cherries
-    disponible: true
+  - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
+    disponible: false
     imagen: 300.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda .
@@ -2239,7 +2239,6 @@ items:
     pvp_terraza: 8€
 
   - nombre: 🍍 Gin Fizz de Pomelo y Piña
-    prioridad: true
     imagen: 316.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Tanqueray Ten, Sirope de Piña asada homemade, Zumo de Pomelo y Mixer de Pomelo Thomas henrry.
