@@ -2176,16 +2176,16 @@ items:
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Vermut finalista de la III Ruta Cinzano de Zaragoza. Oferta Válida de 12 a 22:30h
-    pvp_local: 3,90€
-    pvp_terraza: 4,30€
+    pvp_local: 4,25€
+    pvp_terraza: 4,75€
 
   - nombre: Sándwich Mixto + Zumo Natural
     imagen: sandwich+zumo.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 16h
-    pvp_local: 3,75€ Con rodajas de tomate 4,25€
-    pvp_terraza: 4,25€ Con rodajas de tomate 4,65€
+    pvp_local: 4€ Con rodajas de tomate 4,50€
+    pvp_terraza: 4,50€ Con rodajas de tomate 5€
 
   - nombre: Café + Repostería + Zumo Natural
     imagen: cafe+reposteria.png
@@ -2482,6 +2482,14 @@ items:
     vol_ml: 
     edul_gr:
     pvp_local: 8,5€
-    pvp_terraza: 9€  
+    pvp_terraza: 9€ 
+
+  - nombre: Tostada Gourmet + Cerveza/Refresco y Café 
+    imagen: ofertatostadagourmet.png
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos: 
+    txt_aclaraciones: En pan de Hogaza Normal o Integral 5 Semillas. Otras opciones diponibles son; Con Salmón ahumado, Philadelphia y Anchoas o Con Jamón Serrano Tomate y Huevo revuelto. Oferta válida de 7 a 16h
+    pvp_local: Tostada 3,95€ + Bebida 5,45€ + Café 6,45€
+    pvp_terraza: Tostada 3,95€ + Bebida 5,95€ + Café 6,95€
 
 
