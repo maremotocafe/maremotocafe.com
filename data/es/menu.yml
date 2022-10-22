@@ -2443,6 +2443,7 @@ items:
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Dewars Summer 🌞 🆕
+    prioridad: true
     disponible: true
     imagen: dewarssummer.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2457,6 +2458,7 @@ items:
     pvp_terraza: 8€
 
   - nombre: Dewars Spring 🌺 🆕
+    prioridad: true
     disponible: true
     imagen: dewarsspring.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2471,6 +2473,7 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Dewars Autunm 🍁 🆕
+    prioridad: true
     disponible: true
     imagen: dewarsautunm.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
