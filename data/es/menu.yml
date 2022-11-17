@@ -2495,4 +2495,19 @@ items:
     pvp_local: Tostada 3,95€ + Bebida 5,45€ + Café 6,45€
     pvp_terraza: Tostada 3,95€ + Bebida 5,95€ + Café 6,95€
 
+  - nombre: Tropea Beach 🆕
+    prioridad: true
+    disponible: true
+    imagen: tropeabeach.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
+    alergenos:
+    txt_aclaraciones: Aromas herbales y florales del mediterraneo junto a selectos licores italianos se mezclan en este cocktail inspirado en la maravillosa playa de tropea en la localidad italiana de Calabria.
+    txt_temporal: Disponible de Octubre a Marzo. 
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€ 
+
 
