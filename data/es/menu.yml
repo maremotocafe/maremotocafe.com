@@ -2108,11 +2108,6 @@ items:
     imagen_pequenya: sándwiches_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
-  - nombre: Carta de Focaccias 🍕
-    imagen: focaccias.png
-    imagen_pequenya: focaccias_small.png
-    categorias: ["Bocadillos, Sándwich y Focaccias"]
-
   - nombre: Almuerzos 🍳 🥓
     imagen: almuerzos.png
     imagen_pequenya: almuerzos_small.png
@@ -2286,16 +2281,6 @@ items:
     pvp_local: 2,95€
     pvp_terraza: 3,35€
 
-
-  - nombre: Café + tartaleta
-    prioridad: true
-    imagen: Tartaleta.png
-    categorias: ["Ofertas Destacadas" , "Día" , "Tarde"]
-    alergenos:
-    txt_aclaraciones:
-    pvp_local: 3,50
-    pvp_terraza: 3,90
-
   - nombre: Chocolate con Churros
     imagen: chocolate+churros.png
     categorias: ["Ofertas Destacadas" , "Día" , "tarde"]
@@ -2408,15 +2393,7 @@ items:
     vol_ml:
     edul_gr:
     pvp_local: 8,5€
-    pvp_terraza: 9€
-
-  - nombre: Focaccias + Refresco o Cerveza
-    imagen: cerveza+focaccia.png
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 12 a 16h 
-    pvp_local: 5€
-    pvp_terraza: 5,50€ 
+    pvp_terraza: 9€ 
 
   - nombre: Outlet Gin Maremoto
     prioridad: true
