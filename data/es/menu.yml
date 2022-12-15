@@ -205,8 +205,8 @@ items:
     pvp_local: 3,80€
     pvp_terraza: 4,30€
 
-  - nombre: Pu-erh Cítricos ☕
-    imagen: 296.jpg
+  - nombre: Pu-erh Silueta ☕
+    imagen: puerhsilueta.jpeg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Pu-erh, Naranja y Limón
     alergenos:
@@ -419,7 +419,7 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Touareg ☕
-    imagen: 298.jpg
+    imagen: touareg.jpeg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Té Verde, Hierbabuena, Menta y Clorofila.
     alergenos:
@@ -432,7 +432,7 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Pasión Prohibida ☕
-    imagen: 291.jpg
+    imagen: pasionprohibida.jpeg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Manzana, Fresa, Grosella, Mora e Hibisco
     alergenos:
@@ -445,7 +445,7 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Taj Majal ☕
-    imagen: 288.jpg
+    imagen: tajmahal.jpeg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Té Negro, Canela, Cardamomo, Pimienta, Clavo y Jengibre.
     alergenos:
@@ -471,7 +471,7 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Relax ☕
-    imagen: 292.jpg
+    imagen: relax.jpeg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Rooibos, Ortiga, Lemongrass, Valeriana, Melisa y Ginko.
     alergenos:
@@ -483,10 +483,62 @@ items:
     pvp_local: 2€
     pvp_terraza: 2,5€
 
-  - nombre: Sueños de Chocolate ☕
-    imagen: 297.jpg
+  - nombre: Cañamo Spice 
+    imagen: cañamospice.jpeg
     categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Rooibos, Cacao, Chocolate blanco y negro, Pétalos de Flores y Rosas.
+    ingredientes: Infusión con jengibre, canela, rooibos, pimienta verde, semillas de cáñamo, cardamomo y flores azules.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal:
+    grad_alcoholica:
+    vol_ml:
+    edul_gr:
+    pvp_local: 2€
+    pvp_terraza: 2,5€
+
+  - nombre: Rooibos Naranja
+    imagen: rooibosnaranja.jpeg
+    categorias: ["Cafés y Tés" , "Infusiones"]
+    ingredientes: Infusión de Rooibos con naranja.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal:
+    grad_alcoholica:
+    vol_ml:
+    edul_gr:
+    pvp_local: 2€
+    pvp_terraza: 2,5€
+
+  - nombre: Absenta Mint
+    imagen: absentamint.jpeg
+    categorias: ["Cafés y Tés" , "Infusiones"]
+    ingredientes: Infusión de anís, regaliz y menta.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal:
+    grad_alcoholica:
+    vol_ml:
+    edul_gr:
+    pvp_local: 2€
+    pvp_terraza: 2,5€
+
+  - nombre: Mekong
+    imagen: mekong.jpeg
+    categorias: ["Cafés y Tés" , "Infusiones"]
+    ingredientes: Pirámide de Té verde de Vietnam, con un alto poder antioxidante.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal:
+    grad_alcoholica:
+    vol_ml:
+    edul_gr:
+    pvp_local: 2€
+    pvp_terraza: 2,5€
+
+  - nombre: Earl Grey
+    imagen: earlgrey.jpeg
+    categorias: ["Cafés y Tés" , "Infusiones"]
+    ingredientes: Clásico té negro con aroma de bergamota.
     alergenos:
     txt_aclaraciones:
     txt_temporal:
@@ -2424,15 +2476,15 @@ items:
     disponible: true
     imagen: dewarssummer.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Dewars Caribbean, Piña asada, Menta y Mixer de Pomelo.
-    alergenos:
+    ingredientes: Dewars Caribbean, Piña asada, Menta, Mixer de Pomelo y Espuma de Pomelo Lima y Agua de Azahar.
+    alergenos: Huevo
     txt_aclaraciones:
     txt_temporal: Disponible todo el año
     grad_alcoholica: 
     vol_ml: 
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Dewars Spring 🌺 🆕
     prioridad: true
@@ -2440,7 +2492,7 @@ items:
     imagen: dewarsspring.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Dewars French Smooth, Sirope de flores y Semilla de Cilantro, Zumo de Manzana, Ginger Ale y Espuma de Manzana Albahaca y Cardamomo. 
-    alergenos:
+    alergenos: Huevo
     txt_aclaraciones:
     txt_temporal: Disponible todo el año
     grad_alcoholica: 
@@ -2478,7 +2530,7 @@ items:
     imagen: tropeabeach.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
-    alergenos:
+    alergenos: 
     txt_aclaraciones: Aromas herbales y florales del mediterraneo junto a selectos licores italianos se mezclan en este cocktail inspirado en la maravillosa playa de tropea en la localidad italiana de Calabria.
     txt_temporal: Disponible de Octubre a Marzo. 
     grad_alcoholica: 
@@ -2486,5 +2538,20 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
+
+  - nombre: Miyako 🆕
+    prioridad: true
+    disponible: true
+    imagen: miyako.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Ginebra Gin-Za, Sirope de Mandarina, Zumo Nat de Mandarina, Sirope de Cardamomo, Sirope de Romero, Limoncello Pallini, Campari y Clara de huevo pasteurizada
+    alergenos: Huevo.
+    txt_aclaraciones: Inspirado en la Isla de Miyako donde se encuentran 3 de las mejores playas japonesas. Entre sus ingredientes nos encontramos con una ginebra desarroyada en Zaragoza e inspirada el moderno barrio Ginza de Tokio. Citricos y botánicos asiáticos como la Mandarina y el cardamomo combinan a la perfeccion con otros como Yuzu y Kumquat presentes en la ginebra .
+    txt_temporal: Disponible de Octubre a Marzo. 
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€ 
 
 
