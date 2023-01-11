@@ -2137,28 +2137,38 @@ items:
     pvp_terraza: 9€
 
   - nombre: Carta de Bocadillos 🌭
-    imagen: bocadillos.png
-    imagen_pequenya: bocadillos_small.png
+    imagen: cartabocadillos.png
+    imagen_pequenya: portadabocadillos_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Sándwiches 🥪
-    imagen: sándwiches.png
-    imagen_pequenya: sándwiches_small.png
+    imagen: cartasandwich.png
+    imagen_pequenya: portadasandwich_small.png
     categorias: ["Bocadillos, Sándwich y Focaccias"]
 
+  - nombre: Carta de Tostadas y Picoteo 
+    imagen: cartatostadas.png
+    imagen_pequenya: portadatostadas_small.png
+    categorias: ["Bocadillos, Sándwich y Focaccias"]
+
+  - nombre: Carta de Tostadas y Picoteo 
+    imagen: cartatostadas.png
+    imagen_pequenya: portadatostadas_small.png
+    categorias:  ["Desayunos, Almuerzos y Zumos"]
+
   - nombre: Almuerzos 🍳 🥓
-    imagen: almuerzos.png
-    imagen_pequenya: almuerzos_small.png
+    imagen: cartaalmuerzos.png
+    imagen_pequenya: portadaalmuerzos_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Zumos Naturales 🍊🍏🥕🍎
-    imagen: Zumos.png
-    imagen_pequenya: zumos_small.png
+    imagen: cartazumos.png
+    imagen_pequenya: portadazumos_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Repostería Casera 🍪
-    imagen: Repostería.png
-    imagen_pequenya: Repostería_small.png
+    imagen: cartarepostería.png
+    imagen_pequenya: portadarepostería_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Café + Churros + Zumo Natural
@@ -2294,8 +2304,8 @@ items:
     pvp_terraza: 4,35€
 
   - nombre: Desayunos
-    imagen: desayunos.png
-    imagen_pequenya: desayunos_small.png
+    imagen: cartadesayunos.png
+    imagen_pequenya: portadadesayunos_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
     alergenos:
     txt_aclaraciones:
@@ -2432,15 +2442,6 @@ items:
     edul_gr:
     pvp_local: 8,5€
     pvp_terraza: 9€ 
-
-  - nombre: Outlet Gin Maremoto
-    prioridad: true
-    imagen: outletgin.png
-    categorias: ["Ofertas Destacadas" , "Noche" , "Tarde"]
-    alergenos:
-    txt_aclaraciones:
-    pvp_local: 6,50€
-    pvp_terraza: 7€
 
   - nombre: Tostada de Guacamole, Brie, Cherry y Nueces.🥑
     imagen: tostadabrie.png
