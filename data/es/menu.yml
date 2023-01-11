@@ -79,7 +79,7 @@ categorias:
   - nombre: Desayunos, Almuerzos y Zumos
     icono: las la-bacon
     color: "#d1b9e1"
-  - nombre: Bocadillos, Sándwich y Focaccias
+  - nombre: Bocadillos, Sándwich y Tostadas
     icono: las la-hamburger
     color: "#f0c0c0"
 
@@ -2139,17 +2139,17 @@ items:
   - nombre: Carta de Bocadillos 🌭
     imagen: cartabocadillos.png
     imagen_pequenya: portadabocadillos_small.png
-    categorias: ["Bocadillos, Sándwich y Focaccias"]
+    categorias: ["Bocadillos, Sándwich y Tostadas"]
 
   - nombre: Carta de Sándwiches 🥪
     imagen: cartasandwich.png
     imagen_pequenya: portadasandwich_small.png
-    categorias: ["Bocadillos, Sándwich y Focaccias"]
+    categorias: ["Bocadillos, Sándwich y Tostadas"]
 
   - nombre: Carta de Tostadas y Picoteo 
     imagen: cartatostadas.png
     imagen_pequenya: portadatostadas_small.png
-    categorias: ["Bocadillos, Sándwich y Focaccias"]
+    categorias: ["Bocadillos, Sándwich y Tostadas"]
 
   - nombre: Carta de Tostadas y Picoteo 
     imagen: cartatostadas.png
