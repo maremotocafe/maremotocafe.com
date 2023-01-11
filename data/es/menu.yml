@@ -2167,8 +2167,8 @@ items:
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Repostería Casera 🍪
-    imagen: cartarepostería.png
-    imagen_pequenya: portadarepostería_small.png
+    imagen: cartareposteria.png
+    imagen_pequenya: portadareposteria_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Café + Churros + Zumo Natural
