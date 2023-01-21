@@ -882,6 +882,19 @@ items:
     pvp_local: 6,5€
     pvp_terraza: 7€
 
+  - nombre: Queremos Matcha...🐒
+    imagen: queremosmatcha.jpg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
+    ingredientes: Tanqueray Sin Alcohol, Zumo De Naranja Natural, Té Matcha, Espirulina, Cordial de Pimienta Timur de Nepal y Menta.
+    alergenos: Huevo
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 0%
+    vol_ml:
+    edul_gr: 0 gr
+    pvp_local: 7€
+    pvp_terraza: 7,5€
+
   - nombre: Mojito Clásico
     imagen: 201.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
@@ -1145,6 +1158,20 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,5€
+
+
+  - nombre: Coco Beach
+    imagen: cocobeach.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Don Papa Baroko, Sirope Homemade de Coco Tostado, Zumo de Pomelo, Grand Marnier y Orgeat .
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 
+    vol_ml:
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€  
 
   - nombre: 🍈 Rock Melón (Fuera de temporada)
     prioridad: false
