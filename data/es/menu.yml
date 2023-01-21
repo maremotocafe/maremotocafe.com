@@ -891,7 +891,7 @@ items:
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 0%
     vol_ml:
-    edul_gr: 0 gr
+    edul_gr:
     pvp_local: 7€
     pvp_terraza: 7,5€
 
