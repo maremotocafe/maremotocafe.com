@@ -205,19 +205,6 @@ items:
     pvp_local: 4,25€
     pvp_terraza: 4,75€
 
-  - nombre: Pu-erh Silueta ☕
-    imagen: puerhsilueta.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Pu-erh, Naranja y Limón
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
   - nombre: Té de Frutas del Bosque ☕
     imagen: 192.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
