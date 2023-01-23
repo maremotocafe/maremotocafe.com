@@ -379,161 +379,10 @@ items:
     pvp_local: 4,25€
     pvp_terraza: 4,75€
 
-  - nombre: Hierbas de Ibiza ☕
-    imagen: 294.jpg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Anis estrellado, Tomillo, Romero, Hinojo, Hierba Luisa, Piel de Limón y Naranja
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Digestiva ☕
-    imagen: 293.jpg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Manzanilla,Regaliz, Melisa u Anís
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Touareg ☕
-    imagen: touareg.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Té Verde, Hierbabuena, Menta y Clorofila.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Pasión Prohibida ☕
-    imagen: pasionprohibida.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Manzana, Fresa, Grosella, Mora e Hibisco
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Taj Majal ☕
-    imagen: tajmahal.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Té Negro, Canela, Cardamomo, Pimienta, Clavo y Jengibre.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Caribe ☕
-    imagen: 289.jpg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Rooibos, Piña y Coco.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Relax ☕
-    imagen: relax.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Rooibos, Ortiga, Lemongrass, Valeriana, Melisa y Ginko.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Cañamo Spice 
-    imagen: cañamospice.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Infusión con jengibre, canela, rooibos, pimienta verde, semillas de cáñamo, cardamomo y flores azules.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Rooibos Naranja
-    imagen: rooibosnaranja.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Infusión de Rooibos con naranja.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Absenta Mint
-    imagen: absentamint.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Infusión de anís, regaliz y menta.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Mekong
-    imagen: mekong.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Pirámide de Té verde de Vietnam, con un alto poder antioxidante.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
-
-  - nombre: Earl Grey
-    imagen: earlgrey.jpeg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Clásico té negro con aroma de bergamota.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2€
-    pvp_terraza: 2,5€
+  - nombre: Carta de Infusiones 
+    imagen: cartates.png
+    imagen_pequenya: portadates_small.png
+    categorias: ["Cafés y Tés" , "Infusiones"] 
 
   - nombre: Té Indian Almond ☕
     imagen: 393.jpg
@@ -544,7 +393,7 @@ items:
     pvp_local: 2,75€
     pvp_terraza: 3,25€
 
-  - nombre: Té  Iced ❄
+  - nombre: Té Mojito Iced ❄
     imagen: 319.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Té Verde, Menta, Limón y Lemongrass
