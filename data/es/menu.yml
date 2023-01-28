@@ -996,7 +996,7 @@ items:
     pvp_terraza: 8,5€
 
 
-  - nombre: Coco Beach
+  - nombre: Coco Beach 🥥 🆕
     imagen: cocobeach.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Don Papa Baroko, Sirope Homemade de Coco Tostado, Zumo de Pomelo, Grand Marnier y Orgeat .
@@ -2242,6 +2242,19 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,5€
+
+  - nombre: Cóctel de Cóctel 🥜🌽🆕
+    imagen: cocteldecoctel.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Tequila El Jimador infusionado en Cacahuetes, licor de Elote (Maiz) Nixta, Licor de Pasas Homemade y Zumo de Pomelo. 
+    alergenos: 
+    txt_aclaraciones: ¡Sólo para Atrevidos!🤪 La versión líquida del típico Cóctel de Frutos Secos. Se acompaña de su correspondiente aperitivo de Frutos Secos.😎
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml:
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€ 
 
   - nombre: Cookies Caseras
     prioridad: true
