@@ -161,23 +161,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 2,25€
-    pvp_terraza: 2,75€
-
-  - nombre: Capuccino de Canela ☕
-    imagen: 103.jpg
-    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
-    ingredientes: Café espresso, Crema de leche, Sirope de Canela y Toque de Cacao.
-    alergenos: "*Leche*"
-    txt_aclaraciones: >
-      Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja.
-      Todas las tardes de 16h a 22,30h con tu Cappuccino Gratis una Cookie casera a elegir entre 5 variedades distintas.
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2,50€
-    pvp_terraza: 3€
+    pvp_local: 2,25€ (A partir de las 22:30) 2,75€
+    pvp_terraza: 2,75€ 
 
   - nombre: Frapuccino ❄
     imagen: 196.jpg
@@ -221,7 +206,7 @@ items:
   - nombre: Capuccino Sabor ☕
     imagen: 102.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
-    ingredientes: Café espresso, Crema de leche, Sirope de Canela, Sirope del sabor que pidas y toque de Cacao.
+    ingredientes: Café espresso, Crema de leche, Sirope del sabor que pidas y toque de Cacao.
     alergenos: "*Leche y Avellana*"
     txt_aclaraciones: >
      Elige entre Avellana*, Vainilla, Canela, Cookie o Tiramisú.
@@ -233,7 +218,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 2,50€
+    pvp_local: 2,50€ (A partir de las 22:30) 3€
     pvp_terraza: 3€
 
   - nombre: Bombón Licor ☕
