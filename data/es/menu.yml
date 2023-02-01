@@ -690,6 +690,19 @@ items:
     pvp_local: 6,5€
     pvp_terraza: 7€
 
+  - nombre: Blondi Beach 🏖 🆕 
+    imagen: blondibeach.jpg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
+    ingredientes: Zumo de Limón, Jengibre, Cordial de Pimienta Rue Berry, Angostura y Soda.
+    alergenos:
+    txt_aclaraciones: Version tuneada del famoso cocktail Sin Alcohol Limon, lima & Bitter típico de las maravillosas playas australianas. Blondi Beach es nuestra favorita. Este Cocktail contiene un pequeño porcentaje de alcohol debido a la Angostura de la cual utilizamos 4 gotas.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 0,1%
+    vol_ml:
+    edul_gr:
+    pvp_local: 6,5€
+    pvp_terraza: 7€  
+
   - nombre: Jalamango
     imagen: 315.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
@@ -1065,7 +1078,7 @@ items:
     pvp_terraza: 9€
 
   - nombre: Mohito Nipon
-    imagen: 380.jpg
+    imagen: mohitonipon.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Gin licuor Proof 13, Puré de Yuzu, Zumo de Manzana Granny Smith Natural, Albahaca y Frambuesa.
     alergenos:
