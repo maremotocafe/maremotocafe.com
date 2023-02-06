@@ -2377,6 +2377,22 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€ 
 
+  - nombre: Isla Blanca 💝💕🥰 🆕
+    prioridad: true
+    disponible: true
+    imagen: islablanca.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Licor de Pino Mugo, Crema de Violetas, Zumo de Limón y Sirope homemade de Flores y Semilla de Cilantro.
+    alergenos:
+    txt_aclaraciones: Nuestro Cocktail más Romántico! ❤️❤️❤️ Esta inspirado en la maravillosa isla de Ibiza conocida como La Isla Blanca o La Isla de Amor. En el encontrarás aromas propios de la zona como el Pino, Violeta, Lavanda... 
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€ 
+
+
   - nombre: Tostada Gourmet + Cerveza/Refresco y Café 
     imagen: ofertatostadagourmet.png
     categorias: ["Ofertas Destacadas" , "Día"]
