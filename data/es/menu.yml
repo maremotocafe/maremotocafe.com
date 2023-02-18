@@ -1130,19 +1130,6 @@ items:
     pvp_local: 8,00€
     pvp_terraza: 8,50€
 
-  - nombre: Brandy Smash Tiki
-    imagen: 208.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Cognac Courvoisier, Zumo de Lima, Zumo de Naranja, Pimiento Dram, Azúcar y Bitter de Chocolate y Canela.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 13,30%
-    vol_ml: 120 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
-
   - nombre: Daiquiri Flavour
     imagen: 271.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Frozeen"]
@@ -1220,8 +1207,8 @@ items:
     grad_alcoholica: 6%
     vol_ml: 270 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp_local: 6,5€
+    pvp_terraza: 7€
 
   - nombre: Green Station
     imagen: 377.jpg
@@ -1288,7 +1275,7 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,5€
 
-  - nombre: Destornillador
+  - nombre: rnillador
     imagen: 324.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Vodka Finlandia y Zumo de Naranja Natural.
@@ -1706,19 +1693,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Ginbraltar Citrus & Schweppes Premium Toque de Lima
-    imagen: 224.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra desarrollada por un cocinero zaragozano. 2ª versión de Ginbraltar en este caso más cítrica debido al uso de bergamota
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
-
   - nombre: Tanqueray Ten & Fever Tree
     imagen: 262.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1744,20 +1718,6 @@ items:
     edul_gr:
     pvp_local: 7,50€
     pvp_terraza: 8€
-
-  - nombre: Voortrekker & 1724 tonic water 🍊
-    prioridad: true
-    imagen: 238.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra holandesa que se caracteriza por su suavidad y su sabor final con notas a naranja.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
 
   - nombre: Magellan & Schweppes Toque de Lima
     prioridad: true
@@ -1839,20 +1799,6 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Ish Limed & Schweppes Toque de Lima 🍋
-    prioridad: true
-    imagen: 231.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra británica muy cítrica debido a un mayor porcentaje de lima en su elaboración, pero sin perder de vista el enebro.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
-
   - nombre: Gin Loe & 1724 tonic water
     imagen: 227.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1914,19 +1860,6 @@ items:
     txt_aclaraciones: Ginebra italiana aromática, delicada y especiada con un toque dulce.
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 8,60%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8,50€
-    pvp_terraza: 9€
-
-  - nombre: Gin Plymout & Fever Tree
-    imagen: 247.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra británica con siglos de historia y de fama mundial. Sabor clásico y alta calidad.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,80%
     vol_ml: 250 ml
     edul_gr:
     pvp_local: 8,50€
@@ -2199,21 +2132,6 @@ items:
     pvp_terraza: 3€
 
 
-  - nombre: Gin Raw & Schweppes Toque de Lima 
-    prioridad: true 
-    imagen: 359.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginegra de corte cítrico gracias a el uso de bergamota en su elaboración
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 7,50%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
-
-
   - nombre: Old Memories
     imagen: 361.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2384,7 +2302,7 @@ items:
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Licor de Pino Mugo, Crema de Violetas, Zumo de Limón y Sirope homemade de Flores y Semilla de Cilantro.
     alergenos:
-    txt_aclaraciones: Nuestro Cocktail más Romántico! ❤️❤️❤️ Esta inspirado en la maravillosa isla de Ibiza conocida como La Isla Blanca o La Isla de Amor. En el encontrarás aromas propios de la zona como el Pino, Violeta, Lavanda... 
+    txt_aclaraciones: Nuestro Cocktail más Romántico! ❤️❤️❤️ Está inspirado en la maravillosa isla de Ibiza conocida como La Isla Blanca o La Isla de Amor. En el encontrarás aromas propios de la zona como el Pino, Violeta, Lavanda... 
     txt_temporal: Disponible todo el año
     grad_alcoholica: 
     vol_ml: 
