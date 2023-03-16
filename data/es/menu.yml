@@ -886,7 +886,7 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Caipirinha
-    imagen: 268.jpg
+    imagen: caipirinha.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Cachaça, Lima y Azúcar.
     alergenos:
@@ -964,21 +964,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: El Viejo Santa Claus (fuera de temporada)
-    prioridad: false
-    disponible: false
-    imagen: 38.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Inspirado en la Navidad pero disponible todo el año.
-    alergenos: "*Huevo*"
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 9,20%
-    vol_ml: 175 ml
-    edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
-
   - nombre: 🍉 Vodka Patilla (Fuera de temporada)
     disponible: false
     imagen: 194.jpg
@@ -1007,7 +992,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€  
 
-  - nombre: 🍈 Rock Melón (Fuera de temporada)
+  - nombre: Rock Melón (Fuera de temporada)🍈
     prioridad: false
     disponible: false
     imagen: 104.jpg
@@ -1021,6 +1006,32 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,50€
+
+  - nombre: Be Welcome🍍🆕
+    imagen: bewelcome.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Italicus Rogsolio de Bergamota, Chadornnay infusionado con Té de Jazmín, Gin Saffron, Soda de Piña Asada y Menta.
+    alergenos: Sulfitos
+    txt_aclaraciones: Cocktail presentado a The Art of Italicus 2023 Challenge.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Whale Beach🍍🆕
+    imagen: whalebeach.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Ron de Piña Maremoto, Sirope de Jengibre y Clavo, Mermelada de Naranja, Rón y Canela, Hierbabuena, Triple Seco y Soda. 
+    alergenos: 
+    txt_aclaraciones: Imagina que estás en la maravillosa Playa de Las Ballenas en Noruega disfrutando de un atardecer, y a lo lejos en alta mar puedes ver un grupo de ballenas! Nosotros lo hicimos y nos inspiró este fantástico Cocktail del color del Ocaso.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,50€   
 
   - nombre: Nido de Escocia
     imagen: 381.jpg
@@ -1036,33 +1047,6 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,50€
-
-  - nombre: Donde Dije DHigo (fuera de temporada)
-    disponible: false
-    imagen: 273.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Ron Plantation 3 Stars, Sirope de Higo Natural, Zumo de Naranja Natural, Gran Marnier Rouge, Jägermeister, Sirope de Canela y bitter Thomas Henrry.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible de Junio a Octubre.
-    grad_alcoholica: 12,50%
-    vol_ml: 145 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
-
-  - nombre: Sevent Pillar
-    imagen: 305.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Macallan 12 años, Zumo de Manzana Granny Smith, Sirope de Hierbaluisa y Jengibre, Miel de Dátil especiada, Licor de Miel de brezo, Clara de huevo pasteurizada, Bitter Jerry Thomas y Soda
-    alergenos: "*Huevo*"
-    txt_aclaraciones:  Este Cocktail nos llevo a la final nacional "The Excellece Project2 2017"
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,80%
-    vol_ml: 225 ml
-    edul_gr:
-    pvp_local: 9€
-    pvp_terraza: 9,5€
 
   - nombre: The First Cocktail
     imagen: 285.jpg
@@ -1115,20 +1099,6 @@ items:
     edul_gr:
     pvp_local: 9€
     pvp_terraza: 9,5€
-
-  - nombre: Around the World (Fuera de temporada)
-    disponible: false
-    imagen: 353.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: (Cocktail finalista en World Class 2016) Ron Zacapa, Zumo de Mandarina, Sirope de Mandarina, Sirope de Borraja, Miel macerada con Frut@s sec@s (Orejon de Albaricoque, Nueces y Pasas) y Bitter de Chocolate y Canela.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible de Octubre a Abril.
-    grad_alcoholica: 11%
-    vol_ml: 185 ml
-    edul_gr:
-    pvp_local: 8,00€
-    pvp_terraza: 8,50€
 
   - nombre: Daiquiri Flavour
     imagen: 271.jpg
@@ -1275,19 +1245,6 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,5€
 
-  - nombre: rnillador
-    imagen: 324.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
-    ingredientes: Vodka Finlandia y Zumo de Naranja Natural.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 9,20%
-    vol_ml: 260 ml
-    edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
-
   - nombre: Paloma
     imagen: 382.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
@@ -1330,7 +1287,7 @@ items:
   - nombre: Garibaldi Fizz
     imagen: 284.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
-    ingredientes: Campari, Zumo de Naranja, Sirope de especias y cítricos y 1724 Tonic Water.
+    ingredientes: Campari, Zumo de Naranja, Martini Vibrante y 1724 Tonic Water.
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
@@ -1434,7 +1391,7 @@ items:
   - nombre: Manhatan
     imagen: 349.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
-    ingredientes: Bulleit Bourbon, Cinzano 1757 y Angostura
+    ingredientes: Bulleit Bourbon, Vermut Rojo y Angostura
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
@@ -1535,7 +1492,7 @@ items:
     pvp_local: 9€
     pvp_terraza: 9,50€
 
-  - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana 🍏)
+  - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana)🍏
     prioridad: true
     imagen: 351.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1546,8 +1503,22 @@ items:
     grad_alcoholica: 7%
     vol_ml: 290 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
+
+  - nombre: Tanqueray Foam (Con Espuma de Pomelo y Lima)🍊
+    prioridad: true
+    imagen: tanquerayfoam.png
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Gin Xoringer, Schweppes Hibiscus y Espuma de Manzana, Albahaca, Cardamomo y Clara de huevo pasteurizada
+    alergenos: "*Huevo*"
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7%
+    vol_ml: 290 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€  
 
   - nombre: Gin Pasión & Schweppes Toque de Lima 🌺 (Ginebras Infusionadas)
     imagen: ginpasion.jpg
@@ -2078,7 +2049,7 @@ items:
   - nombre: 🍍 Gin Fizz de Pomelo y Piña
     imagen: 316.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Tanqueray Ten, Sirope de Piña asada homemade, Zumo de Pomelo y Mixer de Pomelo Thomas henrry.
+    ingredientes: Tanqueray Ten, Sirope de Piña asada y Menta homemade, Zumo de Pomelo y Mixer de Pomelo Thomas henrry.
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año
@@ -2135,7 +2106,7 @@ items:
   - nombre: Old Memories
     imagen: 361.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Whisky Lamphroaig, Zumo de Pomelo, Sirope de Canela, bitter Jerry thomas y Clara de huevo.
+    ingredientes: Whisky Talisker, Zumo de Pomelo, Sirope de Canela, bitter Jerry thomas y Clara de huevo.
     alergenos: "*Huevo*"
     txt_aclaraciones: 
     txt_temporal: Disponible todo el año.
@@ -2219,21 +2190,6 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
-
-  - nombre: Jengi (fuera de temporada)
-    prioridad: false
-    disponible: false
-    imagen: jengi.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Calvados, Zumo de manzana Nat, Crema de Castañas, Fireball, Nata y Clara huevo .
-    alergenos: "*Huevo y Lacteos*"
-    txt_aclaraciones: ¡Con galleta de jengibre incluida!
-    txt_temporal: Disponible de Diciembre a Abril.
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€ 
 
   - nombre: Tostada de Guacamole, Brie, Cherry y Nueces.🥑
     imagen: tostadabrie.png
