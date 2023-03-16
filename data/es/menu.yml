@@ -1510,15 +1510,15 @@ items:
     prioridad: true
     imagen: tanquerayfoam.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Gin Xoringer, Schweppes Hibiscus y Espuma de Manzana, Albahaca, Cardamomo y Clara de huevo pasteurizada
+    ingredientes: Gin Tanqueray Ten, Schweppes Toque de lima y Espuma de Pomelo, Lima, Agua de Azahar y Clara de huevo pasteurizada
     alergenos: "*Huevo*"
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 7%
     vol_ml: 290 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€  
+    pvp_local: 8,5€
+    pvp_terraza: 9€  
 
   - nombre: Gin Pasión & Schweppes Toque de Lima 🌺 (Ginebras Infusionadas)
     imagen: ginpasion.jpg
