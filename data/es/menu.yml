@@ -2166,7 +2166,7 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Italicus Rosolio 🆕
-    imagen: Italicus Rosolio.jpg
+    imagen: ItalicusRosolio.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Italicus Rosolio, Proseco, Brocheta de olivas y twist de limón.
     alergenos: Sulfitos
@@ -2291,18 +2291,32 @@ items:
     pvp_terraza: 8,5€ 
 
   - nombre: Miyako 🆕
-    prioridad: true
     disponible: true
     imagen: miyako.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Ginebra Gin-Za, Sirope de Mandarina, Zumo Nat de Mandarina, Sirope de Cardamomo, Sirope de Romero, Limoncello Pallini, Campari y Clara de huevo pasteurizada
     alergenos: Huevo.
-    txt_aclaraciones: Inspirado en la Isla de Miyako donde se encuentran 3 de las mejores playas japonesas. Entre sus ingredientes nos encontramos con una ginebra desarroyada en Zaragoza e inspirada en el moderno barrio de Ginza de Tokio. Citricos y botánicos asiáticos como la Mandarina y el Cardamomo combinan a la perfeccion con otros como Yuzu y Kumquat presentes en la ginebra .
+    txt_aclaraciones: Inspirado en la Isla de Miyako donde se encuentran 3 de las mejores playas japonesas. Entre sus ingredientes nos encontramos con una ginebra desarroyada en Zaragoza e inspirada en el moderno barrio de Ginza de Tokio. Citricos y botánicos asiáticos como la Mandarina y el Cardamomo combinan a la perfeccion con otros como Yuzu y Kumquat presentes en la ginebra.
     txt_temporal: Disponible de Octubre a Marzo. 
     grad_alcoholica: 
     vol_ml: 
     edul_gr:
     pvp_local: 8,5€
-    pvp_terraza: 9€ 
+    pvp_terraza: 9€
+
+
+  - nombre: Boston Beach🍓🆕
+    disponible: true
+    imagen: boston.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Ron Captain Morgan Spiced, Don Papa Baroko, Zumo de Fresa Natural, Chadornnay inf. con Fresas y Romero, Sirope de Jengibre y Clavo, Sirope de Arce, limón, Ginger Beer y Angostura de Naranja.
+    alergenos: Huevo.
+    txt_aclaraciones: Inspirado la tierra de Bob Marley en concreto en la playa de Boston bal en Jamaica nos encontramos con un trago de perfil dulce y especiado gracias al Ron Jamaicano Captain Morgan. El Jengibre en forma de Sirope y en Mixer en el Ginger Beer le otorgan un leve carácter picante.    .
+    txt_temporal: Disponible todo el año. 
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€  
 
 
