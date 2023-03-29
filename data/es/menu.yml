@@ -2213,7 +2213,7 @@ items:
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Dewars Caribbean, Piña asada, Menta, Mixer de Pomelo y Espuma de Pomelo Lima y Agua de Azahar.
     alergenos: Huevo
-    txt_aclaraciones:
+    txt_aclaraciones: Este higball cocktail junto a sus 2 hermanos Dewars Autumn y Dewars Spring nos clasificó en 2º puesto en la 1er Dewars Higball Challenge de Zaragoza.  
     txt_temporal: Disponible todo el año
     grad_alcoholica: 
     vol_ml: 
@@ -2228,7 +2228,7 @@ items:
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Dewars French Smooth, Sirope de flores y Semilla de Cilantro, Zumo de Manzana, Ginger Ale y Espuma de Manzana Albahaca y Cardamomo. 
     alergenos: Huevo
-    txt_aclaraciones:
+    txt_aclaraciones: Este higball cocktail junto a sus 2 hermanos Dewars Autumn y Dewars Summer nos clasificó en 2º puesto en la 1er Dewars Higball Challenge de Zaragoza.
     txt_temporal: Disponible todo el año
     grad_alcoholica: 
     vol_ml:
@@ -2243,7 +2243,7 @@ items:
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Dewars 12 años, Manzana caramelizada, Calabaza especiada y Ginger Ale.
     alergenos:
-    txt_aclaraciones:
+    txt_aclaraciones: Este higball cocktail junto a sus 2 hermanos Dewars Summer y Dewars Spring nos clasificó en 2º puesto en la 1er Dewars Higball Challenge de Zaragoza.
     txt_temporal: Disponible todo el año
     grad_alcoholica: 
     vol_ml: 
