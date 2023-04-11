@@ -1009,6 +1009,7 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Be Welcome🍍🆕
+    prioridad: true
     imagen: bewelcome.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Italicus Rogsolio de Bergamota, Chadornnay infusionado con Té de Jazmín, Gin Saffron, Soda de Piña Asada y Menta.
@@ -1022,6 +1023,7 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Whale Beach🍍🆕
+    prioridad: true
     imagen: whalebeach.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Ron de Piña Maremoto, Sirope de Jengibre y Clavo, Mermelada de Naranja, Rón y Canela, Hierbabuena, Triple Seco y Soda. 
