@@ -1,6 +1,8 @@
 #!/bin/bash
 # Simple script to reset to the remote branch.
 
+set -x
+
 # Making sure it's running in the correct directory
 # shellcheck disable=SC2164
 cd "$(dirname "${BASH_SOURCE[0]}")"

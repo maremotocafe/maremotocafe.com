@@ -1,19 +1,15 @@
 #!/bin/bash
 # Simple script to upload files to the repository.
 
-set -e
+set -ex
 
 # Making sure it's running in the correct directory
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
-MSG="$1"
+COMMIT_MSG="${1:-Update on $TIMESTAMP}"
 
 echo ">> Uploading source files..."
-git add .
-if [ -n "$MSG" ]; then
-    git commit -m "$MSG"
-else
-    git commit -m "Update on $TIMESTAMP"
-fi || echo "Skipping commit"
+git add . || echo "Skipping add"
+git commit -m "$COMMIT_MSG" || echo "Skipping commit"
 git push origin master

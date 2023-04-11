@@ -1,7 +1,7 @@
 #!/bin/bash
 # Simple script to run the site in the local network.
 
-set -e
+set -ex
 
 cmd_exists() {
     command -v "$1" >/dev/null 2>&1
