@@ -677,13 +677,14 @@ items:
     pvp_local: 6,5€
     pvp_terraza: 7€
 
-  - nombre: Frescor Cálido 
+  - nombre: Frescor Cálido (Fuera de temporada)
+    disponible: false
     imagen: 311.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo Natural de Granada, Sirope de Especias, Zumo de Limón, Canela y Soda.
     alergenos:
     txt_aclaraciones:
-    txt_temporal: Disponible de Septiembre a Enero.
+    txt_temporal: Disponible de Octubre a Marzo.
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
@@ -1506,7 +1507,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Tanqueray Foam (Con Espuma de Pomelo y Lima)🍊
+  - nombre: Tanqueray Foam (Con Espuma de Pomelo y Lima)🍊🆕
     prioridad: true
     imagen: tanquerayfoam.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2178,7 +2179,8 @@ items:
     pvp_terraza: 7,5€
 
   - nombre: Tangerine Vintage 🍊🆕 
-    prioridad: true
+    prioridad: false
+    disponible: false
     imagen: tangerine.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: JB Botanico, Zumo de mandarina, Sirope de frambuesa, Te de Vainilla y Pedro Ximenez.
@@ -2237,7 +2239,6 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Dewars Autunm 🍁 🆕
-    prioridad: true
     disponible: true
     imagen: dewarsautunm.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2290,8 +2291,8 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
 
-  - nombre: Miyako 🆕
-    disponible: true
+  - nombre: Miyako 🆕 (fuera de temporada)
+    disponible: false
     imagen: miyako.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Ginebra Gin-Za, Sirope de Mandarina, Zumo Nat de Mandarina, Sirope de Cardamomo, Sirope de Romero, Limoncello Pallini, Campari y Clara de huevo pasteurizada
@@ -2306,6 +2307,7 @@ items:
 
 
   - nombre: Boston Beach🍓🆕
+    prioridad: true
     disponible: true
     imagen: boston.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
