@@ -15,5 +15,5 @@ if [ -n "$MSG" ]; then
     git commit -m "$MSG"
 else
     git commit -m "Update on $TIMESTAMP"
-fi
+fi || echo "Skipping commit"
 git push origin master
