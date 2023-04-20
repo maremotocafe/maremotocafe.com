@@ -720,7 +720,7 @@ items:
   - nombre: Queremos Matcha...🐒
     imagen: queremosmatcha.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
-    ingredientes: Tanqueray Sin Alcohol, Zumo De Naranja Natural, Té Matcha, Espirulina, Cordial de Pimienta Timur de Nepal y Menta.
+    ingredientes: Tanqueray Sin Alcohol, Zumo De Naranja Natural, Té Matcha, Espirulina, Cordial de Pimienta Timur de Nepal, Clara de huevo Pasteurizada y Menta.
     alergenos: Huevo
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
@@ -729,6 +729,19 @@ items:
     edul_gr:
     pvp_local: 7€
     pvp_terraza: 7,5€
+
+  - nombre: Floreale.🌼🌺🆕
+    imagen: floreale.jpg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
+    ingredientes: Martini Floreale, Droplet de Camomila y Té Daerling, Tonica Schweppes de Pomelo y Baya de Nepal y Perfume de Lima Rangpur.
+    alergenos: 
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 0%
+    vol_ml:
+    edul_gr:
+    pvp_local: 7€
+    pvp_terraza: 7,5€  
 
   - nombre: Mojito Clásico
     imagen: 201.jpg
@@ -2120,7 +2133,6 @@ items:
     pvp_terraza: 9€
 
   - nombre: Grazie Mille
-    prioridad: true 
     imagen: 362.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Whisky J&B Rare, Zumo de Piña, Zumo de Pomelo, Zumo de Limón, Licor de Frambuesas y Moras y Azúcar.
@@ -2180,7 +2192,7 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,5€
 
-  - nombre: Tangerine Vintage 🍊🆕 
+  - nombre: Tangerine Vintage 🍊🆕 (Fuera de temporada)
     prioridad: false
     disponible: false
     imagen: tangerine.jpg
