@@ -2290,9 +2290,8 @@ items:
     pvp_local: Tostada 3,95€ + Bebida 5,45€ + Café 6,45€
     pvp_terraza: Tostada 3,95€ + Bebida 5,95€ + Café 6,95€
 
-  - nombre: Tropea Beach 🆕
-    prioridad: true
-    disponible: true
+  - nombre: Tropea Beach (Fuera de temporada)
+    disponible: false
     imagen: tropeabeach.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
@@ -2305,7 +2304,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
 
-  - nombre: Miyako 🆕 (fuera de temporada)
+  - nombre: Miyako 🆕 (Fuera de temporada)
     disponible: false
     imagen: miyako.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
