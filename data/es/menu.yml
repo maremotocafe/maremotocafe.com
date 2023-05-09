@@ -2266,6 +2266,20 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€ 
 
+  - nombre: Dewars Beach 🏖 ¡¡¡Ojo al Descuentazo de 4€!!! 🆕
+    disponible: true
+    imagen: dewarsbeach.png
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Dewars White Label, Sirope de Frambuesa casero, Licor de Angostura, Limoncello Pallini y Ginger Beer.
+    alergenos:
+    txt_aclaraciones: Con este higball cocktail estamos participando en la 2º Dewars Higball Challenge de Zaragoza. ¡Los 100 Primeros Cocktails llevan un descuento de 4€! ¡Aprovecha la ocasión!
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp_local: 10€ menos 4€ dto 6€
+    pvp_terraza: 10,50€ menos 4€ dto 6,50€
+
   - nombre: Isla Blanca 💝💕🥰 🆕
     prioridad: true
     disponible: true
