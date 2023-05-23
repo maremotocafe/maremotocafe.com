@@ -1612,8 +1612,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Hendrick's & Schweppes Toque de Lima 🥒
     imagen: 320.jpg
