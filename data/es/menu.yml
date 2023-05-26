@@ -1546,8 +1546,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Xoringer & Schweppes Toque de Lima
     imagen: xoringer.jpg
@@ -1651,8 +1651,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Citadelle & 1724 tonic water
     imagen: 248.jpg
@@ -1875,8 +1875,8 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Ginial Rosé & 1724 tonic water
     imagen: 226.jpg
