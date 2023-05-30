@@ -1551,7 +1551,7 @@ items:
 
   - nombre: Tanqueray Flor de Sevilla & 1724 tonic water 🍊
     prioridad: true
-    imagen: 352.jpg
+    imagen: tanqueraysevilla.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1590,7 +1590,7 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Bulldog & Fever Tree
-    imagen: 215.jpg
+    imagen: bulldog.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1774,7 +1774,7 @@ items:
     pvp_terraza: 8€
 
   - nombre: Gin Loe & 1724 tonic water
-    imagen: 227.jpg
+    imagen: ginloe.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1788,7 +1788,7 @@ items:
 
   - nombre: G'Vine Floraisson & 1724 Tonic Water 🍇
     prioridad: true
-    imagen: 250.jpg
+    imagen: gvine.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1892,7 +1892,7 @@ items:
     pvp_terraza: 9€
 
   - nombre: Brockman`s & Fever Tree 
-    imagen: 252.jpg
+    imagen: brockmans.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
