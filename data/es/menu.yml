@@ -1453,11 +1453,11 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
+    pvp_local: 7,5€
     pvp_terraza: 8€
 
   - nombre: Ciroc & Schweppes Toque de Lima
-    imagen: 251.jpg
+    imagen: ciroc.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Con brocheta de Uva y twist de Pomelo.
     alergenos:
@@ -1466,8 +1466,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Grey Goose & Schweppes Toque de Lima
     imagen: greygoose.jpg
@@ -1479,8 +1479,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    pvp_terraza: 9,5€
 
   - nombre: Crystal Head & Schweppes Toque de Lima.
     imagen: 249.jpg
@@ -1546,8 +1546,8 @@ items:
     grad_alcoholica: 7,60%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Tanqueray Flor de Sevilla & 1724 tonic water 🍊
     prioridad: true
@@ -1560,10 +1560,10 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
-  - nombre: Gin.Za & Schweppes Toque de Lima 🍑 🍋
+  - nombre: Gin Za & Schweppes Toque de Lima 🍑 🍋
     imagen: 246.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1573,8 +1573,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Larios 150 Aniversario & Fever Tre Mediterranean
     imagen: 234.jpg
@@ -1612,8 +1612,8 @@ items:
     grad_alcoholica: 8,80%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Pink & 1724 tonic water
     imagen: 239.jpg
@@ -1625,8 +1625,8 @@ items:
     grad_alcoholica: 9,40%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Martin Miller's & Fever Tree
     imagen: 255.jpg
@@ -1654,18 +1654,6 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
-  - nombre: Ginbraltar & Fever Tree
-    imagen: 245.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra desarrollada por un cocinero zaragozano. Destaca por contener eucalipto entre sus botánicos lo que la hace muy refrescante.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
 
   - nombre: Tanqueray Ten & Fever Tree
     imagen: 262.jpg
@@ -1677,11 +1665,11 @@ items:
     grad_alcoholica: 9,50%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Tanqueray Rangpur & Schweppes Premium Toque de Lima 🍋
-    imagen: 256.jpg
+    imagen: rangpur.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1690,8 +1678,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Magellan & Schweppes Toque de Lima
     prioridad: true
@@ -1704,11 +1692,11 @@ items:
     grad_alcoholica: 8,30%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
-  - nombre: Nordest & Fever Tree 🍇
-    imagen: 237.jpg
+  - nombre: Nordés & Fever Tree 🍇
+    imagen: nordes.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1717,8 +1705,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Cubical & Fever Tree 🍋
     imagen: 257.jpg
@@ -1746,19 +1734,6 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
-  - nombre: Mombasa & Schweppes Toque de Lima
-    imagen: 236.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra británica exótica y sorprendente por sus aromas a clavo y comino entre otros que contiene su receta. Sabor elegante y fresco.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,30%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
-
   - nombre: Ish & Schweppes Toque de Lima
     prioridad: true
     imagen: 232.jpg
@@ -1770,8 +1745,8 @@ items:
     grad_alcoholica: 8,20%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Gin Loe & 1724 tonic water
     imagen: ginloe.jpeg
@@ -1783,8 +1758,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: G'Vine Floraisson & 1724 Tonic Water 🍇
     prioridad: true
@@ -1797,8 +1772,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    pvp_terraza: 9,5€
 
   - nombre: Gin Mare & Fever Tree Mediterranean
     imagen: 221.jpg
@@ -1814,7 +1789,7 @@ items:
     pvp_terraza: 9€
 
   - nombre: Gin del Professore Monsieur & Fever Tree
-    imagen: 220.jpg
+    imagen: monsieur.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1823,11 +1798,11 @@ items:
     grad_alcoholica: 8,80%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,50€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    pvp_terraza: 9,5€
 
   - nombre: Gin del Professore Madame & Fever Tree
-    imagen: 219.jpg
+    imagen: maddame.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1836,10 +1811,10 @@ items:
     grad_alcoholica: 8,60%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,50€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    pvp_terraza: 9,5€
 
-  - nombre: Gordon`s Pink & 1724 tonic water 🍓
+  - nombre: Gordon`s & 1724 tonic water 🍓
     imagen: 229.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1849,8 +1824,8 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Puerto de Indias & 1724 tonic water 🍓
     imagen: puertoindias.jpg
@@ -1875,10 +1850,10 @@ items:
     grad_alcoholica: 5%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
-  - nombre: Proof 13 & 1724 tonic water 
+  - nombre: Proof 13 & 1724 tonic water (Temporalmente Fuera de Stock)
     imagen: 222.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1888,8 +1863,8 @@ items:
     grad_alcoholica: 6%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    pvp_terraza: 9,5€
 
   - nombre: Brockman`s & Fever Tree 
     imagen: brockmans.png
@@ -1901,8 +1876,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    pvp_terraza: 9,5€
 
   - nombre: Carta de Bocadillos 🌭
     imagen: cartabocadillos.png
@@ -2046,8 +2021,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: 🍍 Gin Fizz de Pomelo y Piña
     imagen: 316.jpg
