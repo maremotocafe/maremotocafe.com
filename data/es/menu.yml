@@ -1802,7 +1802,7 @@ items:
     pvp_terraza: 9,5€
 
   - nombre: Gin del Professore Madame & Fever Tree
-    imagen: maddame.jpeg
+    imagen: madamme.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
