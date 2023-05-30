@@ -2348,14 +2348,14 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Bombay Presse
+  - nombre: Bombay Presse & Fever Tree
     imagen: bombaypresse.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
+    ingredientes: Servida con gajos y Twist de limón
     alergenos:
-    txt_aclaraciones: Elaborada con arándanos y moras entre otros botánicos. destaca por su elegancia y suavidad.
+    txt_aclaraciones: Elaborada a base de limones mediterráneos a partir de una infusión de frutas 100% natural, es fresca y vibrante y no contiene azúcares refinados añadidos.
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
+    grad_alcoholica: 7,5%
     vol_ml: 250 ml
     edul_gr:
     pvp_local: 8€
@@ -2369,7 +2369,7 @@ items:
     alergenos:
     txt_aclaraciones:  Nueva y deliciosa dimensión a la receta original. Las semillas de ambreta proceden exclusivamente de Ecuador. La piel de naranja bergamota secada lentamente se recolecta a mano en Calabria.
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
+    grad_alcoholica: 9,5%
     vol_ml: 250 ml
     edul_gr:
     pvp_local: 8,5€
@@ -2382,7 +2382,7 @@ items:
     alergenos:
     txt_aclaraciones: Bombay Sapphire Premier Cru es una ginebra producida de forma limitada que celebra los cítricos más estimulantes y aromáticos del mundo los limones, mandarinas y naranjas dulces Navel de Murcia
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
+    grad_alcoholica: 9,5%
     vol_ml: 250 ml
     edul_gr:
     pvp_local: 8,5€
