@@ -598,8 +598,8 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: 🍉 Limonada de Sandía y Menta (Fuera de temporada)
-    disponible: false
+  - nombre: 🍉 Limonada de Sandía y Menta.
+    disponible: true
     imagen: 270.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
@@ -964,25 +964,12 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: 🍒 Grandma's Cherry (Fuera de temporada)
-    disponible: false
-    imagen: 287.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Vodka Finlandia, Sirope homemade de Cerezas, Cerezas frescas, Marrasquino, Azúcar, Tónica 1724 y Bitter de Naranja.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible de Mayo a Agosto.
-    grad_alcoholica: 7,90%
-    vol_ml: 295 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
 
   - nombre: 🍉 Vodka Patilla (Fuera de temporada)
     disponible: false
     imagen: 194.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Vodka Finlandia, Sandía fresca, Zumo de Lima, Sirope de Romero, Azúcar, Pimienta Negra y bitter de Lima.
+    ingredientes: Vodka Finlandia, Sandía fresca, Zumo de Lima, Sirope de Romero, Azúcar, Pimienta Negra y Bitter de Lima.
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible de Junio a Septiembre.
@@ -1052,7 +1039,7 @@ items:
   - nombre: Nido de Escocia
     imagen: 381.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Naked Grouse, Manzanilla (vino de Jerez) infusionada con té Lapsang Souchong, Cizano 1757, frambuesa, Romero, Azucar y Soda.
+    ingredientes: Dewars French Smooth, Manzanilla (Vino de Jerez) infusionada con té Lapsang Souchong, Vermut rojo Turmeon, Frambuesa, Romero y Azúcar.
     alergenos: "*Sulfitos*"
     txt_aclaraciones: >
      Con este Cocktail conseguimos el 2º puesto en el Certamen Nacional The Excellence Project.
@@ -2035,14 +2022,14 @@ items:
     pvp_local: 2€ + Zumo 3,75€
     pvp_terraza: 2,40€ + Zumo 4.15€
 
-  - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
-    disponible: false
+  - nombre: 🍒 Gewürztraminer & Cherries
+    disponible: true
     imagen: 300.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda .
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
-    txt_temporal: Disponible de Mayo a Agosto.
+    txt_temporal: Disponible de Junio a Agosto.
     grad_alcoholica: 3,50%
     vol_ml: 185 ml
     edul_gr:
@@ -2348,4 +2335,55 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€  
 
+  - nombre: Bombay Sapphire & Schweppes Toque de Lima.
+    imagen: bombaysapphire.png
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: La servimos con unos pocos Granos de Pimienta Rosa y Twist de lima. 
+    alergenos:
+    txt_aclaraciones: Ginebra de fama mundial. Cada gota contiene 10 botánicos seleccionados a mano en lugares exóticos de todo el mundo
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
+  - nombre: Bombay Presse
+    imagen: bombaypresse.jpeg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
+    alergenos:
+    txt_aclaraciones: Elaborada con arándanos y moras entre otros botánicos. destaca por su elegancia y suavidad.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€
+
+
+  - nombre: Star of Bombay & Schweppes Toque de Lima
+    imagen: bombaystar.jpeg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Servida con Twist de Lima
+    alergenos:
+    txt_aclaraciones:  Nueva y deliciosa dimensión a la receta original. Las semillas de ambreta proceden exclusivamente de Ecuador. La piel de naranja bergamota secada lentamente se recolecta a mano en Calabria.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€
+
+  - nombre: Bombay S. Premier Cru Murcian Lemon & Schweppes Toque de Lima
+    imagen: bombaymurcian.jpeg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Servida con twist de Limón
+    alergenos:
+    txt_aclaraciones: Bombay Sapphire Premier Cru es una ginebra producida de forma limitada que celebra los cítricos más estimulantes y aromáticos del mundo los limones, mandarinas y naranjas dulces Navel de Murcia
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€ 
