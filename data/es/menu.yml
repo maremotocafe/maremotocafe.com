@@ -123,6 +123,18 @@ items:
     pvp_local: 2,5€
     pvp_terraza: 3€
 
+
+  - nombre: Café de Especialidad ☕ 🆕 
+    imagen: especialidad.png
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
+    ingredientes: 
+    txt_aclaraciones: Café de una calidad extraordinaria por su cuidadosa selección de granos. Para recibir esta denominación, el café ha tenido que obtener 80 o más puntos en una categoría que llega hasta los 100 puntos.
+    alergenos:
+    txt_temporal: 
+    grad_alcoholica:
+    pvp_local: +0,20€ Sobre la tarifa vigente en el momento del servicio.
+    pvp_terraza:
+
   - nombre: Café Bombón Limón 🍋
     imagen: 301.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
@@ -176,6 +188,20 @@ items:
     edul_gr:
     pvp_local: 3,25€
     pvp_terraza: 3,75€
+
+
+  - nombre: Cold Brew y Cold Brew Latte ❄ 🆕
+    imagen: coldbrew.png
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés Fríos"]
+    ingredientes: Cafe 100% arabica infusionado en frio 16 Horas. A la opción Latte le añadimos crema de Leche Fresca emulsionada en frío y un toque de Canela 
+    alergenos: "*Leche*"
+    txt_aclaraciones:  El café obtenido mediante cold brew consigue una bebida muy rica en matices, con menor acidez y sin el amargor que tantos detractores tiene. Si lo deseas podemos añadirle un toque de Azúcar de lima.
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 0%
+    vol_ml:
+    edul_gr:
+    pvp_local: Cold Brew 2,20€ Cold Brew Latte 2,40€ 
+    pvp_terraza: Cold Brew 2,70€ Cold Brew Latte 2,90€ 
 
   - nombre: Frappé de Baileys ❄
     imagen: 196.jpg
@@ -1470,7 +1496,7 @@ items:
     pvp_terraza: 9€
 
   - nombre: Grey Goose & Schweppes Toque de Lima
-    imagen: greygoose.jpg
+    imagen: greygoose.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Con twist de Lima.
     alergenos:
@@ -1481,6 +1507,20 @@ items:
     edul_gr:
     pvp_local: 9€
     pvp_terraza: 9,5€
+
+  - nombre: Belvedere & Fever Mediterranean
+    imagen: belvedere.png
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Infusionado con Romero.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal:
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€
+
 
   - nombre: Crystal Head & Schweppes Toque de Lima.
     imagen: 249.jpg
@@ -1564,7 +1604,7 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Gin Za & Schweppes Toque de Lima 🍑 🍋
-    imagen: 246.jpg
+    imagen: ginza.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1603,7 +1643,7 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Hendrick's & Schweppes Toque de Lima 🥒
-    imagen: 320.jpg
+    imagen: hendricks.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1629,7 +1669,7 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Martin Miller's & Fever Tree
-    imagen: 255.jpg
+    imagen: martinmillers.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1642,7 +1682,7 @@ items:
     pvp_terraza: 9€
 
   - nombre: Citadelle & 1724 tonic water
-    imagen: 248.jpg
+    imagen: citadelle.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1656,7 +1696,7 @@ items:
 
 
   - nombre: Tanqueray Ten & Fever Tree
-    imagen: 262.jpg
+    imagen: tanquerayten.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1709,7 +1749,7 @@ items:
     pvp_terraza: 9€
 
   - nombre: Cubical & Fever Tree 🍋
-    imagen: 257.jpg
+    imagen: cubical.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -1733,6 +1773,20 @@ items:
     edul_gr:
     pvp_local: 8,5€
     pvp_terraza: 9€
+
+
+  - nombre: ketel One & Schweppes Toque de Lima. 
+    imagen: ketelone.jpeg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Servida con twist de Naranja y Romero
+    alergenos:
+    txt_aclaraciones: Destaca por su inconfundible frescor y por una suavidad que recubre la lengua.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,50€
 
   - nombre: Ish & Schweppes Toque de Lima
     prioridad: true
@@ -1815,7 +1869,7 @@ items:
     pvp_terraza: 9,5€
 
   - nombre: Gordon`s & 1724 tonic water 🍓
-    imagen: 229.jpg
+    imagen: gordonspink.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
@@ -2361,4 +2415,32 @@ items:
     vol_ml: 250 ml
     edul_gr:
     pvp_local: 8,5€
-    pvp_terraza: 9€ 
+    pvp_terraza: 9€
+
+  - nombre: June & 1724 Tonic Water
+    imagen: june.jpeg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
+    alergenos:
+    txt_aclaraciones: June es un licor de Ginebra por su bajo contenido alcohólico, elaborado by G'vine una ginebra elegante y natural, donde se fusionan el melocotón de uva y G'Vine, ginebra francesa elaborada con uvas
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 6%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€
+
+  - nombre: Gin Ordesano & Fever Tree
+    imagen: ordesano.jpeg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
+    alergenos:
+    txt_aclaraciones: ¡La ginebra del Pirineo! Personalidad propia y 100% natural, elaborado con enebros y peras. 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,5%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+
