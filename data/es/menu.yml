@@ -1470,7 +1470,7 @@ items:
     pvp_terraza: 7,5€
 
   - nombre: Finlandia & Schweppes Hibiscus 🌺 
-    imagen: finlandiahibiscus.jpg
+    imagen: finlandia.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Con Twist de Naranja.
     alergenos:
@@ -1577,7 +1577,7 @@ items:
     pvp_terraza: 8€
 
   - nombre: Xoringer & Schweppes Toque de Lima
-    imagen: xoringer.jpg
+    imagen: xoringer.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
