@@ -201,8 +201,7 @@ items:
     vol_ml:
     edul_gr:
     pvp_local: 2,20€ Cold Brew Latte 2,40€ 
-    pvp_terraza: 2,70€ Cold Brew Latte 2,90€ 
-    pvp_noche: 3,50€ Cold Brew Latte 3,80€ (Viernes, Sábados y vísperas desde las 22:30)
+    pvp_terraza: 2,70€ Cold Brew Latte 2,90€  Pvp Noche(Viernes, Sábados y vísperas desde las 22:30) Cold Brew 3,50€ Cold Brew Latte 3,80€
 
   - nombre: Frappé de Baileys ❄
     imagen: 196.jpg
