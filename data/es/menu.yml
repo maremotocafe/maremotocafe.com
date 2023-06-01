@@ -193,7 +193,7 @@ items:
   - nombre: Cold Brew y Cold Brew Latte ❄ 🆕
     imagen: coldbrew.png
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés Fríos"]
-    ingredientes: Cafe 100% arabica infusionado en frio 16 Horas. Servimos con Menta y Naranja. la opción Latte la servimos con crema de Leche Fresca emulsionada en frío y un toque de Canela 
+    ingredientes: Cafe 100% arabica infusionado en frio 16 Horas. Servimos con Menta y Naranja. La opción Latte la servimos con crema de Leche Fresca emulsionada en frío y un toque de Canela. 
     alergenos: "*Leche*"
     txt_aclaraciones: El Cold Brew consigue una bebida muy rica en matices, con menor acidez y sin el amargor que tantos detractores tiene. Si lo deseas podemos añadirle un toque de Azúcar de lima.
     txt_temporal: Disponible todo el año
@@ -201,7 +201,7 @@ items:
     vol_ml:
     edul_gr:
     pvp_local: Cold Brew 2,20€ Cold Brew Latte 2,40€ 
-    pvp_terraza: Cold Brew 2,70€ Cold Brew Latte 2,90€  Pvp Noche(Viernes, Sábados y vísperas desde las 22:30) Cold Brew 3,50€ Cold Brew Latte 3,80€
+    pvp_terraza: Cold Brew 2,70€ Cold Brew Latte 2,90€     Pvp Noche (Viernes, Sábados y vísperas desde las 22:30) Cold Brew 3,50€ Cold Brew Latte 3,80€
 
   - nombre: Frappé de Baileys ❄
     imagen: 196.jpg
