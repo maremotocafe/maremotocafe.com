@@ -2016,8 +2016,8 @@ items:
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 16h
-    pvp_local: 4€ Con rodajas de tomate 4,50€
-    pvp_terraza: 4,50€ Con rodajas de tomate 5€
+    pvp_local: 4,50€ Con rodajas de tomate 5€
+    pvp_terraza: 5€ Con rodajas de tomate 5,5€
 
   - nombre: Café + Repostería + Zumo Natural
     imagen: cafe+reposteria.png
@@ -2102,7 +2102,7 @@ items:
     pvp_terraza:
 
   - nombre: Bocatín + Cañita/Vino + Café
-    imagen: bocatin+caña.png
+    imagen: bocatin+cañita+cafe.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
