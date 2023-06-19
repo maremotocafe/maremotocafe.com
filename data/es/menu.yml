@@ -1974,32 +1974,32 @@ items:
     ingredientes:
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,10€ + Zumo 3,75€
-    pvp_terraza: 2,50€ + Zumo 4,15€
+    pvp_local: 2,50€ + Zumo 4,25€
+    pvp_terraza: 3€ + Zumo 4,75€
 
   - nombre:  Café + Tostada + Zumo Natural
     imagen: cafe+tostada.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,25€ + Zumo 3,75€
-    pvp_terraza: 2,65€ + Zumo 4,15€
+    pvp_local: 2,75€ + Zumo 4,25€
+    pvp_terraza: 3,25€ + Zumo 4,75€
 
   - nombre:  Café + Croissant Mixto
     imagen: cafe+croissantmixto.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta Válida de 7 a 16h
-    pvp_local: 2,95€
-    pvp_terraza: 3,35€
+    pvp_local: 3,50€
+    pvp_terraza: 4€
 
   - nombre: Café + Croissant Plancha + Zumo Natural
     imagen: cafe+croissantplancha.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,40€ + Zumo 3,75€
-    pvp_terraza: 2,85€ + Zumo 4,15€
+    pvp_local: 3€ + Zumo 4,25€
+    pvp_terraza: 3,50€ + Zumo 4,75€
 
   - nombre: Cappuccino + Cookie Casera Gratis
     imagen: 74.jpg
@@ -2010,14 +2010,6 @@ items:
      Consulta la variedad de Cookies disponibles
     pvp_local: Cappuccino Clásico 2,20€ Cappuccino Sabor 2,50€
     pvp_terraza: Cappuccino Clásico 2,70€ Cappuccino Sabor 3€
-
-  - nombre: Vermut Preparado + Tapa
-    imagen: vermut+tapa.png
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Vermut finalista de la III Ruta Cinzano de Zaragoza. Oferta Válida de 12 a 22:30h
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
 
   - nombre: Sándwich Mixto + Zumo Natural
     imagen: sandwich+zumo.png
@@ -2032,24 +2024,24 @@ items:
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,25€ + Zumo 3,75€
-    pvp_terraza: 2,65€ + Zumo 4,15€
+    pvp_local: 2,75€ + Zumo 4,25€
+    pvp_terraza: 3,25€ + Zumo 4,75€
 
   - nombre: Café + Bizcocho Casero + Zumo Natural
     imagen: cafe+bizcocho.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,40€ + Zumo 3,75€
-    pvp_terraza: 2,80€ + Zumo 4,15€
+    pvp_local: 3€ + Zumo 4,25€
+    pvp_terraza: 3,5€ + Zumo 4,75€
 
   - nombre: Café + Cookie Casera
     imagen: cafe+cookie.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2€ + Zumo 3,75€
-    pvp_terraza: 2,40€ + Zumo 4.15€
+    pvp_local: 2,50€ + Zumo 4,25€
+    pvp_terraza: 3€ + Zumo 4,75€
 
   - nombre: 🍒 Gewürztraminer & Cherries
     disponible: true
@@ -2114,8 +2106,8 @@ items:
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,75€ + Café 3,75€ 
-    pvp_terraza: 3,15€ + Café 4,15€ 
+    pvp_local: 3,25€ + Café 4,25€ 
+    pvp_terraza: 3,75€ + Café 4,75€ 
 
 
   - nombre: Bocatín + Refresco
@@ -2123,16 +2115,16 @@ items:
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,95€
-    pvp_terraza: 3,35€
+    pvp_local: 3,50€
+    pvp_terraza: 4€
 
   - nombre: Chocolate con Churros
     imagen: chocolate+churros.png
     categorias: ["Ofertas Destacadas" , "Día" , "tarde"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 22:30h
-    pvp_local: 2,60€
-    pvp_terraza: 3€
+    pvp_local: 3€
+    pvp_terraza: 3,50€
 
 
   - nombre: Old Memories
@@ -2180,8 +2172,8 @@ items:
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local: 1,25€
-    pvp_terraza: 1,25€
+    pvp_local: 1,50€
+    pvp_terraza: 1,50€
 
   - nombre: Carraskiko 🆕
     imagen: Carraskiko.jpg
