@@ -990,22 +990,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-
-  - nombre: 🍉 Vodka Patilla (Fuera de temporada)
-    disponible: false
-    imagen: 194.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Vodka Finlandia, Sandía fresca, Zumo de Lima, Sirope de Romero, Azúcar, Pimienta Negra y Bitter de Lima.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible de Junio a Septiembre.
-    grad_alcoholica: 9%
-    vol_ml: 185 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
-
-
   - nombre: Coco Beach 🥥 🆕
     imagen: cocobeach.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1018,21 +1002,6 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,5€  
-
-  - nombre: Rock Melón (Fuera de temporada)🍈
-    prioridad: false
-    disponible: false
-    imagen: 104.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Gin licor Proof 13, Puré de Melón Cantalupo Natural, Sirope de Hierbaluisa y Jengibre, Zumo de Naranja Natural, Zumo de Lima y Puré de Calabaza especiada.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible de Junio a Septiembre.
-    grad_alcoholica: 9%
-    vol_ml: 165 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
 
   - nombre: Be Welcome🍍🆕
     prioridad: true
@@ -1221,19 +1190,6 @@ items:
     edul_gr:
     pvp_local: 7€
     pvp_terraza: 7,5€
-
-  - nombre: Sangría Jamaicana
-    imagen: 325.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
-    ingredientes: Rón Captain Morgan, Chartreuse amarillo, Granadina, Zumo de Limón, Trocitos de frutas tropicales y Azúcar.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 11,30%
-    vol_ml: 235 ml
-    edul_gr:
-    pvp_local: 7,5€
-    pvp_terraza: 8€
 
   - nombre: Singapure Sling
     imagen: 326.jpg
@@ -1907,18 +1863,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Proof 13 & 1724 tonic water (Temporalmente Fuera de Stock)
-    imagen: 222.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: denominada como gin licuor debido a su graduación de 30% está elaborada con bayas de enebro, moras y frambuesas entre otros botánicos.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 6%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 9€
-    pvp_terraza: 9,5€
 
   - nombre: Brockman`s & Fever Tree 
     imagen: brockmans.png
@@ -2274,19 +2218,6 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€ 
 
-  - nombre: Dewars Beach 🏖 🆕
-    disponible: true
-    imagen: dewarsbeach.png
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Dewars White Label, Sirope de Frambuesa casero, Licor de Angostura, Limoncello Pallini y Ginger Beer.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
 
   - nombre: Isla Blanca 💝💕🥰 🆕
     prioridad: true
