@@ -956,7 +956,7 @@ items:
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Bulleit bourbon, Zumo de Limón, Clara de Huevo pasteurizada, Angostura y Azúcar.
     alergenos: "*Huevo*"
-    txt_aclaraciones:
+    txt_aclaraciones: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 18,60%
     vol_ml: 145 ml
@@ -969,7 +969,7 @@ items:
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Pisco Quebranta, Zumo de Lima, Clara de huevo pasteurizada, Angostura y Azúcar
     alergenos: "*Huevo*"
-    txt_aclaraciones:
+    txt_aclaraciones: Cocktail Nacional del Perú declarado patrimonio cultural de la Nación  
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 14,40%
     vol_ml: 175 ml
@@ -982,7 +982,7 @@ items:
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Bulleit Bourbon, Puré de Melocotón en vino, Zumo de Naranja y Bitter de Melocotón.
     alergenos: "*Sulfitos*"
-    txt_aclaraciones:
+    txt_aclaraciones: Delicioso Cocktail con base de bourbon que incorpora sabores de postres típicos aragoneses.
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 12,50%
@@ -995,7 +995,7 @@ items:
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Don Papa Baroko, Sirope Homemade de Coco Tostado, Zumo de Pomelo, Grand Marnier y Orgeat .
     alergenos:
-    txt_aclaraciones:
+    txt_aclaraciones: Cocktail goloso con notas avainilladas
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 
     vol_ml:
@@ -1029,7 +1029,21 @@ items:
     vol_ml: 
     edul_gr:
     pvp_local: 8€
-    pvp_terraza: 8,50€   
+    pvp_terraza: 8,50€
+
+  - nombre: Sunset Beach 🌞🥭🆕
+    prioridad: true
+    imagen: sunsetbeach.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Gin infusionado con Romero, Gewürztraminer, Itálicus, Sirope de Romero, Zumo de Pomelo y Mango Nat. . 
+    alergenos: 
+    txt_aclaraciones: Cocktail ligero y refrescante que mezcla aromas mediterraneos con otros sabores más tropicales 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,50€    
 
   - nombre: Nido de Escocia
     imagen: 381.jpg
@@ -1051,7 +1065,7 @@ items:
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Rón Plantation 3 Stars, Mango Natural, Fresa Natural, Manzana Granny Smith, Sirope de Hierba luisa y jengibre, Falernum, Bitter de Melocotón y Soda.
     alergenos: "*Almendra*"
-    txt_aclaraciones: ¿ Te imaginas como sería el primer cocktail de la historia? Te lo preparamos!
+    txt_aclaraciones: ¿Te imaginas como sería el primer cocktail de la historia? Te lo preparamos!
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 8,90%
     vol_ml: 230 ml
@@ -1062,7 +1076,7 @@ items:
   - nombre: Mohito Nipon
     imagen: mohitonipon.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Gin licuor Proof 13, Puré de Yuzu, Zumo de Manzana Granny Smith Natural, Albahaca y Frambuesa.
+    ingredientes: Gin Brockmans, Puré de Yuzu, Zumo de Manzana Granny Smith Natural, Albahaca y Frambuesa.
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
