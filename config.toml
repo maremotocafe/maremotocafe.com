@@ -1,6 +1,6 @@
 ####### MAIN CONFIG #######
 baseURL = "https://maremotocafe.com/"
-title = "Maremoto Café & Cocktail"
+title = "Maremoto Beach"
 defaultContentLanguage = "es"
 languageCode = "es"
 
@@ -29,7 +29,7 @@ languageName = "Es"
 languageCode = "es-es"
 contentDir = "content/spanish"
 weight = 1
-description = "Maremoto Café & Cocktail en Zaragoza"
+description = "Maremoto Beach en Zaragoza"
 tags = "bar,pub,copas,cafeteria,cocktails,zaragoza,cafes,desayunos,brunch,zumos,reposteria,bocadillos,centro,aragon"
 home = "Inicio"
 copyright = """
@@ -40,7 +40,7 @@ Página desarrollada por [Mario Ortiz Manero](https://github.com/marioortizmaner
 ####### MAP #######
 [params.map]
 enable = true
-place = "Maremoto Café & Cocktail"
+place = "Maremoto Beach Zaragoza"
 
 ####### SCROLL TO TOP #######
 [params.scrollToTop]
