@@ -58,15 +58,11 @@ icon = "las la-exclamation-triangle"
 ####### SOCIAL NETWORKS #######
 [[params.social]]
 icon = "lab la-facebook-f"
-link = "https://www.facebook.com/maremotocafeandcocktail/"
-
-[[params.social]]
-icon = "lab la-twitter"
-link = "https://twitter.com/maremotocafe"
+link = "https://www.facebook.com/maremotobeachzaragoza"
 
 [[params.social]]
 icon = "lab la-instagram"
-link = "https://www.instagram.com/maremotocafeandcocktail"
+link = "https://www.instagram.com/maremoto.beach"
 
 ####### NAVIGATION #######
 [[menu.main]]
