@@ -2,7 +2,12 @@ enable: true
 bg_image: "images/backgrounds/hero-area.jpg"
 icon: ""
 title: "Maremoto Beach"
-content: "Cafés, Desayunos, Brunch, Copas, Cocktails de Autor y mucho más"
+content: |
+  Cocktail Club
+
+  Gin club
+
+  Coffee & Brunch
 button:
   enable: true
   label: "¿Qué te apetece?"
