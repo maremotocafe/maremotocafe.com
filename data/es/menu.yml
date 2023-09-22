@@ -1045,20 +1045,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€    
 
-  - nombre: Nido de Escocia
-    imagen: 381.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Dewars French Smooth, Manzanilla (Vino de Jerez) infusionada con té Lapsang Souchong, Vermut rojo Turmeon, Frambuesa, Romero y Azúcar.
-    alergenos: "*Sulfitos*"
-    txt_aclaraciones: >
-     Con este Cocktail conseguimos el 2º puesto en el Certamen Nacional The Excellence Project.
-     Cocktail de perfil ligeramente ahumado debido al té Lapsang Souchong.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 15,80%
-    vol_ml: 145 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
 
   - nombre: The First Cocktail
     imagen: 285.jpg
@@ -1950,6 +1936,14 @@ items:
     txt_aclaraciones: Oferta Válida de 7 a 16h
     pvp_local: 3,50€
     pvp_terraza: 4€
+
+  - nombre:  Tortitas 
+    imagen: tortitas.png
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones:  Disponible de 7 a 16h
+    pvp_local: 3,75€
+    pvp_terraza: 3,75€
 
   - nombre: Café + Croissant Plancha + Zumo Natural
     imagen: cafe+croissantplancha.png
