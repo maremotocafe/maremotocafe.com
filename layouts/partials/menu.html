@@ -32,17 +32,17 @@
     <div class="row">
       <div class="col-md-12">
         {{ "<!-- First level -->" | safeHTML }}
-        {{ partial "menu-bar.html" (dict "context" . "level" "1" "message_prefix" $menu.paso1_prefijo "message" $menu.paso1 "default" "all" "defaultIcon" $menu.icono_todo "children" $menu.categorias) }}
+        {{ partial "menu-bar.html" (dict "context" . "level" "1" "message" $menu.paso1 "default" "all" "defaultIcon" $menu.icono_todo "children" $menu.categorias) }}
 
         {{ "<!-- Second level -->" | safeHTML }}
         {{ range $parent := $menu.categorias }}
-        {{ partial "menu-bar.html" (dict "context" . "level" "2" "message_prefix" $menu.paso2_prefijo "message" $menu.paso2 "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $parent.icono "class_color" (md5 $parent.nombre) "parent" $parent.nombre "children" $parent.subcategorias) }}
+        {{ partial "menu-bar.html" (dict "context" . "level" "2" "message" $menu.paso2 "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $parent.icono "class_color" (md5 $parent.nombre) "parent" $parent.nombre "children" $parent.subcategorias) }}
         {{ end }}
 
         {{ "<!-- Third level -->" | safeHTML }}
         {{ range $grandparent := $menu.categorias }}
         {{ range $parent := $grandparent.subcategorias }}
-        {{ partial "menu-bar.html" (dict "context" . "level" "3" "message_prefix" $menu.paso3_prefijo "message" $menu.paso3 "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $grandparent.icono "parent" $parent.nombre "class_color" (md5 $grandparent.nombre) "children" $parent.subcategorias) }}
+        {{ partial "menu-bar.html" (dict "context" . "level" "3" "message" $menu.paso3 "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $grandparent.icono "parent" $parent.nombre "class_color" (md5 $grandparent.nombre) "children" $parent.subcategorias) }}
         {{ end }}
         {{ end }}
       </div>

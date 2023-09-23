@@ -2,6 +2,7 @@ enable: true
 bg_image: "images/backgrounds/hero-area.jpg"
 icon: ""
 title: "Maremoto Beach"
+logo_title: "images/logo-text.png"
 content: |
   Cocktail Club
 

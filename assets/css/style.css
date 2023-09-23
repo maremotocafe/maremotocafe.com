@@ -51,12 +51,12 @@ pre {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #3c9fb4;
+  background: #5ce1e6;
 }
 
 ::selection {
   color: #fff;
-  background: #3c9fb4;
+  background: #5ce1e6;
 }
 
 hr {
@@ -68,7 +68,7 @@ figure {
 }
 
 a {
-  color: #3c9fb4;
+  color: #5ce1e6;
   transition: all .3s ease-in 0s;
 }
 
@@ -115,13 +115,13 @@ a:hover {
 
 .btn:focus,
 .btn:hover {
-  background-color: #3c9fb4;
+  background-color: #5ce1e6;
   border: 1px solid transparent;
   color: #fff;
 }
 
 .btn-inverse-colors {
-  background: #3c9fb4;
+  background: #5ce1e6;
 }
 
 .btn-inverse-colors:hover,
@@ -152,11 +152,11 @@ a:hover {
   position: absolute;
   top: -4px;
   width: 50px;
-  background-color: #3c9fb4;
+  background-color: #5ce1e6;
 }
 
 .color {
-  color: #6CB670;
+  color: #5ce1e6;
 }
 
 .sub-title {
@@ -366,7 +366,9 @@ a:hover {
 }
 /* bigger X button to close the popup */
 .mfp-close {
-  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  font-size: 70px;
   opacity: 1;
 }
 
@@ -407,6 +409,7 @@ a:hover {
 .logo {
   max-height: 2.75em;
   margin-top: 15px 0;
+  padding: 5px;
   display: inline-block;
 }
 
@@ -554,6 +557,12 @@ a:hover {
 
 .banner-area-video .block .btn-main {
   margin-top: 20px;
+}
+
+.banner-area .logo-title {
+  pointer-events: none;
+  min-width: 30%;
+  max-width: 80%;
 }
 
 .dark-bg {

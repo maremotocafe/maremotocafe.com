@@ -2,3 +2,4 @@
 /assets/carta/*.psd
 /.hugo_build.lock
 /resources
+/public
