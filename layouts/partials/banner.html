@@ -3,13 +3,17 @@
 {{ if $data.banner.enable }}
 {{ with $data.banner }}
 <section class="banner-area" style='background-image: url("{{ .bg_image | absURL }}")'>
-  <div class="block">
+  <div class="block w-100">
     {{ if .icon }}
     <div class="video-button">
       <i class="{{ .icon }}"></i>
     </div>
     {{ end }}
+    {{ if .logo_title }}
+    <img src="{{ .logo_title }}" alt="{{ .title }}" class="mb-3 logo-title"/>
+    {{ else }}
     <h1>{{ .title | markdownify }}</h1>
+    {{ end }}
     <p>{{ .content | markdownify }}</p>
     {{ if .button.enable }}
     {{ with .button }}

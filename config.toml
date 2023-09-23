@@ -29,13 +29,15 @@ languageName = "Es"
 languageCode = "es-es"
 contentDir = "content/spanish"
 weight = 1
-description = "Maremoto Beach en Zaragoza"
-tags = "bar,pub,copas,cafeteria,cocktails,zaragoza,cafes,desayunos,brunch,zumos,reposteria,bocadillos,centro,aragon"
-home = "Inicio"
 copyright = """
 Página desarrollada por [Mario Ortiz Manero](https://github.com/marioortizmanero).  
 *Basado en [gethugothemes](https://gethugothemes.com), licencia [Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/).*
 """
+
+[languages.es.params]
+description = "Maremoto Beach en Zaragoza"
+tags = "bar,pub,copas,cafeteria,cocktails,zaragoza,cafes,desayunos,brunch,zumos,reposteria,bocadillos,centro,aragon"
+home = "Inicio"
 
 ####### MAP #######
 [params.map]
@@ -66,13 +68,13 @@ link = "https://www.instagram.com/maremoto.beach"
 
 ####### NAVIGATION #######
 [[menu.main]]
-name = "Glovo"
-URL = "glovo"
+name = "Carta"
+URL = "carta"
 weight = 1
 
 [[menu.main]]
-name = "Carta"
-URL = "carta"
+name = "Glovo"
+URL = "glovo"
 weight = 2
 
 [[menu.main]]

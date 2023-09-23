@@ -4,12 +4,9 @@ title: Nuestra Carta
 description: Encuentra lo que deseas paso a paso
 description_icon: las la-info-circle
 
-paso1_prefijo: "Primero"
-paso1: "elige una categoría:"
-paso2_prefijo: "Ahora"
-paso2: "concreta tu búsqueda con una de las siguientes subcategorías:"
-paso3_prefijo: "Finalmente"
-paso3: "escoge una opción y pulsa una foto para ver más detalles:"
+paso1: "Primero elige una categoría:"
+paso2: "Ahora concreta tu búsqueda con una de las siguientes subcategorías:"
+paso3: "Finalmente escoge una opción y pulsa una foto para ver más detalles:"
 
 items_iniciales: 30
 items_incremento: 30
