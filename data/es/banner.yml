@@ -4,11 +4,11 @@ icon: ""
 title: "Maremoto Beach"
 logo_title: "images/logo-text.png"
 content: |
-  Cocktail Club
+  *Cocktail Club*
 
-  Gin club
+  *Gin club*
 
-  Coffee & Brunch
+  *Coffee & Brunch*
 button:
   enable: true
   label: "¿Qué te apetece?"

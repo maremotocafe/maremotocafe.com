@@ -20,8 +20,8 @@
       <div class="col-md-12">
         {{"<!-- Section subtitle -->" | safeHTML}}
         <div class="text-center">
-          <h3 class="font-weight-bold">
-          {{ with $menu.description_icon }}<i class="field-icon {{ . }}"></i>{{ end }}
+          <h3 class="font-italic">
+            {{ with $menu.description_icon }}<i class="field-icon {{ . }}"></i>{{ end }}
             <span>{{ with $menu.description }}{{ . }}{{ end }}</span>
           </h3>
         </div>
