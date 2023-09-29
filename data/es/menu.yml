@@ -2164,21 +2164,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
 
-  - nombre: Tostada de Guacamole, Brie, Cherry y Nueces.🥑
-    imagen: tostadabrie.png
-    imagen_pequenya: 
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-
-  - nombre: Tostada de Jamón, Huevo y Tomate.🥚🍅
-    imagen: tostadajamon.png
-    imagen_pequenya: 
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-
-  - nombre: Tostada de Salmón, Philadelphia y Anchoas.
-    imagen: tostadasalmon.png
-    imagen_pequenya:
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-
   - nombre: Dewars Summer 🌞 🆕
     prioridad: true
     disponible: true
@@ -2240,13 +2225,13 @@ items:
     pvp_terraza: 9€ 
 
 
-  - nombre: Tostada Gourmet + Cerveza/Refresco y Café 
+  - nombre: Tostada Gourmet + Zumo 
     imagen: ofertatostadagourmet.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos: 
     txt_aclaraciones: En pan de Hogaza Normal o Integral 5 Semillas. Otras opciones diponibles son; Con Salmón ahumado, Philadelphia y Anchoas o Con Jamón Serrano Tomate y Huevo revuelto. Oferta válida de 7 a 16h
-    pvp_local: Tostada 3,95€ + Bebida 5,45€ + Café 6,45€
-    pvp_terraza: Tostada 3,95€ + Bebida 5,95€ + Café 6,95€
+    pvp_local: 7€ + Café 8€
+    pvp_terraza: 7,50€ + Café 8,50€
 
   - nombre: Tropea Beach (Fuera de temporada)
     disponible: false
