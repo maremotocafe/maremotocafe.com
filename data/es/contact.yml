@@ -5,7 +5,7 @@ content: "¿Quieres comentarnos algo? ¿Tienes alguna duda, alguna sugerencia pa
 subject_txt: Asunto
 message_txt: Mensaje
 submit_txt: Enviar
-help_txt: "Si no se abrió tu cliente de correo es posible que necesites configurar tu navegador. [Haz click aquí](https://www.cristianmonroy.com/2016/03/abre-los-enlaces-mailto-de-internet-en-tu-cliente-de-correo-preferido-cuando-usas-chrome-o-firefox.html)."
+help_txt: "Se ha producido un error. Por favor, abre tu cliente de correo preferido y mándanos un correo a maremotocafe@hotmail.com"
 
 contact_details:
   - icon: las la-map-marker
