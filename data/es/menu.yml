@@ -621,8 +621,8 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: 🍉 Limonada de Sandía y Menta.
-    disponible: true
+  - nombre: 🍉 Limonada de Sandía y Menta. (Fuera de temporada)
+    disponible: false
     imagen: 270.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
@@ -1992,8 +1992,8 @@ items:
     pvp_local: 2,50€ + Zumo 4,25€
     pvp_terraza: 3€ + Zumo 4,75€
 
-  - nombre: 🍒 Gewürztraminer & Cherries
-    disponible: true
+  - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
+    disponible: false
     imagen: 300.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda .
