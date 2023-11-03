@@ -987,7 +987,8 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Coco Beach 🥥 🆕
+  - nombre: Coco Beach 🥥 🆕 (No disponible)
+    disponible: false
     imagen: cocobeach.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Don Papa Baroko, Sirope Homemade de Coco Tostado, Zumo de Pomelo, Grand Marnier y Orgeat .
@@ -2233,8 +2234,8 @@ items:
     pvp_local: 7€ + Café 8€
     pvp_terraza: 7,50€ + Café 8,50€
 
-  - nombre: Tropea Beach (Fuera de temporada)
-    disponible: false
+  - nombre: Tropea Beach
+    disponible: true
     imagen: tropeabeach.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
@@ -2247,8 +2248,8 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
 
-  - nombre: Miyako 🆕 (Fuera de temporada)
-    disponible: false
+  - nombre: Miyako 🆕 
+    disponible: true
     imagen: miyako.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Ginebra Gin-Za, Sirope de Mandarina, Zumo Nat de Mandarina, Sirope de Cardamomo, Sirope de Romero, Limoncello Pallini, Campari y Clara de huevo pasteurizada
