@@ -1173,8 +1173,8 @@ items:
     grad_alcoholica: 6%
     vol_ml: 270 ml
     edul_gr:
-    pvp_local: 6,5€
-    pvp_terraza: 7€
+    pvp_local: 7€
+    pvp_terraza: 7,5€
 
   - nombre: Green Station
     imagen: 377.jpg
@@ -1243,7 +1243,7 @@ items:
 
   - nombre: Cold Green Chilli Peppers
     imagen: 264.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Tequila El Jimador, Licor de Chilli Ancho Reyes, Zumo de Lima, Sirope de Ágave y Ginger Beer.
     alergenos:
     txt_aclaraciones: Delicioso Cocktail de carácter picante
@@ -1282,7 +1282,7 @@ items:
 
   - nombre: Aperoni Gin
     imagen: 367.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Tanqueray Ten, Aperol, Zumo de Pomelo y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1919,7 +1919,7 @@ items:
     pvp_local: 2,50€ + Zumo 4,25€
     pvp_terraza: 3€ + Zumo 4,75€
 
-  - nombre:  Café + Tostada + Zumo Natural
+  - nombre: Café + Tostada + Zumo Natural
     imagen: cafe+tostada.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
@@ -1927,7 +1927,7 @@ items:
     pvp_local: 2,75€ + Zumo 4,25€
     pvp_terraza: 3,25€ + Zumo 4,75€
 
-  - nombre:  Café + Croissant Mixto
+  - nombre: Café + Croissant Mixto
     imagen: cafe+croissantmixto.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
@@ -1935,7 +1935,7 @@ items:
     pvp_local: 3,50€
     pvp_terraza: 4€
 
-  - nombre:  Tortitas 
+  - nombre: Tortitas 
     imagen: tortitas.png
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
@@ -2007,6 +2007,20 @@ items:
     pvp_local: 7,5€
     pvp_terraza: 8€
 
+  - nombre: Tiki Beach 🆕
+    disponible: true
+    imagen: tikibeach.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Blend de Rones, Zumo de Naranja, Zumo de Lima, Frambuesa, Arandanos y Pimiento Dram.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 3,50%
+    vol_ml: 185 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€
+
   - nombre: Gin Roku & Schweppes Toque de Lima
     imagen: 323.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2077,7 +2091,8 @@ items:
     pvp_terraza: 3,50€
 
 
-  - nombre: Old Memories
+  - nombre: Old Memories (No disponible)
+    Disponible: False
     imagen: 361.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Whisky Talisker, Zumo de Pomelo, Sirope de Canela, bitter Jerry thomas y Clara de huevo.
@@ -2090,7 +2105,8 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
-  - nombre: Grazie Mille
+  - nombre: Grazie Mille (No disponible)
+    disponible: False
     imagen: 362.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Whisky J&B Rare, Zumo de Piña, Zumo de Pomelo, Zumo de Limón, Licor de Frambuesas y Moras y Azúcar.
