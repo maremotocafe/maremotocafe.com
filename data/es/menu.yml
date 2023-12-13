@@ -988,7 +988,7 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Coco Beach 🥥 🆕 (No disponible)
-    disponible: false
+    disponible: true
     imagen: cocobeach.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Don Papa Baroko, Sirope Homemade de Coco Tostado, Zumo de Pomelo, Grand Marnier y Orgeat .
@@ -1045,6 +1045,7 @@ items:
 
 
   - nombre: The First Cocktail
+    disponible: false
     imagen: 285.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Rón Plantation 3 Stars, Mango Natural, Fresa Natural, Manzana Granny Smith, Sirope de Hierba luisa y jengibre, Falernum, Bitter de Melocotón y Soda.
@@ -1384,7 +1385,8 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Gin Fizz
+  - nombre: Gin Fizz (No disponible)
+    disponible: false
     imagen: 376.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Ginebra Gin-Za, Zumo de Limón y Azúcar.
@@ -2092,7 +2094,7 @@ items:
 
 
   - nombre: Old Memories (No disponible)
-    Disponible: False
+    disponible: False
     imagen: 361.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Whisky Talisker, Zumo de Pomelo, Sirope de Canela, bitter Jerry thomas y Clara de huevo.
