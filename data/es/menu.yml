@@ -420,7 +420,7 @@ items:
     ingredientes: Leche, Fruta liofilizada, fructosa y Hielo.
     alergenos: "*Leche*"
     txt_aclaraciones: >
-     A elegir entre Chocolate, Chocolate Blanco, Vainilla, Naranja con Canela, Café y Caramelo
+     A elegir entre Chocolate, Chocolate Blanco, Vainilla, Naranja con Canela, Café o Caramelo
 
      Sin Guten ni Colorantes artificiales.
 
@@ -987,7 +987,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Coco Beach 🥥 🆕 (No disponible)
+  - nombre: Coco Beach 🥥 🆕
     disponible: true
     imagen: cocobeach.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1033,7 +1033,7 @@ items:
     prioridad: true
     imagen: sunsetbeach.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Gin infusionado con Romero, Gewürztraminer, Itálicus, Sirope de Romero, Zumo de Pomelo y Mango Nat. . 
+    ingredientes: Gin infusionado con Romero, Gewürztraminer, Itálicus, Sirope de Romero, Zumo de Pomelo y Mango Nat. 
     alergenos: 
     txt_aclaraciones: Cocktail ligero y refrescante que mezcla aromas mediterraneos con otros sabores más tropicales 
     txt_temporal: Disponible todo el año.
@@ -1041,7 +1041,49 @@ items:
     vol_ml: 
     edul_gr:
     pvp_local: 8€
-    pvp_terraza: 8,50€    
+    pvp_terraza: 8,50€ 
+
+  - nombre: Tangerine Road
+    prioridad: true
+    imagen: tangerineroad.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Nordés Gin, Sirope de Mandarina y Romero, Zumo de Mandarina, Licor de Pino, Menta y Bitter de Lavanda. 
+    alergenos: 
+    txt_aclaraciones: Cocktail ligero y refrescante que combina aromas del Atlantico con otros Mediterraneos 
+    txt_temporal: Disponible de Noviembre a Marzo.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€ 
+
+  - nombre: As Meigas
+    prioridad: true
+    imagen: asmeigas.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Nordes Gin, Licor de Flor de Sauco, Zumo de Pomelo, Licor de Chipotle y Mixer de Pomelo
+    alergenos: 
+    txt_aclaraciones: Cocktail Floral, Herbal y Ligeramente picante
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€ 
+
+  - nombre: Altantic
+    prioridad: true
+    imagen: atlantic.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Nordés Gin, Aperitivo Bonanto, Sirope de Romero, Zumo de Limón ,Curaçao Azul, Fever Tree Mediterranean y Espuma de Pomelo y Lima.
+    alergenos: 
+    txt_aclaraciones: Este Cocktail representa el horizonte desde el oceano Altantico. 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr:
+    pvp_local: 8,5€
+    pvp_terraza: 9€    
 
 
   - nombre: The First Cocktail
