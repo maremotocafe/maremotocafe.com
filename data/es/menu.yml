@@ -155,8 +155,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr: 14gr Azúcar moreno
-    pvp_local: 3€
-    pvp_terraza: 3,50€
+    pvp_local: 4€
+    pvp_terraza: 4,5€
 
   - nombre: Capuccino Clásico ☕
     imagen: 132.jpg
@@ -183,8 +183,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 3,25€
-    pvp_terraza: 3,75€
+    pvp_local: 3,75€
+    pvp_terraza: 3,25€
 
 
   - nombre: Cold Brew y Cold Brew Latte ❄ 🆕
@@ -210,8 +210,8 @@ items:
     grad_alcoholica: 3,80%
     vol_ml:
     edul_gr:
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
+    pvp_local: 5€
+    pvp_terraza: 5,5€
 
   - nombre: Té de Frutas del Bosque ☕
     imagen: 192.jpg
@@ -267,8 +267,8 @@ items:
     grad_alcoholica: 10,50%
     vol_ml:
     edul_gr:
-    pvp_local: 3,75€
-    pvp_terraza: 4,25€
+    pvp_local: 4€
+    pvp_terraza: 4,5€
 
   - nombre: Irlandés ☕
     imagen: 282.jpg
@@ -280,8 +280,8 @@ items:
     grad_alcoholica: 9,50%
     vol_ml:
     edul_gr:
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
+    pvp_local: 5€
+    pvp_terraza: 5,5€
 
   - nombre: Coffee Licor ☕
     imagen: 310.jpg
@@ -293,8 +293,8 @@ items:
     grad_alcoholica: 9,50%
     vol_ml:
     edul_gr:
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
+    pvp_local: 5€
+    pvp_terraza: 5,5€
 
   - nombre: Coffee Cream ☕
     imagen: 309.jpg
@@ -306,8 +306,8 @@ items:
     grad_alcoholica: 4,10%
     vol_ml:
     edul_gr:
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
+    pvp_local: 5€
+    pvp_terraza: 5,5€
 
   - nombre: Quemadillo de Rón ☕
     imagen: 387.jpg
@@ -319,8 +319,8 @@ items:
     grad_alcoholica: 5,50%
     vol_ml:
     edul_gr:
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
+    pvp_local: 5€
+    pvp_terraza: 5,5€
 
   - nombre: Mexican Coffee ☕
     imagen: 2a.jpg
@@ -332,8 +332,8 @@ items:
     grad_alcoholica: 10,50%
     vol_ml:
     edul_gr:
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
+    pvp_local: 5€
+    pvp_terraza: 5,5€
 
   - nombre: Frappé al Caramelo ❄
     imagen: 196.jpg
@@ -345,8 +345,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 3,25€
-    pvp_terraza: 3,75€
+    pvp_local: 3,75€
+    pvp_terraza: 4,25€
 
   - nombre: Frappé Rón Cream ❄
     imagen: 196.jpg
@@ -358,8 +358,8 @@ items:
     grad_alcoholica: 3,80%
     vol_ml:
     edul_gr:
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
+    pvp_local: 5€
+    pvp_terraza: 5,5€
 
   - nombre: Frappé Mozart ❄
     imagen: 196.jpg
@@ -371,8 +371,8 @@ items:
     grad_alcoholica: 3,80%
     vol_ml:
     edul_gr:
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
+    pvp_local: 5€
+    pvp_terraza: 5,5€
 
   - nombre: Carta de Infusiones 
     imagen: cartates.png
@@ -789,8 +789,8 @@ items:
     grad_alcoholica: 10,60%
     vol_ml: 175 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Mojito Moreno
     imagen: 275.jpg
@@ -893,8 +893,8 @@ items:
     grad_alcoholica: 13,30%
     vol_ml: 140 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,50€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Caipiroska Black
     imagen: 266.jpg
@@ -932,7 +932,7 @@ items:
     grad_alcoholica: 15,50%
     vol_ml: 110 ml
     edul_gr:
-    pvp_local: 7€
+    pvp_local: 7,5€
     pvp_terraza: 7,5€
 
   - nombre: Caipirinha de Naranja y Piña
@@ -1151,8 +1151,8 @@ items:
     grad_alcoholica: 7,40%
     vol_ml: 320 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Piña Colada
     imagen: 304.jpg
@@ -1164,8 +1164,8 @@ items:
     grad_alcoholica: 6%
     vol_ml: 350 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Chestnut Touch
     imagen: 307.jpg
@@ -1190,8 +1190,8 @@ items:
     grad_alcoholica: 5,75%
     vol_ml: 330 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: New Orleans Fizz
     imagen: 306.jpg
@@ -1229,8 +1229,8 @@ items:
     grad_alcoholica: 7%
     vol_ml: 235 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Singapure Sling
     imagen: 326.jpg
@@ -1242,8 +1242,8 @@ items:
     grad_alcoholica: 9,60%
     vol_ml: 220 ml
     edul_gr:
-    pvp_local: 7,5€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,5€
 
   - nombre: Tom Collins
     imagen: 322.jpg
@@ -1268,8 +1268,8 @@ items:
     grad_alcoholica: 12,90%
     vol_ml: 155 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Paloma
     imagen: 382.jpg
@@ -1372,8 +1372,8 @@ items:
     grad_alcoholica: 23%
     vol_ml: 110 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Daiquiri
     imagen: 373.jpg
@@ -1398,8 +1398,8 @@ items:
     grad_alcoholica: 19,80%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp_local: 7,5€
+    pvp_terraza: 8€
 
   - nombre: Black Russian
     imagen: 369.jpg
@@ -1424,8 +1424,8 @@ items:
     grad_alcoholica: 29%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp_local: 8,5€
+    pvp_terraza: 9€
 
   - nombre: Gin Fizz (No disponible)
     disponible: false
@@ -1955,29 +1955,29 @@ items:
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Café + Churros + Zumo Natural
-    imagen: cafe+churros.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,50€ + Zumo 4,25€
-    pvp_terraza: 3€ + Zumo 4,75€
+    pvp_local: 3€ + Zumo 5€
+    pvp_terraza: 3,5€ + Zumo 5,5€
 
   - nombre: Café + Tostada + Zumo Natural
-    imagen: cafe+tostada.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,75€ + Zumo 4,25€
-    pvp_terraza: 3,25€ + Zumo 4,75€
+    pvp_local: 3,25€ + Zumo 5€
+    pvp_terraza: 3,75€ + Zumo 5,5€
 
   - nombre: Café + Croissant Mixto
-    imagen: cafe+croissantmixto.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta Válida de 7 a 16h
-    pvp_local: 3,50€
-    pvp_terraza: 4€
+    pvp_local: 4€
+    pvp_terraza: 4,5€
 
   - nombre: Tortitas 
     imagen: tortitas.png
@@ -1988,12 +1988,12 @@ items:
     pvp_terraza: 3,75€
 
   - nombre: Café + Croissant Plancha + Zumo Natural
-    imagen: cafe+croissantplancha.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3€ + Zumo 4,25€
-    pvp_terraza: 3,50€ + Zumo 4,75€
+    pvp_local: 3,5€ + Zumo 5€
+    pvp_terraza: 4€ + Zumo 5,5€
 
   - nombre: Cappuccino + Cookie Casera Gratis
     imagen: 74.jpg
@@ -2002,19 +2002,20 @@ items:
     txt_aclaraciones: >
      Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
      Consulta la variedad de Cookies disponibles
-    pvp_local: Cappuccino Clásico 2,20€ Cappuccino Sabor 2,50€
-    pvp_terraza: Cappuccino Clásico 2,70€ Cappuccino Sabor 3€
+    pvp_local: Cappuccino Clásico 2,5€ Cappuccino Sabor 2,8€
+    pvp_terraza: Cappuccino Clásico 3€ Cappuccino Sabor 3,3€
+    pvp_noche (A partir de 22:30H): Clásico 3,3€/ Sabor 3,50€
 
   - nombre: Sándwich Mixto + Zumo Natural
-    imagen: sandwich+zumo.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 16h
-    pvp_local: 4,50€ Con rodajas de tomate 5€
-    pvp_terraza: 5€ Con rodajas de tomate 5,5€
+    pvp_local: 5€ Con rodajas de tomate 5,5€
+    pvp_terraza: 5,5€ Con rodajas de tomate 6€
 
   - nombre: Café + Repostería + Zumo Natural
-    imagen: cafe+reposteria.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
@@ -2022,20 +2023,20 @@ items:
     pvp_terraza: 3,25€ + Zumo 4,75€
 
   - nombre: Café + Bizcocho Casero + Zumo Natural
-    imagen: cafe+bizcocho.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3€ + Zumo 4,25€
-    pvp_terraza: 3,5€ + Zumo 4,75€
+    pvp_local: 3,5€ + Zumo 5€
+    pvp_terraza: 4€ + Zumo 5,5€
 
   - nombre: Café + Cookie Casera
-    imagen: cafe+cookie.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,50€ + Zumo 4,25€
-    pvp_terraza: 3€ + Zumo 4,75€
+    pvp_local: 3€ + Zumo 5€
+    pvp_terraza: 3,5€ + Zumo 5,5€
 
   - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
     disponible: false
@@ -2110,29 +2111,29 @@ items:
     pvp_terraza:
 
   - nombre: Bocatín + Cañita/Vino + Café
-    imagen: bocatin+cañita+cafe.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3,25€ + Café 4,25€ 
-    pvp_terraza: 3,75€ + Café 4,75€ 
+    pvp_local: 3,75€ + Café 4,75€ 
+    pvp_terraza: 4,25€ + Café 5,25€ 
 
 
   - nombre: Bocatín + Refresco
-    imagen: bocatin+refresco.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3,50€
-    pvp_terraza: 4€
+    pvp_local: 4€
+    pvp_terraza: 4,5€
 
   - nombre: Chocolate con Churros
-    imagen: chocolate+churros.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día" , "tarde"]
     alergenos:
     txt_aclaraciones: Oferta válida de 7 a 22:30h
-    pvp_local: 3€
-    pvp_terraza: 3,50€
+    pvp_local: 3,5€
+    pvp_terraza: 4€
 
 
   - nombre: Old Memories (No disponible)
@@ -2178,12 +2179,12 @@ items:
 
   - nombre: Cookies Caseras
     prioridad: true
-    imagen: cookiescaseras.png
+    imagen: 75.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local: 1,50€
-    pvp_terraza: 1,50€
+    pvp_local: 1,80€
+    pvp_terraza: 1,80€
 
   - nombre: Carraskiko 🆕
     imagen: Carraskiko.jpg
