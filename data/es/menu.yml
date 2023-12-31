@@ -223,8 +223,8 @@ items:
     grad_alcoholica: 0%
     vol_ml: 200ml
     edul_gr:
-    pvp_local: 3,25€
-    pvp_terraza: 3,75€
+    pvp_local: 3,5€
+    pvp_terraza: 4€
 
   - nombre: Capuccino Sabor ☕
     imagen: 102.jpg
@@ -388,18 +388,7 @@ items:
     pvp_local: 2,75€
     pvp_terraza: 3,25€
 
-  - nombre: Té Mojito Iced ❄
-    imagen: 319.jpg
-    categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Té Verde, Menta, Limón y Lemongrass
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 0%
-    vol_ml:
-    edul_gr: 15 gr de Azúcar
-    pvp_local: 3,25€
-    pvp_terraza: 3,75€
+
 
   - nombre: Té Chai con Leche de Soja ❄
     imagen: 280.jpg
@@ -411,8 +400,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr: 10gr de Azúcar
-    pvp_local: 3,25€
-    pvp_terraza: 3,75€
+    pvp_local: 3,50€
+    pvp_terraza: 4€
 
   - nombre: Batidos de Sabores. 🆕 ¡Nuevos Sabores!
     imagen: 5a.jpg
@@ -431,8 +420,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 4,25€
-    pvp_terraza: 4,75€
+    pvp_local: 4,50€
+    pvp_terraza: 5€
 
   - nombre: Smoothies de Frutas (Con leche)
     imagen: 388.jpg
@@ -446,8 +435,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 4€
-    pvp_terraza: 4,5€
+    pvp_local: 4,5€
+    pvp_terraza: 5€
 
   - nombre: Smoothies de Fruta (Sin Lacteos)
     imagen: 389.jpg
@@ -460,8 +449,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 4€
-    pvp_terraza: 4,5€
+    pvp_local: 4,5€
+    pvp_terraza: 5€
 
   - nombre: Smoothies Sabores Combinados
     imagen: 392.jpg
@@ -475,8 +464,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 4€
-    pvp_terraza: 4,5€
+    pvp_local: 4,5€
+    pvp_terraza: 5€
 
   - nombre: Smoothie Leche Merengada
     imagen: 390.jpg
@@ -488,8 +477,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 4€
-    pvp_terraza: 4,5€
+    pvp_local: 4,5€
+    pvp_terraza: 5€
 
   - nombre: Smoothie Premium Estambul
     imagen: 375.jpg
@@ -566,8 +555,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 4€
-    pvp_terraza: 4,50€
+    pvp_local: 4,5€
+    pvp_terraza: 5€
 
   - nombre: Granizado de Limón Casero 🍋
     imagen: 258.jpg
@@ -2004,7 +1993,7 @@ items:
      Consulta la variedad de Cookies disponibles
     pvp_local: Cappuccino Clásico 2,5€ Cappuccino Sabor 2,8€
     pvp_terraza: Cappuccino Clásico 3€ Cappuccino Sabor 3,3€
-    pvp_noche (A partir de 22:30H): Clásico 3,3€/ Sabor 3,50€
+    pvp_noche(A partir de 22:30H): Clásico 3,3€/ Sabor 3,50€
 
   - nombre: Sándwich Mixto + Zumo Natural
     imagen: 75.jpg
