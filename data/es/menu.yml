@@ -379,14 +379,15 @@ items:
     imagen_pequenya: portadates_small.png
     categorias: ["Cafés y Tés" , "Infusiones"] 
 
-  - nombre: Té Indian Almond ☕
-    imagen: 393.jpg
+  - nombre: Golden Milk ☕
+    imagen: goldenmilk.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Reconfortante bebida caliente a base de Té Chai y Leche de Almendra o la leche que prefieras.
+    ingredientes: Reconfortante bebida caliente a base de Leche de Avena, Cúrcuma, Clavo, Canela, Jengibre, Pimienta y Sirope de Arce.
     alergenos:
-    txt_aclaraciones: Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración
-    pvp_local: 2,75€
-    pvp_terraza: 3,25€
+    txt_aclaraciones:
+    txt_temporal: Disponible de Noviembre a Marzo
+    pvp_local: 2,80€ (3,50 Noche a partir de 22:30)
+    pvp_terraza: 3,30€ (3,50 Noche a partir de 22:30)
 
 
 
