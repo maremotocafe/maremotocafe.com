@@ -121,7 +121,7 @@ items:
     pvp_terraza: 3€
 
 
-  - nombre: Café de Especialidad ☕ 🆕 
+  - nombre: Café de Especialidad ☕   
     imagen: especialidad.png
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
     ingredientes: 
@@ -187,7 +187,8 @@ items:
     pvp_terraza: 3,25€
 
 
-  - nombre: Cold Brew y Cold Brew Latte ❄ 🆕
+  - nombre: Cold Brew y Cold Brew Latte ❄  (Fuera de Temporada)
+    disponible: false
     imagen: coldbrew.png
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés Fríos"]
     ingredientes: Cafe 100% arabica infusionado en frio 16 Horas. Servimos con Menta y Naranja. La opción Latte la servimos con crema de Leche Fresca emulsionada en frío y un toque de Canela. 
@@ -379,7 +380,8 @@ items:
     imagen_pequenya: portadates_small.png
     categorias: ["Cafés y Tés" , "Infusiones"] 
 
-  - nombre: Golden Milk ☕
+  - nombre: Golden Milk ☕ (Fuera de Temporada)
+    disponible: false
     imagen: goldenmilk.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Reconfortante bebida caliente a base de Leche de Avena, Cúrcuma, Clavo, Canela, Jengibre, Pimienta y Sirope de Arce.
@@ -404,7 +406,7 @@ items:
     pvp_local: 3,50€
     pvp_terraza: 4€
 
-  - nombre: Batidos de Sabores. 🆕 ¡Nuevos Sabores!
+  - nombre: Batidos de Sabores.   ¡Nuevos Sabores!
     imagen: 5a.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Batidos"]
     ingredientes: Leche, Fruta liofilizada, fructosa y Hielo.
@@ -704,7 +706,7 @@ items:
     pvp_local: 6,5€
     pvp_terraza: 7€
 
-  - nombre: Blondi Beach 🏖 🆕 
+  - nombre: Blondi Beach 🏖   
     imagen: blondibeach.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Limón, Jengibre, Cordial de Pimienta Rue Berry, Angostura y Soda.
@@ -729,19 +731,6 @@ items:
     edul_gr: 0 gr
     pvp_local: 6,5€
     pvp_terraza: 7€
-
-  - nombre: Queremos Matcha...🐒
-    imagen: queremosmatcha.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
-    ingredientes: Tanqueray Sin Alcohol, Zumo De Naranja Natural, Té Matcha, Espirulina, Cordial de Pimienta Timur de Nepal, Clara de huevo Pasteurizada y Menta.
-    alergenos: Huevo
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 0%
-    vol_ml:
-    edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
 
   - nombre: Floreale.🌼🌺🆕
     imagen: floreale.jpg
@@ -977,7 +966,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Coco Beach 🥥 🆕
+  - nombre: Coco Beach 🥥  
     disponible: true
     imagen: cocobeach.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1033,8 +1022,9 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€ 
 
-  - nombre: Tangerine Road
-    prioridad: true
+  - nombre: Tangerine Road (Fuera de Temporada)
+    prioridad: false
+    disponible: false
     imagen: tangerineroad.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Nordés Gin, Sirope de Mandarina y Romero, Zumo de Mandarina, Licor de Pino, Menta y Bitter de Lavanda. 
@@ -1776,19 +1766,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Ish & Schweppes Toque de Lima
-    prioridad: true
-    imagen: 232.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra británica clásica con mayor proporción de enebro de lo habitual yque también contine notas cítricas y florales.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,20%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
 
   - nombre: Gin Loe & 1724 tonic water
     imagen: ginloe.jpeg
@@ -1829,19 +1806,6 @@ items:
     edul_gr:
     pvp_local: 8,5€
     pvp_terraza: 9€
-
-  - nombre: Gin del Professore Monsieur & Fever Tree
-    imagen: monsieur.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra italiana macerada en frio con 12 botánicos entre los que destaca el enebro italiano de Umbría.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,80%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 9€
-    pvp_terraza: 9,5€
 
   - nombre: Gin del Professore Madame & Fever Tree
     imagen: madamme.jpeg
@@ -2042,7 +2006,7 @@ items:
     pvp_local: 7,5€
     pvp_terraza: 8€
 
-  - nombre: Tiki Beach 🆕
+  - nombre: Tiki Beach  
     disponible: true
     imagen: tikibeach.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2176,7 +2140,7 @@ items:
     pvp_local: 1,80€
     pvp_terraza: 1,80€
 
-  - nombre: Carraskiko 🆕
+  - nombre: Carraskiko  
     imagen: Carraskiko.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Cinzano Bianco, Italicus, Sirope de Melocotón en vino y Angostura de Naranja.
@@ -2189,7 +2153,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Italicus Rosolio 🆕
+  - nombre: Italicus Rosolio  
     imagen: ItalicusRosolio.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Italicus Rosolio, Proseco, Brocheta de olivas y twist de limón.
@@ -2216,7 +2180,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
 
-  - nombre: Dewars Summer 🌞 🆕
+  - nombre: Dewars Summer 🌞  
     prioridad: true
     disponible: true
     imagen: dewarssummer.jpeg
@@ -2231,7 +2195,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Dewars Spring 🌺 🆕
+  - nombre: Dewars Spring 🌺  
     prioridad: true
     disponible: true
     imagen: dewarsspring.jpeg
@@ -2246,7 +2210,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Dewars Autunm 🍁 🆕
+  - nombre: Dewars Autunm 🍁  
     disponible: true
     imagen: dewarsautunm.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2261,7 +2225,7 @@ items:
     pvp_terraza: 9€ 
 
 
-  - nombre: Isla Blanca 💝💕🥰 🆕
+  - nombre: Isla Blanca 💝💕🥰  
     prioridad: true
     disponible: true
     imagen: islablanca.jpg
@@ -2285,8 +2249,8 @@ items:
     pvp_local: 7€ + Café 8€
     pvp_terraza: 7,50€ + Café 8,50€
 
-  - nombre: Tropea Beach
-    disponible: true
+  - nombre: Tropea Beach (Fuera de Temporada)
+    disponible: false
     imagen: tropeabeach.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
@@ -2299,8 +2263,8 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
 
-  - nombre: Miyako 🆕 
-    disponible: true
+  - nombre: Miyako   (Fuera de Temporada)
+    disponible: false
     imagen: miyako.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Ginebra Gin-Za, Sirope de Mandarina, Zumo Nat de Mandarina, Sirope de Cardamomo, Sirope de Romero, Limoncello Pallini, Campari y Clara de huevo pasteurizada
@@ -2342,19 +2306,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Bombay Presse & Fever Tree
-    imagen: bombaypresse.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Servida con gajos y Twist de limón
-    alergenos:
-    txt_aclaraciones: Elaborada a base de limones mediterráneos a partir de una infusión de frutas 100% natural, es fresca y vibrante y no contiene azúcares refinados añadidos.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 7,5%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
-
 
   - nombre: Star of Bombay & Schweppes Toque de Lima
     imagen: bombaystar.jpeg
@@ -2377,19 +2328,6 @@ items:
     txt_aclaraciones: Bombay Sapphire Premier Cru es una ginebra producida de forma limitada que celebra los cítricos más estimulantes y aromáticos del mundo los limones, mandarinas y naranjas dulces Navel de Murcia
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 9,5%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
-
-  - nombre: June & 1724 Tonic Water
-    imagen: june.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: June es un licor de Ginebra por su bajo contenido alcohólico, elaborado by G'vine una ginebra elegante y natural, donde se fusionan el melocotón de uva y G'Vine, ginebra francesa elaborada con uvas
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 6%
     vol_ml: 250 ml
     edul_gr:
     pvp_local: 8,5€
