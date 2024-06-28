@@ -613,8 +613,8 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: 🍉 Limonada de Sandía y Menta. (Fuera de temporada)
-    disponible: false
+  - nombre: 🍉 Limonada de Sandía y Menta.
+    disponible: true
     imagen: 270.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
@@ -623,7 +623,7 @@ items:
     txt_temporal: Disponible de Junio a Septiembre
     grad_alcoholica: 0%
     vol_ml:
-    edul_gr: 10gr de Azúcar Integral de caña
+    edul_gr:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
@@ -1859,6 +1859,47 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
+
+  - nombre: Pink Velvet Gin 🍓🆕
+    imagen: pinkvelvet.png
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Notas de Fresa, Frambuesa y Pétalos de Rosa
+    alergenos:
+    txt_aclaraciones: ¡La ginebra de frutos rojos de Aragón! (Sin edulcorantes artificiales) 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,5%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€  
+
+
+  - nombre: Blue Velvet Gin 🍓🆕
+    imagen: bluekvelvet.jpeg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Notas de Violeta, Flor de Cerezo, Lirio
+    alergenos:
+    txt_aclaraciones: ¡Ginebra de Aragón! (Inspirada en los atardeceres de la laguna de Gallocanta) ¡Cambia de color de Azul a Violeta al servirla! 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,5%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€
+
+
+  - nombre: White Velvet Gin 🍓🆕
+    imagen: whitekvelvet.jpeg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:  Notas a Piña, Clavo y Canela.
+    alergenos:
+    txt_aclaraciones: Ginebra de Aragón (Inspirada n la Pureza del Pirineo)  
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,5%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,5€   
 
   - nombre: Brockman`s & Fever Tree 
     imagen: brockmans.png
