@@ -1861,6 +1861,7 @@ items:
 
 
   - nombre: Pink Velvet Gin 🍓🆕
+    prioridad: true
     imagen: pinkvelvet.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Notas de Fresa, Frambuesa y Pétalos de Rosa
@@ -1874,7 +1875,8 @@ items:
     pvp_terraza: 8,5€  
 
 
-  - nombre: Blue Velvet Gin 🍓🆕
+  - nombre: Blue Velvet Gin 🆕 🌺
+    prioridad: true
     imagen: bluevelvet.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Notas de Violeta, Flor de Cerezo, Lirio
@@ -1888,7 +1890,8 @@ items:
     pvp_terraza: 8,5€
 
 
-  - nombre: White Velvet Gin 🍓🆕
+  - nombre: White Velvet Gin 🆕 🍍
+    prioridad: true
     imagen: whitevelvet.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:  Notas a Piña, Clavo y Canela.
@@ -2074,7 +2077,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: 🍍 Gin Fizz de Pomelo y Piña
+  - nombre: Gin Fizz de Pomelo y Piña 🍍 
     imagen: 316.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Tanqueray Ten, Sirope de Piña asada y Menta homemade, Zumo de Pomelo y Mixer de Pomelo Thomas henrry.
