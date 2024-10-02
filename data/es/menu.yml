@@ -164,8 +164,7 @@ items:
     ingredientes: Café espresso, Crema de leche y Toque de Cacao.
     alergenos: "*Leche*"
     txt_aclaraciones: >
-      Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja
-      Todas las tardes de 16h a 22,30h con tu Cappuccino Gratis una Cookie casera a elegir entre 5 variedades distintas
+     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja
     txt_temporal:
     grad_alcoholica:
     vol_ml:
@@ -237,7 +236,6 @@ items:
 
      Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja.
 
-     Todas las tardes de 16h a 22,30h con tu Cappuccino Gratis una Cookie casera a elegir entre 5 variedades distintas.
     txt_temporal:
     grad_alcoholica:
     vol_ml:
@@ -613,8 +611,8 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: 🍉 Limonada de Sandía y Menta.
-    disponible: true
+  - nombre: 🍉 Limonada de Sandía y Menta. (Fuera de temporada)
+    disponible: false
     imagen: 270.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
@@ -1992,17 +1990,6 @@ items:
     txt_aclaraciones: Oferta válida de 7 a 12:30h
     pvp_local: 3,5€ + Zumo 5€
     pvp_terraza: 4€ + Zumo 5,5€
-
-  - nombre: Cappuccino + Cookie Casera Gratis
-    imagen: 74.jpg
-    categorias: ["Ofertas Destacadas" , "Tarde"]
-    alergenos:
-    txt_aclaraciones: >
-     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
-     Consulta la variedad de Cookies disponibles
-    pvp_local: Cappuccino Clásico 2,5€ Cappuccino Sabor 2,8€
-    pvp_terraza: Cappuccino Clásico 3€ Cappuccino Sabor 3,3€
-    pvp_noche(A partir de 22:30H): Clásico 3,3€/ Sabor 3,50€
 
   - nombre: Sándwich Mixto + Zumo Natural
     imagen: 75.jpg
