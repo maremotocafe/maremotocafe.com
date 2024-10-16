@@ -183,7 +183,7 @@ items:
     vol_ml:
     edul_gr:
     pvp_local: 3,75€
-    pvp_terraza: 3,25€
+    pvp_terraza: 4,25€
 
 
   - nombre: Cold Brew y Cold Brew Latte ❄  (Fuera de Temporada)
@@ -235,13 +235,6 @@ items:
      Elige entre Avellana*, Vainilla, Canela, Cookie o Tiramisú.
 
      Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja.
-
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 2,50€ (A partir de las 22:30) 3€
-    pvp_terraza: 3€
 
   - nombre: Bombón Licor ☕
     imagen: 370.jpg
@@ -2161,15 +2154,6 @@ items:
     edul_gr:
     pvp_local: 8,5€
     pvp_terraza: 9€ 
-
-  - nombre: Cookies Caseras
-    prioridad: true
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones:
-    pvp_local: 1,80€
-    pvp_terraza: 1,80€
 
   - nombre: Carraskiko  
     imagen: Carraskiko.jpg
