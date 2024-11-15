@@ -288,12 +288,12 @@ items:
     pvp_local: 5€
     pvp_terraza: 5,5€
 
-  - nombre: Coffee Cream ☕
+  - nombre: Coffee Cream Baileys ☕
     imagen: 309.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso con Cacao, Nata y Crema de licor a elegir
     alergenos: "*Leche*"
-    txt_aclaraciones: Elige entre Baileys, Mélodi, Mozart, Crema de Orujo o Crema de Rón.
+    txt_aclaraciones: 
     txt_temporal:
     grad_alcoholica: 4,10%
     vol_ml:
@@ -683,8 +683,8 @@ items:
     pvp_local: 6,5€
     pvp_terraza: 7€
 
-  - nombre: Frescor Cálido (Fuera de temporada)
-    disponible: false
+  - nombre: Frescor Cálido 
+    disponible: true
     imagen: 311.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo Natural de Granada, Sirope de Especias, Zumo de Limón, Canela y Soda.
@@ -1013,9 +1013,9 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€ 
 
-  - nombre: Tangerine Road (Fuera de Temporada)
-    prioridad: false
-    disponible: false
+  - nombre: Tangerine Road 
+    prioridad: true
+    disponible: true
     imagen: tangerineroad.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Nordés Gin, Sirope de Mandarina y Romero, Zumo de Mandarina, Licor de Pino, Menta y Bitter de Lavanda. 
@@ -1271,7 +1271,7 @@ items:
   - nombre: Aperol Spritz
     imagen: 260.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
-    ingredientes: Aperol, proseco Cinzano y Soda
+    ingredientes: Aperol, Proseco Cinzano y Soda
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
@@ -1280,6 +1280,21 @@ items:
     edul_gr:
     pvp_local: 5€
     pvp_terraza: 5,5€
+
+
+  - nombre: Hugo Spritz 
+    imagen: hugo.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    ingredientes: San Germain, Proseco Cinzano y Soda
+    alergenos: "*Sulfitos*"
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 9%
+    vol_ml: 210 ml
+    edul_gr:
+    pvp_local: 6,5€
+    pvp_terraza: 7€
+
 
   - nombre: Garibaldi Fizz
     imagen: 284.jpg
@@ -1311,6 +1326,19 @@ items:
     imagen: 259.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Zumo de Tomate, Vodka Finlandia, Zumo de Limón, Tabasco, Sal de Apio, Pimienta y Salsa Perrins.
+    alergenos: "*Apio*"
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,50%
+    vol_ml: 215 ml
+    edul_gr:
+    pvp_local: 7,5€
+    pvp_terraza: 8€
+
+  - nombre: Michelada
+    imagen: michelada.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    ingredientes: Zumo de Tomate, Zumo de Limón, Tabasco, Sal, Pimienta y Salsa Perrins, Clamato, Salsa Maggie  y Coronita.
     alergenos: "*Apio*"
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
@@ -1359,7 +1387,8 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,5€
 
-  - nombre: Alexander
+  - nombre: Alexander (fuera de temporada)
+    disponible: false
     imagen: 210.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Brandy, Nata y Licor Mozart.
@@ -2128,8 +2157,8 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
-  - nombre: Grazie Mille (No disponible)
-    disponible: False
+  - nombre: Grazie Mille 
+    disponible: true
     imagen: 362.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Whisky J&B Rare, Zumo de Piña, Zumo de Pomelo, Zumo de Limón, Licor de Frambuesas y Moras y Azúcar.
@@ -2264,8 +2293,8 @@ items:
     pvp_local: 7€ + Café 8€
     pvp_terraza: 7,50€ + Café 8,50€
 
-  - nombre: Tropea Beach (Fuera de Temporada)
-    disponible: false
+  - nombre: Tropea Beach 
+    disponible: true
     imagen: tropeabeach.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
@@ -2278,8 +2307,8 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
 
-  - nombre: Miyako   (Fuera de Temporada)
-    disponible: false
+  - nombre: Miyako  
+    disponible: true
     imagen: miyako.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Ginebra Gin-Za, Sirope de Mandarina, Zumo Nat de Mandarina, Sirope de Cardamomo, Sirope de Romero, Limoncello Pallini, Campari y Clara de huevo pasteurizada
