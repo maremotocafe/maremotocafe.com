@@ -2184,7 +2184,8 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€ 
 
-  - nombre: Carraskiko  
+  - nombre: Carraskiko (No disponible temporalmente)  
+    disponible: false
     imagen: Carraskiko.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Cinzano Bianco, Italicus, Sirope de Melocotón en vino y Angostura de Naranja.
