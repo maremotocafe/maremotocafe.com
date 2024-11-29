@@ -21,7 +21,7 @@ jobs:
         run: sudo apt-get -y update && sudo apt install -y asciidoctor
 
       - name: Build
-        run: hugo --minify --verbose --gc --disableKinds=taxonomyTerm
+        run: hugo --minify --gc --disableKinds=taxonomyTerm
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
