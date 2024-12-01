@@ -944,7 +944,7 @@ items:
     pvp_local: 7,5€
     pvp_terraza: 8€
 
-  - nombre: Fernet Sour
+  - nombre: Fernet Sour 🆕
     imagen: fernetsour.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Fernet Branca, Lima, Cordial de Mandarina, Bitter de Chocolate y Canela y clara de huevo.
@@ -957,9 +957,9 @@ items:
     pvp_local: 7,5€
     pvp_terraza: 8€
 
-  - nombre: Entre Tanto 
+  - nombre: Entre Tanto 🆕
     imagen: entretanto.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Tequila blanco Cazadores, Oleo de Kumquat,Sirope de Rooibos, Lima, Bitter de Lavanda. 
     alergenos: 
     txt_aclaraciones:  
@@ -971,9 +971,9 @@ items:
     pvp_terraza: 8€
 
 
-  - nombre: Hasta pronto
+  - nombre: Hasta pronto 🆕
     imagen: hastapronto.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Hendricks gin Sirope de Verde (Manzana, Pepino y Menta), Lima y Ginger beer
     alergenos: "*Huevo*"
     txt_aclaraciones: Refrescante Cocktail con la famosa gin de Pepino (Refrescante y Delicioso) 
@@ -985,7 +985,8 @@ items:
     pvp_terraza: 8€
 
 
-  - nombre: Dark Soul
+  - nombre: Dark Soul (fuera de temporada)
+    disponible: false
     imagen: 308.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Bulleit Bourbon, Puré de Melocotón en vino, Zumo de Naranja y Bitter de Melocotón.
