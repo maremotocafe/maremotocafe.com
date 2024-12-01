@@ -289,7 +289,7 @@ items:
     pvp_terraza: 5,5€
 
   - nombre: Coffee Cream Baileys ☕
-    imagen: 309.jpg
+    imagen: baileyscream.jpeg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso con Cacao, Nata y Crema de licor a elegir
     alergenos: "*Leche*"
@@ -371,8 +371,8 @@ items:
     imagen_pequenya: portadates_small.png
     categorias: ["Cafés y Tés" , "Infusiones"] 
 
-  - nombre: Golden Milk ☕ (Fuera de Temporada)
-    disponible: false
+  - nombre: Golden Milk ☕
+    disponible: true
     imagen: goldenmilk.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Reconfortante bebida caliente a base de Leche de Avena, Cúrcuma, Clavo, Canela, Jengibre, Pimienta y Sirope de Arce.
@@ -943,6 +943,47 @@ items:
     edul_gr:
     pvp_local: 7,5€
     pvp_terraza: 8€
+
+  - nombre: Fernet Sour
+    imagen: fernetsour.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    ingredientes: Fernet Branca, Lima, Cordial de Mandarina, Bitter de Chocolate y Canela y clara de huevo.
+    alergenos: "*Huevo*"
+    txt_aclaraciones: Cocktail de caracter amargo con base de Fernet (El destilado preferido por los Argentinos) 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 14,40%
+    vol_ml: 175 ml
+    edul_gr:
+    pvp_local: 7,5€
+    pvp_terraza: 8€
+
+  - nombre: Entre Tanto 
+    imagen: entretanto.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    ingredientes: Tequila blanco Cazadores, Oleo de Kumquat,Sirope de Rooibos, Lima, Bitter de Lavanda. 
+    alergenos: 
+    txt_aclaraciones:  
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp_local: 7,5€
+    pvp_terraza: 8€
+
+
+  - nombre: Hasta pronto
+    imagen: hastapronto.jpeg
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    ingredientes: Hendricks gin Sirope de Verde (Manzana, Pepino y Menta), Lima y Ginger beer
+    alergenos: "*Huevo*"
+    txt_aclaraciones: Refrescante Cocktail con la famosa gin de Pepino (Refrescante y Delicioso) 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp_local: 7,5€
+    pvp_terraza: 8€
+
 
   - nombre: Dark Soul
     imagen: 308.jpg
@@ -2308,8 +2349,8 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€ 
 
-  - nombre: Miyako  
-    disponible: true
+  - nombre: Miyako  (fuera de temporada)
+    disponible: false
     imagen: miyako.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Ginebra Gin-Za, Sirope de Mandarina, Zumo Nat de Mandarina, Sirope de Cardamomo, Sirope de Romero, Limoncello Pallini, Campari y Clara de huevo pasteurizada
