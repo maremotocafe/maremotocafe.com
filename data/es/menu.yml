@@ -117,8 +117,8 @@ items:
     alergenos: "*leche*"
     txt_temporal:
     grad_alcoholica:
-    pvp_local: 2,5€
-    pvp_terraza: 3€
+    pvp_local: 2,5€ A partir de las 22:30 3,50€
+    pvp_terraza: 3€ A partir de las 22:30 3,50€
 
 
   - nombre: Café de Especialidad ☕   
@@ -142,8 +142,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 2,5€
-    pvp_terraza: 3€
+    pvp_local: 2,5€ A partir de las 22.30 3,50€
+    pvp_terraza: 3€ A partir de las 22.30 3,50€
 
   - nombre: Vienés
     imagen: 281.jpg
@@ -155,8 +155,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr: 14gr Azúcar moreno
-    pvp_local: 4€
-    pvp_terraza: 4,5€
+    pvp_local: 4,5€
+    pvp_terraza: 5€
 
   - nombre: Capuccino Clásico ☕
     imagen: 132.jpg
@@ -169,8 +169,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 2,25€ (A partir de las 22:30) 2,75€
-    pvp_terraza: 2,75€ 
+    pvp_local: 2,80€ (A partir de las 22:30) 3,50€
+    pvp_terraza: 3,30€ (a partir de las 22:30 3,50€) 
 
   - nombre: Frapuccino ❄
     imagen: 196.jpg
@@ -182,8 +182,8 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 3,75€
-    pvp_terraza: 4,25€
+    pvp_local: 4€
+    pvp_terraza: 4,50€
 
 
   - nombre: Cold Brew y Cold Brew Latte ❄  (Fuera de Temporada)
@@ -210,8 +210,8 @@ items:
     grad_alcoholica: 3,80%
     vol_ml:
     edul_gr:
-    pvp_local: 5€
-    pvp_terraza: 5,5€
+    pvp_local: 5,50€
+    pvp_terraza: 6€
 
   - nombre: Té de Frutas del Bosque ☕
     imagen: 192.jpg
@@ -235,7 +235,9 @@ items:
      Elige entre Avellana*, Vainilla, Canela, Cookie o Tiramisú.
 
      Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja.
-
+    pvp_local: 3€ A partir de las 22:30 3,50€
+    pvp_terraza: 3,50€ 
+        
   - nombre: Bombón Licor ☕
     imagen: 370.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
@@ -246,8 +248,8 @@ items:
     grad_alcoholica: 10,50%
     vol_ml:
     edul_gr:
-    pvp_local: 3,75€
-    pvp_terraza: 4,25€
+    pvp_local: 4€
+    pvp_terraza: 4,50€
 
   - nombre: Bombón Licor Limón 🍋 ☕
     imagen: 302.jpg
@@ -272,8 +274,8 @@ items:
     grad_alcoholica: 9,50%
     vol_ml:
     edul_gr:
-    pvp_local: 5€
-    pvp_terraza: 5,5€
+    pvp_local: 5,5€
+    pvp_terraza: 6€
 
   - nombre: Coffee Licor ☕
     imagen: 310.jpg
@@ -285,8 +287,8 @@ items:
     grad_alcoholica: 9,50%
     vol_ml:
     edul_gr:
-    pvp_local: 5€
-    pvp_terraza: 5,5€
+    pvp_local: 5,5€
+    pvp_terraza: 6€
 
   - nombre: Coffee Cream Baileys ☕
     imagen: baileyscream.jpeg
@@ -298,8 +300,8 @@ items:
     grad_alcoholica: 4,10%
     vol_ml:
     edul_gr:
-    pvp_local: 5€
-    pvp_terraza: 5,5€
+    pvp_local: 5,50€
+    pvp_terraza: 6€
 
   - nombre: Quemadillo de Rón ☕
     imagen: 387.jpg
@@ -311,11 +313,11 @@ items:
     grad_alcoholica: 5,50%
     vol_ml:
     edul_gr:
-    pvp_local: 5€
-    pvp_terraza: 5,5€
+    pvp_local: 5,5€
+    pvp_terraza: 6€
 
   - nombre: Mexican Coffee ☕
-    imagen: 2a.jpg
+    imagen: mexicancoffee.jpeg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso, Tequila Reposado macerado con Café y Canela, Nata, Orgeat, Cacao y Azúcar moreno
     alergenos: "*Leche*"
@@ -324,8 +326,8 @@ items:
     grad_alcoholica: 10,50%
     vol_ml:
     edul_gr:
-    pvp_local: 5€
-    pvp_terraza: 5,5€
+    pvp_local: 5,5€
+    pvp_terraza: 6€
 
   - nombre: Frappé al Caramelo ❄
     imagen: 196.jpg
@@ -337,10 +339,10 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 3,75€
-    pvp_terraza: 4,25€
+    pvp_local: 4€
+    pvp_terraza: 4,50€
 
-  - nombre: Frappé Rón Cream ❄
+  - nombre: Frappé Rón Cream ❄ (No disponible temporalmente)
     imagen: 196.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
     ingredientes: Café, Barceló Cream, Crema de Leche y topping de Caramelo
@@ -350,10 +352,10 @@ items:
     grad_alcoholica: 3,80%
     vol_ml:
     edul_gr:
-    pvp_local: 5€
-    pvp_terraza: 5,5€
+    pvp_local: 5,5€
+    pvp_terraza: 6€
 
-  - nombre: Frappé Mozart ❄
+  - nombre: Frappé Mozart ❄ (No disponible temporalmente)
     imagen: 196.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
     ingredientes: Café, Licor Mozart, Cacao, Crema de Leche y topping de Chocolate
@@ -363,22 +365,22 @@ items:
     grad_alcoholica: 3,80%
     vol_ml:
     edul_gr:
-    pvp_local: 5€
-    pvp_terraza: 5,5€
+    pvp_local: 5,50€
+    pvp_terraza: 6€
 
   - nombre: Carta de Infusiones 
-    imagen: cartates.png
+    imagen: cartadeinfusiones.jpg
     imagen_pequenya: portadates_small.png
     categorias: ["Cafés y Tés" , "Infusiones"] 
 
   - nombre: Golden Milk ☕
-    disponible: true
+    disponible: false
     imagen: goldenmilk.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Reconfortante bebida caliente a base de Leche de Avena, Cúrcuma, Clavo, Canela, Jengibre, Pimienta y Sirope de Arce.
     alergenos:
     txt_aclaraciones:
-    txt_temporal: Disponible de Noviembre a Marzo
+    txt_temporal: Disponible de Noviembre a Enero
     pvp_local: 2,80€ (3,50 Noche a partir de 22:30)
     pvp_terraza: 3,30€ (3,50 Noche a partir de 22:30)
 
