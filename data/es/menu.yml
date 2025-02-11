@@ -959,19 +959,6 @@ items:
     pvp_local: 7,5€
     pvp_terraza: 8€
 
-  - nombre: Entre Tanto 🆕
-    imagen: entretanto.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Tequila blanco Cazadores, Oleo de Kumquat,Sirope de Rooibos, Lima, Bitter de Lavanda. 
-    alergenos: 
-    txt_aclaraciones:  
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr:
-    pvp_local: 7,5€
-    pvp_terraza: 8€
-
 
   - nombre: Hasta pronto 🆕
     imagen: hastapronto.jpeg
@@ -2254,20 +2241,20 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,5€
 
-  - nombre: Tangerine Vintage 🍊🆕 (Fuera de temporada)
-    prioridad: false
-    disponible: false
-    imagen: tangerine.jpg
+  - nombre: Carmen Beach
+    prioridad: true
+    disponible: true
+    imagen: carmenbeach.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: JB Botanico, Zumo de mandarina, Sirope de frambuesa, Te de Vainilla y Pedro Ximenez.
-    alergenos: "*Sulfitos*"
-    txt_aclaraciones: Cocktail de temporada!
-    txt_temporal: Disponible de Octubre a Marzo.
+    ingredientes: Tequila Patron Silver, Sirope de Rooibos,Zumo de lima, Oleo de Kumquat, Bitter de lavanda
+    alergenos: 
+    txt_aclaraciones: Delicioso y Original Cocktail Premium ispirado en Mexico y su famosa playa del Carmen.
+    txt_temporal: Disponible todo el año
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€ 
+    pvp_local: 12€
+    pvp_terraza: 12,50€ 
 
   - nombre: Dewars Summer 🌞  
     prioridad: true
@@ -2340,6 +2327,7 @@ items:
 
   - nombre: Tropea Beach 
     disponible: true
+    prioridad: true
     imagen: tropeabeach.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
