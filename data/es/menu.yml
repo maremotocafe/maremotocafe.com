@@ -409,7 +409,7 @@ items:
 
      Sin Guten ni Colorantes artificiales.
 
-     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de tu batido.
+     Disponemos de leche Sin Lactosa, Avena o Soja para la elaboración de tu batido.
 
      Todos los Batidos incluyen Nata y Toppings, si no desea Nata comuniqueló a su camarero.
     txt_temporal: Disponible todo el año.
@@ -426,7 +426,7 @@ items:
     alergenos: "*Leche*"
     txt_aclaraciones: >
      A elegir entre; Coco, Plátano, Fresa, Frambuesa, Arándano Azul o Cereza.
-     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de su Smoothie.
+     Disponemos de leche Sin Lactosa, Avena o Soja para la elaboración de su Smoothie.
     txt_temporal:
     grad_alcoholica:
     vol_ml:
@@ -440,7 +440,7 @@ items:
     ingredientes: Zumos de frutas o limonada, Puré de frutas y Hielo
     alergenos:
     txt_aclaraciones: >
-     A elegir entre; Maracuyá, Mango, Melocotón, Manzana Verde o Yuzu.
+     A elegir entre; Maracuyá, Mango, Melocotón o Yuzu.
     txt_temporal:
     grad_alcoholica:
     vol_ml:
@@ -455,7 +455,7 @@ items:
     alergenos: "*Leche*"
     txt_aclaraciones: >
      A elegir entre; Frambuesa con Mora, Fresa con Plátano o Frambuesa y Coco.
-     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de su Smoothie.
+     Disponemos de leche Sin Lactosa, Avena o Soja para la elaboración de su Smoothie.
     txt_temporal:
     grad_alcoholica:
     vol_ml:
@@ -685,8 +685,8 @@ items:
     pvp_local: 6,5€
     pvp_terraza: 7€
 
-  - nombre: Frescor Cálido 
-    disponible: true
+  - nombre: Frescor Cálido (fuera de temporada)
+    disponible: false
     imagen: 311.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo Natural de Granada, Sirope de Especias, Zumo de Limón, Canela y Soda.
@@ -706,7 +706,7 @@ items:
     alergenos:
     txt_aclaraciones: Version tuneada del famoso cocktail Sin Alcohol Limon, lima & Bitter típico de las maravillosas playas australianas. Blondi Beach es nuestra favorita. Este Cocktail contiene un pequeño porcentaje de alcohol debido a la Angostura de la cual utilizamos 4 gotas.
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 0,1%
+    grad_alcoholica: Una miaja 0,1%
     vol_ml:
     edul_gr:
     pvp_local: 6,5€
@@ -803,7 +803,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Honey & Mint
+  - nombre: Honey & Mint 
     imagen: 278.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: J & B Honey, Lima, Manzana Granny Smith y Azúcar
@@ -1498,7 +1498,7 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,5€
 
-  - nombre: Finlandia & Schweppes Hibiscus 🌺 
+  - nombre: Sky & Schweppes Hibiscus 🌺 
     imagen: finlandia.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Con Twist de Naranja.
@@ -1645,19 +1645,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Larios 150 Aniversario & Fever Tre Mediterranean
-    imagen: 234.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Versión superpremium de Larios. Gran expresión de Enebro y matices mediterraneos.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,40%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
-
   - nombre: Bulldog & Fever Tree
     imagen: bulldog.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1723,8 +1710,7 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
-
-  - nombre: Tanqueray Ten & Fever Tree
+ - nombre: Tanqueray Ten & Fever Tree
     imagen: tanquerayten.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
@@ -1777,19 +1763,6 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
-  - nombre: Cubical & Fever Tree 🍋
-    imagen: cubical.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra inglesa que se caracteriza por el uso de mano de buda, un cítrico oriental menos amargo y más aromático que la mayoría de los cítricos.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
-
   - nombre: Sipsmith & Fever Tree
     imagen: 241.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1818,19 +1791,6 @@ items:
     pvp_terraza: 8,50€
 
 
-  - nombre: Gin Loe & 1724 tonic water
-    imagen: ginloe.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra Ecológica procedente de formentera elaborada con agua del mediterraneo. También se caracteriza por el uso de aloe vera entre sus botánicos.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
-
   - nombre: G'Vine Floraisson & 1724 Tonic Water 🍇
     prioridad: true
     imagen: gvine.jpeg
@@ -1857,19 +1817,6 @@ items:
     edul_gr:
     pvp_local: 8,5€
     pvp_terraza: 9€
-
-  - nombre: Gin del Professore Madame & Fever Tree
-    imagen: madamme.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra italiana aromática, delicada y especiada con un toque dulce.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,60%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 9€
-    pvp_terraza: 9,5€
 
   - nombre: Gordon`s & 1724 tonic water 🍓
     imagen: gordonspink.jpeg
@@ -2130,15 +2077,6 @@ items:
     pvp_local: 8,50€
     pvp_terraza: 9€
 
-  - nombre: Café o té + Tarta del día
-    prioridad: true
-    imagen: tarta.png
-    categorias: ["Ofertas Destacadas" , "Día" , "Tarde"]
-    alergenos:
-    txt_aclaraciones: Oferta Válida de 7 a 22:30h
-    pvp_local: 3,95€
-    pvp_terraza: 4,35€
-
   - nombre: Desayunos
     imagen: cartadesayunos.png
     imagen_pequenya: portadadesayunos_small.png
@@ -2172,21 +2110,6 @@ items:
     txt_aclaraciones: Oferta válida de 7 a 22:30h
     pvp_local: 3,5€
     pvp_terraza: 4€
-
-
-  - nombre: Old Memories (No disponible)
-    disponible: False
-    imagen: 361.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Whisky Talisker, Zumo de Pomelo, Sirope de Canela, bitter Jerry thomas y Clara de huevo.
-    alergenos: "*Huevo*"
-    txt_aclaraciones: 
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica:
-    vol_ml:
-    edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
 
   - nombre: Grazie Mille 
     disponible: true
@@ -2302,8 +2225,8 @@ items:
 
 
   - nombre: Isla Blanca 💝💕🥰  
-    prioridad: true
-    disponible: true
+    prioridad: false
+    disponible: false
     imagen: islablanca.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Licor de Pino Mugo, Crema de Violetas, Zumo de Limón y Sirope homemade de Flores y Semilla de Cilantro.
@@ -2326,8 +2249,8 @@ items:
     pvp_terraza: 7,50€ + Café 8,50€
 
   - nombre: Tropea Beach 
-    disponible: true
-    prioridad: true
+    disponible: false
+    prioridad: false
     imagen: tropeabeach.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
@@ -2383,19 +2306,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-
-  - nombre: Star of Bombay & Schweppes Toque de Lima
-    imagen: bombaystar.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Servida con Twist de Lima
-    alergenos:
-    txt_aclaraciones:  Nueva y deliciosa dimensión a la receta original. Las semillas de ambreta proceden exclusivamente de Ecuador. La piel de naranja bergamota secada lentamente se recolecta a mano en Calabria.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 9,5%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
 
   - nombre: Bombay S. Premier Cru Murcian Lemon & Schweppes Toque de Lima
     imagen: bombaymurcian.jpeg
