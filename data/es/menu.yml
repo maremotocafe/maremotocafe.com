@@ -1710,7 +1710,7 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
- - nombre: Tanqueray Ten & Fever Tree
+  - nombre: Tanqueray Ten & Fever Tree
     imagen: tanquerayten.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
