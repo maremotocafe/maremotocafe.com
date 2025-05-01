@@ -399,7 +399,7 @@ items:
     pvp_local: 3,50€
     pvp_terraza: 4€
 
-  - nombre: Batidos de Sabores.   ¡Nuevos Sabores!
+  - nombre: Batidos de Sabores.  
     imagen: 5a.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Batidos"]
     ingredientes: Leche, Fruta liofilizada, fructosa y Hielo.
@@ -1915,39 +1915,19 @@ items:
     pvp_local: 9€
     pvp_terraza: 9,5€
 
-  - nombre: Carta de Bocadillos 🌭
+  - nombre: Carta de Bocadillos y Sándwiches 🌭
     imagen: cartabocadillos.png
     imagen_pequenya: portadabocadillos_small.png
     categorias: ["Bocadillos, Sándwich y Tostadas"]
 
-  - nombre: Carta de Sándwiches 🥪
-    imagen: cartasandwich.png
-    imagen_pequenya: portadasandwich_small.png
-    categorias: ["Bocadillos, Sándwich y Tostadas"]
-
   - nombre: Carta de Tostadas y Picoteo 
     imagen: cartatostadas.png
     imagen_pequenya: portadatostadas_small.png
     categorias: ["Bocadillos, Sándwich y Tostadas"]
-
-  - nombre: Carta de Tostadas y Picoteo 
-    imagen: cartatostadas.png
-    imagen_pequenya: portadatostadas_small.png
-    categorias:  ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Almuerzos 🍳 🥓
     imagen: cartaalmuerzos.png
     imagen_pequenya: portadaalmuerzos_small.png
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-
-  - nombre: Zumos Naturales 🍊🍏🥕🍎
-    imagen: cartazumos.png
-    imagen_pequenya: portadazumos_small.png
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-
-  - nombre: Repostería Casera 🍪
-    imagen: cartareposteria.png
-    imagen_pequenya: portadareposteria_small.png
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Café + Churros + Zumo Natural
