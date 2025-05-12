@@ -7,10 +7,6 @@ languageCode = "es"
 enableRobotsTXT = true
 enableGitInfo = false
 
-# post pagination
-paginate = "6"
-# post excerpt
-summaryLength = "15"
 # disqus short name
 disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language
