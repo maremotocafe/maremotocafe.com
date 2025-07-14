@@ -593,7 +593,7 @@ items:
     pvp_local: 3,25€
     pvp_terraza: 3,75€
 
-  - nombre: Limonada de Jengigre y Pomelo
+  - nombre: Limonada de Pomelo y Menta
     imagen: 272.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Limón, Zumo de Pomelo Natural, Jengibre fresco, Azucar Integral de caña, y Menta fresca.
@@ -606,8 +606,9 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: 🍉 Limonada de Sandía y Menta. (Fuera de temporada)
-    disponible: false
+  - nombre: 🍉 Limonada de Sandía y Menta.
+    disponible: true
+    prioridad: true
     imagen: 270.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
@@ -961,10 +962,11 @@ items:
 
 
   - nombre: Hasta pronto 🆕
+    prioridad: true 
     imagen: hastapronto.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Hendricks gin Sirope de Verde (Manzana, Pepino y Menta), Lima y Ginger beer
-    alergenos: "*Huevo*"
+    alergenos: 
     txt_aclaraciones: Refrescante Cocktail con la famosa gin de Pepino (Refrescante y Delicioso) 
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 
@@ -1044,9 +1046,9 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€ 
 
-  - nombre: Tangerine Road 
-    prioridad: true
-    disponible: true
+  - nombre: Tangerine Road (Fuera de temporada)
+    prioridad: false
+    disponible: false
     imagen: tangerineroad.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Nordés Gin, Sirope de Mandarina y Romero, Zumo de Mandarina, Licor de Pino, Menta y Bitter de Lavanda. 
@@ -1763,14 +1765,15 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
-  - nombre: Sipsmith & Fever Tree
-    imagen: 241.jpg
+  - nombre: Martin Miller´s Summerful 
+    prioridad: true 
+    imagen: martinmillerssummerful.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:
     alergenos:
-    txt_aclaraciones: Ginebra londinense de carácter clásico en la que destaca el enebro. Aroma cítrico y ligera dulzura.
+    txt_aclaraciones: Edición especial de la Mitica ginebra. Se aprecian notas florales; también a hierbas, Lavanda, Salvia, toques de Romero inglés y Tomillo ártico de Islandia
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8,30%
+    grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
     pvp_local: 8,5€
@@ -1818,6 +1821,19 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€
 
+  - nombre: Tanqueray Lovage 🆕
+    prioridad: true
+    imagen: tanqueraylovage.jpeg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Inspirada en una receta original creada por Tanqueray en 1832, la nueva expresión es un “giro salado” en la expresión clásica de Tanqueray, gracias a la adición de la hierba de jardín inglesa, lovage.
+    alergenos:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 9,5%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 9€
+    pvp_terraza: 9,5€
+
   - nombre: Gordon`s & 1724 tonic water 🍓
     imagen: gordonspink.jpeg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1858,7 +1874,7 @@ items:
     pvp_terraza: 8,5€
 
 
-  - nombre: Pink Velvet Gin 🍓🆕
+  - nombre: Pink Velvet Gin 🍓
     prioridad: true
     imagen: pinkvelvet.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1902,18 +1918,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€   
 
-  - nombre: Brockman`s & Fever Tree 
-    imagen: brockmans.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Elaborada con arándanos y moras entre otros botánicos. destaca por su elegancia y suavidad.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 9€
-    pvp_terraza: 9,5€
+
 
   - nombre: Carta de Bocadillos y Sándwiches 🌭
     imagen: cartabocadillos.png
@@ -2003,8 +2008,9 @@ items:
     pvp_local: 3€ + Zumo 5€
     pvp_terraza: 3,5€ + Zumo 5,5€
 
-  - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
-    disponible: false
+  - nombre: 🍒 Gewürztraminer & Cherries 
+    disponible: true
+    prioridad: true
     imagen: 300.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda .
