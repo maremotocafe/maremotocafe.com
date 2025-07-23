@@ -114,7 +114,7 @@ items:
     imagen: vegechips.png
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
-    alergenos: "*Apio.*"
+    alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
@@ -2242,7 +2242,7 @@ items:
     imagen: vegechips.png
     categorias: ["Ofertas Destacadas" , "Tarde" , "Noche"]
     ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
-    alergenos: "*Apio.*"
+    alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
