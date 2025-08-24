@@ -122,6 +122,65 @@ items:
     pvp_local: 2€
     pvp_terraza: 2€
 
+  - nombre: Veggie Chips  
+    imagen: vegechips.png
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp_local: 2€
+    pvp_terraza: 2€
+
+  - nombre: Veggie Chips  
+    imagen: vegechips.png
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp_local: 2€
+    pvp_terraza: 2€
+
+  - nombre: Veggie Chips  
+    imagen: vegechips.png
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp_local: 2€
+
+  - nombre: Veggie Chips  
+    imagen: vegechips.png
+    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp_local: 2€
+
+  - nombre: Veggie Chips  
+    imagen: vegechips.png
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp_local: 2€
+
+
+
 
   - nombre: Café Bombón
     imagen: 261.jpg
@@ -780,7 +839,7 @@ items:
 
   - nombre: Mojito Moreno
     imagen: 275.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: []
     ingredientes: Ron Añejo especiado, Lima, Hierbabuena, Azúcar moreno, Angostura y Soda
     alergenos:
     txt_aclaraciones:
