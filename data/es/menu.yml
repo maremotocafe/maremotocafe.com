@@ -1928,7 +1928,7 @@ items:
 
   - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
     disponible: false
-    prioridad: true
+    prioridad: false
     imagen: 300.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda .
