@@ -73,7 +73,7 @@ categorias:
         - nombre: Cafés sin Alcohol
         - nombre: Cafés Fríos
         - nombre: Infusiones
-  - nombre: Cartas de Rones y Whiskies
+  - nombre: Rones, Whiskies y licores
     icono: 
     color: "#d1b9e1"
   - nombre: Carta de licores 
@@ -113,7 +113,7 @@ items:
   - nombre: Veggie Chips  
     imagen: vegechips.png
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
-    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
@@ -125,7 +125,7 @@ items:
   - nombre: Veggie Chips  
     imagen: vegechips.png
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
-    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
@@ -137,7 +137,7 @@ items:
   - nombre: Veggie Chips  
     imagen: vegechips.png
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
@@ -149,7 +149,7 @@ items:
   - nombre: Veggie Chips  
     imagen: vegechips.png
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
@@ -157,10 +157,43 @@ items:
     edul_gr: 
     pvp_local: 2€
 
+  - nombre: Carta de Rones  
+    imagen: portadaderones.png
+    categorias: ["Rones, Whiskies y Licores"]
+    ingredientes: 
+    alergenos: 
+    txt_temporal: 
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp_local:
+
+  - nombre: Carta de Whiskies  
+    imagen: portadadewhiskies.png
+    categorias: ["Rones, Whiskies y Licores"]
+    ingredientes: 
+    alergenos: 
+    txt_temporal: 
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp_local:
+    
+  - nombre: Carta de Licores  
+    imagen: portadadelicores.png
+    categorias: ["Rones, Whiskies y Licores"]
+    ingredientes: 
+    alergenos: 
+    txt_temporal: 
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp_local:     
+
   - nombre: Veggie Chips  
     imagen: vegechips.png
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
-    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
@@ -171,7 +204,7 @@ items:
   - nombre: Veggie Chips  
     imagen: vegechips.png
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
-    ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
