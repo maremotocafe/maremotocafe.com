@@ -58,7 +58,7 @@ categorias:
         - nombre: Granizados
         - nombre: Batidos
         - nombre: Healthy Cocktails
-  - nombre: Ofertas Destacadas
+  - nombre: Promociones y Ofertas
     icono: las la-certificate
     color: "#dbd9a7"
     subcategorias:
@@ -73,11 +73,11 @@ categorias:
         - nombre: Cafés sin Alcohol
         - nombre: Cafés Fríos
         - nombre: Infusiones
-  - nombre: Desayunos, Almuerzos y Zumos
-    icono: las la-bacon
+  - nombre: Carta de Rones y Whiskies
+    icono: 
     color: "#d1b9e1"
-  - nombre: Bocadillos, Sándwich y Tostadas
-    icono: las la-hamburger
+  - nombre: Carta de licores 
+    icono: 
     color: "#f0c0c0"
 
 items:
@@ -193,17 +193,6 @@ items:
     pvp_terraza: 3€ A partir de las 22:30 3,50€
 
 
-  - nombre: Café de Especialidad ☕   
-    imagen: especialidad.png
-    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
-    ingredientes: 
-    txt_aclaraciones: Café de una calidad extraordinaria por su cuidadosa selección de granos. Para recibir esta denominación, el café ha tenido que obtener 80 o más puntos en una categoría que llega hasta los 100 puntos.
-    alergenos:
-    txt_temporal: 
-    grad_alcoholica:
-    pvp_local: +0,20€ Sobre la tarifa vigente en el momento del servicio.
-    pvp_terraza:
-
   - nombre: Café Bombón Limón 🍋
     imagen: 301.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
@@ -257,20 +246,6 @@ items:
     pvp_local: 4€
     pvp_terraza: 4,50€
 
-
-  - nombre: Cold Brew y Cold Brew Latte ❄  (Fuera de Temporada)
-    disponible: false
-    imagen: coldbrew.png
-    categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés Fríos"]
-    ingredientes: Cafe 100% arabica infusionado en frio 16 Horas. Servimos con Menta y Naranja. La opción Latte la servimos con crema de Leche Fresca emulsionada en frío y un toque de Canela. 
-    alergenos: "*Leche*"
-    txt_aclaraciones: El Cold Brew consigue una bebida muy rica en matices, con menor acidez y sin el amargor que tantos detractores tiene. Si lo deseas podemos añadirle un toque de Azúcar de lima.
-    txt_temporal: Disponible todo el año
-    grad_alcoholica: 0%
-    vol_ml:
-    edul_gr:
-    pvp_local: Cold Brew 2,20€ Cold Brew Latte 2,40€ 
-    pvp_terraza: Cold Brew 2,70€ Cold Brew Latte 2,90€     Pvp Noche (Viernes, Sábados y vísperas desde las 22:30) Cold Brew 3,50€ Cold Brew Latte 3,80€
 
   - nombre: Frappé de Baileys ❄
     imagen: 196.jpg
@@ -375,7 +350,7 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: Quemadillo de Rón ☕
+  - nombre: Quemadillo de Rón ☕ (No disponible temporalmente)
     imagen: 387.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Ron flambeado con granos de café y corteza de naranja, Licor 43, Canela y Crema de leche.
@@ -477,7 +452,7 @@ items:
     ingredientes: Leche, Fruta liofilizada, fructosa y Hielo.
     alergenos: "*Leche*"
     txt_aclaraciones: >
-     A elegir entre Chocolate, Chocolate Blanco, Vainilla, Naranja con Canela, Café o Caramelo
+     A elegir entre Chocolate, Fresa, Frambuesa y Mora, Arándanos, Coco y Menta, Naranja y Canela, Maracuyá, Café o Caramelo
 
      Sin Guten ni Colorantes artificiales.
 
@@ -526,7 +501,7 @@ items:
     ingredientes: Leche, Puré de Frutas y Hielo.
     alergenos: "*Leche*"
     txt_aclaraciones: >
-     A elegir entre; Frambuesa con Mora, Fresa con Plátano o Frambuesa y Coco.
+     A elegir entre; Fresa con Plátano, Frambuesa con Coco. o Coco con Plátano y Menta
      Disponemos de leche Sin Lactosa, Avena o Soja para la elaboración de su Smoothie.
     txt_temporal:
     grad_alcoholica:
@@ -1192,7 +1167,7 @@ items:
   - nombre: Refujito de Ágave
     imagen: 200.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Tequila el Jimador, Pure de Maracuyá, Zumo de Lima y Sirope de Ágave.
+    ingredientes: Tequila, Pure de Maracuyá, Zumo de Lima y Sirope de Ágave.
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
@@ -1285,7 +1260,7 @@ items:
   - nombre: Margarita Blue Frozeen
     imagen: 303.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Frozeen"]
-    ingredientes: Tequila El Jimador, Curaçao azul, Zumo de Limón y Azúcar.
+    ingredientes: Tequila, Curaçao azul, Zumo de Limón y Azúcar.
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
@@ -1350,9 +1325,9 @@ items:
   - nombre: Paloma
     imagen: 382.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
-    ingredientes: Tequila el Jimador, Mixer de Pomelo y Zumo de Lima.
+    ingredientes: Tequila, Mixer de Pomelo y Zumo de Lima.
     alergenos:
-    txt_aclaraciones:
+    txt_aclaraciones: Pruébalo con tequila Patron Reposado +2€
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 9%
     vol_ml: 220 ml
@@ -1572,19 +1547,6 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,5€
 
-  - nombre: Sky & Schweppes Hibiscus 🌺 
-    imagen: finlandia.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Con Twist de Naranja.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,5€
-    pvp_terraza: 8€
-
   - nombre: Ciroc & Schweppes Toque de Lima
     imagen: ciroc.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1638,7 +1600,7 @@ items:
     pvp_local: 9€
     pvp_terraza: 9,50€
 
-  - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana)🍏
+  - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana y Albahaca)🍏
     prioridad: true
     imagen: 351.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1674,19 +1636,6 @@ items:
     txt_aclaraciones:
     txt_temporal:
     grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,5€
-    pvp_terraza: 8€
-
-  - nombre: Xoringer & Schweppes Toque de Lima
-    imagen: xoringer.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra menorquina elaborada con alcohol vinico. Sabor suave y mediterraneo.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 7,60%
     vol_ml: 250 ml
     edul_gr:
     pvp_local: 7,5€
@@ -1906,19 +1855,6 @@ items:
     pvp_local: 9€
     pvp_terraza: 9,5€
 
-  - nombre: Gordon`s & 1724 tonic water 🍓
-    imagen: gordonspink.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra británica elaborada con frambuesas y grosellas naturales.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 7,50%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 7,5€
-    pvp_terraza: 8€
-
   - nombre: Puerto de Indias & 1724 tonic water 🍓
     imagen: puertoindias.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1944,7 +1880,6 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,5€
-
 
   - nombre: Pink Velvet Gin 🍓
     prioridad: true
@@ -1991,97 +1926,8 @@ items:
     pvp_terraza: 8,5€   
 
 
-
-  - nombre: Carta de Bocadillos y Sándwiches 🌭
-    imagen: cartabocadillos.png
-    imagen_pequenya: portadabocadillos_small.png
-    categorias: ["Bocadillos, Sándwich y Tostadas"]
-
-  - nombre: Carta de Tostadas y Picoteo 
-    imagen: cartatostadas.png
-    imagen_pequenya: portadatostadas_small.png
-    categorias: ["Bocadillos, Sándwich y Tostadas"]
-
-  - nombre: Almuerzos 🍳 🥓
-    imagen: cartaalmuerzos.png
-    imagen_pequenya: portadaalmuerzos_small.png
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-
-  - nombre: Café + Churros + Zumo Natural
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3€ + Zumo 5€
-    pvp_terraza: 3,5€ + Zumo 5,5€
-
-  - nombre: Café + Tostada + Zumo Natural
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3,25€ + Zumo 5€
-    pvp_terraza: 3,75€ + Zumo 5,5€
-
-  - nombre: Café + Croissant Mixto
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta Válida de 7 a 16h
-    pvp_local: 4€
-    pvp_terraza: 4,5€
-
-  - nombre: Tortitas 
-    imagen: tortitas.png
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones:  Disponible de 7 a 16h
-    pvp_local: 3,75€
-    pvp_terraza: 3,75€
-
-  - nombre: Café + Croissant Plancha + Zumo Natural
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3,5€ + Zumo 5€
-    pvp_terraza: 4€ + Zumo 5,5€
-
-  - nombre: Sándwich Mixto + Zumo Natural
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 16h
-    pvp_local: 5€ Con rodajas de tomate 5,5€
-    pvp_terraza: 5,5€ Con rodajas de tomate 6€
-
-  - nombre: Café + Repostería + Zumo Natural
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 2,75€ + Zumo 4,25€
-    pvp_terraza: 3,25€ + Zumo 4,75€
-
-  - nombre: Café + Bizcocho Casero + Zumo Natural
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3,5€ + Zumo 5€
-    pvp_terraza: 4€ + Zumo 5,5€
-
-  - nombre: Café + Cookie Casera
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3€ + Zumo 5€
-    pvp_terraza: 3,5€ + Zumo 5,5€
-
   - nombre: 🍒 Gewürztraminer & Cherries 
-    disponible: true
+    disponible: false
     prioridad: true
     imagen: 300.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2109,19 +1955,6 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€
 
-  - nombre: Gin Roku & Schweppes Toque de Lima
-    imagen: 323.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:
-    alergenos:
-    txt_aclaraciones: Ginebra artesanal japonesa muy fina y elegante que mezcla matices cítricos florales y especiados.
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250 ml
-    edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
-
   - nombre: Gin Fizz de Pomelo y Piña 🍍 
     imagen: 316.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2135,39 +1968,6 @@ items:
     pvp_local: 8,50€
     pvp_terraza: 9€
 
-  - nombre: Desayunos
-    imagen: cartadesayunos.png
-    imagen_pequenya: portadadesayunos_small.png
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-    alergenos:
-    txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
-
-  - nombre: Bocatín + Cañita/Vino + Café
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 3,75€ + Café 4,75€ 
-    pvp_terraza: 4,25€ + Café 5,25€ 
-
-
-  - nombre: Bocatín + Refresco
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 12:30h
-    pvp_local: 4€
-    pvp_terraza: 4,5€
-
-  - nombre: Chocolate con Churros
-    imagen: 75.jpg
-    categorias: ["Ofertas Destacadas" , "Día" , "tarde"]
-    alergenos:
-    txt_aclaraciones: Oferta válida de 7 a 22:30h
-    pvp_local: 3,5€
-    pvp_terraza: 4€
 
   - nombre: Grazie Mille 
     disponible: true
@@ -2227,7 +2027,7 @@ items:
     disponible: true
     imagen: carmenbeach.jpeg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Tequila Patron Silver, Sirope de Rooibos,Zumo de lima, Oleo de Kumquat, Bitter de lavanda
+    ingredientes: Tequila Patron Silver, Sirope de Rooibos, Zumo de lima, Oleo de Kumquat, Bitter de lavanda
     alergenos: 
     txt_aclaraciones: Delicioso y Original Cocktail Premium ispirado en Mexico y su famosa playa del Carmen.
     txt_temporal: Disponible todo el año
@@ -2282,7 +2082,7 @@ items:
     pvp_terraza: 9€ 
 
 
-  - nombre: Isla Blanca 💝💕🥰  
+  - nombre: Isla Blanca 💝💕🥰  (no disponible temporalmente)
     prioridad: false
     disponible: false
     imagen: islablanca.jpg
