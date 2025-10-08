@@ -73,7 +73,7 @@ categorias:
         - nombre: Cafés sin Alcohol
         - nombre: Cafés Fríos
         - nombre: Infusiones
-  - nombre: Carta de Rones y Whiskies
+  - nombre: Cartas de Rones y Whiskies
     icono: 
     color: "#d1b9e1"
   - nombre: Carta de licores 
@@ -1926,7 +1926,7 @@ items:
     pvp_terraza: 8,5€   
 
 
-  - nombre: 🍒 Gewürztraminer & Cherries 
+  - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
     disponible: false
     prioridad: true
     imagen: 300.jpg
