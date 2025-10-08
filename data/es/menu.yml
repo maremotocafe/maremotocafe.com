@@ -446,6 +446,19 @@ items:
     pvp_local: 3,50€
     pvp_terraza: 4€
 
+  - nombre: Iced Orange Matcha ❄ 🆕
+    imagen: icedorangematcha.jpeg
+    categorias: ["Cafés y Tés" , "Infusiones"]
+    ingredientes: Té Chai, Zumo de Narnja y Menta
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml:
+    edul_gr: Sin Azúcar
+    pvp_local: 3,50€
+    pvp_terraza: 4€
+
   - nombre: Batidos de Sabores.  
     imagen: 5a.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Batidos"]
