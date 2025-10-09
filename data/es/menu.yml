@@ -107,7 +107,7 @@ items:
     grad_alcoholica: 0%
     vol_ml: 300ml
     edul_gr: 0 gr Azucares añadidos 0 gr Edulcorantes artificiales.
-    pvp: 7€
+    pvp_local: 7€
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
