@@ -774,7 +774,7 @@ a:hover {
   /* Can be deactivated for wider buttons */
   flex-basis: 0;
   margin: 5px;
-  padding: 6px 10px;
+  padding: 10px 10px;
 
   font-size: 16px;
   color: #1d2024;
@@ -798,6 +798,10 @@ a:hover {
 .menu-filter > .btn-group > .btn > i {
   font-size: 25px;
   margin-right: 5px;
+}
+
+.menu-filter > .btn-group > .btn > span {
+  line-height: 1.2;
 }
 
 /* For items in the menu */

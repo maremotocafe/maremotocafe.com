@@ -136,7 +136,7 @@
                 {{/* Overridden automatic preview */}}
                 <img class="lozad img-fluid" data-src="{{ $preview.RelPermalink }}" alt="{{ .nombre }}">
               {{ else if (and (ne $image nil) (in $processableFormats $image.MediaType.SubType)) }}
-                <img class="lozad img-fluid" data-src="{{ ($image.Fit "465x350 jpg q100 Box").RelPermalink }}" alt="{{ .nombre }}">
+                <img class="lozad img-fluid" data-src="{{ ($image.Fit "664x500 jpg q95 Box").RelPermalink }}" alt="{{ .nombre }}">
               {{ else }}
                 {{/* Unprocessable image */}}
                 <img class="lozad img-fluid" data-src="{{ $image.RelPermalink }}" alt="{{ .nombre }}">

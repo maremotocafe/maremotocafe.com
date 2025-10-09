@@ -22,6 +22,7 @@ titulos_datos:
     grad_alcoholica: Graduación
     vol_ml: Volumen (ml)
     edul_gr: Edulcorantes (gr)
+    pvp: PVP
     pvp_local: PVP en local
     pvp_terraza: PVP en terraza
 iconos_datos:
@@ -32,6 +33,7 @@ iconos_datos:
     grad_alcoholica: las la-glass-martini
     vol_ml: las la-prescription-bottle
     edul_gr: las la-prescription-bottle
+    pvp: las la-money-bill-wave
     pvp_local: las la-money-bill-wave
     pvp_terraza: las la-money-bill-wave
 
@@ -40,16 +42,21 @@ icono_todo: las la-times
 color_todo: "#e4e8ec"
 color_bordes: "#c4cdd5"
 categorias:
-  - nombre: Cocktails & Drinks
+  - nombre: Cocktails
     icono: las la-cocktail
     color: "#a7dfda"
     subcategorias:
-        - nombre: Gin Tonic y Vodka Tonic
         - nombre: Mojitos Caipirinhas y Similares
         - nombre: Cocktails de Autor
         - nombre: Cocktails Frozeen
         - nombre: Cocktails Long Drinks
         - nombre: Cocktails Clásicos
+  - nombre: Gin Tonics
+    icono: las la-wine-glass-alt
+    color: "#f0c0c0"
+  - nombre: Rones, Whiskies y Licores
+    icono: las la-glass-whiskey
+    color: "#d1b9e1"
   - nombre: Smoothies, Healthy Drinks y Batidos
     icono: las la-blender
     color: "#97d295"
@@ -73,12 +80,6 @@ categorias:
         - nombre: Cafés sin Alcohol
         - nombre: Cafés Fríos
         - nombre: Infusiones
-  - nombre: Rones, Whiskies y licores
-    icono: 
-    color: "#d1b9e1"
-  - nombre: Carta de licores 
-    icono: 
-    color: "#f0c0c0"
 
 items:
   ### ÍTEM DE EJEMPLO ###
@@ -107,12 +108,12 @@ items:
     grad_alcoholica: 0%
     vol_ml: 300ml
     edul_gr: 0 gr Azucares añadidos 0 gr Edulcorantes artificiales.
-    pvp_local: 7€
+    pvp: 7€
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
-    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    ingredientes: Aperitivo saludable a base de Yuca, Batata, Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
@@ -123,8 +124,8 @@ items:
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
-    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
+    ingredientes: Aperitivo saludable a base de Yuca, Batata, Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
@@ -135,8 +136,8 @@ items:
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
-    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    categorias: ["Cocktails" , "Cocktails de Autor"]
+    ingredientes: Aperitivo saludable a base de Yuca, Batata, Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
@@ -147,14 +148,14 @@ items:
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
+    categorias: ["Gin Tonics"]
+    ingredientes: Aperitivo saludable a base de Yuca, Batata, Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local: 2€
+    pvp: 2€
 
   - nombre: Carta de Rones  
     imagen: portadaderones.png
@@ -165,7 +166,7 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local:
+    pvp:
 
   - nombre: Carta de Whiskies  
     imagen: portadadewhiskies.png
@@ -176,7 +177,7 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local:
+    pvp:
     
   - nombre: Carta de Licores  
     imagen: portadadelicores.png
@@ -187,29 +188,29 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local:     
+    pvp:     
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local: 2€
+    pvp: 2€
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Aperitivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local: 2€
+    pvp: 2€
 
 
 
@@ -275,7 +276,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 4,50€
+    pvp: 4,50€
 
 
   - nombre: Frappé de Baileys ❄
@@ -288,7 +289,7 @@ items:
     grad_alcoholica: 3,80%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Té de Frutas del Bosque ☕
     imagen: 192.jpg
@@ -300,7 +301,7 @@ items:
     grad_alcoholica: 0%
     vol_ml: 200ml
     edul_gr:
-    pvp_local: 4€
+    pvp: 4€
 
   - nombre: Capuccino Sabor ☕
     imagen: 102.jpg
@@ -311,7 +312,7 @@ items:
      Elige entre Avellana*, Vainilla, Canela, Cookie o Tiramisú.
 
      Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja.
-    pvp_local: 3,50€
+    pvp: 3,50€
         
   - nombre: Bombón Licor ☕
     imagen: 370.jpg
@@ -323,7 +324,7 @@ items:
     grad_alcoholica: 10,50%
     vol_ml:
     edul_gr:
-    pvp_local: 4,50€
+    pvp: 4,50€
 
   - nombre: Bombón Licor Limón 🍋 ☕
     imagen: 302.jpg
@@ -335,7 +336,7 @@ items:
     grad_alcoholica: 10,50%
     vol_ml:
     edul_gr:
-    pvp_local: 4,50€
+    pvp: 4,50€
 
   - nombre: Irlandés ☕
     imagen: 282.jpg
@@ -347,7 +348,7 @@ items:
     grad_alcoholica: 9,50%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Coffee Licor ☕
     imagen: 310.jpg
@@ -359,7 +360,7 @@ items:
     grad_alcoholica: 9,50%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Coffee Cream Baileys ☕
     imagen: baileyscream.jpeg
@@ -371,7 +372,7 @@ items:
     grad_alcoholica: 4,10%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Quemadillo de Rón ☕ (No disponible temporalmente)
     imagen: 387.jpg
@@ -383,7 +384,7 @@ items:
     grad_alcoholica: 5,50%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Mexican Coffee ☕
     imagen: mexicancoffee.jpeg
@@ -395,7 +396,7 @@ items:
     grad_alcoholica: 10,50%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Frappé al Caramelo ❄
     imagen: 196.jpg
@@ -407,7 +408,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 4,50€
+    pvp: 4,50€
 
   - nombre: Frappé Rón Cream ❄ (No disponible temporalmente)
     imagen: 196.jpg
@@ -419,7 +420,7 @@ items:
     grad_alcoholica: 3,80%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Frappé Mozart ❄ (No disponible temporalmente)
     imagen: 196.jpg
@@ -431,7 +432,7 @@ items:
     grad_alcoholica: 3,80%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Carta de Infusiones 
     imagen: cartadeinfusiones.jpg
@@ -446,7 +447,7 @@ items:
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible de Noviembre a Enero
-    pvp_local: 3,5€ 
+    pvp: 3,5€ 
 
 
 
@@ -460,7 +461,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr: 10gr de Azúcar
-    pvp_local: 4€
+    pvp: 4€
 
   - nombre: Iced Orange Matcha ❄ 🆕
     imagen: icedorangematcha.jpeg
@@ -472,7 +473,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr: Sin Azúcar
-    pvp_local: 4€
+    pvp: 4€
 
   - nombre: Batidos de Sabores.  
     imagen: 5a.jpg
@@ -491,7 +492,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 5,5€
+    pvp: 5,5€
 
   - nombre: Smoothies de Frutas (Con leche)
     imagen: 388.jpg
@@ -505,7 +506,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 5,5€
+    pvp: 5,5€
 
 
   - nombre: Smoothies de Fruta (Sin Lacteos)
@@ -519,7 +520,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 5,5€
+    pvp: 5,5€
 
   - nombre: Smoothies Sabores Combinados
     imagen: 392.jpg
@@ -533,7 +534,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 5,5€
+    pvp: 5,5€
 
   - nombre: Smoothie Leche Merengada
     imagen: 390.jpg
@@ -545,7 +546,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 5,5€
+    pvp: 5,5€
 
   - nombre: Smoothie Premium Estambul
     imagen: 375.jpg
@@ -557,7 +558,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Smoothie Premium Paradis
     imagen: 383.jpg
@@ -569,7 +570,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
 
   - nombre: Smoothie Premium Auténtico Placer
@@ -582,7 +583,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Smoothie Premium Mango & Basil
     imagen: 378.jpg
@@ -594,7 +595,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Smoothie Premium Caribe
     imagen: 371.jpg
@@ -606,7 +607,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
   - nombre: Smoothie de Naranja, Fresa y Menta
     imagen: 391.jpg
@@ -618,7 +619,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 5,5€
+    pvp: 5,5€
 
   - nombre: Granizado de Limón Casero 🍋
     imagen: 258.jpg
@@ -630,7 +631,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 4€
+    pvp: 4€
 
   - nombre: Granizado de Naranja y Menta 🍊
     imagen: 198.jpg
@@ -642,7 +643,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 4€
+    pvp: 4€
 
   - nombre: Granizado de Café
     imagen: 197.jpg
@@ -654,7 +655,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 4€
+    pvp: 4€
 
 
   - nombre: Limonada de Pomelo y Menta
@@ -667,9 +668,9 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 15gr de Azúcar Integral de caña
-    pvp_local: 6€
+    pvp: 6€
 
-  - nombre: 🍉 Limonada de Sandía y Menta.
+  - nombre: 🍉 Limonada de Sandía y Menta
     disponible: false
     prioridad: false
     imagen: 270.jpg
@@ -681,7 +682,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 6€
+    pvp: 6€
 
 
   - nombre: Limonada Mr Smith
@@ -694,7 +695,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 0 gr
-    pvp_local: 6€
+    pvp: 6€
 
 
   - nombre: San Francisco
@@ -707,7 +708,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 20gr
-    pvp_local: 6,5€
+    pvp: 6,5€
 
 
   - nombre: Virgin Mojito
@@ -720,7 +721,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 22gr
-    pvp_local: 7€
+    pvp: 7€
 
   - nombre: Virgin Colada
     imagen: 394.jpg
@@ -732,7 +733,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 22gr
-    pvp_local: 7€
+    pvp: 7€
 
   - nombre: Shin Tonic
     imagen: 63.jpg
@@ -744,7 +745,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
   - nombre: Frescor Cálido (fuera de temporada)
     disponible: false
@@ -757,7 +758,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 7€
+    pvp: 7€
 
 
   - nombre: Blondi Beach 🏖   
@@ -770,7 +771,7 @@ items:
     grad_alcoholica: Una miaja 0,1%
     vol_ml:
     edul_gr:
-    pvp_local: 7€
+    pvp: 7€
 
   - nombre: Jalamango
     imagen: 315.jpg
@@ -782,7 +783,7 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 0 gr
-    pvp_local: 7€
+    pvp: 7€
     
 
   - nombre: Floreale.🌼🌺🆕
@@ -795,12 +796,12 @@ items:
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
 
   - nombre: Mojito Clásico
     imagen: 201.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Rón blanco Plantation, Lima, Hierbabuena, Azúcar y Soda.
     alergenos:
     txt_aclaraciones:
@@ -808,11 +809,11 @@ items:
     grad_alcoholica: 13,70%
     vol_ml: 135 ml aprox.
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
   - nombre: Mojito Sabor
     imagen: 202.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Rón blanco Plantation, Lima, Hierbabuena, Puré de Frutas, Azúcar y Soda.
     alergenos:
     txt_aclaraciones: Mojito Cásico al que le añadimos un toque de fruta a elegir entre Fresa Natural, Mango Natural, Frambuesa Natural, Cereza o Arandano Azul.
@@ -832,12 +833,12 @@ items:
     grad_alcoholica: 11,70%
     vol_ml: 135 ml
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
 
   - nombre: Mai Tai
     imagen: 286.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Rón Blanco Plantation, Rón añejo Captain Morgan Dark, Lima, Pomelo, Triple Seco, Caramelo, Falernum, Angostura y Pernod.
     alergenos: "*Almendra*"
     txt_aclaraciones: Descubre la coctelería Tiki con su Cocktail más Popular.
@@ -845,11 +846,11 @@ items:
     grad_alcoholica: 14%
     vol_ml: 185 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
   - nombre: Mint Julep
     imagen: 279.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Bulleit bourbon, Menta fresca, Azúcar y Soda.
     alergenos:
     txt_aclaraciones:
@@ -857,11 +858,11 @@ items:
     grad_alcoholica: 20,50%
     vol_ml: 110 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
   - nombre: Honey & Mint 
     imagen: 278.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: J & B Honey, Lima, Manzana Granny Smith y Azúcar
     alergenos:
     txt_aclaraciones:
@@ -869,11 +870,11 @@ items:
     grad_alcoholica: 10,30%
     vol_ml: 135 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
   - nombre: Lynchburg Lemonade
     imagen: 276.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Jack Daniels, Zumo de Limón, Triple Seco, Azúcar y Sprite.
     alergenos:
     txt_aclaraciones:
@@ -881,11 +882,11 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
   - nombre: Gin Smash Basil
     imagen: 277.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Tanqueray Ten, Zumo de Limón, Zumo de Pomelo, Albahaca y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -893,11 +894,11 @@ items:
     grad_alcoholica: 15%
     vol_ml: 150 ml
     edul_gr:
-    pvp_local: 8,50€
+    pvp: 8,50€
 
   - nombre: Caipiroska
     imagen: 269.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Vodka Finlandia, Lima y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -905,11 +906,11 @@ items:
     grad_alcoholica: 18,90%
     vol_ml: 100 ml
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
   - nombre: Caipiroska Sabor
     imagen: 195.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Vodka Finlandia, Lima, Pure de Fruta y Azúcar.
     alergenos:
     txt_aclaraciones: Caipiroska Clasica a la que le añadimos fruta a elegir entre Fresa Natural, Frambuesa Natural o Melocotón.
@@ -917,12 +918,12 @@ items:
     grad_alcoholica: 13,30%
     vol_ml: 140 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
 
   - nombre: Caipiroska Black
     imagen: 266.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Vodka Eristoff Black, Lima y A zúcar.
     alergenos:
     txt_aclaraciones:
@@ -930,11 +931,11 @@ items:
     grad_alcoholica: 8,50%
     vol_ml: 100 ml
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
   - nombre: Moskow Mule
     imagen: 263.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Vodka Finlandia, Zumo de Lima, Sirope de Ágave y Ginger Beer
     alergenos:
     txt_aclaraciones:
@@ -942,11 +943,11 @@ items:
     grad_alcoholica: 12%
     vol_ml: 165 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
   - nombre: Caipirinha
     imagen: caipirinha.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Cachaça, Lima y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -959,7 +960,7 @@ items:
 
   - nombre: Caipirinha de Naranja y Piña
     imagen: 267.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Cachaça, Lima, Mermelada de Naranja homemade, Zumo de Piña y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -967,11 +968,11 @@ items:
     grad_alcoholica: 10,80%
     vol_ml: 140ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
   - nombre: Whisky Sour
     imagen: 395.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Bulleit bourbon, Zumo de Limón, Clara de Huevo pasteurizada, Angostura y Azúcar.
     alergenos: "*Huevo*"
     txt_aclaraciones: 
@@ -979,11 +980,11 @@ items:
     grad_alcoholica: 18,60%
     vol_ml: 145 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
   - nombre: Pisco Sour
     imagen: 384.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Pisco Quebranta, Zumo de Lima, Clara de huevo pasteurizada, Angostura y Azúcar
     alergenos: "*Huevo*"
     txt_aclaraciones: Cocktail Nacional del Perú declarado patrimonio cultural de la Nación  
@@ -991,12 +992,12 @@ items:
     grad_alcoholica: 14,40%
     vol_ml: 175 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: Fernet Sour 🆕
     imagen: fernetsour.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Fernet Branca, Lima, Cordial de Mandarina, Bitter de Chocolate y Canela y clara de huevo.
     alergenos: "*Huevo*"
     txt_aclaraciones: Cocktail de caracter amargo con base de Fernet (El destilado preferido por los Argentinos) 
@@ -1004,13 +1005,13 @@ items:
     grad_alcoholica: 14,40%
     vol_ml: 175 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: Hasta pronto 🆕
     prioridad: true 
     imagen: hastapronto.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: whitley neill gin Cucumber Sirope de Verde (Manzana, Pepino y Menta), Lima y Ginger beer
     alergenos: 
     txt_aclaraciones: Refrescante Cocktail con la famosa gin de Pepino (Refrescante y Delicioso) 
@@ -1018,13 +1019,13 @@ items:
     grad_alcoholica: 
     vol_ml: 
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Dark Soul (fuera de temporada)
     disponible: false
     imagen: 308.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Bulleit Bourbon, Puré de Melocotón en vino, Zumo de Naranja y Bitter de Melocotón.
     alergenos: "*Sulfitos*"
     txt_aclaraciones: Delicioso Cocktail con base de bourbon que incorpora sabores de postres típicos aragoneses.
@@ -1032,14 +1033,14 @@ items:
     grad_alcoholica:
     vol_ml: 12,50%
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
     
 
 
   - nombre: Coco Beach 🥥  
     disponible: true
     imagen: cocobeach.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Don Papa Baroko, Sirope Homemade de Coco Tostado, Zumo de Pomelo, Grand Marnier y Orgeat .
     alergenos:
     txt_aclaraciones: Cocktail goloso con notas avainilladas
@@ -1047,12 +1048,12 @@ items:
     grad_alcoholica: 
     vol_ml:
     edul_gr:
-    pvp_local: 9€  
+    pvp: 9€  
 
   - nombre: Be Welcome🍍🆕
     prioridad: true
     imagen: bewelcome.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Italicus Rogsolio de Bergamota, Chadornnay infusionado con Té de Jazmín, Gin Saffron, Soda de Piña Asada y Menta.
     alergenos: Sulfitos
     txt_aclaraciones: Cocktail presentado a The Art of Italicus 2023 Challenge.
@@ -1060,13 +1061,13 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: Whale Beach🍍🆕
     prioridad: true
     imagen: whalebeach.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Ron de Piña Maremoto, Sirope de Jengibre y Clavo, Mermelada de Naranja, Rón y Canela, Hierbabuena, Triple Seco y Soda. 
     alergenos: 
     txt_aclaraciones: Imagina que estás en la maravillosa Playa de Las Ballenas en Noruega disfrutando de un atardecer, y a lo lejos en alta mar puedes ver un grupo de ballenas! Nosotros lo hicimos y nos inspiró este fantástico Cocktail del color del Ocaso.
@@ -1074,13 +1075,13 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Sunset Beach 🌞🥭🆕
     prioridad: true
     imagen: sunsetbeach.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Gin infusionado con Romero, Gewürztraminer, Itálicus, Sirope de Romero, Zumo de Pomelo y Mango Nat. 
     alergenos: 
     txt_aclaraciones: Cocktail ligero y refrescante que mezcla aromas mediterraneos con otros sabores más tropicales 
@@ -1088,13 +1089,13 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
   - nombre: Tangerine Road (Fuera de temporada)
     prioridad: false
     disponible: false
     imagen: tangerineroad.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Nordés Gin, Sirope de Mandarina y Romero, Zumo de Mandarina, Licor de Pino, Menta y Bitter de Lavanda. 
     alergenos: 
     txt_aclaraciones: Cocktail ligero y refrescante que combina aromas del Atlantico con otros Mediterraneos 
@@ -1102,13 +1103,13 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: As Meigas
     prioridad: true
     imagen: asmeigas.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Nordes Gin, Licor de Flor de Sauco, Zumo de Pomelo, Licor de Chipotle y Mixer de Pomelo
     alergenos: 
     txt_aclaraciones: Cocktail Floral, Herbal y Ligeramente picante
@@ -1116,13 +1117,13 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: Altantic
     prioridad: true
     imagen: atlantic.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Nordés Gin, Aperitivo Bonanto, Sirope de Romero, Zumo de Limón ,Curaçao Azul, Fever Tree Mediterranean y Espuma de Pomelo y Lima.
     alergenos: 
     txt_aclaraciones: Este Cocktail representa el horizonte desde el oceano Altantico. 
@@ -1130,13 +1131,13 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr:
-    pvp_local: 9€   
+    pvp: 9€   
 
 
   - nombre: The First Cocktail
     disponible: false
     imagen: 285.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Rón Plantation 3 Stars, Mango Natural, Fresa Natural, Manzana Granny Smith, Sirope de Hierba luisa y jengibre, Falernum, Bitter de Melocotón y Soda.
     alergenos: "*Almendra*"
     txt_aclaraciones: ¿Te imaginas como sería el primer cocktail de la historia? Te lo preparamos!
@@ -1144,12 +1145,12 @@ items:
     grad_alcoholica: 8,90%
     vol_ml: 230 ml
     edul_gr:
-    pvp_local: 12€
+    pvp: 12€
 
 
   - nombre: Mohito Nipon
     imagen: mohitonipon.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Gin Brockmans, Puré de Yuzu, Zumo de Manzana Granny Smith Natural, Albahaca y Frambuesa.
     alergenos:
     txt_aclaraciones:
@@ -1157,11 +1158,11 @@ items:
     grad_alcoholica: 10%
     vol_ml: 125 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
   - nombre: Refujito de Ágave
     imagen: 200.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Tequila, Pure de Maracuyá, Zumo de Lima y Sirope de Ágave.
     alergenos:
     txt_aclaraciones:
@@ -1169,12 +1170,12 @@ items:
     grad_alcoholica: 16,50%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Mezcalito de Romero
     imagen: 274.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Mezcal Joven Alipús, Zumo de Pomelo, Sirope de Romero, Sirope de Ágave y Romero fresco.
     alergenos:
     txt_aclaraciones:
@@ -1182,11 +1183,11 @@ items:
     grad_alcoholica: 11,25%
     vol_ml: 155 ml
     edul_gr:
-    pvp_local: 10€
+    pvp: 10€
 
   - nombre: Daiquiri Flavour
     imagen: 271.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Frozeen"]
+    categorias: ["Cocktails" , "Cocktails Frozeen"]
     ingredientes: Rón Plantation 3 Stars, Zumo de Limón, Triple Seco, Azúcar y Puré de frutas.
     alergenos:
     txt_aclaraciones: >
@@ -1196,12 +1197,12 @@ items:
     grad_alcoholica: 7,40%
     vol_ml: 320 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
 
   - nombre: Piña Colada
     imagen: 304.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Frozeen"]
+    categorias: ["Cocktails" , "Cocktails Frozeen"]
     ingredientes: Ron Plantation, Zumo de Piña, Puré de Coco, Nata y Azúcar
     alergenos: "*Lacteos"
     txt_aclaraciones: Este Cocktail va decorado con Chocolate crujiente, si no lo deseas avisa a tu camarero
@@ -1209,12 +1210,12 @@ items:
     grad_alcoholica: 6%
     vol_ml: 350 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
 
   - nombre: Chestnut Touch
     imagen: 307.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Frozeen"]
+    categorias: ["Cocktails" , "Cocktails Frozeen"]
     ingredientes: Bulleit Bourbon, Curaçao, Puré de Plátano, Sirope de Castaña y Angostura de Naranja.
     alergenos: "*Frutos Secos*"
     txt_aclaraciones:
@@ -1222,11 +1223,11 @@ items:
     grad_alcoholica: 8,50%
     vol_ml: 315 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
   - nombre: Pomada Menorquina
     imagen: 385.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Frozeen"]
+    categorias: ["Cocktails" , "Cocktails Frozeen"]
     ingredientes: Gin Xoringer, Sirope de Limón homemade y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1234,11 +1235,11 @@ items:
     grad_alcoholica: 5,75%
     vol_ml: 330 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
   - nombre: New Orleans Fizz
     imagen: 306.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Frozeen"]
+    categorias: ["Cocktails" , "Cocktails Frozeen"]
     ingredientes: Tanqueray Rangpur, Zumo de limón, Zumo de Lima, Agua de Azahar, Nata, Clara de huevo pasteurizada y Azúcar.
     alergenos: "*Lacteos y huevo*"
     txt_aclaraciones:
@@ -1246,11 +1247,11 @@ items:
     grad_alcoholica: 6,20%
     vol_ml: 300ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
   - nombre: Margarita Blue Frozeen
     imagen: 303.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Frozeen"]
+    categorias: ["Cocktails" , "Cocktails Frozeen"]
     ingredientes: Tequila, Curaçao azul, Zumo de Limón y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1258,11 +1259,11 @@ items:
     grad_alcoholica: 6%
     vol_ml: 270 ml
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
   - nombre: Green Station
     imagen: 377.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: Ron Plantation 3 Stars, Zumo de Naranja, Zumo de Limón, Zumo de Piña y Curaçao azul.
     alergenos:
     txt_aclaraciones:
@@ -1270,12 +1271,12 @@ items:
     grad_alcoholica: 7%
     vol_ml: 235 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
 
   - nombre: Singapure Sling
     imagen: 326.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: Ginegra Ampersand, Triple Seco, Benedictine, Heering de Cereza, Zumo de Piña, Zumo de Limón y Angostura.
     alergenos:
     txt_aclaraciones:
@@ -1283,12 +1284,12 @@ items:
     grad_alcoholica: 9,60%
     vol_ml: 220 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Tom Collins
     imagen: 322.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: Tanqueray Rangpur, Zumo de Limón, Soda y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1296,12 +1297,12 @@ items:
     grad_alcoholica: 7,40%
     vol_ml: 290 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Sex on the Beach
     imagen: 203.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: Vodka Finlandia, Licor de Melocotón, Zumo de Naranja y Zumo de Arándanos.
     alergenos:
     txt_aclaraciones:
@@ -1309,12 +1310,12 @@ items:
     grad_alcoholica: 12,90%
     vol_ml: 155 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
 
   - nombre: Paloma
     imagen: 382.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: Tequila, Mixer de Pomelo y Zumo de Lima.
     alergenos:
     txt_aclaraciones: Pruébalo con tequila Patron Reposado + 2€
@@ -1322,12 +1323,12 @@ items:
     grad_alcoholica: 9%
     vol_ml: 220 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Cold Green Chilli Peppers
     imagen: 264.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Tequila El Jimador, Licor de Chilli Ancho Reyes, Zumo de Lima, Sirope de Ágave y Ginger Beer.
     alergenos:
     txt_aclaraciones: Delicioso Cocktail de carácter picante
@@ -1335,11 +1336,11 @@ items:
     grad_alcoholica: 12,80%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
   - nombre: Aperol Spritz
     imagen: 260.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: Aperol, Proseco Cinzano y Soda
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
@@ -1347,13 +1348,13 @@ items:
     grad_alcoholica: 9%
     vol_ml: 210 ml
     edul_gr:
-    pvp_local: 6,5€
+    pvp: 6,5€
 
 
 
   - nombre: Hugo Spritz 
     imagen: hugo.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: San Germain, Proseco Cinzano y Soda
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
@@ -1361,12 +1362,12 @@ items:
     grad_alcoholica: 9%
     vol_ml: 210 ml
     edul_gr:
-    pvp_local: 7€
+    pvp: 7€
 
 
   - nombre: Garibaldi Fizz
     imagen: 284.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: Campari, Zumo de Naranja, Martini Vibrante y 1724 Tonic Water.
     alergenos:
     txt_aclaraciones:
@@ -1374,11 +1375,11 @@ items:
     grad_alcoholica: 4%
     vol_ml: 315 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
   - nombre: Aperoni Gin
     imagen: 367.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Tanqueray Ten, Aperol, Zumo de Pomelo y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1386,12 +1387,12 @@ items:
     grad_alcoholica: 13%
     vol_ml: 150 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Bloody Mary
     imagen: 259.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Zumo de Tomate, Vodka Finlandia, Zumo de Limón, Tabasco, Sal de Apio, Pimienta y Salsa Perrins.
     alergenos: "*Apio*"
     txt_aclaraciones:
@@ -1399,11 +1400,11 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 215 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
   - nombre: Michelada
     imagen: michelada.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Zumo de Tomate, Zumo de Limón, Tabasco, Sal, Pimienta y Salsa Perrins, Clamato, Salsa Maggie  y Coronita.
     alergenos: "*Apio*"
     txt_aclaraciones:
@@ -1411,12 +1412,12 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 215 ml
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
 
   - nombre: Margarita Clásica
     imagen: 199.jpg
-    categorias: [Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: [Cocktails" , "Cocktails Clásicos"]
     ingredientes: Tequila El Jimador, Zumo de Lima, Triple Seco y Azúcar
     alergenos:
     txt_aclaraciones: Este cocktail va escarchado con sal, si no lo desea avise al camarero.
@@ -1424,12 +1425,12 @@ items:
     grad_alcoholica: 24%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
 
   - nombre: Cosmopolitan
     imagen: 372.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Vodka Finlandia, Zumo de Lima, Zumo de Arándanos y Tripe Seco.
     alergenos:
     txt_aclaraciones:
@@ -1437,12 +1438,12 @@ items:
     grad_alcoholica: 23%
     vol_ml: 110 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
 
   - nombre: Daiquiri
     imagen: 373.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Rón Plantation 3 Stars, Zumo de Limón, Triple Seco y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1450,13 +1451,13 @@ items:
     grad_alcoholica: 20%
     vol_ml: 140 ml
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
 
   - nombre: Alexander (fuera de temporada)
     disponible: false
     imagen: 210.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Brandy, Nata y Licor Mozart.
     alergenos: "*Lacteo*"
     txt_aclaraciones:
@@ -1464,11 +1465,11 @@ items:
     grad_alcoholica: 19,80%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
   - nombre: Black Russian
     imagen: 369.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Vodka Finlandia y Kalhua
     alergenos:
     txt_aclaraciones:
@@ -1476,11 +1477,11 @@ items:
     grad_alcoholica: 30%
     vol_ml: 85 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
   - nombre: Manhatan
     imagen: 349.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Bulleit Bourbon, Vermut Rojo y Angostura
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
@@ -1488,13 +1489,13 @@ items:
     grad_alcoholica: 29%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: Gin Fizz (No disponible)
     disponible: false
     imagen: 376.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Ginebra Gin-Za, Zumo de Limón y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1502,11 +1503,11 @@ items:
     grad_alcoholica: 13,50%
     vol_ml: 150 ml
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
   - nombre: Dry Martini
     imagen: 374.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Ginebra Tanqueray Ten, Vermout dry y Aceitunas
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
@@ -1514,12 +1515,12 @@ items:
     grad_alcoholica: 28,40%
     vol_ml: 115 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: Espresso Martini
     imagen: 350.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
     ingredientes: Café espresso, Vodka Finlandia, Kalhua y Azúcar
     alergenos:
     txt_aclaraciones:
@@ -1527,12 +1528,12 @@ items:
     grad_alcoholica: 14,50%
     vol_ml: 110 ml
     edul_gr:
-    pvp_local: 7,5€
+    pvp: 7,5€
 
 
   - nombre: Ciroc & Schweppes Toque de Lima
     imagen: ciroc.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Con brocheta de Uva y twist de Pomelo.
     alergenos:
     txt_aclaraciones:
@@ -1540,11 +1541,11 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
   - nombre: Grey Goose & Schweppes Toque de Lima
     imagen: greygoose.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Con twist de Lima.
     alergenos:
     txt_aclaraciones:
@@ -1552,11 +1553,11 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 10€
+    pvp: 10€
 
   - nombre: Belvedere & Fever Mediterranean
     imagen: belvedere.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Infusionado con Romero.
     alergenos:
     txt_aclaraciones:
@@ -1564,12 +1565,12 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
-  - nombre: Crystal Head & Schweppes Toque de Lima.
+  - nombre: Crystal Head & Schweppes Toque de Lima
     imagen: 249.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Con Bitter de Pomelo y twist de Pomelo.
     alergenos:
     txt_aclaraciones:
@@ -1577,12 +1578,12 @@ items:
     grad_alcoholica: 8%
     vol_ml:
     edul_gr:
-    pvp_local: 10€
+    pvp: 10€
 
   - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana y Albahaca)🍏
     prioridad: true
     imagen: 351.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Gin Xoringer, Schweppes Hibiscus y Espuma de Manzana, Albahaca, Cardamomo y Clara de huevo pasteurizada
     alergenos: "*Huevo*"
     txt_aclaraciones:
@@ -1590,13 +1591,13 @@ items:
     grad_alcoholica: 7%
     vol_ml: 290 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Tanqueray Foam (Con Espuma de Pomelo y Lima)🍊🆕
     prioridad: true
     imagen: tanquerayfoam.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Gin Tanqueray Ten, Schweppes Toque de lima y Espuma de Pomelo, Lima, Agua de Azahar y Clara de huevo pasteurizada
     alergenos: "*Huevo*"
     txt_aclaraciones:
@@ -1604,11 +1605,11 @@ items:
     grad_alcoholica: 7%
     vol_ml: 290 ml
     edul_gr:
-    pvp_local: 9€  
+    pvp: 9€  
 
   - nombre: Gin Pasión & Schweppes Toque de Lima 🌺 (Ginebras Infusionadas)
     imagen: ginpasion.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Ginebra Ampersand infusionada con Mora, Grosella, Fresa e Hibisco & Schweppes Premium Toque de Lima
     alergenos:
     txt_aclaraciones:
@@ -1616,13 +1617,13 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
+    pvp: 8€
 
 
   - nombre: Tanqueray Flor de Sevilla & 1724 tonic water 🍊
     prioridad: true
     imagen: tanqueraysevilla.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra elaborada con naranjas sevillanas y flor de Azahar. Sabor cítrico y afrutado.
@@ -1630,12 +1631,12 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Gin Za & Schweppes Toque de Lima 🍑 🍋
     imagen: ginza.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra Zaragozana que fusiona a la perfección sabores de la tierra como el melocotón de Calanda con cítricos japoneses (Yuzu y Mano de Buda) y Té Matcha
@@ -1643,12 +1644,12 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Bulldog & Fever Tree
     imagen: bulldog.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra cásica inglesa con notas florales, cítricas y frutales.
@@ -1656,12 +1657,12 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Hendrick's & Schweppes Toque de Lima 🥒
     imagen: hendricks.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra escocesa elaborada con pepino y pétalos de rosas.
@@ -1669,12 +1670,12 @@ items:
     grad_alcoholica: 8,80%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: Pink & 1724 tonic water
     imagen: 239.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra londinense de tipo clásico con notas dulces cítricas y especiadas.
@@ -1682,12 +1683,12 @@ items:
     grad_alcoholica: 9,40%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
+    pvp: 8,5€
 
 
   - nombre: Martin Miller's & Fever Tree
     imagen: martinmillers.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra clásica inglesa de muy alta calida debido en parte a la utilización de agua de los glaciares de Islandia. ¡Una apuesta segura!
@@ -1695,12 +1696,12 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: Citadelle & 1724 tonic water
     imagen: citadelle.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra francesa distinguida y que impresiona por su gusto complejo y sus notas florales.
@@ -1708,12 +1709,12 @@ items:
     grad_alcoholica: 9,20%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 9€
+    pvp: 9€
 
 
   - nombre: Tanqueray Ten & Fever Tree
     imagen: tanquerayten.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra escocesa muy galardonada y de excelente calidad. frescura cítrica muy acentuada debido al uso de ingredientes frescos.
@@ -1726,7 +1727,7 @@ items:
 
   - nombre: Tanqueray Rangpur & Schweppes Premium Toque de Lima 🍋
     imagen: rangpur.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra escocesa elaborada con lima Rangpur, una variedad de lima muy aromática que la convierte en una de nuestras favoritas.
@@ -1740,7 +1741,7 @@ items:
   - nombre: Magellan & Schweppes Toque de Lima
     prioridad: true
     imagen: 235.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra francesa de ligero tono azulado debido a la raiz de iris y flores que contiene su receta. Sabor suave y armonioso.
@@ -1753,7 +1754,7 @@ items:
 
   - nombre: Nordés & Fever Tree 🍇
     imagen: nordes.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra gallega para nada convencional, con aromas atlánticos debido a su base de alcohol de albariño y al uso de eucalipto, salicornia y laurel entre otro botánicos.
@@ -1767,7 +1768,7 @@ items:
   - nombre: Martin Miller´s Summerful 
     prioridad: true 
     imagen: martinmillerssummerful.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Edición especial de la Mitica ginebra. Se aprecian notas florales; también a hierbas, Lavanda, Salvia, toques de Romero inglés y Tomillo ártico de Islandia
@@ -1781,7 +1782,7 @@ items:
 
   - nombre: ketel One & Schweppes Toque de Lima. 
     imagen: ketelone.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Servida con twist de Naranja y Romero
     alergenos:
     txt_aclaraciones: Destaca por su inconfundible frescor y por una suavidad que recubre la lengua.
@@ -1796,7 +1797,7 @@ items:
   - nombre: G'Vine Floraisson & 1724 Tonic Water 🍇
     prioridad: true
     imagen: gvine.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra francesa elaborada con alcohol vinico y macerada con flor de vid lo que le otorga un sabor fresco primaveral y floral.
@@ -1809,7 +1810,7 @@ items:
 
   - nombre: Gin Mare & Fever Tree Mediterranean
     imagen: 221.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra española cuya principal caracteristica es el uso de botánicos mediterraneos como la albahaca, romero, tomillo y aceituna arbequina.
@@ -1823,7 +1824,7 @@ items:
   - nombre: Tanqueray Lovage 🆕
     prioridad: true
     imagen: tanqueraylovage.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Inspirada en una receta original creada por Tanqueray en 1832, la nueva expresión es un “giro salado” en la expresión clásica de Tanqueray, gracias a la adición de la hierba de jardín inglesa, lovage.
     alergenos:
     txt_temporal: Disponible todo el año.
@@ -1835,7 +1836,7 @@ items:
 
   - nombre: Puerto de Indias & 1724 tonic water 🍓
     imagen: puertoindias.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Ginebra sevillana de aromas dulces y salvajes a fresa y enebro.
@@ -1848,7 +1849,7 @@ items:
 
   - nombre: Ginial Rosé & 1724 tonic water
     imagen: 226.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: Femenina y exigente a la par que dulce. Una ginebra elaorada con cítricos, flores y fresas. Destaca por su baja graduación (25%)
@@ -1862,7 +1863,7 @@ items:
   - nombre: Pink Velvet Gin 🍓
     prioridad: true
     imagen: pinkvelvet.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Notas de Fresa, Frambuesa y Pétalos de Rosa
     alergenos:
     txt_aclaraciones: ¡La ginebra de frutos rojos de Aragón! (Sin edulcorantes artificiales) 
@@ -1877,7 +1878,7 @@ items:
   - nombre: Blue Velvet Gin 🆕 🌺
     prioridad: true
     imagen: bluevelvet.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Notas de Violeta, Flor de Cerezo, Lirio
     alergenos:
     txt_aclaraciones: ¡Ginebra de Aragón! (Inspirada en los atardeceres de la laguna de Gallocanta) ¡Cambia de color de Azul a Violeta al servirla! 
@@ -1892,7 +1893,7 @@ items:
   - nombre: White Velvet Gin 🆕 🍍
     prioridad: true
     imagen: whitevelvet.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:  Notas a Piña, Clavo y Canela.
     alergenos:
     txt_aclaraciones: Ginebra de Aragón (Inspirada n la Pureza del Pirineo)  
@@ -1908,7 +1909,7 @@ items:
     disponible: false
     prioridad: false
     imagen: 300.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda .
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
@@ -1922,7 +1923,7 @@ items:
   - nombre: Tiki Beach  
     disponible: true
     imagen: tikibeach.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Blend de Rones, Zumo de Naranja, Zumo de Lima, Frambuesa, Arandanos y Pimiento Dram.
     alergenos:
     txt_aclaraciones:
@@ -1935,7 +1936,7 @@ items:
 
   - nombre: Gin Fizz de Pomelo y Piña 🍍 
     imagen: 316.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Tanqueray Ten, Sirope de Piña asada y Menta homemade, Zumo de Pomelo y Mixer de Pomelo Thomas henrry.
     alergenos:
     txt_aclaraciones:
@@ -1950,7 +1951,7 @@ items:
   - nombre: Grazie Mille 
     disponible: true
     imagen: 362.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Whisky J&B Rare, Zumo de Piña, Zumo de Pomelo, Zumo de Limón, Licor de Frambuesas y Moras y Azúcar.
     alergenos: 
     txt_aclaraciones: 
@@ -1963,7 +1964,7 @@ items:
 
   - nombre: Cóctel de Cóctel 🥜🌽🆕
     imagen: cocteldecoctel.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Tequila El Jimador infusionado en Cacahuetes, licor de Elote (Maiz) Nixta, Licor de Pasas Homemade y Zumo de Pomelo. 
     alergenos: 
     txt_aclaraciones: ¡Sólo para Atrevidos!🤪 La versión líquida del típico Cóctel de Frutos Secos. Se acompaña de su correspondiente aperitivo de Frutos Secos.😎
@@ -1977,7 +1978,7 @@ items:
   - nombre: Carraskiko (No disponible temporalmente)  
     disponible: false
     imagen: Carraskiko.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Cinzano Bianco, Italicus, Sirope de Melocotón en vino y Angostura de Naranja.
     alergenos: Sulfitos
     txt_aclaraciones: Este Cocktail es el hermano mayor de nuestro vermut preparado finalista de la III Ruta Cinzano de Zaragoza.
@@ -1990,7 +1991,7 @@ items:
 
   - nombre: Italicus Rosolio  
     imagen: ItalicusRosolio.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
     ingredientes: Italicus Rosolio, Proseco, Brocheta de olivas y twist de limón.
     alergenos: Sulfitos
     txt_aclaraciones: Excelente aperitivo apto para cualquier hora del dia.
@@ -2004,7 +2005,7 @@ items:
     prioridad: true
     disponible: true
     imagen: carmenbeach.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Tequila Patron Silver, Sirope de Rooibos, Zumo de lima, Oleo de Kumquat, Bitter de lavanda
     alergenos: 
     txt_aclaraciones: Delicioso y Original Cocktail Premium ispirado en Mexico y su famosa playa del Carmen.
@@ -2019,7 +2020,7 @@ items:
     prioridad: true
     disponible: true
     imagen: dewarssummer.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Dewars Caribbean, Piña asada, Menta, Mixer de Pomelo y Espuma de Pomelo Lima y Agua de Azahar.
     alergenos: Huevo
     txt_aclaraciones: Este higball cocktail junto a sus 2 hermanos Dewars Autumn y Dewars Spring nos clasificó en 2º puesto en la 1er Dewars Higball Challenge de Zaragoza.  
@@ -2034,7 +2035,7 @@ items:
     prioridad: true
     disponible: true
     imagen: dewarsspring.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Dewars French Smooth, Sirope de flores y Semilla de Cilantro, Zumo de Manzana, Ginger Ale y Espuma de Manzana Albahaca y Cardamomo. 
     alergenos: Huevo
     txt_aclaraciones: Este higball cocktail junto a sus 2 hermanos Dewars Autumn y Dewars Summer nos clasificó en 2º puesto en la 1er Dewars Higball Challenge de Zaragoza.
@@ -2048,7 +2049,7 @@ items:
   - nombre: Dewars Autunm 🍁  
     disponible: true
     imagen: dewarsautunm.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Dewars 12 años, Manzana caramelizada, Calabaza especiada y Ginger Ale.
     alergenos:
     txt_aclaraciones: Este higball cocktail junto a sus 2 hermanos Dewars Summer y Dewars Spring nos clasificó en 2º puesto en la 1er Dewars Higball Challenge de Zaragoza.
@@ -2064,7 +2065,7 @@ items:
     prioridad: false
     disponible: false
     imagen: islablanca.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Licor de Pino Mugo, Crema de Violetas, Zumo de Limón y Sirope homemade de Flores y Semilla de Cilantro.
     alergenos:
     txt_aclaraciones: Nuestro Cocktail más Romántico! ❤️❤️❤️ Está inspirado en la maravillosa isla de Ibiza conocida como La Isla Blanca o La Isla de Amor. En el encontrarás aromas propios de la zona como el Pino, Violeta, Lavanda... 
@@ -2075,9 +2076,9 @@ items:
     pvp_local: 8,5€
     pvp_terraza: 9€ 
 
-  - nombre: Veggie Chips. 
+  - nombre: Veggie Chips
     imagen: vegechips.png
-    categorias: ["Ofertas Destacadas" , "Tarde" , "Noche"]
+    categorias: ["Promociones y Ofertas" , "Tarde" , "Noche"]
     ingredientes: Apeeritivo saludable a base de Yuca, Batata,Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
@@ -2091,7 +2092,7 @@ items:
     disponible: false
     prioridad: false
     imagen: tropeabeach.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
     alergenos: 
     txt_aclaraciones: Aromas herbales y florales del mediterraneo junto a selectos licores italianos se mezclan en este cocktail inspirado en la maravillosa playa de tropea en la localidad italiana de Calabria.
@@ -2105,7 +2106,7 @@ items:
   - nombre: Miyako  (fuera de temporada)
     disponible: false
     imagen: miyako.jpeg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Ginebra Gin-Za, Sirope de Mandarina, Zumo Nat de Mandarina, Sirope de Cardamomo, Sirope de Romero, Limoncello Pallini, Campari y Clara de huevo pasteurizada
     alergenos: Huevo.
     txt_aclaraciones: Inspirado en la Isla de Miyako donde se encuentran 3 de las mejores playas japonesas. Entre sus ingredientes nos encontramos con una ginebra desarroyada en Zaragoza e inspirada en el moderno barrio de Ginza de Tokio. Citricos y botánicos asiáticos como la Mandarina y el Cardamomo combinan a la perfeccion con otros como Yuzu y Kumquat presentes en la ginebra.
@@ -2121,7 +2122,7 @@ items:
     prioridad: true
     disponible: true
     imagen: boston.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Ron Captain Morgan Spiced, Don Papa Baroko, Zumo de Fresa Natural, Chadornnay inf. con Fresas y Romero, Sirope de Jengibre y Clavo, Sirope de Arce, limón, Ginger Beer y Angostura de Naranja.
     alergenos: Huevo.
     txt_aclaraciones: Inspirado la tierra de Bob Marley en concreto en la playa de Boston bal en Jamaica nos encontramos con un trago de perfil dulce y especiado gracias al Ron Jamaicano Captain Morgan. El Jengibre en forma de Sirope y en Mixer en el Ginger Beer le otorgan un leve carácter picante.    .
@@ -2132,9 +2133,9 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,5€  
 
-  - nombre: Bombay Sapphire & Schweppes Toque de Lima.
+  - nombre: Bombay Sapphire & Schweppes Toque de Lima
     imagen: bombaysapphire.png
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: La servimos con unos pocos Granos de Pimienta Rosa y Twist de lima. 
     alergenos:
     txt_aclaraciones: Ginebra de fama mundial. Cada gota contiene 10 botánicos seleccionados a mano en lugares exóticos de todo el mundo
@@ -2148,7 +2149,7 @@ items:
 
   - nombre: Bombay S. Premier Cru Murcian Lemon & Schweppes Toque de Lima
     imagen: bombaymurcian.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes: Servida con twist de Limón
     alergenos:
     txt_aclaraciones: Bombay Sapphire Premier Cru es una ginebra producida de forma limitada que celebra los cítricos más estimulantes y aromáticos del mundo los limones, mandarinas y naranjas dulces Navel de Murcia
@@ -2161,7 +2162,7 @@ items:
 
   - nombre: Gin Ordesano & Fever Tree
     imagen: ordesano.jpeg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Gin Tonics"]
     ingredientes:
     alergenos:
     txt_aclaraciones: ¡La ginebra del Pirineo! Personalidad propia y 100% natural, elaborado con enebros y peras. 
