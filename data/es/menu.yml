@@ -107,8 +107,7 @@ items:
     grad_alcoholica: 0%
     vol_ml: 300ml
     edul_gr: 0 gr Azucares añadidos 0 gr Edulcorantes artificiales.
-    pvp_local: 6,5€
-    pvp_terraza: 7€
+    pvp: 7€
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
@@ -482,7 +481,7 @@ items:
   - nombre: Iced Orange Matcha ❄ 🆕
     imagen: icedorangematcha.jpeg
     categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Té Chai, Zumo de Narnja y Menta
+    ingredientes: Té Matcha, Zumo de Narnja y Menta
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
