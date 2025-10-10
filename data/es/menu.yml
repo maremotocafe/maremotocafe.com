@@ -119,8 +119,8 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local: 2€
-    pvp_terraza: 2€
+    pvp: 2€
+
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
@@ -131,8 +131,8 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local: 2€
-    pvp_terraza: 2€
+    pvp: 2€
+    
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
@@ -143,8 +143,8 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local: 2€
-    pvp_terraza: 2€
+    pvp: 2€
+
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
@@ -249,8 +249,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr: 14gr Azúcar moreno
-    pvp_local: 4,5€
-    pvp_terraza: 5€
+    pvp_local: 5€
+    
 
   - nombre: Capuccino Clásico ☕
     imagen: 132.jpg
@@ -1722,8 +1722,8 @@ items:
     grad_alcoholica: 9,50%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp: 9€
+    
 
   - nombre: Tanqueray Rangpur & Schweppes Premium Toque de Lima 🍋
     imagen: rangpur.jpeg
@@ -1735,8 +1735,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp: 8,5€
+    
 
   - nombre: Magellan & Schweppes Toque de Lima
     prioridad: true
@@ -1749,8 +1749,8 @@ items:
     grad_alcoholica: 8,30%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp: 8,5€
+
 
   - nombre: Nordés & Fever Tree 🍇
     imagen: nordes.jpeg
@@ -1762,8 +1762,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp: 9€
+
 
   - nombre: Martin Miller´s Summerful 
     prioridad: true 
@@ -1776,8 +1776,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp: 9€
+    
 
 
   - nombre: ketel One & Schweppes Toque de Lima. 
@@ -1790,8 +1790,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp: 8,5€
+
 
 
   - nombre: G'Vine Floraisson & 1724 Tonic Water 🍇
@@ -1805,8 +1805,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 9€
-    pvp_terraza: 9,5€
+    pvp: 9,5€
+    
 
   - nombre: Gin Mare & Fever Tree Mediterranean
     imagen: 221.jpg
@@ -1818,8 +1818,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp: 9€
+
 
   - nombre: Tanqueray Lovage 🆕
     prioridad: true
@@ -1831,8 +1831,7 @@ items:
     grad_alcoholica: 9,5%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 9€
-    pvp_terraza: 9,5€
+    pvp_: 9€
 
   - nombre: Puerto de Indias & 1724 tonic water 🍓
     imagen: puertoindias.jpg
@@ -1844,8 +1843,8 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,5€
-    pvp_terraza: 8€
+    pvp: 8€
+
 
   - nombre: Ginial Rosé & 1724 tonic water
     imagen: 226.jpg
@@ -1857,8 +1856,7 @@ items:
     grad_alcoholica: 5%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp: 8,5€
 
   - nombre: Pink Velvet Gin 🍓
     prioridad: true
@@ -1871,8 +1869,7 @@ items:
     grad_alcoholica: 7,5%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€  
+    pvp: 8,5€  
 
 
   - nombre: Blue Velvet Gin 🆕 🌺
@@ -1886,8 +1883,7 @@ items:
     grad_alcoholica: 7,5%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp: 8,5€
 
 
   - nombre: White Velvet Gin 🆕 🍍
@@ -1901,8 +1897,7 @@ items:
     grad_alcoholica: 7,5%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€   
+    pvp: 8,5€  
 
 
   - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
@@ -1917,8 +1912,8 @@ items:
     grad_alcoholica: 3,50%
     vol_ml: 185 ml
     edul_gr:
-    pvp_local: 7,5€
-    pvp_terraza: 8€
+    pvp: 8€
+
 
   - nombre: Tiki Beach  
     disponible: true
@@ -1931,8 +1926,7 @@ items:
     grad_alcoholica: 3,50%
     vol_ml: 185 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp: 8,5€
 
   - nombre: Gin Fizz de Pomelo y Piña 🍍 
     imagen: 316.jpg
@@ -1944,8 +1938,8 @@ items:
     grad_alcoholica: No disponible
     vol_ml:
     edul_gr:
-    pvp_local: 8,50€
-    pvp_terraza: 9€
+    pvp: 9€
+
 
 
   - nombre: Grazie Mille 
@@ -1959,8 +1953,7 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp: 8,5€
 
   - nombre: Cóctel de Cóctel 🥜🌽🆕
     imagen: cocteldecoctel.jpg
@@ -1972,8 +1965,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€ 
+    pvp: 9€
+
 
   - nombre: Carraskiko (No disponible temporalmente)  
     disponible: false
@@ -1986,8 +1979,8 @@ items:
     grad_alcoholica: 
     vol_ml: 220 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp: 8€
+    
 
   - nombre: Italicus Rosolio  
     imagen: ItalicusRosolio.jpg
@@ -1998,8 +1991,8 @@ items:
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     edul_gr:
-    pvp_local: 7€
-    pvp_terraza: 7,5€
+    pvp: 7,5€
+
 
   - nombre: Carmen Beach
     prioridad: true
@@ -2013,8 +2006,8 @@ items:
     grad_alcoholica:
     vol_ml:
     edul_gr:
-    pvp_local: 12€
-    pvp_terraza: 12,50€ 
+    pvp: 12€
+ 
 
   - nombre: Dewars Summer 🌞  
     prioridad: true
@@ -2028,8 +2021,8 @@ items:
     grad_alcoholica: 
     vol_ml: 
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp: 8,5€
+
 
   - nombre: Dewars Spring 🌺  
     prioridad: true
@@ -2043,8 +2036,7 @@ items:
     grad_alcoholica: 
     vol_ml:
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp: 8,5€
 
   - nombre: Dewars Autunm 🍁  
     disponible: true
@@ -2057,8 +2049,7 @@ items:
     grad_alcoholica: 
     vol_ml: 
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€ 
+    pvp: 9€
 
 
   - nombre: Isla Blanca 💝💕🥰  (no disponible temporalmente)
@@ -2073,8 +2064,8 @@ items:
     grad_alcoholica: 
     vol_ml: 
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€ 
+    pvp: 9€
+    
 
   - nombre: Veggie Chips
     imagen: vegechips.png
@@ -2085,8 +2076,8 @@ items:
     grad_alcoholica:
     vol_ml: 
     edul_gr: 
-    pvp_local: 2€
-    pvp_terraza: 2€
+    pvp: 2€
+
 
   - nombre: Tropea Beach 
     disponible: false
@@ -2100,8 +2091,8 @@ items:
     grad_alcoholica: 
     vol_ml: 
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€ 
+    pvp: 8,5€
+    
 
   - nombre: Miyako  (fuera de temporada)
     disponible: false
@@ -2114,8 +2105,8 @@ items:
     grad_alcoholica: 
     vol_ml: 
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    
 
 
   - nombre: Boston Beach🍓🆕
@@ -2130,8 +2121,8 @@ items:
     grad_alcoholica: 
     vol_ml: 
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€  
+    pvp: 8,5€
+    
 
   - nombre: Bombay Sapphire & Schweppes Toque de Lima
     imagen: bombaysapphire.png
@@ -2143,8 +2134,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,5€
+    pvp: 8,5€
+
 
 
   - nombre: Bombay S. Premier Cru Murcian Lemon & Schweppes Toque de Lima
@@ -2157,8 +2148,8 @@ items:
     grad_alcoholica: 9,5%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8,5€
-    pvp_terraza: 9€
+    pvp: 9€
+
 
   - nombre: Gin Ordesano & Fever Tree
     imagen: ordesano.jpeg
@@ -2170,7 +2161,6 @@ items:
     grad_alcoholica: 7,5%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 8€
-    pvp_terraza: 8,50€
+    pvp: 8€
 
 
