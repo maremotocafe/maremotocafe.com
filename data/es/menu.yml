@@ -13,7 +13,7 @@ items_incremento: 30
 no_items_mensaje: No hay nada con esos filtros, prueba a usar otros.
 no_items_icono: las la-exclamation
 
-nombres_datos: ["ingredientes", "alergenos", "txt_aclaraciones", "txt_temporal", "grad_alcoholica", "vol_ml", "edul_gr", "pvp_local", "pvp_terraza"]
+nombres_datos: ["ingredientes", "alergenos", "txt_aclaraciones", "txt_temporal", "grad_alcoholica", "vol_ml", "edul_gr", "pvp_local", "pvp_terraza", "pvp"]
 titulos_datos:
     ingredientes: Ingredientes
     alergenos: Alérgenos
