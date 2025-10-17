@@ -124,8 +124,9 @@ items:
   - nombre: Pastas de Té Caseras  
     imagen: pastasdete.jpeg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
-    ingredientes: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
+    ingredientes: 
     alergenos: 
+    txt_aclaraciones: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
@@ -147,8 +148,9 @@ items:
   - nombre: Pastas de Té Caseras  
     imagen: pastasdete.jpeg
     categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
-    ingredientes: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
+    ingredientes: 
     alergenos: 
+    txt_aclaraciones: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
@@ -170,8 +172,9 @@ items:
   - nombre: Pastas de Té Caseras  
     imagen: pastasdete.jpeg
     categorias: ["Cocktails" , "Cocktails de Autor"]
-    ingredientes: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
+    ingredientes: 
     alergenos: 
+    txt_aclaraciones: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
@@ -193,8 +196,9 @@ items:
   - nombre: Pastas de Té
     imagen: pastasdete.jpeg
     categorias: ["Gin Tonics"]
-    ingredientes: Acompaña tu Gin Tonic con estas ricas Pastas de Té Caseras
+    ingredientes: 
     alergenos: 
+    txt_aclaraciones: Acompaña tu Gin Tonic con estas ricas Pastas de Té Caseras
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
@@ -248,8 +252,9 @@ items:
   - nombre: Pastas de Té  
     imagen: pastasdete.jpeg
     categorias: ["Cocktails" , "Cocktails Long Drinks"]
-    ingredientes: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
-    alergenos: 
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
@@ -2169,11 +2174,12 @@ items:
     edul_gr: 
     pvp: 2€
 
-   - nombre: Pastas de Té
+  - nombre: Pastas de Té
     imagen: pastasdete.jpeg
     categorias: ["Promociones y Ofertas" , "Tarde" , "Noche"]
-    ingredientes: Acompaña tu bebida con estas ricas Pastas de Té Caseras
+    ingredientes: 
     alergenos: 
+    txt_aclaraciones: Acompaña tu bebida con estas ricas Pastas de Té Caseras
     txt_temporal: Disponible todo el año.
     grad_alcoholica:
     vol_ml: 
