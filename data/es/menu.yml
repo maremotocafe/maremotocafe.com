@@ -121,6 +121,17 @@ items:
     edul_gr: 
     pvp: 2€
 
+  - nombre: Pastas de Té Caseras  
+    imagen: pastasdete.jpeg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
+    ingredientes: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp: 2,5€
+
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
@@ -132,6 +143,17 @@ items:
     vol_ml: 
     edul_gr: 
     pvp: 2€
+
+  - nombre: Pastas de Té Caseras  
+    imagen: pastasdete.jpeg
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
+    ingredientes: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp: 2,5€
     
 
   - nombre: Veggie Chips  
@@ -145,6 +167,17 @@ items:
     edul_gr: 
     pvp: 2€
 
+  - nombre: Pastas de Té Caseras  
+    imagen: pastasdete.jpeg
+    categorias: ["Cocktails" , "Cocktails de Autor"]
+    ingredientes: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp: 2,5€
+
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
@@ -156,6 +189,17 @@ items:
     vol_ml: 
     edul_gr: 
     pvp: 2€
+
+  - nombre: Pastas de Té
+    imagen: pastasdete.jpeg
+    categorias: ["Gin Tonics"]
+    ingredientes: Acompaña tu Gin Tonic con estas ricas Pastas de Té Caseras
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp: 2,5€
 
   - nombre: Carta de Rones  
     imagen: portadaderones.png
@@ -201,6 +245,17 @@ items:
     edul_gr: 
     pvp: 2€
 
+  - nombre: Pastas de Té  
+    imagen: pastasdete.jpeg
+    categorias: ["Cocktails" , "Cocktails Long Drinks"]
+    ingredientes: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp: 2,5€
+
   - nombre: Veggie Chips  
     imagen: vegechips.png
     categorias: ["Cocktails" , "Cocktails Clásicos"]
@@ -211,6 +266,18 @@ items:
     vol_ml: 
     edul_gr: 
     pvp: 2€
+
+  - nombre: Pastas de Té  
+    imagen: pastasdete.jpeg
+    categorias: ["Cocktails" , "Cocktails Clásicos"]
+    ingredientes: 
+    alergenos:  
+    txt_aclaraciones: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras  
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp: 2,5€
 
 
 
@@ -250,6 +317,18 @@ items:
     vol_ml:
     edul_gr: 14gr Azúcar moreno
     pvp_local: 5€
+
+  - nombre: Pastas de Té Caseras
+    imagen: pastasdete.jpeg
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
+    ingredientes: 
+    alergenos: 
+    txt_aclaraciones: Acompaña tu Café con estas ricas Pastas de Té caseras
+    txt_temporal:
+    grad_alcoholica:
+    vol_ml:
+    edul_gr: 
+    pvp_local: 2,5€
     
 
   - nombre: Capuccino Clásico ☕
@@ -462,6 +541,18 @@ items:
     vol_ml:
     edul_gr: 10gr de Azúcar
     pvp: 4€
+
+  - nombre: Pastas de Té
+    imagen: pastasdete.jpeg
+    categorias: ["Cafés y Tés" , "Infusiones"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Acompaña tu Té con estas ricas Pastas de Té Caseras
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml:
+    edul_gr: 
+    pvp: 2,5€
 
   - nombre: Iced Orange Matcha ❄ 🆕
     imagen: icedorangematcha.jpeg
@@ -2077,6 +2168,17 @@ items:
     vol_ml: 
     edul_gr: 
     pvp: 2€
+
+   - nombre: Pastas de Té
+    imagen: pastasdete.jpeg
+    categorias: ["Promociones y Ofertas" , "Tarde" , "Noche"]
+    ingredientes: Acompaña tu bebida con estas ricas Pastas de Té Caseras
+    alergenos: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml: 
+    edul_gr: 
+    pvp: 2,5€
 
 
   - nombre: Tropea Beach 
