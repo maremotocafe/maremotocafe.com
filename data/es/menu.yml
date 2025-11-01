@@ -205,8 +205,9 @@ items:
     edul_gr: 
     pvp: 2,5€
 
-  - nombre: Carta de Rones  
-    imagen: portadaderones.png
+  - nombre: Carta de Rones   
+    imagen: cartaderones.png
+    imagen_pequenya: portadaderon.png
     categorias: ["Rones, Whiskies y Licores"]
     ingredientes: 
     alergenos: 
