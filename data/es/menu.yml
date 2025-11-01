@@ -2243,6 +2243,21 @@ items:
     edul_gr:
     pvp: 8,5€
 
+  - nombre: Pagos Trimestrales 🎃🆕
+    prioridad: true
+    disponible: true
+    imagen: pagostrimestrales.jpeg
+    categorias: ["Cocktails" , "Cocktails de Autor"]
+    ingredientes: Don Papa Baroko Maskkara, Zumo de Piña Natural, Lima, Sirope de Guindas, Granadina.
+    alergenos: 
+    txt_aclaraciones: Nuestro Cocktail de Halloween. ¿Hay algo que de mas miedo que la declaración trimestral? 😀 ¡Con sentido del humor este cocktail todavía está mas rico!
+    txt_temporal: Disponible todo el año. 
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp: 9€
+
+
   - nombre: Chilcano de Piña Asada 🍍🆕
     prioridad: true
     disponible: true
