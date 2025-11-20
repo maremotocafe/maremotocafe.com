@@ -857,8 +857,8 @@ items:
     edul_gr:
     pvp: 7,5€
 
-  - nombre: Frescor Cálido (fuera de temporada)
-    disponible: false
+  - nombre: Frescor Cálido 
+    disponible: true
     imagen: 311.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo Natural de Granada, Sirope de Especias, Zumo de Limón, Canela y Soda.
@@ -2214,8 +2214,8 @@ items:
 
 
   - nombre: Tropea Beach 
-    disponible: false
-    prioridad: false
+    disponible: true
+    prioridad: true
     imagen: tropeabeach.jpeg
     categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
