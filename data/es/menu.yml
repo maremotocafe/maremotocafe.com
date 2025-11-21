@@ -321,8 +321,21 @@ items:
     txt_temporal:
     grad_alcoholica:
     vol_ml:
-    edul_gr: 14gr Azúcar moreno
+    edul_gr: 
     pvp_local: 5€
+
+  - nombre: Mocaccino
+    imagen: mocaccino.jpeg
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
+    ingredientes: Café espresso, Nata semimontada y Sirope de Chocolate.
+    alergenos: "*Leche*"
+    txt_aclaraciones:
+    txt_temporal:
+    grad_alcoholica:
+    vol_ml:
+    edul_gr: 
+    pvp_local: 5,5€
+
 
   - nombre: Pastas de Té Caseras
     imagen: pastasdete.jpeg
@@ -525,7 +538,7 @@ items:
     categorias: ["Cafés y Tés" , "Infusiones"] 
 
   - nombre: Golden Milk ☕
-    disponible: false
+    disponible: true
     imagen: goldenmilk.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Reconfortante bebida caliente a base de Leche de Avena, Cúrcuma, Clavo, Canela, Jengibre, Pimienta y Sirope de Arce.
@@ -933,7 +946,7 @@ items:
     edul_gr:
     pvp: 7,5€
 
-  - nombre: Mojito Sabor
+  - nombre: Mojito Sabor 
     imagen: 202.jpg
     categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Rón blanco Plantation, Lima, Hierbabuena, Puré de Frutas, Azúcar y Soda.
@@ -947,7 +960,7 @@ items:
 
   - nombre: Mojito Moreno
     imagen: 275.jpg
-    categorias: []
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Ron Añejo especiado, Lima, Hierbabuena, Azúcar moreno, Angostura y Soda
     alergenos:
     txt_aclaraciones:
@@ -957,6 +970,17 @@ items:
     edul_gr:
     pvp: 7,5€
 
+  - nombre: Mojito Canario 🍌
+    imagen: mojitocanario.jpeg
+    categorias: ["Cocktails" , "Mojitos Caipirinhas y Similares"]
+    ingredientes: Ron Guanche Arehucas, Pure de Plátano, Lima y Hierbabuena
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 10,60%
+    vol_ml: 135 ml
+    edul_gr:
+    pvp: 7,5€
 
   - nombre: Mai Tai
     imagen: 286.jpg
@@ -1213,7 +1237,7 @@ items:
     edul_gr:
     pvp: 8,5€
 
-  - nombre: Tangerine Road (Fuera de temporada)
+  - nombre: Tangerine Road 
     prioridad: false
     disponible: false
     imagen: tangerineroad.jpg
