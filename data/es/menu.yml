@@ -218,7 +218,8 @@ items:
     pvp:
 
   - nombre: Carta de Whiskies  
-    imagen: portadadewhiskies.png
+    imagen: cartadewhiskies.png
+    imagen_pequenya: portadadewhiskies_small.png
     categorias: ["Rones, Whiskies y Licores"]
     ingredientes: 
     alergenos: 
@@ -541,7 +542,7 @@ items:
     disponible: true
     imagen: goldenmilk.jpg
     categorias: ["Cafés y Tés" , "Infusiones"]
-    ingredientes: Reconfortante bebida caliente a base de Leche de Avena, Cúrcuma, Clavo, Canela, Jengibre, Pimienta y Sirope de Arce.
+    ingredientes: Reconfortante bebida caliente a base de Leche de Avena, Cúrcuma, Clavo, Canela, Jengibre, Pimienta y Azucar Moreno.
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible de Noviembre a Enero
