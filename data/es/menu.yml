@@ -871,6 +871,43 @@ items:
     edul_gr:
     pvp: 7,5€
 
+   - nombre: Tiki Shin 🆕
+    imagen: tikishin.jpg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    ingredientes: Tanqueray 0% Alcohol, Leche Merengada, Zumo de Naranja, Zumo de Lima, Sirope de Especias y Ginger Ale
+    alergenos: Leche
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 0%
+    vol_ml:
+    edul_gr:
+    pvp: 7,5€  
+
+
+   - nombre: Playa Paraiso 🆕
+    imagen: playaparaiso.jpg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    ingredientes: Piña Asada, Hierbabuena, Zumo de Piña y Mixer de Pomelo.
+    alergenos: 
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 0%
+    vol_ml:
+    edul_gr:
+    pvp: 7,5€  
+
+  - nombre: Jugo Verde Detox 🆕
+    imagen: jugoverde.jpg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    ingredientes: Pepinno, Espinaca, Hierbabuena, Manzana Gran Smith, Jengibre y Lima 
+    alergenos: 
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 0%
+    vol_ml:
+    edul_gr:
+    pvp: 6,5€       
+
   - nombre: Frescor Cálido 
     disponible: true
     imagen: 311.jpg
@@ -1306,6 +1343,19 @@ items:
     vol_ml: 125 ml
     edul_gr:
     pvp: 9€
+
+  - nombre: Mai Tai de Sasha 
+    imagen: maitaidesasha.jpg
+    categorias: ["Cocktails" , "Cocktails de Autor"]
+    ingredientes: Vodka de Leche Merengada, Don Papa Maskkara, Zumo de Naranja, Triple Seco, Falernum y Angostura.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp: 9€
+
 
   - nombre: Refujito de Ágave
     imagen: 200.jpg
@@ -2241,7 +2291,7 @@ items:
   - nombre: Tropea Beach 
     disponible: true
     prioridad: true
-    imagen: tropeabeach.jpeg
+    imagen: tropea.jpg
     categorias: ["Cocktails" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.
     alergenos: 
@@ -2251,7 +2301,36 @@ items:
     vol_ml: 
     edul_gr:
     pvp: 8,5€
-    
+
+
+  - nombre: Espresso MarTiki 🆕
+    disponible: true
+    prioridad: true
+    imagen: espressomartiki.jpg
+    categorias: ["Cocktails" , "Cocktails de Autor"]
+    ingredientes: Vodka de Tamarindo, Pure Maracuyá, Espresso, Licor Café y Falernum
+    alergenos: 
+    txt_aclaraciones: 
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp: 8€ 
+
+  - nombre: Golden Tiki 🆕
+    disponible: true
+    prioridad: true
+    imagen: goldentiki.jpg
+    categorias: ["Cocktails" , "Cocktails de Autor"]
+    ingredientes: Ron de Cúrcuma y especias, Zumo de Mandarina, Falernum, Az Liquido y Angostura
+    alergenos: 
+    txt_aclaraciones: 
+    txt_temporal: Disponible de Noviembre a Marzo 
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
+    pvp: 9€ 
+
 
   - nombre: Miyako  (fuera de temporada)
     disponible: false
