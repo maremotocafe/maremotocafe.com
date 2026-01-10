@@ -871,7 +871,7 @@ items:
     edul_gr:
     pvp: 7,5€
 
-   - nombre: Tiki Shin 🆕
+  - nombre: Tiki Shin 🆕
     imagen: tikishin.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Tanqueray 0% Alcohol, Leche Merengada, Zumo de Naranja, Zumo de Lima, Sirope de Especias y Ginger Ale
@@ -884,7 +884,7 @@ items:
     pvp: 7,5€  
 
 
-   - nombre: Playa Paraiso 🆕
+  - nombre: Playa Paraiso 🆕
     imagen: playaparaiso.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Piña Asada, Hierbabuena, Zumo de Piña y Mixer de Pomelo.
