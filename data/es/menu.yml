@@ -859,17 +859,30 @@ items:
     edul_gr: 22gr
     pvp: 7€
 
-  - nombre: Shin Tonic
-    imagen: 63.jpg
+  - nombre: Shin Tonic de Frambuesa (Sin Alcohol) 🆕
+    imagen: shintonicframbuesa.jpeg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
-    ingredientes: Martini Vibrante (Sin alcohol) & 1724 tonic watter
+    ingredientes: Tanqueray 0% Alcohol infusionada con frambuesas y Tonica Schweppes
     alergenos:
-    txt_aclaraciones:
+    txt_aclaraciones: Infusionamos con mucho cariño Tanqueray Sin Alcohol con Frambuesas frescas para darle a tu trago sin Alcohol un toque único.
     txt_temporal: Disponible todo el año
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp: 7,5€
+    pvp: 8€
+
+  - nombre: Shin Tonic Mediterraneo (Sin Alcohol) 🆕
+    imagen: shintonicmediterraneo.jpeg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    ingredientes: Tanqueray 0% Alcohol infusionada con Romero y Tonica Fever Mediterranean
+    alergenos:
+    txt_aclaraciones: Infusionamos con mucho cariño Tanqueray Sin Alcohol con Romero y lo combinamos con Fever Mediterranean para darle a tu trago sin Alcohol un caracter, pues eso, ¡Más Mediterraneo! :)
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: 0%
+    vol_ml:
+    edul_gr:
+    pvp: 8,5€
+
 
   - nombre: Tiki Shin 🆕
     imagen: tikishin.jpg
