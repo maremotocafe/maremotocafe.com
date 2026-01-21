@@ -231,6 +231,7 @@ items:
     
   - nombre: Carta de Licores  
     imagen: portadadelicores.png
+    imagen_pequenya: cartadelicores_small.png
     categorias: ["Rones, Whiskies y Licores"]
     ingredientes: 
     alergenos: 
