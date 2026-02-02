@@ -89,7 +89,7 @@ items:
   #   # Si no está disponible, ponerle "false" (sin las comillas)
   #   disponible: false
   #   imagen: 42.jpg
-  #   categorias: ["Sin Alcohol", "Healthy Cocktails", "Sin Alcohol ni Azúcares"]
+  #   categorias: ["Sin Alcohol", "Cocktails Sin Alcohol", "Sin Alcohol ni Azúcares"]
   #   ingredientes: Zumo de Tomate Natural, Zumo de Limón, Salsa Perrin's, Tabasco, Romero, Jengibre, Sal de Apio y Pimienta.
   #   alergenos: "*Apio.*"
   #   txt_temporal: Disponible todo el año.
@@ -101,7 +101,7 @@ items:
 
   - nombre: Bloody Mary Free 🍎
     imagen: 42.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Zumo de Tomate Natural, Zumo de Limón, Salsa Perrin's, Tabasco, Romero, Jengibre, Sal de Apio y Pimienta.
     alergenos: "*Apio.*"
     txt_temporal: Disponible todo el año.
@@ -112,7 +112,7 @@ items:
 
   - nombre: Veggie Chips  
     imagen: vegechips.png
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Aperitivo saludable a base de Yuca, Batata, Zanahoria, Remolacha y Aceite de oliva
     alergenos: 
     txt_temporal: Disponible todo el año.
@@ -123,7 +123,7 @@ items:
 
   - nombre: Pastas de Té Caseras  
     imagen: pastasdete.jpeg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: 
     alergenos: 
     txt_aclaraciones: Acompaña tu Cocktail con estas ricas Pastas de Té Caseras
@@ -772,7 +772,7 @@ items:
 
   - nombre: Limonada de Pomelo y Menta
     imagen: 272.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Zumo de Limón, Zumo de Pomelo Natural, Jengibre fresco, Azucar Integral de caña, y Menta fresca.
     alergenos:
     txt_aclaraciones:
@@ -786,7 +786,7 @@ items:
     disponible: false
     prioridad: false
     imagen: 270.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
     alergenos:
     txt_aclaraciones:
@@ -799,7 +799,7 @@ items:
 
   - nombre: Limonada Mr Smith
     imagen: 299.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Zumo de Manzana Granny Smith Natural, Zumo de Manzana Royal Gala Natural, Zumo de Limón, Hojas de Menta fresca y Soda.
     alergenos:
     txt_aclaraciones:
@@ -812,7 +812,7 @@ items:
 
   - nombre: San Francisco
     imagen: 317.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Zumo de Naranja Natural, Zumo de piña, Zumo de Limón y Granadina.
     alergenos:
     txt_aclaraciones:
@@ -838,7 +838,7 @@ items:
 
   - nombre: Virgin Mojito
     imagen: 318.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Lima, Hierbabuena, Azucar, Piña, Jengibre fresco y Soda.
     alergenos:
     txt_aclaraciones:
@@ -850,7 +850,7 @@ items:
 
   - nombre: Virgin Colada
     imagen: 394.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Zumo de Piña, Zumo de Lima, Puré de coco, Azúcar y Nata.
     alergenos: "*Leche*"
     txt_aclaraciones:
@@ -862,7 +862,7 @@ items:
 
   - nombre: Shin Tonic de Frambuesa (Sin Alcohol) 🆕
     imagen: shintonicframbuesa.jpeg
-    categorias: ["Sin Alcohol", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol" , "Sin Alcohol"]
     ingredientes: Tanqueray 0% Alcohol infusionada con frambuesas y Tonica Schweppes
     alergenos:
     txt_aclaraciones: Infusionamos con mucho cariño Tanqueray Sin Alcohol con Frambuesas frescas para darle a tu trago sin Alcohol un toque único.
@@ -874,7 +874,7 @@ items:
 
   - nombre: Shin Tonic Mediterraneo (Sin Alcohol) 🆕
     imagen: shintonicmediterraneo.jpeg
-    categorias: ["Sin Alcohol", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol" , "Sin Alcohol"]
     ingredientes: Tanqueray 0% Alcohol infusionada con Romero y Tonica Fever Mediterranean
     alergenos:
     txt_aclaraciones: Infusionamos con mucho cariño Tanqueray Sin Alcohol con Romero y lo combinamos con Fever Mediterranean para darle a tu trago sin Alcohol un caracter, pues eso, ¡Más Mediterraneo! :)
@@ -887,7 +887,7 @@ items:
 
   - nombre: Tiki Shin 🆕
     imagen: tikishin.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol" , "Sin Alcohol"]
     ingredientes: Tanqueray 0% Alcohol, Leche Merengada, Zumo de Naranja, Zumo de Lima, Sirope de Especias y Ginger Ale
     alergenos: Leche
     txt_aclaraciones:
@@ -900,7 +900,7 @@ items:
 
   - nombre: Playa Paraiso 🆕
     imagen: playaparaiso.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol" , "Sin Alcohol"]
     ingredientes: Piña Asada, Hierbabuena, Zumo de Piña y Mixer de Pomelo.
     alergenos: 
     txt_aclaraciones:
@@ -912,7 +912,7 @@ items:
 
   - nombre: Jugo Verde Detox 🆕
     imagen: jugoverde.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol" , "Sin Alcohol"]
     ingredientes: Pepinno, Espinaca, Hierbabuena, Manzana Gran Smith, Jengibre y Lima 
     alergenos: 
     txt_aclaraciones:
@@ -925,7 +925,7 @@ items:
   - nombre: Frescor Cálido 
     disponible: true
     imagen: 311.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Zumo Natural de Granada, Sirope de Especias, Zumo de Limón, Canela y Soda.
     alergenos:
     txt_aclaraciones:
@@ -938,7 +938,7 @@ items:
 
   - nombre: Blondi Beach 🏖   
     imagen: blondibeach.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Zumo de Limón, Jengibre, Cordial de Pimienta Rue Berry, Angostura y Soda.
     alergenos:
     txt_aclaraciones: Version tuneada del famoso cocktail Sin Alcohol Limon, lima & Bitter típico de las maravillosas playas australianas. Blondi Beach es nuestra favorita. Este Cocktail contiene un pequeño porcentaje de alcohol debido a la Angostura de la cual utilizamos 4 gotas.
@@ -950,7 +950,7 @@ items:
 
   - nombre: Jalamango
     imagen: 315.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Mango Natural, Jalapeños, Zumo Natural de Naranja y Cilantro fresco.
     alergenos:
     txt_aclaraciones:
@@ -963,7 +963,7 @@ items:
 
   - nombre: Floreale.🌼🌺🆕
     imagen: floreale.jpg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Martini Floreale, Droplet de Camomila y Té Daerling, Tonica Schweppes de Pomelo y Baya de Nepal y Perfume de Lima Rangpur.
     alergenos: 
     txt_aclaraciones:
@@ -975,7 +975,7 @@ items:
 
   - nombre: Costa de Azahar 🍊🆕
     imagen: costadeazahar.jpeg
-    categorias: ["Sin Alcohol", "Healthy Cocktails"]
+    categorias: ["Sin Alcohol", "Cocktails Sin Alcohol"]
     ingredientes: Cordial de Mandarina, Sirope casero de Frambuesa, Jengibre, Hierbabuena y Ginger Beer
     alergenos: 
     txt_aclaraciones: Refrescante y Atractivo Cocktail Sin Alcohol con un toque Picante.
