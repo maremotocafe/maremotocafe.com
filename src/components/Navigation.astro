@@ -2,9 +2,9 @@
 import { siteConfig, navigation } from "../data/site";
 ---
 
-<section class="sticky top-0 z-50 bg-bg/95 backdrop-blur-sm">
+<section class="sticky top-0 z-50 bg-[#1d2024]">
   <div class="mx-auto max-w-6xl px-4">
-    <nav class="flex items-center justify-between py-3">
+    <nav class="flex flex-wrap items-center justify-between py-3">
       <div class="flex items-center">
         <a href="/" class="p-0">
           <img
@@ -12,7 +12,7 @@ import { siteConfig, navigation } from "../data/site";
             alt={siteConfig.title}
             width="557"
             height="67"
-            class="h-10 w-auto"
+            class="h-8 w-auto sm:h-10"
           />
         </a>
       </div>
@@ -20,7 +20,7 @@ import { siteConfig, navigation } from "../data/site";
       <!-- Mobile toggle -->
       <button
         id="nav-toggle"
-        class="rounded p-2 text-text hover:bg-white/10 lg:hidden"
+        class="shrink-0 rounded p-2 text-text hover:bg-white/10 lg:hidden"
         aria-label="Menú"
         aria-expanded="false"
         aria-controls="nav-menu"
@@ -29,11 +29,15 @@ import { siteConfig, navigation } from "../data/site";
         <i class="las la-bars text-2xl"></i>
       </button>
 
-      <!-- Nav links -->
-      <div id="nav-menu" class="hidden lg:flex lg:items-center lg:gap-1">
+      <!-- Nav links: collapsed on mobile, flex row on desktop -->
+      <div
+        id="nav-menu"
+        class="nav-menu w-full overflow-hidden lg:flex lg:w-auto lg:items-center lg:gap-1 lg:overflow-visible"
+      >
         <a
           href="#body"
-          class="block rounded px-4 py-2 text-sm text-text/80 transition-colors hover:text-white"
+          class="nav-link block rounded px-4 py-2 text-sm transition-colors"
+          style="color: rgb(196, 205, 213);"
         >
           {navigation.home}
         </a>
@@ -41,7 +45,8 @@ import { siteConfig, navigation } from "../data/site";
           navigation.items.map((item) => (
             <a
               href={item.url}
-              class="block rounded px-4 py-2 text-sm text-text/80 transition-colors hover:text-white"
+              class="nav-link block rounded px-4 py-2 text-sm transition-colors"
+              style="color: rgb(196, 205, 213);"
             >
               {item.name}
             </a>
@@ -52,6 +57,30 @@ import { siteConfig, navigation } from "../data/site";
   </div>
 </section>
 
+<style>
+  /* Mobile: animate max-height for expand/collapse */
+  @media (max-width: 1023px) {
+    .nav-menu {
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.2s ease;
+    }
+
+    .nav-menu.open {
+      max-height: 300px;
+      opacity: 1;
+    }
+  }
+
+  /* Desktop: no animation needed, always visible */
+  @media (min-width: 1024px) {
+    .nav-menu {
+      max-height: none;
+      opacity: 1;
+    }
+  }
+</style>
+
 <script>
   const toggle = document.getElementById("nav-toggle");
   const menu = document.getElementById("nav-menu");
@@ -59,17 +88,7 @@ import { siteConfig, navigation } from "../data/site";
   toggle?.addEventListener("click", () => {
     const isExpanded = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!isExpanded));
-    menu?.classList.toggle("hidden");
-    // On mobile, display as a column
-    menu?.classList.toggle("flex");
-    menu?.classList.toggle("flex-col");
-    menu?.classList.toggle("absolute");
-    menu?.classList.toggle("top-full");
-    menu?.classList.toggle("left-0");
-    menu?.classList.toggle("right-0");
-    menu?.classList.toggle("bg-bg");
-    menu?.classList.toggle("p-4");
-    menu?.classList.toggle("shadow-lg");
+    menu?.classList.toggle("open");
   });
 
   // Close mobile menu when a link is clicked
@@ -77,19 +96,42 @@ import { siteConfig, navigation } from "../data/site";
     link.addEventListener("click", () => {
       if (window.innerWidth < 1024) {
         toggle?.setAttribute("aria-expanded", "false");
-        menu.classList.add("hidden");
-        menu.classList.remove(
-          "flex",
-          "flex-col",
-          "absolute",
-          "top-full",
-          "left-0",
-          "right-0",
-          "bg-bg",
-          "p-4",
-          "shadow-lg",
-        );
+        menu.classList.remove("open");
       }
     });
   });
+
+  // Scroll spy — highlight the active nav link based on scroll position
+  function updateActiveLink() {
+    const links = document.querySelectorAll<HTMLAnchorElement>(".nav-link");
+    const sections = Array.from(links)
+      .map((link) => {
+        const id = link.getAttribute("href")?.replace("#", "");
+        return id ? document.getElementById(id) : null;
+      })
+      .filter(Boolean) as HTMLElement[];
+
+    const scrollY = window.scrollY + 120;
+
+    let activeIndex = 0;
+    for (let i = sections.length - 1; i >= 0; i--) {
+      if (sections[i].offsetTop <= scrollY) {
+        activeIndex = i;
+        break;
+      }
+    }
+
+    links.forEach((link, i) => {
+      if (i === activeIndex) {
+        link.style.color = "rgb(60, 159, 180)";
+        link.style.fontWeight = "800";
+      } else {
+        link.style.color = "rgb(196, 205, 213)";
+        link.style.fontWeight = "400";
+      }
+    });
+  }
+
+  window.addEventListener("scroll", updateActiveLink, { passive: true });
+  updateActiveLink();
 </script>

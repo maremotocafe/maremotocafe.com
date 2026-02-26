@@ -31,7 +31,7 @@ export default function MenuFilterBar({
 
   return (
     <div className="animate-fade-in mb-4">
-      <h3 className="mb-4 text-center text-lg font-bold">
+      <h3 className="mb-4 text-center text-2xl font-bold">
         <span className="text-accent">{firstWord}</span>{" "}
         {restWords}
       </h3>
@@ -41,7 +41,7 @@ export default function MenuFilterBar({
         {resetOption && (
           <button
             onClick={() => onSelect(resetOption.value)}
-            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-sm font-semibold transition-[border-color,transform] duration-150 active:scale-[0.97]"
+            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-sm font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
             style={{
               backgroundColor: resetOption.color,
               color: "#2e343b",
@@ -57,7 +57,7 @@ export default function MenuFilterBar({
           <button
             key={opt.value}
             onClick={() => onSelect(opt.value)}
-            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-sm font-semibold transition-[border-color,transform] duration-150 active:scale-[0.97]"
+            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-sm font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
             style={{
               backgroundColor: opt.color,
               color: "#2e343b",
