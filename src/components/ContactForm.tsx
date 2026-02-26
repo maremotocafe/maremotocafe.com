@@ -32,6 +32,8 @@ export default function ContactForm() {
           <input
             type="text"
             name="subject"
+            aria-label={contact.subjectTxt}
+            autoComplete="off"
             placeholder={contact.subjectTxt}
             className={`w-full rounded-lg border bg-white/5 px-4 py-3 text-text placeholder-text/50 outline-none transition-colors focus:border-accent ${
               errors.subject ? "border-error" : "border-white/10"
@@ -44,6 +46,7 @@ export default function ContactForm() {
         <div className="mb-4">
           <textarea
             name="message"
+            aria-label={contact.messageTxt}
             rows={6}
             placeholder={contact.messageTxt}
             className={`w-full rounded-lg border bg-white/5 px-4 py-3 text-text placeholder-text/50 outline-none transition-colors focus:border-accent ${
@@ -56,7 +59,7 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          className="w-full rounded-lg bg-accent py-3 font-semibold text-bg transition-all duration-200 hover:opacity-90 active:scale-[0.98]"
+          className="w-full rounded-lg bg-accent py-3 font-semibold text-bg transition-[opacity,transform] duration-200 hover:opacity-90 active:scale-[0.98]"
         >
           {contact.submitTxt}
         </button>

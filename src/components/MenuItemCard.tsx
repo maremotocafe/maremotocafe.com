@@ -14,8 +14,9 @@ export default function MenuItemCard({
   onClick,
 }: MenuItemCardProps) {
   return (
-    <figure
-      className="animate-fade-in group cursor-pointer"
+    <button
+      type="button"
+      className="animate-fade-in group cursor-pointer text-left"
       style={{
         animationDelay: `${staggerDelay}ms`,
       }}
@@ -39,6 +40,6 @@ export default function MenuItemCard({
           <i className="las la-search ml-2 text-sm text-white/70 opacity-0 transition-opacity group-hover:opacity-100" />
         </div>
       </div>
-    </figure>
+    </button>
   );
 }

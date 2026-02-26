@@ -58,10 +58,12 @@ export const navigation = {
 
 export const social = [
   {
+    name: "Facebook",
     icon: "lab la-facebook-f",
     link: "https://www.facebook.com/maremotobeachzaragoza",
   },
   {
+    name: "Instagram",
     icon: "lab la-instagram",
     link: "https://www.instagram.com/maremoto.beach",
   },
@@ -78,4 +80,4 @@ export const scrollToTop = {
 } as const;
 
 export const copyright =
-  'Página desarrollada por <a href="https://github.com/marioortizmanero" target="_blank" rel="noreferrer">Mario Ortiz Manero</a>.<br/><em>Basado en <a href="https://gethugothemes.com" target="_blank" rel="noreferrer">gethugothemes</a>, licencia <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noreferrer">Attribution 3.0 Unported</a>.</em>';
+  'Página desarrollada por <a href="https://github.com/marioortizmanero" target="_blank" rel="noreferrer">Mario Ortiz Manero</a>.';

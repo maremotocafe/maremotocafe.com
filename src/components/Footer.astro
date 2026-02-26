@@ -12,7 +12,8 @@ import { siteConfig, social, copyright } from "../data/site";
             href={item.link}
             target="_blank"
             rel="noreferrer"
-            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-xl transition-all duration-200 hover:bg-accent hover:text-bg"
+            aria-label={item.name}
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-xl transition-colors duration-200 hover:bg-accent hover:text-bg"
           >
             <i class={item.icon} />
           </a>
@@ -25,7 +26,9 @@ import { siteConfig, social, copyright } from "../data/site";
       <img
         src={siteConfig.logo}
         alt={siteConfig.title}
-        class="mx-auto mb-4 h-12"
+        width="557"
+        height="67"
+        class="mx-auto mb-4 h-12 w-auto"
       />
     </a>
 

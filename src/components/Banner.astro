@@ -13,7 +13,9 @@ import { banner } from "../data/site";
         <img
           src={banner.logoTitle}
           alt={banner.title}
-          class="mx-auto mb-3 max-w-xs"
+          width="377"
+          height="52"
+          class="mx-auto mb-3 max-w-md"
         />
       ) : (
         <h1 class="mb-4 text-5xl font-bold">{banner.title}</h1>
@@ -28,7 +30,7 @@ import { banner } from "../data/site";
     </div>
     <a
       href={banner.button.link}
-      class="mt-8 inline-block rounded-lg bg-accent px-8 py-3 font-semibold text-bg transition-all duration-200 hover:scale-105 hover:opacity-90"
+      class="mt-8 inline-block rounded-lg bg-accent px-8 py-3 font-semibold text-black transition-[opacity,transform] duration-200 hover:scale-105 hover:opacity-90"
     >
       {banner.button.label}
     </a>

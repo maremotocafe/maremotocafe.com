@@ -10,6 +10,8 @@ import { siteConfig, navigation } from "../data/site";
           <img
             src={siteConfig.logo}
             alt={siteConfig.title}
+            width="557"
+            height="67"
             class="h-10 w-auto"
           />
         </a>
@@ -20,6 +22,8 @@ import { siteConfig, navigation } from "../data/site";
         id="nav-toggle"
         class="rounded p-2 text-text hover:bg-white/10 lg:hidden"
         aria-label="Menú"
+        aria-expanded="false"
+        aria-controls="nav-menu"
         type="button"
       >
         <i class="las la-bars text-2xl"></i>
@@ -53,6 +57,8 @@ import { siteConfig, navigation } from "../data/site";
   const menu = document.getElementById("nav-menu");
 
   toggle?.addEventListener("click", () => {
+    const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!isExpanded));
     menu?.classList.toggle("hidden");
     // On mobile, display as a column
     menu?.classList.toggle("flex");
@@ -70,6 +76,7 @@ import { siteConfig, navigation } from "../data/site";
   menu?.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       if (window.innerWidth < 1024) {
+        toggle?.setAttribute("aria-expanded", "false");
         menu.classList.add("hidden");
         menu.classList.remove(
           "flex",

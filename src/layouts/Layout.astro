@@ -34,6 +34,10 @@ const {
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
 
+    <!-- Preconnect to CDN domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://maxst.icons8.com" crossorigin />
     <!-- Line Awesome Icons -->
     <link
       rel="stylesheet"
@@ -41,20 +45,16 @@ const {
     />
 
     <!-- Google Fonts: Rubik -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Google Analytics -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=UA-162662877-2"></script>
+    <!-- Plausible Analytics -->
+    <script is:inline async src="https://plausible.io/js/pa-oHpK3m389ufcyEzf-oBEl.js"></script>
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag("js", new Date());
-      gtag("config", "UA-162662877-2");
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
     </script>
   </head>
   <body id="body" class="bg-bg text-text font-sans">

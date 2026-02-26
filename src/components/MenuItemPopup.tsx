@@ -67,27 +67,36 @@ export default function MenuItemPopup({
     <dialog
       ref={dialogRef}
       onClick={handleBackdropClick}
-      onCancel={() => handleClose()}
+      onCancel={handleClose}
       className="m-0 mx-auto my-auto max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-xl bg-bg p-0 text-text"
     >
       {item && (
         <div className="relative">
-          {/* Close button */}
-          <button
-            onClick={handleClose}
-            className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70"
-          >
-            <i className="las la-times" />
-          </button>
+          {/* Close button — sticky container with no height so it doesn't affect layout */}
+          <div className="sticky top-0 z-10 h-0">
+            <button
+              onClick={handleClose}
+              aria-label="Cerrar"
+              className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70"
+            >
+              <i className="las la-times" />
+            </button>
+          </div>
 
           {isStandalone ? (
             /* Standalone: just the image, click to close */
-            <img
-              src={imageSrc}
-              alt={item.nombre}
-              className="w-full cursor-pointer"
+            <button
+              type="button"
               onClick={handleClose}
-            />
+              aria-label={`Cerrar ${item.nombre}`}
+              className="w-full"
+            >
+              <img
+                src={imageSrc}
+                alt={item.nombre}
+                className="w-full"
+              />
+            </button>
           ) : (
             /* Full popup with details */
             <div className="md:flex">

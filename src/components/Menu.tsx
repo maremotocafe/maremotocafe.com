@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useRef } from "react";
 import type { MenuItem, MenuCategory, MenuConfig } from "../data/types";
 import MenuFilterBar from "./MenuFilterBar";
 import MenuItemCard from "./MenuItemCard";
@@ -19,19 +19,13 @@ interface MenuProps {
 
 /** Sort items: priority first, unavailable last, alphabetical within groups. */
 function sortItems(items: MenuItem[]): MenuItem[] {
-  const high: MenuItem[] = [];
-  const normal: MenuItem[] = [];
-  const low: MenuItem[] = [];
-
-  for (const item of [...items].sort((a, b) =>
-    a.nombre.localeCompare(b.nombre, "es"),
-  )) {
-    if (item.prioridad === true) high.push(item);
-    else if (item.disponible === false) low.push(item);
-    else normal.push(item);
-  }
-
-  return [...high, ...normal, ...low];
+  return [...items].sort((a, b) => {
+    // Bucket: priority=0, normal=1, unavailable=2
+    const bucketA = a.prioridad ? 0 : a.disponible === false ? 2 : 1;
+    const bucketB = b.prioridad ? 0 : b.disponible === false ? 2 : 1;
+    if (bucketA !== bucketB) return bucketA - bucketB;
+    return a.nombre.localeCompare(b.nombre, "es");
+  });
 }
 
 export default function Menu({
@@ -46,6 +40,7 @@ export default function Menu({
   );
   const [visibleCount, setVisibleCount] = useState(config.items_iniciales);
   const [popupItem, setPopupItem] = useState<MenuItem | null>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   // Sorted items (stable)
   const sortedItems = useMemo(() => sortItems(items), [items]);
@@ -73,6 +68,14 @@ export default function Menu({
       setActiveCategory(value);
       setActiveSubcategory(null);
       setVisibleCount(config.items_iniciales);
+      // Scroll to show subcategories/items below the category bar
+      requestAnimationFrame(() => {
+        const el = scrollRef.current;
+        if (el) {
+          const top = el.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top, behavior: "smooth" });
+        }
+      });
     },
     [config.items_iniciales],
   );
@@ -95,25 +98,31 @@ export default function Menu({
     setPopupItem(null);
   }, []);
 
-  // Build category filter options
-  const categoryOptions = categories.map((cat) => ({
-    value: cat.nombre,
-    label: cat.nombre,
-    icon: cat.icono,
-    color: cat.color,
-  }));
+  // Build category filter options (stable unless categories change)
+  const categoryOptions = useMemo(
+    () =>
+      categories.map((cat) => ({
+        value: cat.nombre,
+        label: cat.nombre,
+        icon: cat.icono,
+        color: cat.color,
+      })),
+    [categories],
+  );
 
   return (
     <div>
       {/* Level 1: Categories */}
       <MenuFilterBar
-        level={1}
         message={config.paso1}
         options={categoryOptions}
         activeValue={activeCategory || ""}
         visible={true}
         onSelect={handleCategorySelect}
       />
+
+      {/* Scroll target — below categories, above subcategories/items */}
+      <div ref={scrollRef} />
 
       {/* Level 2: Subcategories (only if active category has them) */}
       {categories.map((cat) => {
@@ -123,7 +132,6 @@ export default function Menu({
         return (
           <MenuFilterBar
             key={cat.nombre}
-            level={2}
             message={config.paso2}
             options={cat.subcategorias.map((sub) => ({
               value: sub.nombre,
@@ -144,6 +152,12 @@ export default function Menu({
         );
       })}
 
+      {/* Screen reader announcement for filter changes */}
+      <div className="sr-only" aria-live="polite" role="status">
+        {activeCategory &&
+          `Mostrando ${displayedItems.length} de ${filteredItems.length} items`}
+      </div>
+
       {/* Item Grid */}
       {activeCategory && (
         <>
@@ -153,7 +167,7 @@ export default function Menu({
                 const img = images[item.imagen];
                 return (
                   <MenuItemCard
-                    key={`${item.nombre}-${item.categorias.join("-")}-${i}`}
+                    key={`${item.nombre}-${item.categorias.join("-")}`}
                     nombre={item.nombre}
                     thumbnailSrc={img?.thumbnail}
                     disponible={item.disponible}
@@ -176,7 +190,7 @@ export default function Menu({
               onClick={() =>
                 setVisibleCount((prev) => prev + config.items_incremento)
               }
-              className="mx-auto mt-6 block w-full rounded-lg bg-accent py-3 font-semibold uppercase text-bg transition-all duration-200 hover:opacity-90 active:scale-[0.98]"
+              className="mx-auto mt-6 block w-full rounded-lg bg-accent py-3 font-semibold uppercase text-bg transition-[opacity,transform] duration-200 hover:opacity-90 active:scale-[0.98]"
             >
               Cargar más
             </button>

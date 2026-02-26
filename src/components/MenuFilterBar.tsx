@@ -1,5 +1,3 @@
-import { useRef, useEffect } from "react";
-
 interface FilterOption {
   value: string;
   label: string;
@@ -8,7 +6,6 @@ interface FilterOption {
 }
 
 interface MenuFilterBarProps {
-  level: number;
   message: string;
   options: FilterOption[];
   activeValue: string;
@@ -18,7 +15,6 @@ interface MenuFilterBarProps {
 }
 
 export default function MenuFilterBar({
-  level,
   message,
   options,
   activeValue,
@@ -26,14 +22,7 @@ export default function MenuFilterBar({
   resetOption,
   onSelect,
 }: MenuFilterBarProps) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  // Auto-scroll to this bar when it becomes visible (levels 2+)
-  useEffect(() => {
-    if (visible && level > 1 && ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, [visible, level]);
+  if (!visible) return null;
 
   // Colorize the first word of the message
   const words = message.split(" ");
@@ -41,32 +30,22 @@ export default function MenuFilterBar({
   const restWords = words.slice(1).join(" ");
 
   return (
-    <div
-      ref={ref}
-      className="overflow-hidden transition-all duration-300 ease-out"
-      style={{
-        maxHeight: visible ? "200px" : "0",
-        opacity: visible ? 1 : 0,
-        marginBottom: visible ? "1rem" : "0",
-      }}
-    >
-      <h3 className="mb-3 text-center text-base font-normal italic">
-        <span className="font-semibold text-accent">{firstWord}</span>{" "}
+    <div className="animate-fade-in mb-4">
+      <h3 className="mb-4 text-center text-lg font-bold">
+        <span className="text-accent">{firstWord}</span>{" "}
         {restWords}
       </h3>
 
-      <div className="flex flex-wrap justify-center gap-2">
-        {/* Reset/"Todo" button (shown on levels 2+) */}
+      <div className="flex flex-wrap justify-center gap-3">
+        {/* Reset/"Todo" button */}
         {resetOption && (
           <button
             onClick={() => onSelect(resetOption.value)}
-            className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-150 active:scale-[0.97]"
+            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-sm font-semibold transition-[border-color,transform] duration-150 active:scale-[0.97]"
             style={{
-              backgroundColor:
-                activeValue === resetOption.value
-                  ? resetOption.color
-                  : `${resetOption.color}66`,
-              color: activeValue === resetOption.value ? "#2e343b" : "#c4cdd5",
+              backgroundColor: resetOption.color,
+              color: "#2e343b",
+              borderColor: activeValue === resetOption.value ? "#ffffff" : "transparent",
             }}
           >
             {resetOption.icon && <i className={resetOption.icon} />}
@@ -78,11 +57,11 @@ export default function MenuFilterBar({
           <button
             key={opt.value}
             onClick={() => onSelect(opt.value)}
-            className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-150 active:scale-[0.97]"
+            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-sm font-semibold transition-[border-color,transform] duration-150 active:scale-[0.97]"
             style={{
-              backgroundColor:
-                activeValue === opt.value ? opt.color : `${opt.color}66`,
-              color: activeValue === opt.value ? "#2e343b" : "#c4cdd5",
+              backgroundColor: opt.color,
+              color: "#2e343b",
+              borderColor: activeValue === opt.value ? "#ffffff" : "transparent",
             }}
           >
             {opt.icon && <i className={opt.icon} />}
