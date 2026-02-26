@@ -1,0 +1,15 @@
+{
+  "nombre": "Piña Colada",
+  "imagen": "304.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Frozeen"
+  ],
+  "ingredientes": "Ron Plantation, Zumo de Piña, Puré de Coco, Nata y Azúcar",
+  "alergenos": "*Lacteos",
+  "txt_aclaraciones": "Este Cocktail va decorado con Chocolate crujiente, si no lo deseas avisa a tu camarero",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "6%",
+  "vol_ml": "350 ml",
+  "pvp": "8€"
+}

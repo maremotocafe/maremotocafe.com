@@ -1,0 +1,13 @@
+{
+  "nombre": "Pomada Menorquina",
+  "imagen": "385.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Frozeen"
+  ],
+  "ingredientes": "Gin Xoringer, Sirope de Limón homemade y Azúcar.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "5,75%",
+  "vol_ml": "330 ml",
+  "pvp": "8€"
+}

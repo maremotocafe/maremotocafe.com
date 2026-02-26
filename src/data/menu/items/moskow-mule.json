@@ -1,0 +1,13 @@
+{
+  "nombre": "Moskow Mule",
+  "imagen": "263.jpg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
+  "ingredientes": "Vodka Finlandia, Zumo de Lima, Sirope de Ágave y Ginger Beer",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "12%",
+  "vol_ml": "165 ml",
+  "pvp": "8,5€"
+}

@@ -1,0 +1,13 @@
+{
+  "nombre": "Mohito Nipon",
+  "imagen": "mohitonipon.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
+  "ingredientes": "Gin Brockmans, Puré de Yuzu, Zumo de Manzana Granny Smith Natural, Albahaca y Frambuesa.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "10%",
+  "vol_ml": "125 ml",
+  "pvp": "9€"
+}

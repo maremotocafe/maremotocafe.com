@@ -1,0 +1,11 @@
+{
+  "nombre": "Mai Tai de Sasha",
+  "imagen": "maitaidesasha.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
+  "ingredientes": "Vodka de Leche Merengada, Don Papa Maskkara, Zumo de Naranja, Triple Seco, Falernum y Angostura.",
+  "txt_temporal": "Disponible todo el año.",
+  "pvp": "9€"
+}

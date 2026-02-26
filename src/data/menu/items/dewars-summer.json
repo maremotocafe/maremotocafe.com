@@ -1,0 +1,14 @@
+{
+  "nombre": "Dewars Summer 🌞",
+  "prioridad": true,
+  "imagen": "dewarssummer.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
+  "ingredientes": "Dewars Caribbean, Piña asada, Menta, Mixer de Pomelo y Espuma de Pomelo Lima y Agua de Azahar.",
+  "alergenos": "Huevo",
+  "txt_aclaraciones": "Este higball cocktail junto a sus 2 hermanos Dewars Autumn y Dewars Spring nos clasificó en 2º puesto en la 1er Dewars Higball Challenge de Zaragoza.",
+  "txt_temporal": "Disponible todo el año",
+  "pvp": "8,5€"
+}

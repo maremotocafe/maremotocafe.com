@@ -1,0 +1,13 @@
+{
+  "nombre": "Magellan & Schweppes Toque de Lima",
+  "prioridad": true,
+  "imagen": "235.jpg",
+  "categorias": [
+    "Gin Tonics"
+  ],
+  "txt_aclaraciones": "Ginebra francesa de ligero tono azulado debido a la raiz de iris y flores que contiene su receta. Sabor suave y armonioso.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "8,30%",
+  "vol_ml": "250 ml",
+  "pvp": "8,5€"
+}

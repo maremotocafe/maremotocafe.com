@@ -1,0 +1,12 @@
+{
+  "nombre": "Frescor Cálido",
+  "imagen": "311.jpg",
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
+  "ingredientes": "Zumo Natural de Granada, Sirope de Especias, Zumo de Limón, Canela y Soda.",
+  "txt_temporal": "Disponible de Octubre a Marzo.",
+  "grad_alcoholica": "0%",
+  "pvp": "7€"
+}

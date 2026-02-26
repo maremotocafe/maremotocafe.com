@@ -1,0 +1,12 @@
+{
+  "nombre": "Bulldog & Fever Tree",
+  "imagen": "bulldog.png",
+  "categorias": [
+    "Gin Tonics"
+  ],
+  "txt_aclaraciones": "Ginebra cásica inglesa con notas florales, cítricas y frutales.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "8%",
+  "vol_ml": "250 ml",
+  "pvp": "8,5€"
+}

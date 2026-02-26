@@ -1,12 +1,20 @@
-name: 'Continuous Integration'
+name: CI
 
 on: [push, pull_request]
 
 jobs:
-  shellcheck:
-    name: Shellcheck
+  check:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Run ShellCheck
-      uses: ludeeus/action-shellcheck@master
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx astro check
+
+      - run: npm run build

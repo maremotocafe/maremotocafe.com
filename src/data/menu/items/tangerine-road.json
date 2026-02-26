@@ -1,0 +1,13 @@
+{
+  "nombre": "Tangerine Road",
+  "disponible": false,
+  "imagen": "tangerineroad.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
+  "ingredientes": "Nordés Gin, Sirope de Mandarina y Romero, Zumo de Mandarina, Licor de Pino, Menta y Bitter de Lavanda.",
+  "txt_aclaraciones": "Cocktail ligero y refrescante que combina aromas del Atlantico con otros Mediterraneos",
+  "txt_temporal": "Disponible de Noviembre a Marzo.",
+  "pvp": "9€"
+}

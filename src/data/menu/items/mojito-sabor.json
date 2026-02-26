@@ -1,0 +1,14 @@
+{
+  "nombre": "Mojito Sabor",
+  "imagen": "202.jpg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
+  "ingredientes": "Rón blanco Plantation, Lima, Hierbabuena, Puré de Frutas, Azúcar y Soda.",
+  "txt_aclaraciones": "Mojito Cásico al que le añadimos un toque de fruta a elegir entre Fresa Natural, Mango Natural, Frambuesa Natural, Cereza o Arandano Azul.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "10,60%",
+  "vol_ml": "175 ml",
+  "pvp_terraza": "8€"
+}

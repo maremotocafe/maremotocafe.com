@@ -1,0 +1,51 @@
+{
+  "title": "Nuestra Carta",
+  "description": "Encuentra lo que deseas paso a paso",
+  "description_icon": "las la-info-circle",
+  "paso1": "Primero elige una categoría:",
+  "paso2": "Ahora concreta tu búsqueda con una de las siguientes subcategorías:",
+  "paso3": "Finalmente escoge una opción y pulsa una foto para ver más detalles:",
+  "items_iniciales": 30,
+  "items_incremento": 30,
+  "no_items_mensaje": "No hay nada con esos filtros, prueba a usar otros.",
+  "no_items_icono": "las la-exclamation",
+  "nombres_datos": [
+    "ingredientes",
+    "alergenos",
+    "txt_aclaraciones",
+    "txt_temporal",
+    "grad_alcoholica",
+    "vol_ml",
+    "edul_gr",
+    "pvp_local",
+    "pvp_terraza",
+    "pvp"
+  ],
+  "titulos_datos": {
+    "ingredientes": "Ingredientes",
+    "alergenos": "Alérgenos",
+    "txt_aclaraciones": "",
+    "txt_temporal": "Temporalidad",
+    "grad_alcoholica": "Graduación",
+    "vol_ml": "Volumen (ml)",
+    "edul_gr": "Edulcorantes (gr)",
+    "pvp": "PVP",
+    "pvp_local": "PVP en local",
+    "pvp_terraza": "PVP en terraza"
+  },
+  "iconos_datos": {
+    "ingredientes": "las la-book",
+    "alergenos": "las la-times",
+    "txt_aclaraciones": "las la-info-circle",
+    "txt_temporal": "las la-calendar-alt",
+    "grad_alcoholica": "las la-glass-martini",
+    "vol_ml": "las la-prescription-bottle",
+    "edul_gr": "las la-prescription-bottle",
+    "pvp": "las la-money-bill-wave",
+    "pvp_local": "las la-money-bill-wave",
+    "pvp_terraza": "las la-money-bill-wave"
+  },
+  "icono_todo": "las la-times",
+  "color_todo": "#e4e8ec",
+  "color_bordes": "#c4cdd5"
+}

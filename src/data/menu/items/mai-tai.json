@@ -1,0 +1,15 @@
+{
+  "nombre": "Mai Tai",
+  "imagen": "286.jpg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
+  "ingredientes": "Rón Blanco Plantation, Rón añejo Captain Morgan Dark, Lima, Pomelo, Triple Seco, Caramelo, Falernum, Angostura y Pernod.",
+  "alergenos": "*Almendra*",
+  "txt_aclaraciones": "Descubre la coctelería Tiki con su Cocktail más Popular.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "14%",
+  "vol_ml": "185 ml",
+  "pvp": "9€"
+}

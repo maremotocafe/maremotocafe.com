@@ -1,0 +1,13 @@
+{
+  "nombre": "Limonada Mr Smith",
+  "imagen": "299.jpg",
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
+  "ingredientes": "Zumo de Manzana Granny Smith Natural, Zumo de Manzana Royal Gala Natural, Zumo de Limón, Hojas de Menta fresca y Soda.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "0%",
+  "edul_gr": "0 gr",
+  "pvp": "6€"
+}

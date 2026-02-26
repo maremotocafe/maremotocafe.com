@@ -1,0 +1,14 @@
+{
+  "nombre": "Manhatan",
+  "imagen": "349.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Clásicos"
+  ],
+  "ingredientes": "Bulleit Bourbon, Vermut Rojo y Angostura",
+  "alergenos": "*Sulfitos*",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "29%",
+  "vol_ml": "115 ml",
+  "pvp": "9€"
+}

@@ -1,0 +1,13 @@
+{
+  "nombre": "Bombón Licor ☕",
+  "imagen": "370.jpg",
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés con Alcohol"
+  ],
+  "ingredientes": "Café espresso con Leche condensada y Licor a elegir.",
+  "alergenos": "*Leche*",
+  "txt_aclaraciones": "Elige entre Whisky, Rón; Cognac, Gran Marnier Rouge.",
+  "grad_alcoholica": "10,50%",
+  "pvp": "4,50€"
+}

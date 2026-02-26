@@ -1,0 +1,10 @@
+{
+  "nombre": "Pastas de Té Caseras",
+  "imagen": "pastasdete.jpeg",
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés sin Alcohol"
+  ],
+  "txt_aclaraciones": "Acompaña tu Café con estas ricas Pastas de Té caseras",
+  "pvp_local": "2,5€"
+}

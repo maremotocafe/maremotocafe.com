@@ -1,0 +1,14 @@
+{
+  "nombre": "Caipirinha",
+  "imagen": "caipirinha.jpg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
+  "ingredientes": "Cachaça, Lima y Azúcar.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "15,50%",
+  "vol_ml": "110 ml",
+  "pvp_local": "7,5€",
+  "pvp_terraza": "7,5€"
+}

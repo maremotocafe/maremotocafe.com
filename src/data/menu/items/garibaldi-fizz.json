@@ -1,0 +1,13 @@
+{
+  "nombre": "Garibaldi Fizz",
+  "imagen": "284.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Long Drinks"
+  ],
+  "ingredientes": "Campari, Zumo de Naranja, Martini Vibrante y 1724 Tonic Water.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "4%",
+  "vol_ml": "315 ml",
+  "pvp": "8€"
+}

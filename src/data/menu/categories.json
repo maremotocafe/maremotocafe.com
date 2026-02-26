@@ -1,0 +1,88 @@
+[
+  {
+    "nombre": "Cocktails",
+    "icono": "las la-cocktail",
+    "color": "#a7dfda",
+    "subcategorias": [
+      {
+        "nombre": "Mojitos Caipirinhas y Similares"
+      },
+      {
+        "nombre": "Cocktails de Autor"
+      },
+      {
+        "nombre": "Cocktails Frozeen"
+      },
+      {
+        "nombre": "Cocktails Long Drinks"
+      },
+      {
+        "nombre": "Cocktails Clásicos"
+      }
+    ]
+  },
+  {
+    "nombre": "Gin Tonics",
+    "icono": "las la-wine-glass-alt",
+    "color": "#f0c0c0"
+  },
+  {
+    "nombre": "Rones, Whiskies y Licores",
+    "icono": "las la-glass-whiskey",
+    "color": "#d1b9e1"
+  },
+  {
+    "nombre": "Sin Alcohol",
+    "icono": "las la-apple-alt",
+    "color": "#97d295",
+    "subcategorias": [
+      {
+        "nombre": "Cocktails Sin Alcohol"
+      },
+      {
+        "nombre": "Smoothies"
+      },
+      {
+        "nombre": "Granizados"
+      },
+      {
+        "nombre": "Batidos"
+      }
+    ]
+  },
+  {
+    "nombre": "Promociones y Ofertas",
+    "icono": "las la-certificate",
+    "color": "#dbd9a7",
+    "subcategorias": [
+      {
+        "nombre": "Día"
+      },
+      {
+        "nombre": "Tarde"
+      },
+      {
+        "nombre": "Noche"
+      }
+    ]
+  },
+  {
+    "nombre": "Cafés y Tés",
+    "icono": "las la-coffee",
+    "color": "#cea389",
+    "subcategorias": [
+      {
+        "nombre": "Cafés sin Alcohol"
+      },
+      {
+        "nombre": "Cafés con Alcohol"
+      },
+      {
+        "nombre": "Cafés Fríos"
+      },
+      {
+        "nombre": "Infusiones"
+      }
+    ]
+  }
+]

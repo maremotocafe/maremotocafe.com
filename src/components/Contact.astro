@@ -1,0 +1,38 @@
+---
+import ColorTitle from "./ColorTitle.astro";
+import ContactForm from "./ContactForm";
+import { contact } from "../data/site";
+
+function renderMarkdown(text: string): string {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="text-accent hover:underline">$1</a>');
+}
+---
+
+<section id="contact" class="bg-bg-section py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <ColorTitle text={contact.title} />
+
+    <div class="mt-8 grid gap-8 lg:grid-cols-2">
+      <!-- Contact Details -->
+      <div>
+        <h3 class="mb-3 text-xl font-semibold">{contact.subtitle}</h3>
+        <p class="mb-6 text-text/80">{contact.content}</p>
+        <div class="space-y-3">
+          {
+            contact.details.map((detail) => (
+              <div class="flex items-start gap-3">
+                <i class={`${detail.icon} mt-1 text-lg text-accent`} />
+                <span set:html={renderMarkdown(detail.info)} />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <ContactForm client:visible />
+    </div>
+  </div>
+</section>

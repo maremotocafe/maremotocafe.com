@@ -1,0 +1,11 @@
+{
+  "nombre": "Smoothie Leche Merengada",
+  "imagen": "390.jpg",
+  "categorias": [
+    "Sin Alcohol",
+    "Smoothies"
+  ],
+  "ingredientes": "Leche, Limón, Canela, Azúcar y Hielo",
+  "txt_temporal": "Disponible todo el año.",
+  "pvp": "5,5€"
+}

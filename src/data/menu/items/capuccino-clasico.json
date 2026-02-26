@@ -1,0 +1,13 @@
+{
+  "nombre": "Capuccino Clásico ☕",
+  "imagen": "132.jpg",
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés sin Alcohol"
+  ],
+  "ingredientes": "Café espresso, Crema de leche y Toque de Cacao.",
+  "alergenos": "*Leche*",
+  "txt_aclaraciones": "Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja",
+  "pvp_local": "3€ (A partir de las 22:30) 3,50€",
+  "pvp_terraza": "3,30€ (a partir de las 22:30 3,50€)"
+}

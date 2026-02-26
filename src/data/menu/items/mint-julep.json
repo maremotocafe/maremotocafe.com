@@ -1,0 +1,13 @@
+{
+  "nombre": "Mint Julep",
+  "imagen": "279.jpg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
+  "ingredientes": "Bulleit bourbon, Menta fresca, Azúcar y Soda.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "20,50%",
+  "vol_ml": "110 ml",
+  "pvp": "9€"
+}

@@ -1,0 +1,12 @@
+{
+  "nombre": "Té de Frutas del Bosque ☕",
+  "imagen": "192.jpg",
+  "categorias": [
+    "Cafés y Tés",
+    "Infusiones"
+  ],
+  "ingredientes": "Hibiscus, Frutas del bosque, Escaramujo, Rosas y Enebro",
+  "grad_alcoholica": "0%",
+  "vol_ml": "200ml",
+  "pvp": "4€"
+}

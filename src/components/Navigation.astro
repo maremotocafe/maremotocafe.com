@@ -1,0 +1,88 @@
+---
+import { siteConfig, navigation } from "../data/site";
+---
+
+<section class="sticky top-0 z-50 bg-bg/95 backdrop-blur-sm">
+  <div class="mx-auto max-w-6xl px-4">
+    <nav class="flex items-center justify-between py-3">
+      <div class="flex items-center">
+        <a href="/" class="p-0">
+          <img
+            src={siteConfig.logo}
+            alt={siteConfig.title}
+            class="h-10 w-auto"
+          />
+        </a>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button
+        id="nav-toggle"
+        class="rounded p-2 text-text hover:bg-white/10 lg:hidden"
+        aria-label="Menú"
+        type="button"
+      >
+        <i class="las la-bars text-2xl"></i>
+      </button>
+
+      <!-- Nav links -->
+      <div id="nav-menu" class="hidden lg:flex lg:items-center lg:gap-1">
+        <a
+          href="#body"
+          class="block rounded px-4 py-2 text-sm text-text/80 transition-colors hover:text-white"
+        >
+          {navigation.home}
+        </a>
+        {
+          navigation.items.map((item) => (
+            <a
+              href={item.url}
+              class="block rounded px-4 py-2 text-sm text-text/80 transition-colors hover:text-white"
+            >
+              {item.name}
+            </a>
+          ))
+        }
+      </div>
+    </nav>
+  </div>
+</section>
+
+<script>
+  const toggle = document.getElementById("nav-toggle");
+  const menu = document.getElementById("nav-menu");
+
+  toggle?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+    // On mobile, display as a column
+    menu?.classList.toggle("flex");
+    menu?.classList.toggle("flex-col");
+    menu?.classList.toggle("absolute");
+    menu?.classList.toggle("top-full");
+    menu?.classList.toggle("left-0");
+    menu?.classList.toggle("right-0");
+    menu?.classList.toggle("bg-bg");
+    menu?.classList.toggle("p-4");
+    menu?.classList.toggle("shadow-lg");
+  });
+
+  // Close mobile menu when a link is clicked
+  menu?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth < 1024) {
+        menu.classList.add("hidden");
+        menu.classList.remove(
+          "flex",
+          "flex-col",
+          "absolute",
+          "top-full",
+          "left-0",
+          "right-0",
+          "bg-bg",
+          "p-4",
+          "shadow-lg",
+        );
+      }
+    });
+  });
+</script>

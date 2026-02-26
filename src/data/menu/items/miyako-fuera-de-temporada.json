@@ -1,0 +1,14 @@
+{
+  "nombre": "Miyako  (fuera de temporada)",
+  "disponible": false,
+  "imagen": "miyako.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
+  "ingredientes": "Ginebra Gin-Za, Sirope de Mandarina, Zumo Nat de Mandarina, Sirope de Cardamomo, Sirope de Romero, Limoncello Pallini, Campari y Clara de huevo pasteurizada",
+  "alergenos": "Huevo.",
+  "txt_aclaraciones": "Inspirado en la Isla de Miyako donde se encuentran 3 de las mejores playas japonesas. Entre sus ingredientes nos encontramos con una ginebra desarroyada en Zaragoza e inspirada en el moderno barrio de Ginza de Tokio. Citricos y botánicos asiáticos como la Mandarina y el Cardamomo combinan a la perfeccion con otros como Yuzu y Kumquat presentes en la ginebra.",
+  "txt_temporal": "Disponible de Octubre a Marzo.",
+  "pvp_local": "9€"
+}

@@ -1,0 +1,110 @@
+---
+import { getImage } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner.astro";
+import Navigation from "../components/Navigation.astro";
+import ColorTitle from "../components/ColorTitle.astro";
+import Menu from "../components/Menu";
+import Outro from "../components/Outro.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+import GoogleMap from "../components/GoogleMap.astro";
+import ScrollToTop from "../components/ScrollToTop";
+
+import menuConfig from "../data/menu/config.json";
+import categories from "../data/menu/categories.json";
+import type { MenuItem, MenuConfig, MenuCategory } from "../data/types";
+
+// Load all menu items from per-file JSON
+const itemModules = import.meta.glob<MenuItem>("../data/menu/items/*.json", {
+  eager: true,
+  import: "default",
+});
+const items: MenuItem[] = Object.values(itemModules);
+
+// Load all carta images and build a map: filename → ImageMetadata
+const imageModules = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/carta/*.{jpg,jpeg,png}",
+  { eager: true },
+);
+
+// Pre-resolve images: generate thumbnail (664w) and full-size URLs
+type ResolvedImage = { thumbnail: string; full: string };
+const imageMap: Record<string, ResolvedImage> = {};
+
+for (const [path, mod] of Object.entries(imageModules)) {
+  const filename = path.split("/").pop()!;
+  const meta = mod.default;
+
+  // Generate optimized thumbnail
+  const thumb = await getImage({
+    src: meta,
+    width: 664,
+    quality: 90,
+    format: "webp",
+  });
+
+  // Full size for popup
+  const full = await getImage({
+    src: meta,
+    width: 1200,
+    quality: 90,
+    format: "webp",
+  });
+
+  imageMap[filename] = {
+    thumbnail: thumb.src,
+    full: full.src,
+  };
+}
+
+// Also handle items with imagen_pequenya overrides
+for (const item of items) {
+  if (item.imagen_pequenya && imageModules[`../assets/carta/${item.imagen_pequenya}`]) {
+    const meta = imageModules[`../assets/carta/${item.imagen_pequenya}`].default;
+    const thumb = await getImage({
+      src: meta,
+      width: 664,
+      quality: 90,
+      format: "webp",
+    });
+    // Override only the thumbnail, keep the full image from the main imagen
+    if (imageMap[item.imagen]) {
+      imageMap[item.imagen] = {
+        ...imageMap[item.imagen],
+        thumbnail: thumb.src,
+      };
+    }
+  }
+}
+---
+
+<Layout>
+  <Banner />
+  <ScrollToTop client:load />
+  <Navigation />
+
+  <!-- Menu Section -->
+  <section class="py-16" id="carta">
+    <div class="mx-auto max-w-6xl px-4">
+      <ColorTitle text={menuConfig.title} />
+      <p class="mb-8 text-center text-lg italic text-text/70">
+        <i class={`${menuConfig.description_icon} mr-1`}></i>
+        {menuConfig.description}
+      </p>
+
+      <Menu
+        client:load
+        config={menuConfig as MenuConfig}
+        categories={categories as MenuCategory[]}
+        items={items}
+        images={imageMap}
+      />
+    </div>
+  </section>
+
+  <Outro />
+  <Contact />
+  <GoogleMap />
+  <Footer />
+</Layout>

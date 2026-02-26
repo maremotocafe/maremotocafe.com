@@ -1,0 +1,13 @@
+{
+  "nombre": "Costa de Azahar 🍊🆕",
+  "imagen": "costadeazahar.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
+  "ingredientes": "Cordial de Mandarina, Sirope casero de Frambuesa, Jengibre, Hierbabuena y Ginger Beer",
+  "txt_aclaraciones": "Refrescante y Atractivo Cocktail Sin Alcohol con un toque Picante.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "0%",
+  "pvp": "7,5€"
+}

@@ -1,0 +1,13 @@
+{
+  "nombre": "🍉 Limonada de Sandía y Menta",
+  "disponible": false,
+  "imagen": "270.jpg",
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
+  "ingredientes": "Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.",
+  "txt_temporal": "Disponible de Junio a Septiembre",
+  "grad_alcoholica": "0%",
+  "pvp": "6€"
+}

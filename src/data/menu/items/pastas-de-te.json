@@ -1,0 +1,11 @@
+{
+  "nombre": "Pastas de Té",
+  "imagen": "pastasdete.jpeg",
+  "categorias": [
+    "Cafés y Tés",
+    "Infusiones"
+  ],
+  "txt_aclaraciones": "Acompaña tu Té con estas ricas Pastas de Té Caseras",
+  "txt_temporal": "Disponible todo el año.",
+  "pvp": "2,5€"
+}

@@ -1,0 +1,12 @@
+{
+  "nombre": "Golden Tiki 🆕",
+  "prioridad": true,
+  "imagen": "goldentiki.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
+  "ingredientes": "Ron de Cúrcuma y especias, Zumo de Mandarina, Falernum, Az Liquido y Angostura",
+  "txt_temporal": "Disponible de Noviembre a Marzo",
+  "pvp": "9€"
+}

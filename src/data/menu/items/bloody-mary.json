@@ -1,0 +1,14 @@
+{
+  "nombre": "Bloody Mary",
+  "imagen": "259.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Clásicos"
+  ],
+  "ingredientes": "Zumo de Tomate, Vodka Finlandia, Zumo de Limón, Tabasco, Sal de Apio, Pimienta y Salsa Perrins.",
+  "alergenos": "*Apio*",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "7,50%",
+  "vol_ml": "215 ml",
+  "pvp": "8€"
+}

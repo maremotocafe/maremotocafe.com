@@ -1,0 +1,12 @@
+{
+  "nombre": "Martin Miller's & Fever Tree",
+  "imagen": "martinmillers.jpeg",
+  "categorias": [
+    "Gin Tonics"
+  ],
+  "txt_aclaraciones": "Ginebra clásica inglesa de muy alta calida debido en parte a la utilización de agua de los glaciares de Islandia. ¡Una apuesta segura!",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "8%",
+  "vol_ml": "250 ml",
+  "pvp": "9€"
+}

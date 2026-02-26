@@ -1,0 +1,11 @@
+{
+  "nombre": "Grey Goose & Schweppes Toque de Lima",
+  "imagen": "greygoose.png",
+  "categorias": [
+    "Gin Tonics"
+  ],
+  "ingredientes": "Con twist de Lima.",
+  "grad_alcoholica": "8%",
+  "vol_ml": "250 ml",
+  "pvp": "10€"
+}

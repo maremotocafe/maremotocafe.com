@@ -1,0 +1,13 @@
+{
+  "nombre": "Bombay Sapphire & Schweppes Toque de Lima",
+  "imagen": "bombaysapphire.png",
+  "categorias": [
+    "Gin Tonics"
+  ],
+  "ingredientes": "La servimos con unos pocos Granos de Pimienta Rosa y Twist de lima.",
+  "txt_aclaraciones": "Ginebra de fama mundial. Cada gota contiene 10 botánicos seleccionados a mano en lugares exóticos de todo el mundo",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "8%",
+  "vol_ml": "250 ml",
+  "pvp": "8,5€"
+}

@@ -1,0 +1,12 @@
+{
+  "nombre": "Mexican Coffee ☕",
+  "imagen": "mexicancoffee.jpeg",
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés con Alcohol"
+  ],
+  "ingredientes": "Café espresso, Tequila Reposado macerado con Café y Canela, Nata, Orgeat, Cacao y Azúcar moreno",
+  "alergenos": "*Leche*",
+  "grad_alcoholica": "10,50%",
+  "pvp": "6€"
+}

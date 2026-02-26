@@ -1,0 +1,13 @@
+{
+  "nombre": "Bombay S. Premier Cru Murcian Lemon & Schweppes Toque de Lima",
+  "imagen": "bombaymurcian.jpeg",
+  "categorias": [
+    "Gin Tonics"
+  ],
+  "ingredientes": "Servida con twist de Limón",
+  "txt_aclaraciones": "Bombay Sapphire Premier Cru es una ginebra producida de forma limitada que celebra los cítricos más estimulantes y aromáticos del mundo los limones, mandarinas y naranjas dulces Navel de Murcia",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "9,5%",
+  "vol_ml": "250 ml",
+  "pvp": "9€"
+}

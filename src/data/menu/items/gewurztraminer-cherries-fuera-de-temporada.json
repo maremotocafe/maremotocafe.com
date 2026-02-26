@@ -1,0 +1,15 @@
+{
+  "nombre": "🍒 Gewürztraminer & Cherries (Fuera de temporada)",
+  "disponible": false,
+  "imagen": "300.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
+  "ingredientes": "Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda .",
+  "alergenos": "*Sulfitos*",
+  "txt_temporal": "Disponible de Junio a Agosto.",
+  "grad_alcoholica": "3,50%",
+  "vol_ml": "185 ml",
+  "pvp": "8€"
+}

@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #353b43;
+  --color-bg-section: #2e343b;
+  --color-text: #c4cdd5;
+  --color-accent: #5ce1e6;
+  --color-accent-green: #6cb670;
+  --color-border: #c4cdd5;
+  --color-error: #b10b1f;
+
+  --font-sans: "Rubik", sans-serif;
+}
+
+/* Base styles matching original site */
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #fff;
+}
+
+::selection {
+  color: #fff;
+  background: #5ce1e6;
+}
+
+a {
+  color: #5ce1e6;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6cb670;
+}
+
+/* Dialog backdrop */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+}
+
+/* Dialog open/close animations */
+dialog {
+  opacity: 0;
+  transform: scale(0.95);
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease,
+    overlay 250ms ease allow-discrete,
+    display 250ms ease allow-discrete;
+}
+
+dialog[open] {
+  opacity: 1;
+  transform: scale(1);
+
+  @starting-style {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* Line Awesome icon sizing in our context */
+.field-icon {
+  margin-right: 0.25rem;
+  font-size: 1.1em;
+}
+
+/* Menu item fade-in animation */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in-up 200ms ease both;
+}

@@ -1,0 +1,14 @@
+{
+  "nombre": "New Orleans Fizz",
+  "imagen": "306.jpg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Frozeen"
+  ],
+  "ingredientes": "Tanqueray Rangpur, Zumo de limón, Zumo de Lima, Agua de Azahar, Nata, Clara de huevo pasteurizada y Azúcar.",
+  "alergenos": "*Lacteos y huevo*",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "6,20%",
+  "vol_ml": "300ml",
+  "pvp": "9€"
+}
