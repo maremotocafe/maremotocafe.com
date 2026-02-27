@@ -80,4 +80,4 @@ export const scrollToTop = {
 } as const;
 
 export const copyright =
-  'Página desarrollada por <a href="https://github.com/marioortizmanero" target="_blank" rel="noreferrer">Mario Ortiz Manero</a>.';
+  'Página desarrollada por <a href="https://nullderef.com" target="_blank" rel="noreferrer">Mario Ortiz Manero</a>.';

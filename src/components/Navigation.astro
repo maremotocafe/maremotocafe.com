@@ -2,7 +2,7 @@
 import { siteConfig, navigation } from "../data/site";
 ---
 
-<section class="sticky top-0 z-50 bg-[#1d2024]">
+<section class="sticky top-0 z-50 bg-[#1d2024] shadow-lg shadow-black/20">
   <div class="mx-auto max-w-6xl px-4">
     <nav class="flex flex-wrap items-center justify-between py-3">
       <div class="flex items-center">
@@ -34,13 +34,6 @@ import { siteConfig, navigation } from "../data/site";
         id="nav-menu"
         class="nav-menu w-full overflow-hidden lg:flex lg:w-auto lg:items-center lg:gap-1 lg:overflow-visible"
       >
-        <a
-          href="#body"
-          class="nav-link block rounded px-4 py-2 text-sm transition-colors"
-          style="color: rgb(196, 205, 213);"
-        >
-          {navigation.home}
-        </a>
         {
           navigation.items.map((item) => (
             <a
@@ -68,6 +61,7 @@ import { siteConfig, navigation } from "../data/site";
 
     .nav-menu.open {
       max-height: 300px;
+      margin-top: 0.5rem;
       opacity: 1;
     }
   }
@@ -123,8 +117,8 @@ import { siteConfig, navigation } from "../data/site";
 
     links.forEach((link, i) => {
       if (i === activeIndex) {
-        link.style.color = "rgb(60, 159, 180)";
-        link.style.fontWeight = "800";
+        link.style.color = "#5ce1e6";
+        link.style.fontWeight = "700";
       } else {
         link.style.color = "rgb(196, 205, 213)";
         link.style.fontWeight = "400";

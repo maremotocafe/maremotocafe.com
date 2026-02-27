@@ -7,6 +7,9 @@ import MenuItemPopup from "./MenuItemPopup";
 interface ResolvedImage {
   thumbnail: string;
   full: string;
+  width: number;
+  height: number;
+  thumbAspectRatio: number;
 }
 
 interface MenuProps {
@@ -162,7 +165,7 @@ export default function Menu({
       {activeCategory && (
         <>
           {displayedItems.length > 0 ? (
-            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-6 columns-1 gap-4 sm:columns-2 lg:columns-3">
               {displayedItems.map((item, i) => {
                 const img = images[item.imagen];
                 return (
@@ -170,6 +173,7 @@ export default function Menu({
                     key={`${item.nombre}-${item.categorias.join("-")}`}
                     nombre={item.nombre}
                     thumbnailSrc={img?.thumbnail}
+                    thumbAspectRatio={img?.thumbAspectRatio}
                     disponible={item.disponible}
                     staggerDelay={i < config.items_iniciales ? i * 30 : 0}
                     onClick={() => setPopupItem(item)}
@@ -178,7 +182,7 @@ export default function Menu({
               })}
             </div>
           ) : (
-            <div className="mt-8 text-center text-text/60">
+            <div className="mt-8 text-center text-text">
               <i className={`${config.no_items_icono} mr-2`} />
               <span>{config.no_items_mensaje}</span>
             </div>
@@ -190,7 +194,7 @@ export default function Menu({
               onClick={() =>
                 setVisibleCount((prev) => prev + config.items_incremento)
               }
-              className="mx-auto mt-6 block w-full rounded-lg bg-accent py-3 font-semibold uppercase text-bg transition-[opacity,transform] duration-200 hover:opacity-90 active:scale-[0.98]"
+              className="mx-auto mt-6 block w-full rounded-lg bg-accent py-3 text-lg uppercase text-white transition-[opacity,transform] duration-200 hover:opacity-90 active:scale-[0.98]"
             >
               Cargar más
             </button>
@@ -203,6 +207,8 @@ export default function Menu({
         item={popupItem}
         config={config}
         imageSrc={popupItem ? images[popupItem.imagen]?.full : undefined}
+        imageWidth={popupItem ? images[popupItem.imagen]?.width : undefined}
+        imageHeight={popupItem ? images[popupItem.imagen]?.height : undefined}
         onClose={handleClosePopup}
       />
     </div>

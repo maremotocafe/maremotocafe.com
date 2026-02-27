@@ -6,7 +6,7 @@ import { banner } from "../data/site";
   class="relative flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat"
   style={`background-image: url("${banner.bgImage}")`}
 >
-  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute inset-0 bg-black/70"></div>
   <div class="relative z-10 w-full px-4 text-center">
     {
       banner.logoTitle ? (
@@ -30,7 +30,7 @@ import { banner } from "../data/site";
     </div>
     <a
       href={banner.button.link}
-      class="mt-8 inline-block rounded-lg bg-accent px-8 py-3 font-semibold text-black transition-[opacity,transform] duration-200 hover:scale-105 hover:opacity-90"
+      class="mt-8 inline-block border border-white bg-black/50 px-12 py-3.5 font-bold tracking-wide text-white shadow-[0_3px_6px_rgba(255,255,255,0.2)] transition-[opacity,transform] duration-200 hover:scale-105 hover:opacity-90"
     >
       {banner.button.label}
     </a>

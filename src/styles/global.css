@@ -40,8 +40,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Dialog backdrop */
 dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  transition:
+    background-color 250ms ease,
+    backdrop-filter 250ms ease,
+    overlay 250ms ease allow-discrete,
+    display 250ms ease allow-discrete;
+}
+
+dialog[open]::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(4px);
+
+  @starting-style {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
 }
 
 /* Dialog open/close animations */
@@ -69,6 +84,27 @@ dialog[open] {
 .field-icon {
   margin-right: 0.25rem;
   font-size: 1.1em;
+}
+
+/* Shimmer / skeleton loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.04) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
 }
 
 /* Menu item fade-in animation */

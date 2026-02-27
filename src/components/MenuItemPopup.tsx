@@ -1,10 +1,12 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { MenuItem, MenuConfig } from "../data/types";
 
 interface MenuItemPopupProps {
   item: MenuItem | null;
   config: MenuConfig;
   imageSrc?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   onClose: () => void;
 }
 
@@ -12,9 +14,17 @@ export default function MenuItemPopup({
   item,
   config,
   imageSrc,
+  imageWidth,
+  imageHeight,
   onClose,
 }: MenuItemPopupProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  // Reset image loaded state when item changes
+  useEffect(() => {
+    setImageLoaded(false);
+  }, [item]);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -49,6 +59,8 @@ export default function MenuItemPopup({
       )
     : true;
 
+  const aspectRatio = imageWidth && imageHeight ? imageWidth / imageHeight : 4 / 3;
+
   function handleBackdropClick(e: React.MouseEvent<HTMLDialogElement>) {
     // Close when clicking the backdrop (outside the inner content)
     if (e.target === dialogRef.current) {
@@ -68,7 +80,7 @@ export default function MenuItemPopup({
       ref={dialogRef}
       onClick={handleBackdropClick}
       onCancel={handleClose}
-      className="m-0 mx-auto my-auto max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-xl bg-bg p-0 text-text"
+      className="m-0 h-dvh w-dvw max-h-none max-w-none overflow-y-auto bg-bg p-0 text-text md:m-auto md:h-fit md:w-full md:max-h-[90vh] md:max-w-3xl md:rounded-xl"
     >
       {item && (
         <div className="relative">
@@ -77,9 +89,12 @@ export default function MenuItemPopup({
             <button
               onClick={handleClose}
               aria-label="Cerrar"
-              className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white transition-colors hover:bg-black/70"
+              className="absolute right-3 top-3 flex h-12 w-12 items-center justify-center rounded-full bg-black/70 text-white shadow-lg transition-colors hover:bg-black/90"
             >
-              <i className="las la-times" />
+              <svg width="28" height="28" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+                <line x1="4" y1="4" x2="16" y2="16" />
+                <line x1="16" y1="4" x2="4" y2="16" />
+              </svg>
             </button>
           </div>
 
@@ -91,23 +106,45 @@ export default function MenuItemPopup({
               aria-label={`Cerrar ${item.nombre}`}
               className="w-full"
             >
-              <img
-                src={imageSrc}
-                alt={item.nombre}
-                className="w-full"
-              />
+              <div className="relative">
+                {!imageLoaded && (
+                  <div
+                    className="shimmer w-full"
+                    style={{ aspectRatio }}
+                  />
+                )}
+                <img
+                  src={imageSrc}
+                  alt={item.nombre}
+                  width={imageWidth}
+                  height={imageHeight}
+                  onLoad={() => setImageLoaded(true)}
+                  className={`w-full transition-opacity duration-300 ${imageLoaded ? "opacity-100" : "absolute inset-0 opacity-0"}`}
+                />
+              </div>
             </button>
           ) : (
             /* Full popup with details */
             <div className="md:flex">
               <div className="md:w-1/2">
-                <img
-                  src={imageSrc}
-                  alt={item.nombre}
-                  className="h-full w-full object-cover"
-                />
+                <div className="relative">
+                  {!imageLoaded && (
+                    <div
+                      className="shimmer w-full"
+                      style={{ aspectRatio }}
+                    />
+                  )}
+                  <img
+                    src={imageSrc}
+                    alt={item.nombre}
+                    width={imageWidth}
+                    height={imageHeight}
+                    onLoad={() => setImageLoaded(true)}
+                    className={`h-full w-full object-cover transition-opacity duration-300 ${imageLoaded ? "opacity-100" : "absolute inset-0 opacity-0"}`}
+                  />
+                </div>
               </div>
-              <div className="p-6 md:w-1/2">
+              <div className="p-6 pr-16 md:w-1/2">
                 <h1 className="mb-4 text-2xl font-bold">{item.nombre}</h1>
                 <div className="space-y-3">
                   {config.nombres_datos.map((key) => {

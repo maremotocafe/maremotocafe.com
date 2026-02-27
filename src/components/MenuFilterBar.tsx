@@ -31,7 +31,7 @@ export default function MenuFilterBar({
 
   return (
     <div className="animate-fade-in mb-4">
-      <h3 className="mb-4 text-center text-2xl font-bold">
+      <h3 className="mb-4 text-center text-[25px] font-extrabold">
         <span className="text-accent">{firstWord}</span>{" "}
         {restWords}
       </h3>
@@ -41,14 +41,14 @@ export default function MenuFilterBar({
         {resetOption && (
           <button
             onClick={() => onSelect(resetOption.value)}
-            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-sm font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
+            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-base font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
             style={{
               backgroundColor: resetOption.color,
-              color: "#2e343b",
+              color: "#1d2024",
               borderColor: activeValue === resetOption.value ? "#ffffff" : "transparent",
             }}
           >
-            {resetOption.icon && <i className={resetOption.icon} />}
+            {resetOption.icon && <i className={`${resetOption.icon} text-lg`} />}
             <span>Todo</span>
           </button>
         )}
@@ -57,14 +57,14 @@ export default function MenuFilterBar({
           <button
             key={opt.value}
             onClick={() => onSelect(opt.value)}
-            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-sm font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
+            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-base font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
             style={{
               backgroundColor: opt.color,
-              color: "#2e343b",
+              color: "#1d2024",
               borderColor: activeValue === opt.value ? "#ffffff" : "transparent",
             }}
           >
-            {opt.icon && <i className={opt.icon} />}
+            {opt.icon && <i className={`${opt.icon} text-lg`} />}
             <span>{opt.label}</span>
           </button>
         ))}

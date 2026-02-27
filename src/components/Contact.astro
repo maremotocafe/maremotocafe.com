@@ -23,7 +23,7 @@ function renderMarkdown(text: string): string {
           {
             contact.details.map((detail) => (
               <div class="flex items-start gap-3">
-                <i class={`${detail.icon} mt-1 text-lg text-accent`} />
+                <i class={`${detail.icon} mt-1 text-lg text-text`} />
                 <span set:html={renderMarkdown(detail.info)} />
               </div>
             ))

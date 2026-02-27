@@ -29,7 +29,7 @@ const imageModules = import.meta.glob<{ default: ImageMetadata }>(
 );
 
 // Pre-resolve images: generate thumbnail (664w) and full-size URLs
-type ResolvedImage = { thumbnail: string; full: string };
+type ResolvedImage = { thumbnail: string; full: string; width: number; height: number; thumbAspectRatio: number };
 const imageMap: Record<string, ResolvedImage> = {};
 
 for (const [path, mod] of Object.entries(imageModules)) {
@@ -52,9 +52,16 @@ for (const [path, mod] of Object.entries(imageModules)) {
     format: "webp",
   });
 
+  // Compute full-size dimensions (Astro scales proportionally)
+  const scale = 1200 / meta.width;
+  const fullHeight = Math.round(meta.height * scale);
+
   imageMap[filename] = {
     thumbnail: thumb.src,
     full: full.src,
+    width: 1200,
+    height: fullHeight,
+    thumbAspectRatio: meta.width / meta.height,
   };
 }
 
@@ -73,6 +80,7 @@ for (const item of items) {
       imageMap[item.imagen] = {
         ...imageMap[item.imagen],
         thumbnail: thumb.src,
+        thumbAspectRatio: meta.width / meta.height,
       };
     }
   }
@@ -88,7 +96,7 @@ for (const item of items) {
   <section class="py-16" id="carta">
     <div class="mx-auto max-w-6xl px-4">
       <ColorTitle text={menuConfig.title} />
-      <p class="mb-8 text-center text-lg italic text-text/90">
+      <p class="mb-8 text-center text-[28px] italic text-text">
         <i class={`${menuConfig.description_icon} mr-1`}></i>
         {menuConfig.description}
       </p>
