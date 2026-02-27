@@ -327,7 +327,15 @@ export default function Menu({
         <>
           {displayedItems.length > 0 ? (
             <CardContext.Provider value={cardCtx}>
-              <div className="mt-6">
+              <div
+                className="mt-6"
+                style={{
+                  maxWidth:
+                    allMasonryItems.length * 280 +
+                    Math.max(0, allMasonryItems.length - 1) * 16,
+                  margin: "0 auto",
+                }}
+              >
                 <Masonry
                   key={`${activeCategory}-${activeSubcategory}`}
                   items={displayedItems}

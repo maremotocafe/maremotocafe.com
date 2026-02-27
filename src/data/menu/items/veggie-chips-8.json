@@ -1,9 +1,0 @@
-{
-  "nombre": "Veggie Chips",
-  "orden": 184,
-  "imagen": "vegechips.png",
-  "categorias": ["Promociones y Ofertas", "Noche"],
-  "ingredientes": "Aperitivo saludable a base de Yuca, Batata, Zanahoria, Remolacha y Aceite de oliva",
-  "txt_temporal": "Disponible todo el año.",
-  "pvp": "2€"
-}
