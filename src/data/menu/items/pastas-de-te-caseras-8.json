@@ -2,7 +2,7 @@
   "nombre": "Pastas de Té Caseras",
   "orden": 183,
   "imagen": "pastasdete.jpeg",
-  "categorias": ["Promociones y Ofertas", "Tarde"],
+  "categorias": ["Promociones y Ofertas", "Tarde", "Noche"],
   "txt_aclaraciones": "Acompaña tu bebida con estas ricas Pastas de Té Caseras",
   "txt_temporal": "Disponible todo el año.",
   "pvp": "2,5€"
