@@ -5,7 +5,6 @@ export const siteConfig = {
   author: "Mario Ortiz Manero",
   description: "Maremoto Beach en Zaragoza",
   tags: "bar,pub,copas,cafeteria,cocktails,zaragoza,cafes,desayunos,brunch,zumos,reposteria,bocadillos,centro,aragon",
-  googleAnalyticsId: "UA-162662877-2",
   logo: "/images/logo.png",
 } as const;
 

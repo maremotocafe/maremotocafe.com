@@ -4,7 +4,6 @@
   "description_icon": "las la-info-circle",
   "paso1": "Primero elige una categoría:",
   "paso2": "Ahora concreta tu búsqueda con una de las siguientes subcategorías:",
-  "paso3": "Finalmente escoge una opción y pulsa una foto para ver más detalles:",
   "items_iniciales": 30,
   "items_incremento": 30,
   "no_items_mensaje": "No hay nada con esos filtros, prueba a usar otros.",
@@ -46,6 +45,5 @@
     "pvp_terraza": "las la-money-bill-wave"
   },
   "icono_todo": "las la-times",
-  "color_todo": "#e4e8ec",
-  "color_bordes": "#c4cdd5"
+  "color_todo": "#e4e8ec"
 }

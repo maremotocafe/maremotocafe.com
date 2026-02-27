@@ -13,7 +13,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 import menuConfig from "../data/menu/config.json";
 import categories from "../data/menu/categories.json";
-import type { MenuItem, MenuConfig, MenuCategory } from "../data/types";
+import type { MenuItem, MenuConfig, MenuCategory, ResolvedImage } from "../data/types";
 
 // Load all menu items from per-file JSON
 const itemModules = import.meta.glob<MenuItem>("../data/menu/items/*.json", {
@@ -37,13 +37,6 @@ const imageModules = import.meta.glob<{ default: ImageMetadata }>(
 );
 
 // Pre-resolve images: generate thumbnail (664w) and full-size URLs
-type ResolvedImage = {
-  thumbnail: string;
-  full: string;
-  width: number;
-  height: number;
-  thumbAspectRatio: number;
-};
 const imageMap: Record<string, ResolvedImage> = {};
 
 for (const [path, mod] of Object.entries(imageModules)) {

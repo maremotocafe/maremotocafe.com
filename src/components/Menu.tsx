@@ -7,7 +7,12 @@ import {
   lazy,
   Suspense,
 } from "react";
-import type { MenuItem, MenuCategory, MenuConfig } from "../data/types";
+import type {
+  MenuItem,
+  MenuCategory,
+  MenuConfig,
+  ResolvedImage,
+} from "../data/types";
 import MenuFilterBar from "./MenuFilterBar";
 import MenuItemCard from "./MenuItemCard";
 import MenuItemPopup from "./MenuItemPopup";
@@ -21,14 +26,6 @@ const AdminItemOverlay = import.meta.env.DEV
 const AdminNewItemDialog = import.meta.env.DEV
   ? lazy(() => import("../admin/components/AdminNewItemDialog"))
   : null;
-
-interface ResolvedImage {
-  thumbnail: string;
-  full: string;
-  width: number;
-  height: number;
-  thumbAspectRatio: number;
-}
 
 interface MenuProps {
   config: MenuConfig;
@@ -72,8 +69,6 @@ export default function Menu({
 
   // Sorted items (stable)
   const sortedItems = useMemo(() => sortItems(items), [items]);
-
-  // (activeCategoryObj available for future use by Jesús mode)
 
   // Filter items based on active filters
   const filteredItems = useMemo(() => {

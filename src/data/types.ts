@@ -30,7 +30,6 @@ export interface MenuConfig {
   description_icon: string;
   paso1: string;
   paso2: string;
-  paso3: string;
   items_iniciales: number;
   items_incremento: number;
   no_items_mensaje: string;
@@ -40,5 +39,12 @@ export interface MenuConfig {
   iconos_datos: Record<string, string>;
   icono_todo: string;
   color_todo: string;
-  color_bordes: string;
+}
+
+export interface ResolvedImage {
+  thumbnail: string;
+  full: string;
+  width: number;
+  height: number;
+  thumbAspectRatio: number;
 }
