@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import type { MenuCategory } from "../../data/types";
 import { useAdmin } from "./AdminProvider";
 import { getCategories, updateCategories } from "../api-client";
@@ -11,7 +11,6 @@ interface Props {
 export default function AdminCategoryEditor({ open, onClose }: Props) {
   const { showToast } = useAdmin();
   const [cats, setCats] = useState<MenuCategory[]>([]);
-  const [saving, setSaving] = useState(false);
 
   useEffect(() => {
     if (open) {
@@ -19,93 +18,71 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
     }
   }, [open]);
 
-  const handleSave = async () => {
-    setSaving(true);
+  const save = useCallback(async (next: MenuCategory[]) => {
+    setCats(next);
     try {
-      await updateCategories(cats);
-      showToast("Categorías guardadas", "success");
-      onClose();
+      await updateCategories(next);
     } catch (e: unknown) {
       showToast(`Error: ${e instanceof Error ? e.message : e}`, "error");
-    } finally {
-      setSaving(false);
     }
-  };
+  }, [showToast]);
 
   const addCategory = () => {
-    setCats((prev) => [...prev, { nombre: "", icono: "las la-utensils", color: "#cccccc" }]);
+    save([...cats, { nombre: "", icono: "las la-utensils", color: "#cccccc" }]);
   };
 
   const updateCat = (idx: number, field: keyof MenuCategory, value: string) => {
-    setCats((prev) => prev.map((c, i) => (i === idx ? { ...c, [field]: value } : c)));
+    save(cats.map((c, i) => (i === idx ? { ...c, [field]: value } : c)));
   };
 
   const removeCat = (idx: number) => {
     if (!confirm(`¿Eliminar la categoría "${cats[idx].nombre}"?`)) return;
-    setCats((prev) => prev.filter((_, i) => i !== idx));
+    save(cats.filter((_, i) => i !== idx));
   };
 
   const moveCat = (idx: number, dir: -1 | 1) => {
     const newIdx = idx + dir;
     if (newIdx < 0 || newIdx >= cats.length) return;
-    setCats((prev) => {
-      const next = [...prev];
-      [next[idx], next[newIdx]] = [next[newIdx], next[idx]];
-      return next;
-    });
+    const next = [...cats];
+    [next[idx], next[newIdx]] = [next[newIdx], next[idx]];
+    save(next);
   };
 
   const addSubcategory = (catIdx: number) => {
-    setCats((prev) =>
-      prev.map((c, i) =>
-        i === catIdx
-          ? { ...c, subcategorias: [...(c.subcategorias || []), { nombre: "" }] }
-          : c,
-      ),
-    );
+    save(cats.map((c, i) =>
+      i === catIdx
+        ? { ...c, subcategorias: [...(c.subcategorias || []), { nombre: "" }] }
+        : c,
+    ));
   };
 
   const updateSubcategory = (catIdx: number, subIdx: number, value: string) => {
-    setCats((prev) =>
-      prev.map((c, i) =>
-        i === catIdx
-          ? {
-              ...c,
-              subcategorias: c.subcategorias?.map((s, j) =>
-                j === subIdx ? { nombre: value } : s,
-              ),
-            }
-          : c,
-      ),
-    );
+    save(cats.map((c, i) =>
+      i === catIdx
+        ? { ...c, subcategorias: c.subcategorias?.map((s, j) => j === subIdx ? { nombre: value } : s) }
+        : c,
+    ));
   };
 
   const removeSubcategory = (catIdx: number, subIdx: number) => {
     const name = cats[catIdx].subcategorias?.[subIdx]?.nombre || "esta subcategoría";
     if (!confirm(`¿Eliminar "${name}"?`)) return;
-    setCats((prev) =>
-      prev.map((c, i) =>
-        i === catIdx
-          ? {
-              ...c,
-              subcategorias: c.subcategorias?.filter((_, j) => j !== subIdx),
-            }
-          : c,
-      ),
-    );
+    save(cats.map((c, i) =>
+      i === catIdx
+        ? { ...c, subcategorias: c.subcategorias?.filter((_, j) => j !== subIdx) }
+        : c,
+    ));
   };
 
   const moveSubcategory = (catIdx: number, subIdx: number, dir: -1 | 1) => {
-    setCats((prev) =>
-      prev.map((c, i) => {
-        if (i !== catIdx || !c.subcategorias) return c;
-        const newIdx = subIdx + dir;
-        if (newIdx < 0 || newIdx >= c.subcategorias.length) return c;
-        const subs = [...c.subcategorias];
-        [subs[subIdx], subs[newIdx]] = [subs[newIdx], subs[subIdx]];
-        return { ...c, subcategorias: subs };
-      }),
-    );
+    save(cats.map((c, i) => {
+      if (i !== catIdx || !c.subcategorias) return c;
+      const newIdx = subIdx + dir;
+      if (newIdx < 0 || newIdx >= c.subcategorias.length) return c;
+      const subs = [...c.subcategorias];
+      [subs[subIdx], subs[newIdx]] = [subs[newIdx], subs[subIdx]];
+      return { ...c, subcategorias: subs };
+    }));
   };
 
   if (!open) return null;
@@ -118,8 +95,8 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
             <i className="las la-list mr-1" />
             Gestión de Categorías
           </h2>
-          <button onClick={onClose} className="text-gray-400 hover:text-gray-600">
-            <i className="las la-times text-xl" />
+          <button onClick={onClose} className="cursor-pointer text-gray-400 hover:text-gray-600">
+            <i className="la la-times text-xl" />
           </button>
         </div>
 
@@ -129,23 +106,25 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
                   <div className="flex items-center gap-2">
                     <div className="flex flex-col gap-0.5">
                       <button onClick={() => moveCat(catIdx, -1)} className="cursor-pointer rounded bg-gray-100 px-1 py-0.5 text-xs text-gray-500 hover:bg-gray-200 hover:text-gray-800">
-                        <i className="las la-angle-up" />
+                        <i className="la la-angle-up" />
                       </button>
                       <button onClick={() => moveCat(catIdx, 1)} className="cursor-pointer rounded bg-gray-100 px-1 py-0.5 text-xs text-gray-500 hover:bg-gray-200 hover:text-gray-800">
-                        <i className="las la-angle-down" />
+                        <i className="la la-angle-down" />
                       </button>
                     </div>
                     <input
                       type="text"
                       value={cat.nombre}
-                      onChange={(e) => updateCat(catIdx, "nombre", e.target.value)}
+                      onBlur={(e) => updateCat(catIdx, "nombre", e.target.value)}
+                      onChange={(e) => setCats(prev => prev.map((c, i) => i === catIdx ? { ...c, nombre: e.target.value } : c))}
                       placeholder="Nombre"
                       className="flex-1 rounded border border-gray-300 px-2 py-1 text-sm text-gray-700"
                     />
                     <input
                       type="text"
                       value={cat.icono}
-                      onChange={(e) => updateCat(catIdx, "icono", e.target.value)}
+                      onBlur={(e) => updateCat(catIdx, "icono", e.target.value)}
+                      onChange={(e) => setCats(prev => prev.map((c, i) => i === catIdx ? { ...c, icono: e.target.value } : c))}
                       placeholder="las la-icon"
                       className="w-36 rounded border border-gray-300 px-2 py-1 text-sm text-gray-700"
                     />
@@ -156,7 +135,7 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
                       className="h-8 w-8 cursor-pointer rounded border-0"
                     />
                     <button onClick={() => removeCat(catIdx)} className="cursor-pointer rounded bg-red-50 p-1.5 text-red-500 hover:bg-red-100 hover:text-red-700">
-                      <i className="las la-trash text-sm" />
+                      <i className="la la-trash text-sm" />
                     </button>
                   </div>
 
@@ -166,21 +145,26 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
                       <div key={subIdx} className="flex items-center gap-2">
                         <div className="flex flex-col gap-0.5">
                           <button onClick={() => moveSubcategory(catIdx, subIdx, -1)} className="cursor-pointer rounded bg-gray-100 px-0.5 text-[10px] text-gray-500 hover:bg-gray-200 hover:text-gray-800">
-                            <i className="las la-angle-up" />
+                            <i className="la la-angle-up" />
                           </button>
                           <button onClick={() => moveSubcategory(catIdx, subIdx, 1)} className="cursor-pointer rounded bg-gray-100 px-0.5 text-[10px] text-gray-500 hover:bg-gray-200 hover:text-gray-800">
-                            <i className="las la-angle-down" />
+                            <i className="la la-angle-down" />
                           </button>
                         </div>
                         <input
                           type="text"
                           value={sub.nombre}
-                          onChange={(e) => updateSubcategory(catIdx, subIdx, e.target.value)}
+                          onBlur={(e) => updateSubcategory(catIdx, subIdx, e.target.value)}
+                          onChange={(e) => setCats(prev => prev.map((c, i) =>
+                            i === catIdx
+                              ? { ...c, subcategorias: c.subcategorias?.map((s, j) => j === subIdx ? { nombre: e.target.value } : s) }
+                              : c,
+                          ))}
                           placeholder="Subcategoría"
                           className="flex-1 rounded border border-gray-200 px-2 py-0.5 text-xs text-gray-600"
                         />
                         <button onClick={() => removeSubcategory(catIdx, subIdx)} className="cursor-pointer rounded bg-red-50 p-1 text-xs text-red-400 hover:bg-red-100 hover:text-red-600">
-                          <i className="las la-times" />
+                          <i className="la la-times" />
                         </button>
                       </div>
                     ))}
@@ -196,7 +180,7 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
               ))}
             </div>
 
-            <div className="mt-4 flex items-center justify-between">
+            <div className="mt-4">
               <button
                 onClick={addCategory}
                 className="cursor-pointer rounded bg-amber-500 px-3 py-1.5 text-xs font-bold text-black hover:bg-amber-400"
@@ -204,21 +188,6 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
                 <i className="las la-plus mr-1" />
                 Nueva Categoría
               </button>
-              <div className="flex gap-2">
-                <button
-                  onClick={onClose}
-                  className="cursor-pointer rounded bg-gray-200 px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-300"
-                >
-                  Cancelar
-                </button>
-                <button
-                  onClick={handleSave}
-                  disabled={saving}
-                  className="cursor-pointer rounded bg-green-600 px-4 py-1.5 text-sm font-bold text-white hover:bg-green-500 disabled:opacity-50"
-                >
-                  {saving ? "Guardando..." : "Guardar"}
-                </button>
-              </div>
             </div>
       </div>
     </div>

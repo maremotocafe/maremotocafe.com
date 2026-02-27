@@ -59,34 +59,34 @@ export default function AdminItemOverlay({ item, filename, categories, children 
     >
       {/* Overlay buttons */}
       {hovering && !isEditing && (
-        <div className="absolute top-2 right-2 z-50 flex gap-1">
+        <div className="absolute top-2 right-2 z-50 flex gap-1.5">
           <button
             onClick={(e) => { e.stopPropagation(); setEditingFilename(filename); }}
-            className="rounded bg-blue-600 p-1.5 text-white shadow hover:bg-blue-500"
+            className="cursor-pointer rounded-lg bg-blue-600 px-2.5 py-1.5 text-white shadow-lg hover:bg-blue-500"
             title="Editar"
           >
-            <i className="las la-pen text-sm" />
+            <i className="la la-pen text-base" />
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); togglePriority(); }}
-            className={`rounded p-1.5 text-white shadow ${item.prioridad ? "bg-yellow-500 hover:bg-yellow-400" : "bg-gray-600 hover:bg-gray-500"}`}
+            className={`cursor-pointer rounded-lg px-2.5 py-1.5 text-white shadow-lg ${item.prioridad ? "bg-yellow-500 hover:bg-yellow-400" : "bg-gray-600 hover:bg-gray-500"}`}
             title="Prioridad"
           >
-            <i className="las la-star text-sm" />
+            <i className="la la-star text-base" />
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); toggleAvailable(); }}
-            className={`rounded p-1.5 text-white shadow ${item.disponible === false ? "bg-red-600 hover:bg-red-500" : "bg-green-600 hover:bg-green-500"}`}
+            className={`cursor-pointer rounded-lg px-2.5 py-1.5 text-white shadow-lg ${item.disponible === false ? "bg-red-600 hover:bg-red-500" : "bg-green-600 hover:bg-green-500"}`}
             title="Disponibilidad"
           >
-            <i className={`las ${item.disponible === false ? "la-eye-slash" : "la-eye"} text-sm`} />
+            <i className={`la ${item.disponible === false ? "la-eye-slash" : "la-eye"} text-base`} />
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); handleDelete(); }}
-            className="rounded bg-red-700 p-1.5 text-white shadow hover:bg-red-600"
+            className="cursor-pointer rounded-lg bg-red-700 px-2.5 py-1.5 text-white shadow-lg hover:bg-red-600"
             title="Eliminar"
           >
-            <i className="las la-trash text-sm" />
+            <i className="la la-trash text-base" />
           </button>
         </div>
       )}
