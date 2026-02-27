@@ -2,10 +2,7 @@
   "nombre": "Batidos de Sabores.",
   "orden": 2,
   "imagen": "5a.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Batidos"
-  ],
+  "categorias": ["Sin Alcohol", "Batidos"],
   "ingredientes": "Leche, Fruta liofilizada, fructosa y Hielo.",
   "alergenos": "*Leche*",
   "txt_aclaraciones": "A elegir entre Chocolate, Fresa, Frambuesa y Mora, Arándanos, Coco y Menta, Naranja y Canela, Maracuyá, Café o Caramelo\nSin Gluten ni Colorantes artificiales.\nDisponemos de leche Sin Lactosa, Avena o Soja para la elaboración de tu batido.\nTodos los Batidos incluyen Nata y Toppings, si no desea Nata comuniqueló a su camarero.",

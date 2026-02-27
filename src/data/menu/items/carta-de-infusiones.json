@@ -3,8 +3,5 @@
   "orden": 164,
   "imagen": "cartadeinfusiones.jpg",
   "imagen_pequenya": "portadates_small.png",
-  "categorias": [
-    "Cafés y Tés",
-    "Infusiones"
-  ]
+  "categorias": ["Cafés y Tés", "Infusiones"]
 }

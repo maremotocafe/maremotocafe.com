@@ -2,10 +2,7 @@
   "nombre": "Floreale.🌼🌺🆕",
   "orden": 6,
   "imagen": "floreale.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Cocktails Sin Alcohol"
-  ],
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
   "ingredientes": "Martini Floreale, Droplet de Camomila y Té Darjeeling, Tonica Schweppes de Pomelo y Baya de Nepal y Perfume de Lima Rangpur.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "0%",

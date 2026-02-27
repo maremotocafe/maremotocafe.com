@@ -2,9 +2,7 @@
   "nombre": "Nordés & Fever Tree 🍇",
   "orden": 148,
   "imagen": "nordes.jpeg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "txt_aclaraciones": "Ginebra gallega para nada convencional, con aromas atlánticos debido a su base de alcohol de albariño y al uso de eucalipto, salicornia y laurel entre otros botánicos.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "8%",

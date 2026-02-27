@@ -3,10 +3,7 @@
   "orden": 61,
   "disponible": false,
   "imagen": "Carraskiko.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Cinzano Bianco, Italicus, Sirope de Melocotón en vino y Angostura de Naranja.",
   "alergenos": "Sulfitos",
   "txt_aclaraciones": "Este Cocktail es el hermano mayor de nuestro vermut preparado finalista de la III Ruta Cinzano de Zaragoza.",

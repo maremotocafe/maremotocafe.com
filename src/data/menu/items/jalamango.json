@@ -2,10 +2,7 @@
   "nombre": "Jalamango",
   "orden": 11,
   "imagen": "315.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Cocktails Sin Alcohol"
-  ],
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
   "ingredientes": "Mango Natural, Jalapeños, Zumo Natural de Naranja y Cilantro fresco.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "0%",

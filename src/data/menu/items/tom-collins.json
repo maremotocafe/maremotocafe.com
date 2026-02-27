@@ -2,10 +2,7 @@
   "nombre": "Tom Collins",
   "orden": 116,
   "imagen": "322.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Long Drinks"
-  ],
+  "categorias": ["Cocktails", "Cocktails Long Drinks"],
   "ingredientes": "Tanqueray Rangpur, Zumo de Limón, Soda y Azúcar.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "7,40%",

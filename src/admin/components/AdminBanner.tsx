@@ -99,7 +99,9 @@ export default function AdminBanner() {
           <button
             onClick={async () => {
               if (categories.length === 0) {
-                try { setCategories(await getCategories()); } catch {}
+                try {
+                  setCategories(await getCategories());
+                } catch {}
               }
               setShowNewItem(true);
             }}

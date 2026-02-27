@@ -13,7 +13,12 @@ import ScrollToTop from "../components/ScrollToTop";
 
 import menuConfig from "../data/menu/config.json";
 import categories from "../data/menu/categories.json";
-import type { MenuItem, MenuConfig, MenuCategory, ResolvedImage } from "../data/types";
+import type {
+  MenuItem,
+  MenuConfig,
+  MenuCategory,
+  ResolvedImage,
+} from "../data/types";
 
 // Load all menu items from per-file JSON
 const itemModules = import.meta.glob<MenuItem>("../data/menu/items/*.json", {

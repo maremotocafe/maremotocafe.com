@@ -2,10 +2,7 @@
   "nombre": "Virgin Mojito",
   "orden": 34,
   "imagen": "318.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Cocktails Sin Alcohol"
-  ],
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
   "ingredientes": "Lima, Hierbabuena, Azucar, Piña, Jengibre fresco y Soda.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "0%",

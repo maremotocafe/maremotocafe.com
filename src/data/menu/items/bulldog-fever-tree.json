@@ -2,9 +2,7 @@
   "nombre": "Bulldog & Fever Tree",
   "orden": 135,
   "imagen": "bulldog.png",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "txt_aclaraciones": "Ginebra clásica inglesa con notas florales, cítricas y frutales.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "8%",

@@ -2,10 +2,7 @@
   "nombre": "Smoothie Premium Auténtico Placer",
   "orden": 23,
   "imagen": "368.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Smoothies"
-  ],
+  "categorias": ["Sin Alcohol", "Smoothies"],
   "ingredientes": "Plátano, Cacao 100%, Nata, Cardamomo, Azucar y Hielo.",
   "alergenos": "*Leche*",
   "grad_alcoholica": "0%",

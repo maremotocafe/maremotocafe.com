@@ -2,10 +2,7 @@
   "nombre": "Aperol Spritz",
   "orden": 52,
   "imagen": "260.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Long Drinks"
-  ],
+  "categorias": ["Cocktails", "Cocktails Long Drinks"],
   "ingredientes": "Aperol, Prosecco Cinzano y Soda",
   "alergenos": "*Sulfitos*",
   "txt_temporal": "Disponible todo el año.",

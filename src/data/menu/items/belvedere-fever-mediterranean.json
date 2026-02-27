@@ -2,9 +2,7 @@
   "nombre": "Belvedere & Fever Mediterranean",
   "orden": 132,
   "imagen": "belvedere.png",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "ingredientes": "Infusionado con Romero.",
   "grad_alcoholica": "8%",
   "vol_ml": "250 ml",

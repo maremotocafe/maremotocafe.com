@@ -2,10 +2,7 @@
   "nombre": "Shin Tonic Mediterraneo (Sin Alcohol) 🆕",
   "orden": 20,
   "imagen": "shintonicmediterraneo.jpeg",
-  "categorias": [
-    "Sin Alcohol",
-    "Cocktails Sin Alcohol"
-  ],
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
   "ingredientes": "Tanqueray 0% Alcohol infusionada con Romero y Tonica Fever Mediterranean",
   "txt_aclaraciones": "Infusionamos con mucho cariño Tanqueray Sin Alcohol con Romero y lo combinamos con Fever Mediterranean para darle a tu trago sin Alcohol un caracter, pues eso, ¡Más Mediterraneo! :)",
   "txt_temporal": "Disponible todo el año",

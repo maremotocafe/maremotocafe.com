@@ -2,10 +2,7 @@
   "nombre": "Dewars Spring 🌺",
   "orden": 41,
   "imagen": "dewarsspring.jpeg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Dewars French Smooth, Sirope de flores y Semilla de Cilantro, Zumo de Manzana, Ginger Ale y Espuma de Manzana Albahaca y Cardamomo.",
   "alergenos": "Huevo",
   "txt_aclaraciones": "Este highball cocktail junto a sus 2 hermanos Dewars Autumn y Dewars Summer nos clasificó en 2º puesto en la 1er Dewars Highball Challenge de Zaragoza.",

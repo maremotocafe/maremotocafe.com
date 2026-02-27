@@ -2,9 +2,7 @@
   "nombre": "Maremoto Hibiscus Foam (Con Espuma de Manzana y Albahaca)🍏",
   "orden": 125,
   "imagen": "351.jpg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "ingredientes": "Gin Xoringer, Schweppes Hibiscus y Espuma de Manzana, Albahaca, Cardamomo y Clara de huevo pasteurizada",
   "alergenos": "*Huevo*",
   "txt_temporal": "Disponible todo el año.",

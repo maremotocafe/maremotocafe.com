@@ -2,10 +2,7 @@
   "nombre": "Virgin Colada",
   "orden": 33,
   "imagen": "394.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Cocktails Sin Alcohol"
-  ],
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
   "ingredientes": "Zumo de Piña, Zumo de Lima, Puré de coco, Azúcar y Nata.",
   "alergenos": "*Leche*",
   "txt_temporal": "Disponible todo el año",

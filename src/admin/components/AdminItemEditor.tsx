@@ -139,7 +139,10 @@ export default function AdminItemEditor({
     try {
       if (isNew) {
         const result = await createItem(trimmed);
-        showToast(`"${trimmed.nombre}" creado como ${result.filename}`, "success");
+        showToast(
+          `"${trimmed.nombre}" creado como ${result.filename}`,
+          "success",
+        );
       } else {
         await updateItem(filename!, trimmed);
         original.current = JSON.stringify(trimmed);
@@ -272,7 +275,8 @@ export default function AdminItemEditor({
                   setDraft((d) => {
                     const next = { ...d };
                     if (val) next.imagen_pequenya = val;
-                    else delete (next as Record<string, unknown>).imagen_pequenya;
+                    else
+                      delete (next as Record<string, unknown>).imagen_pequenya;
                     return next;
                   });
                 }}
@@ -381,7 +385,9 @@ export default function AdminItemEditor({
           </div>
 
           {/* Footer: Delete left, Cancelar + Confirmar right */}
-          <div className={`mt-2 flex items-center border-t border-gray-200 pt-3 ${isNew ? "justify-end" : "justify-between"}`}>
+          <div
+            className={`mt-2 flex items-center border-t border-gray-200 pt-3 ${isNew ? "justify-end" : "justify-between"}`}
+          >
             {!isNew && (
               <button
                 type="button"
@@ -403,12 +409,20 @@ export default function AdminItemEditor({
               <button
                 type="button"
                 onClick={handleConfirm}
-                disabled={isNew ? (!draft.nombre || draft.categorias.length === 0 || saving) : (!isDirty || draft.categorias.length === 0 || saving)}
+                disabled={
+                  isNew
+                    ? !draft.nombre || draft.categorias.length === 0 || saving
+                    : !isDirty || draft.categorias.length === 0 || saving
+                }
                 className={`cursor-pointer rounded-lg px-4 py-1.5 text-sm font-bold disabled:cursor-not-allowed disabled:opacity-50 ${isNew ? "bg-green-600 text-white hover:bg-green-500" : "bg-amber-500 text-black hover:bg-amber-400"}`}
               >
                 {isNew
-                  ? saving ? "Creando..." : "Crear"
-                  : saving ? "Guardando..." : "Confirmar"}
+                  ? saving
+                    ? "Creando..."
+                    : "Crear"
+                  : saving
+                    ? "Guardando..."
+                    : "Confirmar"}
               </button>
             </div>
           </div>

@@ -2,10 +2,7 @@
   "nombre": "Pisco Sour",
   "orden": 107,
   "imagen": "384.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Clásicos"
-  ],
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
   "ingredientes": "Pisco Quebranta, Zumo de Lima, Clara de huevo pasteurizada, Angostura y Azúcar",
   "alergenos": "*Huevo*",
   "txt_aclaraciones": "Cocktail Nacional del Perú declarado patrimonio cultural de la Nación",

@@ -3,10 +3,7 @@
   "orden": 114,
   "disponible": false,
   "imagen": "285.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Rón Plantation 3 Stars, Mango Natural, Fresa Natural, Manzana Granny Smith, Sirope de Hierba luisa y jengibre, Falernum, Bitter de Melocotón y Soda.",
   "alergenos": "*Almendra*",
   "txt_aclaraciones": "¿Te imaginas como sería el primer cocktail de la historia? Te lo preparamos!",

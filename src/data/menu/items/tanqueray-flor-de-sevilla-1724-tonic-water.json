@@ -2,9 +2,7 @@
   "nombre": "Tanqueray Flor de Sevilla & 1724 tonic water 🍊",
   "orden": 128,
   "imagen": "tanqueraysevilla.jpg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "txt_aclaraciones": "Ginebra elaborada con naranjas sevillanas y flor de Azahar. Sabor cítrico y afrutado.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "7,50%",

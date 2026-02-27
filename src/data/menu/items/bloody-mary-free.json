@@ -2,10 +2,7 @@
   "nombre": "Bloody Mary Free 🍎",
   "orden": 4,
   "imagen": "42.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Cocktails Sin Alcohol"
-  ],
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
   "ingredientes": "Zumo de Tomate Natural, Zumo de Limón, Salsa Perrin's, Tabasco, Romero, Jengibre, Sal de Apio y Pimienta.",
   "alergenos": "*Apio.*",
   "txt_temporal": "Disponible todo el año.",

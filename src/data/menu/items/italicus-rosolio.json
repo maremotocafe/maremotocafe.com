@@ -2,10 +2,7 @@
   "nombre": "Italicus Rosolio",
   "orden": 84,
   "imagen": "ItalicusRosolio.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Long Drinks"
-  ],
+  "categorias": ["Cocktails", "Cocktails Long Drinks"],
   "ingredientes": "Italicus Rosolio, Prosecco, Brocheta de olivas y twist de limón.",
   "alergenos": "Sulfitos",
   "txt_aclaraciones": "Excelente aperitivo apto para cualquier hora del dia.",

@@ -2,9 +2,7 @@
   "nombre": "Gin Ordesano & Fever Tree",
   "orden": 140,
   "imagen": "ordesano.jpeg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "txt_aclaraciones": "¡La ginebra del Pirineo! Personalidad propia y 100% natural, elaborado con enebros y peras.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "7,5%",

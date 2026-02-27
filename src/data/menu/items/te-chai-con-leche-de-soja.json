@@ -2,10 +2,7 @@
   "nombre": "Té Chai con Leche de Soja ❄",
   "orden": 180,
   "imagen": "280.jpg",
-  "categorias": [
-    "Cafés y Tés",
-    "Infusiones"
-  ],
+  "categorias": ["Cafés y Tés", "Infusiones"],
   "ingredientes": "Té Chai, Leche de Soja y Azúcar",
   "txt_temporal": "Disponible todo el año.",
   "edul_gr": "10gr de Azúcar",

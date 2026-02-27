@@ -2,10 +2,7 @@
   "nombre": "Refujito de Ágave",
   "orden": 110,
   "imagen": "200.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Tequila, Pure de Maracuyá, Zumo de Lima y Sirope de Ágave.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "16,50%",

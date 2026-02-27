@@ -2,9 +2,7 @@
   "nombre": "Ciroc & Schweppes Toque de Lima",
   "orden": 136,
   "imagen": "ciroc.jpg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "ingredientes": "Con brocheta de Uva y twist de Pomelo.",
   "grad_alcoholica": "8%",
   "vol_ml": "250 ml",

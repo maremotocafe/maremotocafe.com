@@ -2,9 +2,7 @@
   "nombre": "Crystal Head & Schweppes Toque de Lima",
   "orden": 138,
   "imagen": "249.jpg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "ingredientes": "Con Bitter de Pomelo y twist de Pomelo.",
   "grad_alcoholica": "8%",
   "pvp": "10€"

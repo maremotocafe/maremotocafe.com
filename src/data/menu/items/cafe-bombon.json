@@ -2,10 +2,7 @@
   "nombre": "Café Bombón",
   "orden": 160,
   "imagen": "261.jpg",
-  "categorias": [
-    "Cafés y Tés",
-    "Cafés sin Alcohol"
-  ],
+  "categorias": ["Cafés y Tés", "Cafés sin Alcohol"],
   "ingredientes": "Café espresso, Leche condensada y Crema de leche.",
   "alergenos": "*leche*",
   "pvp_local": "2,5€ A partir de las 22:30 3,50€",

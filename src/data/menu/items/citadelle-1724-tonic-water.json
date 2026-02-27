@@ -2,9 +2,7 @@
   "nombre": "Citadelle & 1724 tonic water",
   "orden": 137,
   "imagen": "citadelle.png",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "txt_aclaraciones": "Ginebra francesa distinguida y que impresiona por su gusto complejo y sus notas florales.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "9,20%",

@@ -2,10 +2,7 @@
   "nombre": "Margarita Clásica",
   "orden": 90,
   "imagen": "199.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Clásicos"
-  ],
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
   "ingredientes": "Tequila El Jimador, Zumo de Lima, Triple Seco y Azúcar",
   "txt_aclaraciones": "Este cocktail va escarchado con sal, si no lo desea avise al camarero.",
   "txt_temporal": "Disponible todo el año.",

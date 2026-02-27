@@ -24,7 +24,6 @@ const AdminShell = import.meta.env.DEV
   ? lazy(() => import("../admin/components/AdminShell"))
   : null;
 
-
 // WARNING: Do NOT use lazy()/Suspense for AdminItemOverlay. When Suspense resolves
 // a lazy component, it unmounts the fallback and mounts the real tree — causing every
 // menu item card to visibly flash (appear → disappear → reappear). Instead, we eagerly
@@ -49,7 +48,13 @@ const CardContext = createContext<{
 }>(null!);
 
 /** Masonry card renderer — defined at module level for a stable reference. */
-const MasonryCard = ({ data }: { data: MasonryItem; index: number; width: number }) => {
+const MasonryCard = ({
+  data,
+}: {
+  data: MasonryItem;
+  index: number;
+  width: number;
+}) => {
   const { onItemClick, AdminItemOverlay, categories, onSwap } =
     useContext(CardContext);
   const card = (
@@ -340,8 +345,6 @@ export default function Menu({
               <span>{config.no_items_mensaje}</span>
             </div>
           )}
-
-
         </>
       )}
 

@@ -2,10 +2,7 @@
   "nombre": "Dewars Summer 🌞",
   "orden": 42,
   "imagen": "dewarssummer.jpeg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Dewars Caribbean, Piña asada, Menta, Mixer de Pomelo y Espuma de Pomelo Lima y Agua de Azahar.",
   "alergenos": "Huevo",
   "txt_aclaraciones": "Este highball cocktail junto a sus 2 hermanos Dewars Autumn y Dewars Spring nos clasificó en 2º puesto en la 1er Dewars Highball Challenge de Zaragoza.",

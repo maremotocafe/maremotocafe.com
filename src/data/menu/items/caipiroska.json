@@ -2,10 +2,7 @@
   "nombre": "Caipiroska",
   "orden": 58,
   "imagen": "269.jpg",
-  "categorias": [
-    "Cocktails",
-    "Mojitos Caipirinhas y Similares"
-  ],
+  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
   "ingredientes": "Vodka Finlandia, Lima y Azúcar.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "18,90%",

@@ -2,10 +2,7 @@
   "nombre": "Pastas de Té Caseras",
   "orden": 104,
   "imagen": "pastasdete.jpeg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "txt_aclaraciones": "Acompaña tu Cocktail con estas ricas Pastas de Té Caseras",
   "txt_temporal": "Disponible todo el año.",
   "pvp": "2,5€"

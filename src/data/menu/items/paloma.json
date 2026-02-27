@@ -2,10 +2,7 @@
   "nombre": "Paloma",
   "orden": 102,
   "imagen": "382.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Long Drinks"
-  ],
+  "categorias": ["Cocktails", "Cocktails Long Drinks"],
   "ingredientes": "Tequila, Mixer de Pomelo y Zumo de Lima.",
   "txt_aclaraciones": "Pruébalo con tequila Patron Reposado + 2€",
   "txt_temporal": "Disponible todo el año.",

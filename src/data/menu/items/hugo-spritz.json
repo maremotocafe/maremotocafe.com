@@ -2,10 +2,7 @@
   "nombre": "Hugo Spritz",
   "orden": 82,
   "imagen": "hugo.jpeg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Long Drinks"
-  ],
+  "categorias": ["Cocktails", "Cocktails Long Drinks"],
   "ingredientes": "San Germain, Prosecco Cinzano y Soda",
   "alergenos": "*Sulfitos*",
   "txt_temporal": "Disponible todo el año.",

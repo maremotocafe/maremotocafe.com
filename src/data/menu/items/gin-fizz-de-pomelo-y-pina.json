@@ -2,10 +2,7 @@
   "nombre": "Gin Fizz de Pomelo y Piña 🍍",
   "orden": 77,
   "imagen": "316.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Tanqueray Ten, Sirope de Piña asada y Menta homemade, Zumo de Pomelo y Mixer de Pomelo Thomas Henry.",
   "txt_temporal": "Disponible todo el año",
   "grad_alcoholica": "No disponible",

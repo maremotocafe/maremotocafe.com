@@ -4,16 +4,40 @@ const BASE = "/_dev/api";
 
 function pickMenuItem(data: MenuItem): MenuItem {
   const {
-    nombre, disponible, imagen, imagen_pequenya, categorias,
-    ingredientes, alergenos, txt_aclaraciones, txt_temporal,
-    grad_alcoholica, vol_ml, edul_gr, pvp_local, pvp_terraza,
-    pvp, orden,
+    nombre,
+    disponible,
+    imagen,
+    imagen_pequenya,
+    categorias,
+    ingredientes,
+    alergenos,
+    txt_aclaraciones,
+    txt_temporal,
+    grad_alcoholica,
+    vol_ml,
+    edul_gr,
+    pvp_local,
+    pvp_terraza,
+    pvp,
+    orden,
   } = data;
   return {
-    nombre, disponible, imagen, imagen_pequenya, categorias,
-    ingredientes, alergenos, txt_aclaraciones, txt_temporal,
-    grad_alcoholica, vol_ml, edul_gr, pvp_local, pvp_terraza,
-    pvp, orden,
+    nombre,
+    disponible,
+    imagen,
+    imagen_pequenya,
+    categorias,
+    ingredientes,
+    alergenos,
+    txt_aclaraciones,
+    txt_temporal,
+    grad_alcoholica,
+    vol_ml,
+    edul_gr,
+    pvp_local,
+    pvp_terraza,
+    pvp,
+    orden,
   };
 }
 

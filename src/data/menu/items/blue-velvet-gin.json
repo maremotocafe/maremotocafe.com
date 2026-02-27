@@ -2,9 +2,7 @@
   "nombre": "Blue Velvet Gin 🆕 🌺",
   "orden": 122,
   "imagen": "bluevelvet.jpeg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "ingredientes": "Notas de Violeta, Flor de Cerezo, Lirio",
   "txt_aclaraciones": "¡Ginebra de Aragón! (Inspirada en los atardeceres de la laguna de Gallocanta) ¡Cambia de color de Azul a Violeta al servirla!",
   "txt_temporal": "Disponible todo el año.",
