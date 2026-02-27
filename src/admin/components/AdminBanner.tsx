@@ -1,0 +1,153 @@
+import { useState } from "react";
+import { useAdmin } from "./AdminProvider";
+import { gitStatus, gitPull, gitPush, gitReset, type GitChange } from "../api-client";
+import AdminCategoryEditor from "./AdminCategoryEditor";
+
+interface StatusData {
+  branch: string;
+  changes: GitChange[];
+}
+
+export default function AdminBanner() {
+  const { showToast } = useAdmin();
+  const [loading, setLoading] = useState<string | null>(null);
+  const [statusData, setStatusData] = useState<StatusData | null>(null);
+  const [catEditorOpen, setCatEditorOpen] = useState(false);
+
+  const run = async (label: string, fn: () => Promise<void>) => {
+    setLoading(label);
+    try {
+      await fn();
+    } catch (e: unknown) {
+      showToast(`Error: ${e instanceof Error ? e.message : e}`, "error");
+    } finally {
+      setLoading(null);
+    }
+  };
+
+  const handleStatus = () =>
+    run("Estado", async () => {
+      const s = await gitStatus();
+      setStatusData(s);
+    });
+
+  const handlePull = () => {
+    if (!confirm("¿Bajar los últimos cambios del servidor?")) return;
+    run("Bajar", async () => {
+      const r = await gitPull();
+      showToast(`Pull: ${r.result}`, "success");
+    });
+  };
+
+  const handlePush = () => {
+    const message = prompt("Mensaje del commit:", "Actualización del menú");
+    if (!message) return;
+    run("Subir", async () => {
+      await gitPush(message);
+      showToast("Cambios subidos correctamente", "success");
+    });
+  };
+
+  const handleReset = () => {
+    if (!confirm("¿Descartar TODOS los cambios locales y volver a la versión del servidor?")) return;
+    run("Reset", async () => {
+      await gitReset();
+      showToast("Reset completado — se recargará la página", "success");
+      setTimeout(() => location.reload(), 1500);
+    });
+  };
+
+  return (
+    <>
+      <div className="fixed top-0 right-0 left-0 z-[9999] flex items-center justify-between bg-amber-500 px-4 py-1.5 text-sm font-bold text-black shadow-md">
+        <span className="text-base tracking-wide">MODO JESÚS ACTIVADO</span>
+
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setCatEditorOpen(true)}
+            className="rounded bg-amber-700/30 px-2.5 py-1 text-xs transition-colors hover:bg-amber-700/50"
+          >
+            <i className="las la-list mr-1" />
+            Cambiar Categorías
+          </button>
+          <div className="mx-1 h-4 w-px bg-amber-700/30" />
+          <button
+            onClick={handleStatus}
+            disabled={!!loading}
+            className="rounded bg-amber-700/30 px-2.5 py-1 text-xs transition-colors hover:bg-amber-700/50 disabled:opacity-50"
+          >
+            <i className={`${loading === "Estado" ? "las la-spinner la-spin" : "las la-info-circle"} mr-1`} />
+            Mostrar Cambios
+          </button>
+          <button
+            onClick={handlePull}
+            disabled={!!loading}
+            className="rounded bg-amber-700/30 px-2.5 py-1 text-xs transition-colors hover:bg-amber-700/50 disabled:opacity-50"
+          >
+            <i className={`${loading === "Bajar" ? "las la-spinner la-spin" : "las la-download"} mr-1`} />
+            Bajar Cambios
+          </button>
+          <button
+            onClick={handlePush}
+            disabled={!!loading}
+            className="rounded bg-amber-700/30 px-2.5 py-1 text-xs transition-colors hover:bg-amber-700/50 disabled:opacity-50"
+          >
+            <i className={`${loading === "Subir" ? "las la-spinner la-spin" : "las la-upload"} mr-1`} />
+            Subir Cambios
+          </button>
+          <button
+            onClick={handleReset}
+            disabled={!!loading}
+            className="rounded bg-red-600/80 px-2.5 py-1 text-xs text-white transition-colors hover:bg-red-600 disabled:opacity-50"
+          >
+            <i className={`${loading === "Reset" ? "las la-spinner la-spin" : "las la-undo"} mr-1`} />
+            Resetear Cambios
+          </button>
+        </div>
+      </div>
+
+      {/* Status modal */}
+      {statusData !== null && (
+        <div className="fixed inset-0 z-[10000] flex items-center justify-center bg-black/50" onClick={() => setStatusData(null)}>
+          <div className="mx-4 w-full max-w-md rounded-xl bg-white p-6 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="text-sm font-bold text-gray-800">
+                <i className="las la-info-circle mr-1" />
+                Estado de cambios
+              </h3>
+              <button onClick={() => setStatusData(null)} className="text-gray-400 hover:text-gray-600">
+                <i className="las la-times" />
+              </button>
+            </div>
+
+            {statusData.changes.length === 0 ? (
+              <p className="py-4 text-center text-sm text-gray-500">
+                <i className="las la-check-circle mr-1 text-green-500" />
+                No hay cambios pendientes
+              </p>
+            ) : (
+              <ul className="max-h-[50vh] space-y-1.5 overflow-auto">
+                {statusData.changes.map((c, i) => (
+                  <li key={i} className="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-sm">
+                    <span className={`rounded px-1.5 py-0.5 text-[10px] font-bold uppercase ${
+                      c.action === "nuevo" || c.action === "añadido"
+                        ? "bg-green-100 text-green-700"
+                        : c.action === "eliminado"
+                          ? "bg-red-100 text-red-700"
+                          : "bg-amber-100 text-amber-700"
+                    }`}>
+                      {c.action}
+                    </span>
+                    <span className="text-gray-700">{c.label}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+      )}
+
+      <AdminCategoryEditor open={catEditorOpen} onClose={() => setCatEditorOpen(false)} />
+    </>
+  );
+}

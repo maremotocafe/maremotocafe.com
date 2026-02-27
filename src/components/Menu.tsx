@@ -1,8 +1,18 @@
-import { useState, useMemo, useCallback, useRef } from "react";
+import { useState, useMemo, useCallback, useRef, lazy, Suspense } from "react";
 import type { MenuItem, MenuCategory, MenuConfig } from "../data/types";
 import MenuFilterBar from "./MenuFilterBar";
 import MenuItemCard from "./MenuItemCard";
 import MenuItemPopup from "./MenuItemPopup";
+
+const AdminShell = import.meta.env.DEV
+  ? lazy(() => import("../admin/components/AdminShell"))
+  : null;
+const AdminItemOverlay = import.meta.env.DEV
+  ? lazy(() => import("../admin/components/AdminItemOverlay"))
+  : null;
+const AdminNewItemDialog = import.meta.env.DEV
+  ? lazy(() => import("../admin/components/AdminNewItemDialog"))
+  : null;
 
 interface ResolvedImage {
   thumbnail: string;
@@ -18,15 +28,21 @@ interface MenuProps {
   items: MenuItem[];
   /** Map of image filename → { thumbnail, full } URLs (pre-resolved by Astro). */
   images: Record<string, ResolvedImage>;
+  /** Map of item nombre → JSON filename (for admin mode). */
+  itemFilenames?: Record<string, string>;
 }
 
-/** Sort items: priority first, unavailable last, alphabetical within groups. */
+/** Sort items: priority first, unavailable last, by orden, then alphabetical. */
 function sortItems(items: MenuItem[]): MenuItem[] {
   return [...items].sort((a, b) => {
     // Bucket: priority=0, normal=1, unavailable=2
     const bucketA = a.prioridad ? 0 : a.disponible === false ? 2 : 1;
     const bucketB = b.prioridad ? 0 : b.disponible === false ? 2 : 1;
     if (bucketA !== bucketB) return bucketA - bucketB;
+    // Within bucket: sort by orden (items without orden go after those with it)
+    const ordenA = a.orden ?? Infinity;
+    const ordenB = b.orden ?? Infinity;
+    if (ordenA !== ordenB) return ordenA - ordenB;
     return a.nombre.localeCompare(b.nombre, "es");
   });
 }
@@ -36,7 +52,10 @@ export default function Menu({
   categories,
   items,
   images,
+  itemFilenames,
 }: MenuProps) {
+  const isDev = import.meta.env.DEV;
+  const [showNewDialog, setShowNewDialog] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [activeSubcategory, setActiveSubcategory] = useState<string | null>(
     null,
@@ -71,6 +90,7 @@ export default function Menu({
       setActiveCategory(value);
       setActiveSubcategory(null);
       setVisibleCount(config.items_iniciales);
+      window.plausible?.("Category Selected", { props: { category: value } });
       // Scroll to show subcategories/items below the category bar
       requestAnimationFrame(() => {
         const el = scrollRef.current;
@@ -93,6 +113,7 @@ export default function Menu({
         setActiveSubcategory(value);
       }
       setVisibleCount(config.items_iniciales);
+      window.plausible?.("Subcategory Selected", { props: { subcategory: value, category: activeCategory } });
     },
     [activeCategory, config.items_iniciales],
   );
@@ -113,7 +134,7 @@ export default function Menu({
     [categories],
   );
 
-  return (
+  const content = (
     <div>
       {/* Level 1: Categories */}
       <MenuFilterBar
@@ -168,7 +189,7 @@ export default function Menu({
             <div className="mt-6 columns-1 gap-4 sm:columns-2 lg:columns-3">
               {displayedItems.map((item, i) => {
                 const img = images[item.imagen];
-                return (
+                const card = (
                   <MenuItemCard
                     key={`${item.nombre}-${item.categorias.join("-")}`}
                     nombre={item.nombre}
@@ -176,9 +197,27 @@ export default function Menu({
                     thumbAspectRatio={img?.thumbAspectRatio}
                     disponible={item.disponible}
                     staggerDelay={i < config.items_iniciales ? i * 30 : 0}
-                    onClick={() => setPopupItem(item)}
+                    onClick={() => {
+                      setPopupItem(item);
+                      window.plausible?.("Item Viewed", { props: { item: item.nombre, category: activeCategory } });
+                    }}
                   />
                 );
+                if (isDev && AdminItemOverlay) {
+                  const filename = itemFilenames?.[item.nombre] || "";
+                  return (
+                    <Suspense key={`${item.nombre}-${item.categorias.join("-")}`} fallback={card}>
+                      <AdminItemOverlay
+                        item={item}
+                        filename={filename}
+                        categories={categories}
+                      >
+                        {card}
+                      </AdminItemOverlay>
+                    </Suspense>
+                  );
+                }
+                return card;
               })}
             </div>
           ) : (
@@ -186,6 +225,25 @@ export default function Menu({
               <i className={`${config.no_items_icono} mr-2`} />
               <span>{config.no_items_mensaje}</span>
             </div>
+          )}
+
+          {/* Admin: New item button */}
+          {isDev && AdminNewItemDialog && (
+            <Suspense fallback={null}>
+              <button
+                type="button"
+                onClick={() => setShowNewDialog(true)}
+                className="mx-auto mt-4 flex items-center gap-2 rounded-lg bg-amber-500 px-4 py-2 text-sm font-bold text-black transition-colors hover:bg-amber-400"
+              >
+                <i className="las la-plus" /> Nuevo Item
+              </button>
+              {showNewDialog && (
+                <AdminNewItemDialog
+                  categories={categories}
+                  onClose={() => setShowNewDialog(false)}
+                />
+              )}
+            </Suspense>
           )}
 
           {/* Load More */}
@@ -213,4 +271,14 @@ export default function Menu({
       />
     </div>
   );
+
+  if (isDev && AdminShell) {
+    return (
+      <Suspense fallback={content}>
+        <AdminShell>{content}</AdminShell>
+      </Suspense>
+    );
+  }
+
+  return content;
 }

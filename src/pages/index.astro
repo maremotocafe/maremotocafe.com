@@ -22,6 +22,14 @@ const itemModules = import.meta.glob<MenuItem>("../data/menu/items/*.json", {
 });
 const items: MenuItem[] = Object.values(itemModules);
 
+// Build filename-to-item mapping for admin mode
+const itemFilenames: Record<string, string> = {};
+for (const [path, mod] of Object.entries(itemModules)) {
+  const filename = path.split("/").pop()!;
+  const item = mod as MenuItem;
+  itemFilenames[item.nombre] = filename;
+}
+
 // Load all carta images and build a map: filename → ImageMetadata
 const imageModules = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/carta/*.{jpg,jpeg,png}",
@@ -107,6 +115,7 @@ for (const item of items) {
         categories={categories as MenuCategory[]}
         items={items}
         images={imageMap}
+        itemFilenames={itemFilenames}
       />
     </div>
   </section>

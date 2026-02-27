@@ -56,13 +56,18 @@ import { siteConfig, navigation } from "../data/site";
     .nav-menu {
       max-height: 0;
       opacity: 0;
-      transition: max-height 0.3s ease, opacity 0.2s ease;
+      /* Closing: accelerate into collapse */
+      transition: max-height 0.3s cubic-bezier(0.4, 0, 1, 1),
+                  opacity 0.2s ease-in;
     }
 
     .nav-menu.open {
       max-height: 300px;
       margin-top: 0.5rem;
       opacity: 1;
+      /* Opening: decelerate into place */
+      transition: max-height 0.3s cubic-bezier(0, 0, 0.2, 1),
+                  opacity 0.2s ease-out 0.05s;
     }
   }
 

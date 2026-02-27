@@ -15,6 +15,7 @@ export interface MenuItem {
   pvp_local?: string;
   pvp_terraza?: string;
   pvp?: string;
+  orden?: number;
 }
 
 export interface MenuCategory {
