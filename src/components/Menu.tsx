@@ -273,6 +273,7 @@ export default function Menu({
         item={popupItem}
         config={config}
         imageSrc={popupItem ? images[popupItem.imagen]?.full : undefined}
+        thumbnailSrc={popupItem ? images[popupItem.imagen]?.thumbnail : undefined}
         imageWidth={popupItem ? images[popupItem.imagen]?.width : undefined}
         imageHeight={popupItem ? images[popupItem.imagen]?.height : undefined}
         onClose={handleClosePopup}

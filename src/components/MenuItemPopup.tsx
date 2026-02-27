@@ -14,6 +14,7 @@ interface MenuItemPopupProps {
   item: MenuItem | null;
   config: MenuConfig;
   imageSrc?: string;
+  thumbnailSrc?: string;
   imageWidth?: number;
   imageHeight?: number;
   onClose: () => void;
@@ -23,6 +24,7 @@ export default function MenuItemPopup({
   item,
   config,
   imageSrc,
+  thumbnailSrc,
   imageWidth,
   imageHeight,
   onClose,
@@ -116,19 +118,17 @@ export default function MenuItemPopup({
               className="w-full"
             >
               <div className="relative">
-                {!imageLoaded && (
-                  <div
-                    className="shimmer w-full"
-                    style={{ aspectRatio }}
-                  />
-                )}
+                {thumbnailSrc
+                  ? <img src={thumbnailSrc} alt="" className="w-full" style={{ aspectRatio }} />
+                  : <div className="shimmer w-full" style={{ aspectRatio }} />
+                }
                 <img
                   src={imageSrc}
                   alt={item.nombre}
                   width={imageWidth}
                   height={imageHeight}
                   onLoad={() => setImageLoaded(true)}
-                  className={`w-full transition-opacity duration-300 ${imageLoaded ? "opacity-100" : "absolute inset-0 opacity-0"}`}
+                  className={`absolute inset-0 w-full transition-opacity duration-300 ${imageLoaded ? "opacity-100" : "opacity-0"}`}
                 />
               </div>
             </button>
@@ -136,20 +136,18 @@ export default function MenuItemPopup({
             /* Full popup with details */
             <div className="md:flex">
               <div className="md:w-1/2">
-                <div className="relative">
-                  {!imageLoaded && (
-                    <div
-                      className="shimmer w-full"
-                      style={{ aspectRatio }}
-                    />
-                  )}
+                <div className="relative md:h-full">
+                  {thumbnailSrc
+                    ? <img src={thumbnailSrc} alt="" className="h-full w-full object-cover" style={{ aspectRatio }} />
+                    : <div className="shimmer w-full" style={{ aspectRatio }} />
+                  }
                   <img
                     src={imageSrc}
                     alt={item.nombre}
                     width={imageWidth}
                     height={imageHeight}
                     onLoad={() => setImageLoaded(true)}
-                    className={`h-full w-full object-cover transition-opacity duration-300 ${imageLoaded ? "opacity-100" : "absolute inset-0 opacity-0"}`}
+                    className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${imageLoaded ? "opacity-100" : "opacity-0"}`}
                   />
                 </div>
               </div>
