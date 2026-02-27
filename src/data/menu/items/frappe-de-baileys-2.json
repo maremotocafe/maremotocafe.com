@@ -1,0 +1,14 @@
+{
+  "nombre": "Frappé de Baileys ❄",
+  "orden": 168,
+  "imagen": "196.jpg",
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés Fríos"
+  ],
+  "ingredientes": "Café, Baileys, Crema de leche y Cacao",
+  "alergenos": "*Leche*",
+  "txt_aclaraciones": "Refrescante bebida de café con hielo picado. También lo puedes pedir descafeinado!",
+  "grad_alcoholica": "3,80%",
+  "pvp": "6€"
+}

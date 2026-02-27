@@ -1,7 +1,11 @@
 {
   "nombre": "Tropea Beach",
+  "orden": 48,
   "imagen": "tropea.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Vodka Finlandia, Italicus, Zumo de Granada Natural, Sirope de Romero Homemade.",
   "txt_aclaraciones": "Aromas herbales y florales del mediterraneo junto a selectos licores italianos se mezclan en este cocktail inspirado en la maravillosa playa de tropea en la localidad italiana de Calabria.",
   "txt_temporal": "Disponible de Octubre a Marzo.",

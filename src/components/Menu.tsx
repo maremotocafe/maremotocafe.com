@@ -278,7 +278,7 @@ export default function Menu({
 
           {/* Admin: New item button */}
           {isDev && AdminNewItemDialog && (
-            <Suspense fallback={null}>
+            <>
               <button
                 type="button"
                 onClick={() => setShowNewDialog(true)}
@@ -287,12 +287,14 @@ export default function Menu({
                 <i className="las la-plus" /> Nuevo Item
               </button>
               {showNewDialog && (
-                <AdminNewItemDialog
-                  categories={categories}
-                  onClose={() => setShowNewDialog(false)}
-                />
+                <Suspense fallback={null}>
+                  <AdminNewItemDialog
+                    categories={categories}
+                    onClose={() => setShowNewDialog(false)}
+                  />
+                </Suspense>
               )}
-            </Suspense>
+            </>
           )}
 
           {/* Infinite scroll sentinel */}
@@ -306,7 +308,7 @@ export default function Menu({
         config={config}
         imageSrc={popupItem ? images[popupItem.imagen]?.full : undefined}
         thumbnailSrc={
-          popupItem ? images[popupItem.imagen]?.thumbnail : undefined
+          popupItem ? images[popupItem.imagen]?.popupThumbnail : undefined
         }
         imageWidth={popupItem ? images[popupItem.imagen]?.width : undefined}
         imageHeight={popupItem ? images[popupItem.imagen]?.height : undefined}

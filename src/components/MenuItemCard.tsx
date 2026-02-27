@@ -20,6 +20,24 @@ export default function MenuItemCard({
   const [loaded, setLoaded] = useState(false);
   const aspectRatio = thumbAspectRatio || 4 / 3;
 
+  const isUnavailable = disponible === false;
+
+  if (isUnavailable) {
+    return (
+      <button
+        type="button"
+        className="animate-fade-in group mb-2 w-full cursor-pointer break-inside-avoid text-left"
+        style={{ animationDelay: `${staggerDelay}ms` }}
+        onClick={onClick}
+      >
+        <div className="flex items-center justify-between rounded-lg bg-white/80 px-4 py-2.5">
+          <span className="text-lg text-gray-400">{nombre}</span>
+          <i className="las la-search shrink-0 text-lg text-gray-300 transition-colors group-hover:text-accent" />
+        </div>
+      </button>
+    );
+  }
+
   return (
     <button
       type="button"
@@ -30,7 +48,7 @@ export default function MenuItemCard({
       onClick={onClick}
     >
       <div className="overflow-hidden rounded-lg">
-        {disponible !== false && thumbnailSrc ? (
+        {thumbnailSrc ? (
           <div className="relative overflow-hidden">
             {!loaded && (
               <div className="shimmer w-full" style={{ aspectRatio }} />

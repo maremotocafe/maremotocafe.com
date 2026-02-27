@@ -1,7 +1,11 @@
 {
   "nombre": "Smoothies de Fruta (Sin Lacteos)",
+  "orden": 28,
   "imagen": "389.jpg",
-  "categorias": ["Sin Alcohol", "Smoothies"],
+  "categorias": [
+    "Sin Alcohol",
+    "Smoothies"
+  ],
   "ingredientes": "Zumos de frutas o limonada, Puré de frutas y Hielo",
   "txt_aclaraciones": "A elegir entre; Maracuyá, Mango, Melocotón o Yuzu.",
   "pvp": "5,5€"

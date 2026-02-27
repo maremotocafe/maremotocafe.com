@@ -1,7 +1,11 @@
 {
   "nombre": "Mojito Clásico",
+  "orden": 97,
   "imagen": "201.jpg",
-  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
   "ingredientes": "Rón blanco Plantation, Lima, Hierbabuena, Azúcar y Soda.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "13,70%",

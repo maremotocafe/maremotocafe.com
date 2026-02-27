@@ -1,8 +1,12 @@
 {
   "nombre": "Alexander (fuera de temporada)",
+  "orden": 51,
   "disponible": false,
   "imagen": "210.jpg",
-  "categorias": ["Cocktails", "Cocktails Clásicos"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails Clásicos"
+  ],
   "ingredientes": "Brandy, Nata y Licor Mozart.",
   "alergenos": "*Lacteo*",
   "txt_temporal": "Disponible todo el año.",

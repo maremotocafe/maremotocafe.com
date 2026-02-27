@@ -1,7 +1,11 @@
 {
   "nombre": "Irlandés ☕",
+  "orden": 174,
   "imagen": "282.jpg",
-  "categorias": ["Cafés y Tés", "Cafés con Alcohol"],
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés con Alcohol"
+  ],
   "ingredientes": "Café espresso con azúcar moreno, Whisky Irlandés y Nata semimontada.",
   "alergenos": "*Leche*",
   "grad_alcoholica": "9,50%",

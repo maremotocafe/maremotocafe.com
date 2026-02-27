@@ -1,7 +1,11 @@
 {
   "nombre": "Playa Paraiso 🆕",
+  "orden": 17,
   "imagen": "playaparaiso.jpg",
-  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol", "Sin Alcohol"],
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
   "ingredientes": "Piña Asada, Hierbabuena, Zumo de Piña y Mixer de Pomelo.",
   "txt_temporal": "Disponible todo el año",
   "grad_alcoholica": "0%",

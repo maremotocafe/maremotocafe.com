@@ -1,7 +1,11 @@
 {
   "nombre": "Yokesé 🍏🎃🆕",
+  "orden": 50,
   "imagen": "yokese.jpeg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Blend de Rones Nº1 maremoto, Sirope de Manzana Asada Casero, Sirope de Calabaza especiada, Sirope de Especias J.C. y Lima.",
   "txt_aclaraciones": "Delicioso cocktail ideal si no sabes que pedir 😜",
   "txt_temporal": "Disponible todo el año.",

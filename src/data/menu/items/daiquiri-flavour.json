@@ -1,7 +1,11 @@
 {
   "nombre": "Daiquiri Flavour",
+  "orden": 68,
   "imagen": "271.jpg",
-  "categorias": ["Cocktails", "Cocktails Frozeen"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails Frozeen"
+  ],
   "ingredientes": "Rón Plantation 3 Stars, Zumo de Limón, Triple Seco, Azúcar y Puré de frutas.",
   "txt_aclaraciones": "Elije tu sabor entre Fresa, Frutas del Bosque o Mango Natural. Todos ellos van decorados con Chocolate crujiente, si no lo deseas en tu Cocktail avisa a tu camarero",
   "txt_temporal": "Disponible todo el año.",

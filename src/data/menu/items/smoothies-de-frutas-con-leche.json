@@ -1,7 +1,11 @@
 {
   "nombre": "Smoothies de Frutas (Con leche)",
+  "orden": 29,
   "imagen": "388.jpg",
-  "categorias": ["Sin Alcohol", "Smoothies"],
+  "categorias": [
+    "Sin Alcohol",
+    "Smoothies"
+  ],
   "ingredientes": "Leche, Puré de frutas y Hielo",
   "alergenos": "*Leche*",
   "txt_aclaraciones": "A elegir entre; Coco, Plátano, Fresa, Frambuesa, Arándano Azul o Cereza. Disponemos de leche Sin Lactosa, Avena o Soja para la elaboración de su Smoothie.",

@@ -1,7 +1,11 @@
 {
   "nombre": "Altantic",
+  "orden": 35,
   "imagen": "atlantic.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Nordés Gin, Aperitivo Bonanto, Sirope de Romero, Zumo de Limón ,Curaçao Azul, Fever Tree Mediterranean y Espuma de Pomelo y Lima.",
   "txt_aclaraciones": "Este Cocktail representa el horizonte desde el oceano Altantico.",
   "txt_temporal": "Disponible todo el año.",

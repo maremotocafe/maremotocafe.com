@@ -1,7 +1,11 @@
 {
   "nombre": "Tiki Shin 🆕",
+  "orden": 31,
   "imagen": "tikishin.jpg",
-  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol", "Sin Alcohol"],
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
   "ingredientes": "Tanqueray 0% Alcohol, Leche Merengada, Zumo de Naranja, Zumo de Lima, Sirope de Especias y Ginger Ale",
   "alergenos": "Leche",
   "txt_temporal": "Disponible todo el año",

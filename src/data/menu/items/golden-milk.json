@@ -1,7 +1,11 @@
 {
   "nombre": "Golden Milk ☕",
+  "orden": 172,
   "imagen": "goldenmilk.jpg",
-  "categorias": ["Cafés y Tés", "Infusiones"],
+  "categorias": [
+    "Cafés y Tés",
+    "Infusiones"
+  ],
   "ingredientes": "Reconfortante bebida caliente a base de Leche de Avena, Cúrcuma, Clavo, Canela, Jengibre, Pimienta y Azucar Moreno.",
   "txt_temporal": "Disponible de Noviembre a Enero",
   "pvp": "3,5€"

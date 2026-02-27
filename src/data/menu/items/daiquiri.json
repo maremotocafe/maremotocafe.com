@@ -1,7 +1,11 @@
 {
   "nombre": "Daiquiri",
+  "orden": 67,
   "imagen": "373.jpg",
-  "categorias": ["Cocktails", "Cocktails Clásicos"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails Clásicos"
+  ],
   "ingredientes": "Rón Plantation 3 Stars, Zumo de Limón, Triple Seco y Azúcar.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "20%",

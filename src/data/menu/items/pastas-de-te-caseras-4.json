@@ -1,7 +1,10 @@
 {
   "nombre": "Pastas de Té Caseras",
+  "orden": 149,
   "imagen": "pastasdete.jpeg",
-  "categorias": ["Gin Tonics"],
+  "categorias": [
+    "Gin Tonics"
+  ],
   "txt_aclaraciones": "Acompaña tu Gin Tonic con estas ricas Pastas de Té Caseras",
   "txt_temporal": "Disponible todo el año.",
   "pvp": "2,5€"

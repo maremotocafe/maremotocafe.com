@@ -1,6 +1,9 @@
 {
   "nombre": "Carta de Licores",
-  "imagen": "portadadelicores.png",
-  "imagen_pequenya": "cartadelicores_small.png",
-  "categorias": ["Rones, Whiskies y Licores"]
+  "orden": 155,
+  "imagen": "cartadelicores_small.png",
+  "imagen_pequenya": "portadadelicores.png",
+  "categorias": [
+    "Rones, Whiskies y Licores"
+  ]
 }

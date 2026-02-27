@@ -1,7 +1,11 @@
 {
   "nombre": "Quemadillo de Rón ☕ (No disponible temporalmente)",
+  "orden": 179,
   "imagen": "387.jpg",
-  "categorias": ["Cafés y Tés", "Cafés con Alcohol"],
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés con Alcohol"
+  ],
   "ingredientes": "Ron flambeado con granos de café y corteza de naranja, Licor 43, Canela y Crema de leche.",
   "alergenos": "*Leche*",
   "grad_alcoholica": "5,50%",

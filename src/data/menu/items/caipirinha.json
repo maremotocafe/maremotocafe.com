@@ -1,7 +1,11 @@
 {
   "nombre": "Caipirinha",
+  "orden": 56,
   "imagen": "caipirinha.jpg",
-  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
   "ingredientes": "Cachaça, Lima y Azúcar.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "15,50%",

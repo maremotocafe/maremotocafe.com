@@ -1,7 +1,11 @@
 {
   "nombre": "Margarita Blue Frozeen",
+  "orden": 89,
   "imagen": "303.jpg",
-  "categorias": ["Cocktails", "Cocktails Frozeen"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails Frozeen"
+  ],
   "ingredientes": "Tequila, Curaçao azul, Zumo de Limón y Azúcar.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "6%",

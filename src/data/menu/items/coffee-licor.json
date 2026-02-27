@@ -1,10 +1,14 @@
 {
   "nombre": "Coffee Licor ☕",
+  "orden": 166,
   "imagen": "310.jpg",
-  "categorias": ["Cafés y Tés", "Cafés con Alcohol"],
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés con Alcohol"
+  ],
   "ingredientes": "Café espresso con nata y licor a elegir.",
   "alergenos": "*Leche*",
-  "txt_aclaraciones": "Elige entre Frangélico Amaretto, Grand Marnier Rouge o Kalhua.",
+  "txt_aclaraciones": "Elige entre Frangélico Amaretto, Grand Marnier Rouge o Kahlúa.",
   "grad_alcoholica": "9,50%",
   "pvp": "6€"
 }

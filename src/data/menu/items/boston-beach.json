@@ -1,9 +1,13 @@
 {
   "nombre": "Boston Beach🍓🆕",
+  "orden": 38,
   "imagen": "boston.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
-  "ingredientes": "Ron Captain Morgan Spiced, Don Papa Baroko, Zumo de Fresa Natural, Chadornnay inf. con Fresas y Romero, Sirope de Jengibre y Clavo, Sirope de Arce, limón, Ginger Beer y Angostura de Naranja.",
-  "txt_aclaraciones": "Inspirado la tierra de Bob Marley en concreto en la playa de Boston bal en Jamaica nos encontramos con un trago de perfil dulce y especiado gracias al Ron Jamaicano Captain Morgan. El Jengibre en forma de Sirope y en Mixer en el Ginger Beer le otorgan un leve carácter picante.    .",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
+  "ingredientes": "Ron Captain Morgan Spiced, Don Papa Baroko, Zumo de Fresa Natural, Chardonnay inf. con Fresas y Romero, Sirope de Jengibre y Clavo, Sirope de Arce, limón, Ginger Beer y Angostura de Naranja.",
+  "txt_aclaraciones": "Inspirado en la tierra de Bob Marley en concreto en la playa de Boston bal en Jamaica nos encontramos con un trago de perfil dulce y especiado gracias al Ron Jamaicano Captain Morgan. El Jengibre en forma de Sirope y en Mixer en el Ginger Beer le otorgan un leve carácter picante.",
   "txt_temporal": "Disponible todo el año.",
   "pvp": "8,5€"
 }

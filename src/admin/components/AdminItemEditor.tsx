@@ -11,19 +11,27 @@ interface Props {
   onDelete: () => void;
 }
 
-/** All editable text fields on a menu item. */
-const TEXT_FIELDS: { key: keyof MenuItem; label: string }[] = [
+/** Single-column text fields (rendered as wrapping textareas). */
+const REGULAR_FIELDS: { key: keyof MenuItem; label: string }[] = [
   { key: "nombre", label: "Nombre" },
   { key: "ingredientes", label: "Ingredientes" },
   { key: "alergenos", label: "Alérgenos" },
   { key: "txt_aclaraciones", label: "Aclaraciones" },
   { key: "txt_temporal", label: "Temporalidad" },
   { key: "grad_alcoholica", label: "Graduación" },
-  { key: "vol_ml", label: "Volumen (ml)" },
-  { key: "edul_gr", label: "Edulcorantes (gr)" },
+];
+
+/** PVP fields rendered side by side. */
+const PVP_FIELDS: { key: keyof MenuItem; label: string }[] = [
   { key: "pvp", label: "PVP" },
   { key: "pvp_local", label: "PVP Local" },
   { key: "pvp_terraza", label: "PVP Terraza" },
+];
+
+/** Volume/sweetener fields rendered side by side. */
+const VOLUME_FIELDS: { key: keyof MenuItem; label: string }[] = [
+  { key: "vol_ml", label: "Volumen (ml)" },
+  { key: "edul_gr", label: "Edulcorantes (gr)" },
 ];
 
 export default function AdminItemEditor({
@@ -149,21 +157,58 @@ export default function AdminItemEditor({
         </div>
 
         <div className="grid grid-cols-1 gap-3">
-          {/* Text fields */}
-          {TEXT_FIELDS.map(({ key, label }) => (
+          {/* Regular text fields (wrapping) */}
+          {REGULAR_FIELDS.map(({ key, label }) => (
             <div key={key}>
               <label className="mb-0.5 block text-xs font-medium text-gray-500">
                 {label}
               </label>
-              <input
-                type="text"
+              <textarea
+                rows={1}
                 value={(draft[key] as string) || ""}
                 onChange={(e) => setLocal(key, e.target.value)}
                 onBlur={(e) => saveField(key, e.target.value)}
-                className="w-full rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
+                className="field-sizing-content w-full rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
+                style={{ resize: "none" }}
               />
             </div>
           ))}
+
+          {/* PVP fields side by side */}
+          <div className="grid grid-cols-3 gap-3">
+            {PVP_FIELDS.map(({ key, label }) => (
+              <div key={key}>
+                <label className="mb-0.5 block text-xs font-medium text-gray-500">
+                  {label}
+                </label>
+                <input
+                  type="text"
+                  value={(draft[key] as string) || ""}
+                  onChange={(e) => setLocal(key, e.target.value)}
+                  onBlur={(e) => saveField(key, e.target.value)}
+                  className="w-full rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Volumen & Edulcorantes side by side */}
+          <div className="grid grid-cols-2 gap-3">
+            {VOLUME_FIELDS.map(({ key, label }) => (
+              <div key={key}>
+                <label className="mb-0.5 block text-xs font-medium text-gray-500">
+                  {label}
+                </label>
+                <input
+                  type="text"
+                  value={(draft[key] as string) || ""}
+                  onChange={(e) => setLocal(key, e.target.value)}
+                  onBlur={(e) => saveField(key, e.target.value)}
+                  className="w-full rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
+                />
+              </div>
+            ))}
+          </div>
 
           {/* Image fields */}
           <div className="grid grid-cols-2 gap-3">
@@ -183,6 +228,13 @@ export default function AdminItemEditor({
                   </option>
                 ))}
               </select>
+              {draft.imagen && (
+                <img
+                  src={`/src/assets/carta/${draft.imagen}`}
+                  alt={draft.imagen}
+                  className="mt-1.5 h-20 w-full rounded border border-gray-200 object-cover"
+                />
+              )}
             </div>
             <div>
               <label className="mb-0.5 block text-xs font-medium text-gray-500">
@@ -206,6 +258,13 @@ export default function AdminItemEditor({
                   </option>
                 ))}
               </select>
+              {draft.imagen_pequenya && (
+                <img
+                  src={`/src/assets/carta/${draft.imagen_pequenya}`}
+                  alt={draft.imagen_pequenya}
+                  className="mt-1.5 h-20 w-full rounded border border-gray-200 object-cover"
+                />
+              )}
             </div>
           </div>
           <div>
@@ -290,34 +349,6 @@ export default function AdminItemEditor({
               />
               Disponible
             </label>
-          </div>
-
-          {/* Orden */}
-          <div>
-            <label className="mb-0.5 block text-xs font-medium text-gray-500">
-              Orden (menor = primero)
-            </label>
-            <input
-              type="number"
-              value={draft.orden ?? ""}
-              onChange={(e) => {
-                setDraft((d) => {
-                  const next = { ...d };
-                  if (e.target.value === "")
-                    delete (next as Record<string, unknown>).orden;
-                  else next.orden = parseInt(e.target.value, 10);
-                  return next;
-                });
-              }}
-              onBlur={(e) => {
-                const next = { ...draft };
-                if (e.target.value === "")
-                  delete (next as Record<string, unknown>).orden;
-                else next.orden = parseInt(e.target.value, 10);
-                save(next);
-              }}
-              className="w-24 rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
-            />
           </div>
 
           {/* Delete */}

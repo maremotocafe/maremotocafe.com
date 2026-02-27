@@ -1,7 +1,11 @@
 {
   "nombre": "Cóctel de Cóctel 🥜🌽🆕",
+  "orden": 66,
   "imagen": "cocteldecoctel.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Tequila El Jimador infusionado en Cacahuetes, licor de Elote (Maiz) Nixta, Licor de Pasas Homemade y Zumo de Pomelo.",
   "txt_aclaraciones": "¡Sólo para Atrevidos!🤪 La versión líquida del típico Cóctel de Frutos Secos. Se acompaña de su correspondiente aperitivo de Frutos Secos.😎",
   "txt_temporal": "Disponible todo el año.",

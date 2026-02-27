@@ -47,4 +47,6 @@ export interface ResolvedImage {
   width: number;
   height: number;
   thumbAspectRatio: number;
+  /** Thumbnail derived from the main image, for popup placeholder (differs from thumbnail when imagen_pequenya overrides it). */
+  popupThumbnail: string;
 }

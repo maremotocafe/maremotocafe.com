@@ -1,7 +1,11 @@
 {
   "nombre": "Caipiroska Sabor",
+  "orden": 60,
   "imagen": "195.jpg",
-  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
   "ingredientes": "Vodka Finlandia, Lima, Pure de Fruta y Azúcar.",
   "txt_aclaraciones": "Caipiroska Clasica a la que le añadimos fruta a elegir entre Fresa Natural, Frambuesa Natural o Melocotón.",
   "txt_temporal": "Disponible todo el año.",

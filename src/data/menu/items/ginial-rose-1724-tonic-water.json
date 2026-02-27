@@ -1,8 +1,11 @@
 {
   "nombre": "Ginial Rosé & 1724 tonic water",
+  "orden": 143,
   "imagen": "226.jpg",
-  "categorias": ["Gin Tonics"],
-  "txt_aclaraciones": "Femenina y exigente a la par que dulce. Una ginebra elaorada con cítricos, flores y fresas. Destaca por su baja graduación (25%)",
+  "categorias": [
+    "Gin Tonics"
+  ],
+  "txt_aclaraciones": "Femenina y exigente a la par que dulce. Una ginebra elaborada con cítricos, flores y fresas. Destaca por su baja graduación (25%)",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "5%",
   "vol_ml": "250 ml",

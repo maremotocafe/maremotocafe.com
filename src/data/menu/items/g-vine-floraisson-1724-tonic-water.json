@@ -1,7 +1,10 @@
 {
   "nombre": "G'Vine Floraisson & 1724 Tonic Water 🍇",
+  "orden": 123,
   "imagen": "gvine.jpeg",
-  "categorias": ["Gin Tonics"],
+  "categorias": [
+    "Gin Tonics"
+  ],
   "txt_aclaraciones": "Ginebra francesa elaborada con alcohol vinico y macerada con flor de vid lo que le otorga un sabor fresco primaveral y floral.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "8%",

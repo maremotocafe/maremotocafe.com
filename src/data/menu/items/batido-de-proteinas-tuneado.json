@@ -1,7 +1,11 @@
 {
   "nombre": "Batido de Proteinas Tuneado 💪 🆕",
+  "orden": 1,
   "imagen": "batidoproteinas.jpeg",
-  "categorias": ["Sin Alcohol", "Batidos"],
+  "categorias": [
+    "Sin Alcohol",
+    "Batidos"
+  ],
   "ingredientes": "30 gr de Proteina en polvo Whey Gold Standar sabor Doble Rich Chocolate (24 gr de proteina por batido), Zumo de Naranja Natural y Hierbabuena.",
   "txt_aclaraciones": "Disfruta de tu Batido de Proteinas Post entreno bien frío y preparado con un twist de sabor extra. Sin azúcares añadidos.",
   "txt_temporal": "Disponible todo el año.",

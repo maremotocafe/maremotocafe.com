@@ -1,8 +1,12 @@
 {
   "nombre": "Michelada",
+  "orden": 92,
   "imagen": "michelada.jpeg",
-  "categorias": ["Cocktails", "Cocktails Clásicos"],
-  "ingredientes": "Zumo de Tomate, Zumo de Limón, Tabasco, Sal, Pimienta y Salsa Perrins, Clamato, Salsa Maggie  y Coronita.",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Clásicos"
+  ],
+  "ingredientes": "Zumo de Tomate, Zumo de Limón, Tabasco, Sal, Pimienta y Salsa Perrins, Clamato, Salsa Maggi  y Coronita.",
   "alergenos": "*Apio*",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "7,50%",

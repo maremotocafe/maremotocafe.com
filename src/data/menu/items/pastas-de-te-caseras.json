@@ -1,7 +1,11 @@
 {
   "nombre": "Pastas de Té Caseras",
+  "orden": 16,
   "imagen": "pastasdete.jpeg",
-  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
   "txt_aclaraciones": "Acompaña tu Cocktail con estas ricas Pastas de Té Caseras",
   "txt_temporal": "Disponible todo el año.",
   "pvp": "2,5€"
