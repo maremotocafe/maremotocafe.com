@@ -83,3 +83,8 @@ export function useAdmin(): AdminContextValue {
   if (!ctx) throw new Error("useAdmin must be used within AdminProvider");
   return ctx;
 }
+
+/** Returns null when rendered outside AdminProvider (e.g. during Suspense fallback). */
+export function useAdminOptional(): AdminContextValue | null {
+  return useContext(AdminContext);
+}

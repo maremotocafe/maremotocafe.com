@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import type { MenuItem, MenuCategory } from "../../data/types";
-import { useAdmin } from "./AdminProvider";
+import { useAdminOptional } from "./AdminProvider";
 import { deleteItem } from "../api-client";
 import AdminItemEditor from "./AdminItemEditor";
 
@@ -20,10 +20,15 @@ export default function AdminItemOverlay({
   children,
   onSwap,
 }: Props) {
-  const { editingFilename, setEditingFilename, showToast } = useAdmin();
+  const admin = useAdminOptional();
   const [hovering, setHovering] = useState(false);
   const [dragOver, setDragOver] = useState(false);
   const [dragging, setDragging] = useState(false);
+
+  // During Suspense fallback, AdminProvider isn't mounted yet — just render children
+  if (!admin) return <>{children}</>;
+
+  const { editingFilename, setEditingFilename, showToast } = admin;
   const isEditing = editingFilename === filename;
 
   const handleDelete = async () => {
