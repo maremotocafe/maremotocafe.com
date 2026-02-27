@@ -5,7 +5,6 @@ interface MenuItemCardProps {
   thumbnailSrc?: string;
   thumbAspectRatio?: number;
   disponible?: boolean;
-  staggerDelay?: number;
   onClick: () => void;
 }
 
@@ -14,7 +13,6 @@ export default function MenuItemCard({
   thumbnailSrc,
   thumbAspectRatio,
   disponible,
-  staggerDelay = 0,
   onClick,
 }: MenuItemCardProps) {
   const [loaded, setLoaded] = useState(false);
@@ -26,8 +24,7 @@ export default function MenuItemCard({
     return (
       <button
         type="button"
-        className="animate-fade-in group mb-2 w-full cursor-pointer break-inside-avoid text-left"
-        style={{ animationDelay: `${staggerDelay}ms` }}
+        className="group w-full cursor-pointer text-left"
         onClick={onClick}
       >
         <div className="flex items-center justify-between rounded-lg bg-white/80 px-4 py-2.5">
@@ -41,10 +38,7 @@ export default function MenuItemCard({
   return (
     <button
       type="button"
-      className="animate-fade-in group mb-4 w-full cursor-pointer break-inside-avoid text-left"
-      style={{
-        animationDelay: `${staggerDelay}ms`,
-      }}
+      className="group w-full cursor-pointer text-left"
       onClick={onClick}
     >
       <div className="overflow-hidden rounded-lg">

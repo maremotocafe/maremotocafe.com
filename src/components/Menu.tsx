@@ -4,9 +4,12 @@ import React, {
   useCallback,
   useRef,
   useEffect,
+  createContext,
+  useContext,
   lazy,
   Suspense,
 } from "react";
+import { Masonry, useInfiniteLoader } from "masonic";
 import type {
   MenuItem,
   MenuCategory,
@@ -31,6 +34,49 @@ const AdminNewItemDialog = import.meta.env.DEV
 const adminItemOverlayPromise = import.meta.env.DEV
   ? import("../admin/components/AdminItemOverlay")
   : null;
+
+/** Extended item with pre-resolved data for masonry cards. */
+interface MasonryItem extends MenuItem {
+  id: string;
+  _img?: ResolvedImage;
+  _filename: string;
+}
+
+/** Context providing menu-level state to masonry card components. */
+const CardContext = createContext<{
+  onItemClick: (item: MasonryItem) => void;
+  AdminItemOverlay: React.ComponentType<any> | null;
+  categories: MenuCategory[];
+  onSwap: (a: string, b: string) => Promise<void>;
+}>(null!);
+
+/** Masonry card renderer — defined at module level for a stable reference. */
+const MasonryCard = ({ data }: { data: MasonryItem; index: number; width: number }) => {
+  const { onItemClick, AdminItemOverlay, categories, onSwap } =
+    useContext(CardContext);
+  const card = (
+    <MenuItemCard
+      nombre={data.nombre}
+      thumbnailSrc={data._img?.thumbnail}
+      thumbAspectRatio={data._img?.thumbAspectRatio}
+      disponible={data.disponible}
+      onClick={() => onItemClick(data)}
+    />
+  );
+  if (AdminItemOverlay) {
+    return (
+      <AdminItemOverlay
+        item={data}
+        filename={data._filename}
+        categories={categories}
+        onSwap={onSwap}
+      >
+        {card}
+      </AdminItemOverlay>
+    );
+  }
+  return card;
+};
 
 interface MenuProps {
   config: MenuConfig;
@@ -63,9 +109,12 @@ export default function Menu({
   itemFilenames,
 }: MenuProps) {
   const isDev = import.meta.env.DEV;
-  const [AdminItemOverlay, setAdminItemOverlay] = useState<React.ComponentType<any> | null>(null);
+  const [AdminItemOverlay, setAdminItemOverlay] =
+    useState<React.ComponentType<any> | null>(null);
   useEffect(() => {
-    adminItemOverlayPromise?.then((mod) => setAdminItemOverlay(() => mod.default));
+    adminItemOverlayPromise?.then((mod) =>
+      setAdminItemOverlay(() => mod.default),
+    );
   }, []);
   const [showNewDialog, setShowNewDialog] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
@@ -75,6 +124,8 @@ export default function Menu({
   const [visibleCount, setVisibleCount] = useState(config.items_iniciales);
   const [popupItem, setPopupItem] = useState<MenuItem | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const activeCategoryRef = useRef(activeCategory);
+  activeCategoryRef.current = activeCategory;
 
   // Sorted items (stable)
   const sortedItems = useMemo(() => sortItems(items), [items]);
@@ -82,7 +133,7 @@ export default function Menu({
   // Filter items based on active filters
   const filteredItems = useMemo(() => {
     return sortedItems.filter((item) => {
-      if (!activeCategory) return false; // No category selected → show nothing (like original)
+      if (!activeCategory) return false;
       if (!item.categorias.includes(activeCategory)) return false;
       if (activeSubcategory && !item.categorias.includes(activeSubcategory))
         return false;
@@ -90,26 +141,41 @@ export default function Menu({
     });
   }, [sortedItems, activeCategory, activeSubcategory]);
 
-  // Items to display (paginated)
-  const displayedItems = filteredItems.slice(0, visibleCount);
-  const hasMore = filteredItems.length > visibleCount;
+  // Masonry items with pre-resolved data
+  const allMasonryItems = useMemo(
+    () =>
+      filteredItems.map((item) => ({
+        ...item,
+        id: `${item.nombre}-${item.categorias.join("-")}`,
+        _img: images[item.imagen],
+        _filename: itemFilenames?.[item.nombre] || "",
+      })),
+    [filteredItems, images, itemFilenames],
+  );
 
-  // Infinite scroll: load more when sentinel enters viewport
-  const sentinelRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const sentinel = sentinelRef.current;
-    if (!sentinel) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisibleCount((prev) => prev + config.items_incremento);
-        }
-      },
-      { rootMargin: "200px" },
-    );
-    observer.observe(sentinel);
-    return () => observer.disconnect();
-  }, [config.items_incremento, activeCategory, activeSubcategory]);
+  // Items to display (paginated via infinite loader)
+  const displayedItems = useMemo(
+    () => allMasonryItems.slice(0, visibleCount),
+    [allMasonryItems, visibleCount],
+  );
+
+  // Ref for total count (used in async loader to avoid stale closure)
+  const totalRef = useRef(allMasonryItems.length);
+  totalRef.current = allMasonryItems.length;
+
+  // Infinite loader: reveal more pre-loaded items as user scrolls
+  const maybeLoadMore = useInfiniteLoader(
+    async (_startIndex, stopIndex) => {
+      setVisibleCount((prev) =>
+        Math.min(totalRef.current, Math.max(prev, stopIndex + 1)),
+      );
+    },
+    {
+      isItemLoaded: (index, items) => !!items[index],
+      minimumBatchSize: config.items_incremento,
+      threshold: 3,
+    },
+  );
 
   // Category selection handler
   const handleCategorySelect = useCallback(
@@ -174,6 +240,25 @@ export default function Menu({
     [items, itemFilenames],
   );
 
+  // Item click handler (stable via ref for activeCategory)
+  const onItemClick = useCallback((item: MasonryItem) => {
+    setPopupItem(item);
+    window.plausible?.("Item Viewed", {
+      props: { item: item.nombre, category: activeCategoryRef.current },
+    });
+  }, []);
+
+  // Card context (for stable masonry render component)
+  const cardCtx = useMemo(
+    () => ({
+      onItemClick,
+      AdminItemOverlay,
+      categories,
+      onSwap: handleSwap,
+    }),
+    [onItemClick, AdminItemOverlay, categories, handleSwap],
+  );
+
   // Build category filter options (stable unless categories change)
   const categoryOptions = useMemo(
     () =>
@@ -231,49 +316,26 @@ export default function Menu({
       {/* Screen reader announcement for filter changes */}
       <div className="sr-only" aria-live="polite" role="status">
         {activeCategory &&
-          `Mostrando ${displayedItems.length} de ${filteredItems.length} items`}
+          `Mostrando ${displayedItems.length} de ${allMasonryItems.length} items`}
       </div>
 
       {/* Item Grid */}
       {activeCategory && (
         <>
           {displayedItems.length > 0 ? (
-            <div className="mt-6 columns-1 gap-4 sm:columns-2 lg:columns-3">
-              {displayedItems.map((item, i) => {
-                const img = images[item.imagen];
-                const card = (
-                  <MenuItemCard
-                    key={`${item.nombre}-${item.categorias.join("-")}`}
-                    nombre={item.nombre}
-                    thumbnailSrc={img?.thumbnail}
-                    thumbAspectRatio={img?.thumbAspectRatio}
-                    disponible={item.disponible}
-                    staggerDelay={i < config.items_iniciales ? i * 30 : 0}
-                    onClick={() => {
-                      setPopupItem(item);
-                      window.plausible?.("Item Viewed", {
-                        props: { item: item.nombre, category: activeCategory },
-                      });
-                    }}
-                  />
-                );
-                if (AdminItemOverlay) {
-                  const filename = itemFilenames?.[item.nombre] || "";
-                  return (
-                    <AdminItemOverlay
-                      key={`${item.nombre}-${item.categorias.join("-")}`}
-                      item={item}
-                      filename={filename}
-                      categories={categories}
-                      onSwap={handleSwap}
-                    >
-                      {card}
-                    </AdminItemOverlay>
-                  );
-                }
-                return card;
-              })}
-            </div>
+            <CardContext.Provider value={cardCtx}>
+              <div className="mt-6">
+                <Masonry
+                  key={`${activeCategory}-${activeSubcategory}`}
+                  items={displayedItems}
+                  onRender={maybeLoadMore}
+                  render={MasonryCard}
+                  columnGutter={16}
+                  columnWidth={280}
+                  overscanBy={5}
+                />
+              </div>
+            </CardContext.Provider>
           ) : (
             <div className="mt-8 text-center text-text">
               <i className={`${config.no_items_icono} mr-2`} />
@@ -301,9 +363,6 @@ export default function Menu({
               )}
             </>
           )}
-
-          {/* Infinite scroll sentinel */}
-          {hasMore && <div ref={sentinelRef} className="h-1" />}
         </>
       )}
 
