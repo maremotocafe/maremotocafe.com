@@ -27,9 +27,9 @@ export default function MenuItemCard({
         className="group w-full cursor-pointer text-left"
         onClick={onClick}
       >
-        <div className="flex items-center justify-between rounded-lg bg-white/80 px-4 py-2.5">
+        <div className="flex items-center justify-between rounded-lg bg-white/80 px-5 py-2.5">
           <span className="text-lg text-gray-400">{nombre}</span>
-          <i className="las la-search shrink-0 text-lg text-gray-300 transition-colors group-hover:text-accent" />
+          <i className="las la-search shrink-0 text-lg text-gray-400 [text-shadow:0_0_0.5px_currentColor] transition-colors group-hover:text-accent" />
         </div>
       </button>
     );
@@ -60,9 +60,9 @@ export default function MenuItemCard({
             <i className="las la-image text-4xl" />
           </div>
         )}
-        <div className="flex min-h-[70px] items-center justify-between bg-white px-4 py-2.5">
+        <div className="flex min-h-[70px] items-center justify-between bg-white px-5 py-2.5">
           <span className="text-xl text-gray-600">{nombre}</span>
-          <i className="las la-search shrink-0 text-xl text-gray-400 transition-colors group-hover:text-accent" />
+          <i className="las la-search shrink-0 text-xl text-gray-500 [text-shadow:0_0_0.5px_currentColor] transition-colors group-hover:text-accent" />
         </div>
       </div>
     </button>

@@ -40,7 +40,7 @@ export default function MenuFilterBar({
         {resetOption && (
           <button
             onClick={() => onSelect(resetOption.value)}
-            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-base font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
+            className="flex items-center gap-2 rounded-lg border-2 px-6 py-3 text-base font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
             style={{
               backgroundColor: resetOption.color,
               color: "#1d2024",
@@ -49,7 +49,7 @@ export default function MenuFilterBar({
             }}
           >
             {resetOption.icon && (
-              <i className={`${resetOption.icon} text-lg`} />
+              <i className={`${resetOption.icon} text-xl`} />
             )}
             <span>Todo</span>
           </button>
@@ -59,7 +59,7 @@ export default function MenuFilterBar({
           <button
             key={opt.value}
             onClick={() => onSelect(opt.value)}
-            className="flex items-center gap-2 rounded-lg border-2 px-5 py-2.5 text-base font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
+            className="flex items-center gap-2 rounded-lg border-2 px-6 py-3 text-base font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
             style={{
               backgroundColor: opt.color,
               color: "#1d2024",
@@ -67,7 +67,7 @@ export default function MenuFilterBar({
                 activeValue === opt.value ? "#ffffff" : "transparent",
             }}
           >
-            {opt.icon && <i className={`${opt.icon} text-lg`} />}
+            {opt.icon && <i className={`${opt.icon} text-xl`} />}
             <span>{opt.label}</span>
           </button>
         ))}
