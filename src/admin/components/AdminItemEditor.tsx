@@ -134,14 +134,15 @@ export default function AdminItemEditor({
         return;
       }
     }
+    const trimmed = { ...draft, nombre: draft.nombre.trim() };
     setSaving(true);
     try {
       if (isNew) {
-        const result = await createItem(draft);
-        showToast(`"${draft.nombre}" creado como ${result.filename}`, "success");
+        const result = await createItem(trimmed);
+        showToast(`"${trimmed.nombre}" creado como ${result.filename}`, "success");
       } else {
-        await updateItem(filename!, draft);
-        original.current = JSON.stringify(draft);
+        await updateItem(filename!, trimmed);
+        original.current = JSON.stringify(trimmed);
         showToast("Cambios guardados", "success");
       }
       onClose();
