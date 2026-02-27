@@ -2,6 +2,21 @@ import type { MenuItem, MenuCategory } from "../data/types";
 
 const BASE = "/_dev/api";
 
+function pickMenuItem(data: MenuItem): MenuItem {
+  const {
+    nombre, disponible, imagen, imagen_pequenya, categorias,
+    ingredientes, alergenos, txt_aclaraciones, txt_temporal,
+    grad_alcoholica, vol_ml, edul_gr, pvp_local, pvp_terraza,
+    pvp, orden,
+  } = data;
+  return {
+    nombre, disponible, imagen, imagen_pequenya, categorias,
+    ingredientes, alergenos, txt_aclaraciones, txt_temporal,
+    grad_alcoholica, vol_ml, edul_gr, pvp_local, pvp_terraza,
+    pvp, orden,
+  };
+}
+
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}/${path}`, options);
   if (!res.ok) {
@@ -29,7 +44,7 @@ export function updateItem(
   return request(`items/${filename}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
+    body: JSON.stringify(pickMenuItem(data)),
   });
 }
 
@@ -37,7 +52,7 @@ export function createItem(data: MenuItem): Promise<ItemEntry> {
   return request("items", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
+    body: JSON.stringify(pickMenuItem(data)),
   });
 }
 

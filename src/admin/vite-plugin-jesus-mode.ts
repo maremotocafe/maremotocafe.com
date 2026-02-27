@@ -46,15 +46,6 @@ export default function jesusMode(): Plugin {
   return {
     name: "jesus-mode",
     apply: "serve",
-    config() {
-      return {
-        server: {
-          watch: {
-            ignored: ["**/src/data/menu/**", "**/src/assets/carta/**"],
-          },
-        },
-      };
-    },
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
         const url = req.url || "";
