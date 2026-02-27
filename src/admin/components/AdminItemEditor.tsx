@@ -1,14 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import type { MenuItem, MenuCategory } from "../../data/types";
 import { useAdmin } from "./AdminProvider";
-import { updateItem, uploadImage, getImages } from "../api-client";
+import { createItem, updateItem, uploadImage, getImages } from "../api-client";
 
 interface Props {
-  item: MenuItem;
-  filename: string;
+  item?: MenuItem;
+  filename?: string;
   categories: MenuCategory[];
   onClose: () => void;
-  onDelete: () => void;
+  onDelete?: () => void;
 }
 
 /** Single-column text fields (rendered as wrapping textareas). */
@@ -34,6 +34,8 @@ const VOLUME_FIELDS: { key: keyof MenuItem; label: string }[] = [
   { key: "edul_gr", label: "Edulcorantes (gr)" },
 ];
 
+const EMPTY_ITEM: MenuItem = { nombre: "", imagen: "", categorias: [] };
+
 export default function AdminItemEditor({
   item,
   filename,
@@ -41,12 +43,14 @@ export default function AdminItemEditor({
   onClose,
   onDelete,
 }: Props) {
+  const isNew = !filename;
   const { showToast } = useAdmin();
-  const [draft, setDraft] = useState<MenuItem>({ ...item });
+  const initialItem = item ?? EMPTY_ITEM;
+  const [draft, setDraft] = useState<MenuItem>({ ...initialItem });
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [availableImages, setAvailableImages] = useState<string[]>([]);
-  const original = useRef(JSON.stringify(item));
+  const original = useRef(JSON.stringify(initialItem));
 
   const isDirty = JSON.stringify(draft) !== original.current;
 
@@ -56,13 +60,13 @@ export default function AdminItemEditor({
       .catch(() => {});
   }, []);
 
-  // Warn on tab close with unsaved changes
+  // Warn on tab close with unsaved changes (edit mode only)
   useEffect(() => {
-    if (!isDirty) return;
+    if (isNew || !isDirty) return;
     const handler = (e: BeforeUnloadEvent) => e.preventDefault();
     window.addEventListener("beforeunload", handler);
     return () => window.removeEventListener("beforeunload", handler);
-  }, [isDirty]);
+  }, [isNew, isDirty]);
 
   // Subcategories for enabled categories only
   const enabledCategories = categories.filter((c) =>
@@ -126,11 +130,26 @@ export default function AdminItemEditor({
   };
 
   const handleConfirm = async () => {
+    if (isNew) {
+      if (!draft.nombre) {
+        showToast("El nombre es obligatorio", "error");
+        return;
+      }
+      if (draft.categorias.length === 0) {
+        showToast("Selecciona al menos una categoría", "error");
+        return;
+      }
+    }
     setSaving(true);
     try {
-      await updateItem(filename, draft);
-      original.current = JSON.stringify(draft);
-      showToast("Cambios guardados", "success");
+      if (isNew) {
+        const result = await createItem(draft);
+        showToast(`"${draft.nombre}" creado como ${result.filename}`, "success");
+      } else {
+        await updateItem(filename!, draft);
+        original.current = JSON.stringify(draft);
+        showToast("Cambios guardados", "success");
+      }
       onClose();
     } catch (e: unknown) {
       showToast(`Error: ${e instanceof Error ? e.message : e}`, "error");
@@ -140,7 +159,7 @@ export default function AdminItemEditor({
   };
 
   const handleClose = () => {
-    if (isDirty) {
+    if (!isNew && isDirty) {
       if (!confirm("Hay cambios sin guardar. ¿Descartar cambios?")) return;
     }
     onClose();
@@ -157,8 +176,8 @@ export default function AdminItemEditor({
       >
         <div className="mb-3 flex items-center justify-between">
           <h3 className="text-sm font-bold text-gray-700">
-            <i className="las la-pen mr-1" />
-            Editando: {filename}
+            <i className={`las ${isNew ? "la-plus-circle" : "la-pen"} mr-1`} />
+            {isNew ? "Nuevo Item" : `Editando: ${filename}`}
           </h3>
           <button
             onClick={handleClose}
@@ -367,15 +386,17 @@ export default function AdminItemEditor({
           </div>
 
           {/* Footer: Delete left, Cancelar + Confirmar right */}
-          <div className="mt-2 flex items-center justify-between border-t border-gray-200 pt-3">
-            <button
-              type="button"
-              onClick={onDelete}
-              className="cursor-pointer rounded-lg bg-red-600 px-4 py-1.5 text-sm font-bold text-white hover:bg-red-500"
-            >
-              <i className="la la-trash mr-1" />
-              Eliminar item
-            </button>
+          <div className={`mt-2 flex items-center border-t border-gray-200 pt-3 ${isNew ? "justify-end" : "justify-between"}`}>
+            {!isNew && (
+              <button
+                type="button"
+                onClick={onDelete}
+                className="cursor-pointer rounded-lg bg-red-600 px-4 py-1.5 text-sm font-bold text-white hover:bg-red-500"
+              >
+                <i className="la la-trash mr-1" />
+                Eliminar item
+              </button>
+            )}
             <div className="flex gap-2">
               <button
                 type="button"
@@ -387,10 +408,12 @@ export default function AdminItemEditor({
               <button
                 type="button"
                 onClick={handleConfirm}
-                disabled={!isDirty || saving}
-                className="cursor-pointer rounded-lg bg-amber-500 px-4 py-1.5 text-sm font-bold text-black hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-50"
+                disabled={isNew ? (!draft.nombre || draft.categorias.length === 0 || saving) : (!isDirty || draft.categorias.length === 0 || saving)}
+                className={`cursor-pointer rounded-lg px-4 py-1.5 text-sm font-bold disabled:cursor-not-allowed disabled:opacity-50 ${isNew ? "bg-green-600 text-white hover:bg-green-500" : "bg-amber-500 text-black hover:bg-amber-400"}`}
               >
-                {saving ? "Guardando..." : "Confirmar"}
+                {isNew
+                  ? saving ? "Creando..." : "Crear"
+                  : saving ? "Guardando..." : "Confirmar"}
               </button>
             </div>
           </div>

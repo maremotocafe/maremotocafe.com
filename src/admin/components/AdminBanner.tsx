@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import { useAdmin } from "./AdminProvider";
 import {
   gitStatus,
@@ -6,9 +6,13 @@ import {
   gitPush,
   gitReset,
   gitCheckRemote,
+  getCategories,
   type GitChange,
 } from "../api-client";
+import type { MenuCategory } from "../../data/types";
 import AdminCategoryEditor from "./AdminCategoryEditor";
+
+const AdminItemEditor = lazy(() => import("./AdminItemEditor"));
 
 interface StatusData {
   branch: string;
@@ -21,6 +25,8 @@ export default function AdminBanner() {
   const [statusData, setStatusData] = useState<StatusData | null>(null);
   const [catEditorOpen, setCatEditorOpen] = useState(false);
   const [behind, setBehind] = useState(0);
+  const [showNewItem, setShowNewItem] = useState(false);
+  const [categories, setCategories] = useState<MenuCategory[]>([]);
 
   useEffect(() => {
     gitCheckRemote()
@@ -89,6 +95,18 @@ export default function AdminBanner() {
           >
             <i className="las la-list mr-1" />
             Cambiar Categorías
+          </button>
+          <button
+            onClick={async () => {
+              if (categories.length === 0) {
+                try { setCategories(await getCategories()); } catch {}
+              }
+              setShowNewItem(true);
+            }}
+            className="rounded bg-amber-700/30 px-2.5 py-1 text-xs font-normal transition-colors hover:bg-amber-700/50"
+          >
+            <i className="las la-plus mr-1" />
+            Nuevo Item
           </button>
           <div className="mx-1 h-4 w-px bg-amber-700/30" />
           <button
@@ -225,6 +243,15 @@ export default function AdminBanner() {
         open={catEditorOpen}
         onClose={() => setCatEditorOpen(false)}
       />
+
+      {showNewItem && categories.length > 0 && (
+        <Suspense fallback={null}>
+          <AdminItemEditor
+            categories={categories}
+            onClose={() => setShowNewItem(false)}
+          />
+        </Suspense>
+      )}
     </>
   );
 }

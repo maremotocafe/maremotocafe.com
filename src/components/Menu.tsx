@@ -23,9 +23,7 @@ import MenuItemPopup from "./MenuItemPopup";
 const AdminShell = import.meta.env.DEV
   ? lazy(() => import("../admin/components/AdminShell"))
   : null;
-const AdminNewItemDialog = import.meta.env.DEV
-  ? lazy(() => import("../admin/components/AdminNewItemDialog"))
-  : null;
+
 
 // WARNING: Do NOT use lazy()/Suspense for AdminItemOverlay. When Suspense resolves
 // a lazy component, it unmounts the fallback and mounts the real tree — causing every
@@ -116,7 +114,7 @@ export default function Menu({
       setAdminItemOverlay(() => mod.default),
     );
   }, []);
-  const [showNewDialog, setShowNewDialog] = useState(false);
+
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [activeSubcategory, setActiveSubcategory] = useState<string | null>(
     null,
@@ -343,26 +341,7 @@ export default function Menu({
             </div>
           )}
 
-          {/* Admin: New item button */}
-          {isDev && AdminNewItemDialog && (
-            <>
-              <button
-                type="button"
-                onClick={() => setShowNewDialog(true)}
-                className="mx-auto mt-4 flex items-center gap-2 rounded-lg bg-amber-500 px-4 py-2 text-sm font-bold text-black transition-colors hover:bg-amber-400"
-              >
-                <i className="las la-plus" /> Nuevo Item
-              </button>
-              {showNewDialog && (
-                <Suspense fallback={null}>
-                  <AdminNewItemDialog
-                    categories={categories}
-                    onClose={() => setShowNewDialog(false)}
-                  />
-                </Suspense>
-              )}
-            </>
-          )}
+
         </>
       )}
 
