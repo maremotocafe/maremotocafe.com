@@ -53,7 +53,7 @@ export default function MenuItemCard({
         )}
         <div className="flex min-h-[70px] items-center justify-between bg-white px-4 py-2.5">
           <span className="text-xl text-gray-600">{nombre}</span>
-          <i className="las la-search shrink-0 text-xl text-gray-400" />
+          <i className="las la-search shrink-0 text-xl text-gray-400 transition-colors group-hover:text-accent" />
         </div>
       </div>
     </button>

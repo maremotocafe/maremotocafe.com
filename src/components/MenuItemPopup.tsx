@@ -1,6 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import type { MenuItem, MenuConfig } from "../data/types";
 
+/** Parse *italic* markers into <em> elements */
+function formatInline(text: string) {
+  const parts = text.split(/\*([^*]+)\*/g);
+  if (parts.length === 1) return text;
+  return parts.map((part, i) =>
+    i % 2 === 1 ? <em key={i}>{part}</em> : part,
+  );
+}
+
 interface MenuItemPopupProps {
   item: MenuItem | null;
   config: MenuConfig;
@@ -145,7 +154,7 @@ export default function MenuItemPopup({
                 </div>
               </div>
               <div className="p-6 pr-16 md:w-1/2">
-                <h1 className="mb-4 text-2xl font-bold">{item.nombre}</h1>
+                <h1 className="mb-4 text-3xl font-bold">{item.nombre}</h1>
                 <div className="space-y-3">
                   {config.nombres_datos.map((key) => {
                     const value = item[key as keyof MenuItem] as
@@ -158,14 +167,14 @@ export default function MenuItemPopup({
 
                     return (
                       <div key={key}>
-                        <p className="text-sm">
+                        <p className="text-base">
                           {icon && (
                             <i className={`field-icon ${icon} text-accent`} />
                           )}
                           {title && (
                             <span className="font-semibold">{title}: </span>
                           )}
-                          <span className="text-text/80">{value}</span>
+                          <span className="text-text">{formatInline(value)}</span>
                         </p>
                       </div>
                     );
