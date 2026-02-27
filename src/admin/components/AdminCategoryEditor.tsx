@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { MenuCategory } from "../../data/types";
 import { useAdmin } from "./AdminProvider";
 import { getCategories, updateCategories } from "../api-client";
@@ -11,51 +11,55 @@ interface Props {
 export default function AdminCategoryEditor({ open, onClose }: Props) {
   const { showToast } = useAdmin();
   const [cats, setCats] = useState<MenuCategory[]>([]);
+  const [saving, setSaving] = useState(false);
+  const originalCats = useRef<string>("[]");
+
+  const isDirty = JSON.stringify(cats) !== originalCats.current;
 
   useEffect(() => {
     if (open) {
       getCategories()
-        .then(setCats)
+        .then((data) => {
+          setCats(data);
+          originalCats.current = JSON.stringify(data);
+        })
         .catch((e) => showToast(`Error: ${e.message}`, "error"));
     }
   }, [open]);
 
-  const save = useCallback(
-    async (next: MenuCategory[]) => {
-      setCats(next);
-      try {
-        await updateCategories(next);
-      } catch (e: unknown) {
-        showToast(`Error: ${e instanceof Error ? e.message : e}`, "error");
-      }
-    },
-    [showToast],
-  );
+  // Warn on tab close with unsaved changes
+  useEffect(() => {
+    if (!isDirty) return;
+    const handler = (e: BeforeUnloadEvent) => e.preventDefault();
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
+  }, [isDirty]);
 
   const addCategory = () => {
-    save([...cats, { nombre: "", icono: "las la-utensils", color: "#cccccc" }]);
-  };
-
-  const updateCat = (idx: number, field: keyof MenuCategory, value: string) => {
-    save(cats.map((c, i) => (i === idx ? { ...c, [field]: value } : c)));
+    setCats((prev) => [
+      ...prev,
+      { nombre: "", icono: "las la-utensils", color: "#cccccc" },
+    ]);
   };
 
   const removeCat = (idx: number) => {
     if (!confirm(`¿Eliminar la categoría "${cats[idx].nombre}"?`)) return;
-    save(cats.filter((_, i) => i !== idx));
+    setCats((prev) => prev.filter((_, i) => i !== idx));
   };
 
   const moveCat = (idx: number, dir: -1 | 1) => {
     const newIdx = idx + dir;
     if (newIdx < 0 || newIdx >= cats.length) return;
-    const next = [...cats];
-    [next[idx], next[newIdx]] = [next[newIdx], next[idx]];
-    save(next);
+    setCats((prev) => {
+      const next = [...prev];
+      [next[idx], next[newIdx]] = [next[newIdx], next[idx]];
+      return next;
+    });
   };
 
   const addSubcategory = (catIdx: number) => {
-    save(
-      cats.map((c, i) =>
+    setCats((prev) =>
+      prev.map((c, i) =>
         i === catIdx
           ? {
               ...c,
@@ -66,27 +70,12 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
     );
   };
 
-  const updateSubcategory = (catIdx: number, subIdx: number, value: string) => {
-    save(
-      cats.map((c, i) =>
-        i === catIdx
-          ? {
-              ...c,
-              subcategorias: c.subcategorias?.map((s, j) =>
-                j === subIdx ? { nombre: value } : s,
-              ),
-            }
-          : c,
-      ),
-    );
-  };
-
   const removeSubcategory = (catIdx: number, subIdx: number) => {
     const name =
       cats[catIdx].subcategorias?.[subIdx]?.nombre || "esta subcategoría";
     if (!confirm(`¿Eliminar "${name}"?`)) return;
-    save(
-      cats.map((c, i) =>
+    setCats((prev) =>
+      prev.map((c, i) =>
         i === catIdx
           ? {
               ...c,
@@ -98,8 +87,8 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
   };
 
   const moveSubcategory = (catIdx: number, subIdx: number, dir: -1 | 1) => {
-    save(
-      cats.map((c, i) => {
+    setCats((prev) =>
+      prev.map((c, i) => {
         if (i !== catIdx || !c.subcategorias) return c;
         const newIdx = subIdx + dir;
         if (newIdx < 0 || newIdx >= c.subcategorias.length) return c;
@@ -110,12 +99,33 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
     );
   };
 
+  const handleConfirm = async () => {
+    setSaving(true);
+    try {
+      await updateCategories(cats);
+      originalCats.current = JSON.stringify(cats);
+      showToast("Categorías guardadas", "success");
+      onClose();
+    } catch (e: unknown) {
+      showToast(`Error: ${e instanceof Error ? e.message : e}`, "error");
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleClose = () => {
+    if (isDirty) {
+      if (!confirm("Hay cambios sin guardar. ¿Descartar cambios?")) return;
+    }
+    onClose();
+  };
+
   if (!open) return null;
 
   return (
     <div
       className="fixed inset-0 z-[10001] flex items-start justify-center overflow-y-auto bg-black/50 py-8"
-      onClick={onClose}
+      onClick={handleClose}
     >
       <div
         className="mx-4 w-full max-w-2xl rounded-xl bg-white p-6 shadow-2xl"
@@ -127,7 +137,7 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
             Gestión de Categorías
           </h2>
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="cursor-pointer text-gray-400 hover:text-gray-600"
           >
             <i className="la la-times text-xl" />
@@ -155,7 +165,6 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
                 <input
                   type="text"
                   value={cat.nombre}
-                  onBlur={(e) => updateCat(catIdx, "nombre", e.target.value)}
                   onChange={(e) =>
                     setCats((prev) =>
                       prev.map((c, i) =>
@@ -169,7 +178,6 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
                 <input
                   type="text"
                   value={cat.icono}
-                  onBlur={(e) => updateCat(catIdx, "icono", e.target.value)}
                   onChange={(e) =>
                     setCats((prev) =>
                       prev.map((c, i) =>
@@ -183,7 +191,13 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
                 <input
                   type="color"
                   value={cat.color}
-                  onChange={(e) => updateCat(catIdx, "color", e.target.value)}
+                  onChange={(e) =>
+                    setCats((prev) =>
+                      prev.map((c, i) =>
+                        i === catIdx ? { ...c, color: e.target.value } : c,
+                      ),
+                    )
+                  }
                   className="h-8 w-8 cursor-pointer rounded border-0"
                 />
                 <button
@@ -215,9 +229,6 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
                     <input
                       type="text"
                       value={sub.nombre}
-                      onBlur={(e) =>
-                        updateSubcategory(catIdx, subIdx, e.target.value)
-                      }
                       onChange={(e) =>
                         setCats((prev) =>
                           prev.map((c, i) =>
@@ -257,7 +268,8 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
           ))}
         </div>
 
-        <div className="mt-4">
+        {/* Footer: Nueva Categoría left, Cancelar + Confirmar right */}
+        <div className="mt-4 flex items-center justify-between">
           <button
             onClick={addCategory}
             className="cursor-pointer rounded bg-amber-500 px-3 py-1.5 text-xs font-bold text-black hover:bg-amber-400"
@@ -265,6 +277,23 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
             <i className="las la-plus mr-1" />
             Nueva Categoría
           </button>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={handleClose}
+              className="cursor-pointer rounded-lg border border-gray-300 px-4 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-50"
+            >
+              Cancelar
+            </button>
+            <button
+              type="button"
+              onClick={handleConfirm}
+              disabled={!isDirty || saving}
+              className="cursor-pointer rounded-lg bg-amber-500 px-4 py-1.5 text-sm font-bold text-black hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {saving ? "Guardando..." : "Confirmar"}
+            </button>
+          </div>
         </div>
       </div>
     </div>

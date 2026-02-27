@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { MenuItem, MenuCategory } from "../../data/types";
 import { useAdmin } from "./AdminProvider";
 import { updateItem, uploadImage, getImages } from "../api-client";
@@ -44,7 +44,11 @@ export default function AdminItemEditor({
   const { showToast } = useAdmin();
   const [draft, setDraft] = useState<MenuItem>({ ...item });
   const [uploading, setUploading] = useState(false);
+  const [saving, setSaving] = useState(false);
   const [availableImages, setAvailableImages] = useState<string[]>([]);
+  const original = useRef(JSON.stringify(item));
+
+  const isDirty = JSON.stringify(draft) !== original.current;
 
   useEffect(() => {
     getImages()
@@ -52,24 +56,20 @@ export default function AdminItemEditor({
       .catch(() => {});
   }, []);
 
+  // Warn on tab close with unsaved changes
+  useEffect(() => {
+    if (!isDirty) return;
+    const handler = (e: BeforeUnloadEvent) => e.preventDefault();
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
+  }, [isDirty]);
+
   // Subcategories for enabled categories only
   const enabledCategories = categories.filter((c) =>
     draft.categorias.includes(c.nombre),
   );
   const availableSubcategories = enabledCategories.flatMap(
     (c) => c.subcategorias?.map((s) => s.nombre) || [],
-  );
-
-  const save = useCallback(
-    async (next: MenuItem) => {
-      setDraft(next);
-      try {
-        await updateItem(filename, next);
-      } catch (e: unknown) {
-        showToast(`Error: ${e instanceof Error ? e.message : e}`, "error");
-      }
-    },
-    [filename, showToast],
   );
 
   // Update local draft only (for text inputs while typing)
@@ -82,27 +82,18 @@ export default function AdminItemEditor({
     });
   };
 
-  // Save on blur for text fields
-  const saveField = (key: keyof MenuItem, value: string) => {
-    const next = { ...draft, [key]: value || undefined };
-    if (!value) delete (next as Record<string, unknown>)[key];
-    if (key === "nombre") (next as Record<string, unknown>).nombre = value;
-    save(next);
-  };
-
   const toggleCategory = (catName: string) => {
     if (draft.categorias.includes(catName)) {
-      // Removing: also remove its subcategories
       const cat = categories.find((c) => c.nombre === catName);
       const subNames = new Set(cat?.subcategorias?.map((s) => s.nombre) || []);
-      save({
+      setDraft({
         ...draft,
         categorias: draft.categorias.filter(
           (c) => c !== catName && !subNames.has(c),
         ),
       });
     } else {
-      save({ ...draft, categorias: [...draft.categorias, catName] });
+      setDraft({ ...draft, categorias: [...draft.categorias, catName] });
     }
   };
 
@@ -110,7 +101,7 @@ export default function AdminItemEditor({
     const cats = draft.categorias.includes(subName)
       ? draft.categorias.filter((c) => c !== subName)
       : [...draft.categorias, subName];
-    save({ ...draft, categorias: cats });
+    setDraft({ ...draft, categorias: cats });
   };
 
   const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -122,7 +113,7 @@ export default function AdminItemEditor({
       setAvailableImages((prev) =>
         prev.includes(imgFilename) ? prev : [...prev, imgFilename].sort(),
       );
-      save({ ...draft, imagen: imgFilename });
+      setDraft((d) => ({ ...d, imagen: imgFilename }));
       showToast(`Imagen subida: ${imgFilename}`, "success");
     } catch (err: unknown) {
       showToast(
@@ -134,10 +125,31 @@ export default function AdminItemEditor({
     }
   };
 
+  const handleConfirm = async () => {
+    setSaving(true);
+    try {
+      await updateItem(filename, draft);
+      original.current = JSON.stringify(draft);
+      showToast("Cambios guardados", "success");
+      onClose();
+    } catch (e: unknown) {
+      showToast(`Error: ${e instanceof Error ? e.message : e}`, "error");
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleClose = () => {
+    if (isDirty) {
+      if (!confirm("Hay cambios sin guardar. ¿Descartar cambios?")) return;
+    }
+    onClose();
+  };
+
   return (
     <div
       className="fixed inset-0 z-[10001] flex items-start justify-center overflow-y-auto bg-black/50 py-8"
-      onClick={onClose}
+      onClick={handleClose}
     >
       <div
         className="mx-4 w-full max-w-2xl rounded-xl bg-white p-6 shadow-2xl"
@@ -149,7 +161,7 @@ export default function AdminItemEditor({
             Editando: {filename}
           </h3>
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="cursor-pointer text-gray-400 hover:text-gray-600"
           >
             <i className="la la-times text-lg" />
@@ -167,7 +179,6 @@ export default function AdminItemEditor({
                 rows={1}
                 value={(draft[key] as string) || ""}
                 onChange={(e) => setLocal(key, e.target.value)}
-                onBlur={(e) => saveField(key, e.target.value)}
                 className="field-sizing-content w-full rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
                 style={{ resize: "none" }}
               />
@@ -185,7 +196,6 @@ export default function AdminItemEditor({
                   type="text"
                   value={(draft[key] as string) || ""}
                   onChange={(e) => setLocal(key, e.target.value)}
-                  onBlur={(e) => saveField(key, e.target.value)}
                   className="w-full rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
                 />
               </div>
@@ -203,7 +213,6 @@ export default function AdminItemEditor({
                   type="text"
                   value={(draft[key] as string) || ""}
                   onChange={(e) => setLocal(key, e.target.value)}
-                  onBlur={(e) => saveField(key, e.target.value)}
                   className="w-full rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
                 />
               </div>
@@ -218,7 +227,9 @@ export default function AdminItemEditor({
               </label>
               <select
                 value={draft.imagen || ""}
-                onChange={(e) => save({ ...draft, imagen: e.target.value })}
+                onChange={(e) =>
+                  setDraft((d) => ({ ...d, imagen: e.target.value }))
+                }
                 className="w-full cursor-pointer rounded border border-gray-300 bg-white px-2 py-1.5 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
               >
                 <option value="">— Sin imagen —</option>
@@ -244,10 +255,12 @@ export default function AdminItemEditor({
                 value={draft.imagen_pequenya || ""}
                 onChange={(e) => {
                   const val = e.target.value;
-                  const next = { ...draft };
-                  if (val) next.imagen_pequenya = val;
-                  else delete (next as Record<string, unknown>).imagen_pequenya;
-                  save(next);
+                  setDraft((d) => {
+                    const next = { ...d };
+                    if (val) next.imagen_pequenya = val;
+                    else delete (next as Record<string, unknown>).imagen_pequenya;
+                    return next;
+                  });
                 }}
                 className="w-full cursor-pointer rounded border border-gray-300 bg-white px-2 py-1.5 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
               >
@@ -340,19 +353,21 @@ export default function AdminItemEditor({
                 type="checkbox"
                 checked={draft.disponible !== false}
                 onChange={(e) => {
-                  const next = { ...draft };
-                  if (e.target.checked)
-                    delete (next as Record<string, unknown>).disponible;
-                  else next.disponible = false;
-                  save(next);
+                  setDraft((d) => {
+                    const next = { ...d };
+                    if (e.target.checked)
+                      delete (next as Record<string, unknown>).disponible;
+                    else next.disponible = false;
+                    return next;
+                  });
                 }}
               />
               Disponible
             </label>
           </div>
 
-          {/* Delete */}
-          <div className="mt-2 border-t border-gray-200 pt-3">
+          {/* Footer: Delete left, Cancelar + Confirmar right */}
+          <div className="mt-2 flex items-center justify-between border-t border-gray-200 pt-3">
             <button
               type="button"
               onClick={onDelete}
@@ -361,6 +376,23 @@ export default function AdminItemEditor({
               <i className="la la-trash mr-1" />
               Eliminar item
             </button>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={handleClose}
+                className="cursor-pointer rounded-lg border border-gray-300 px-4 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-50"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={handleConfirm}
+                disabled={!isDirty || saving}
+                className="cursor-pointer rounded-lg bg-amber-500 px-4 py-1.5 text-sm font-bold text-black hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                {saving ? "Guardando..." : "Confirmar"}
+              </button>
+            </div>
           </div>
         </div>
       </div>
