@@ -3,7 +3,6 @@ import {
   useMemo,
   useCallback,
   useRef,
-  useEffect,
   lazy,
   Suspense,
 } from "react";
@@ -14,6 +13,7 @@ import type {
   ResolvedImage,
 } from "../data/types";
 import MenuFilterBar from "./MenuFilterBar";
+import { Masonry } from "masonic";
 import MenuItemCard from "./MenuItemCard";
 import MenuItemPopup from "./MenuItemPopup";
 
@@ -63,7 +63,6 @@ export default function Menu({
   const [activeSubcategory, setActiveSubcategory] = useState<string | null>(
     null,
   );
-  const [visibleCount, setVisibleCount] = useState(config.items_iniciales);
   const [popupItem, setPopupItem] = useState<MenuItem | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -81,33 +80,11 @@ export default function Menu({
     });
   }, [sortedItems, activeCategory, activeSubcategory]);
 
-  // Items to display (paginated)
-  const displayedItems = filteredItems.slice(0, visibleCount);
-  const hasMore = filteredItems.length > visibleCount;
-
-  // Infinite scroll: load more when sentinel enters viewport
-  const sentinelRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const sentinel = sentinelRef.current;
-    if (!sentinel) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisibleCount((prev) => prev + config.items_incremento);
-        }
-      },
-      { rootMargin: "200px" },
-    );
-    observer.observe(sentinel);
-    return () => observer.disconnect();
-  }, [config.items_incremento, activeCategory, activeSubcategory]);
-
   // Category selection handler
   const handleCategorySelect = useCallback(
     (value: string) => {
       setActiveCategory(value);
       setActiveSubcategory(null);
-      setVisibleCount(config.items_iniciales);
       window.plausible?.("Category Selected", { props: { category: value } });
       // Scroll to show subcategories/items below the category bar
       requestAnimationFrame(() => {
@@ -118,7 +95,7 @@ export default function Menu({
         }
       });
     },
-    [config.items_iniciales],
+    [],
   );
 
   // Subcategory selection handler
@@ -130,12 +107,11 @@ export default function Menu({
       } else {
         setActiveSubcategory(value);
       }
-      setVisibleCount(config.items_iniciales);
       window.plausible?.("Subcategory Selected", {
         props: { subcategory: value, category: activeCategory },
       });
     },
-    [activeCategory, config.items_iniciales],
+    [activeCategory],
   );
 
   const handleClosePopup = useCallback(() => {
@@ -175,6 +151,53 @@ export default function Menu({
         color: cat.color,
       })),
     [categories],
+  );
+
+  // Masonry render component for each menu item
+  const MasonryItem = useCallback(
+    ({ data: item, index: i }: { data: MenuItem; index: number }) => {
+      const img = images[item.imagen];
+      const card = (
+        <MenuItemCard
+          nombre={item.nombre}
+          thumbnailSrc={img?.thumbnail}
+          thumbAspectRatio={img?.thumbAspectRatio}
+          disponible={item.disponible}
+          staggerDelay={i < config.items_iniciales ? i * 30 : 0}
+          onClick={() => {
+            setPopupItem(item);
+            window.plausible?.("Item Viewed", {
+              props: { item: item.nombre, category: activeCategory },
+            });
+          }}
+        />
+      );
+      if (isDev && AdminItemOverlay) {
+        const filename = itemFilenames?.[item.nombre] || "";
+        return (
+          <Suspense fallback={card}>
+            <AdminItemOverlay
+              item={item}
+              filename={filename}
+              categories={categories}
+              onSwap={handleSwap}
+            >
+              {card}
+            </AdminItemOverlay>
+          </Suspense>
+        );
+      }
+      return card;
+    },
+    [
+      images,
+      config.items_iniciales,
+      activeCategory,
+      isDev,
+      itemFilenames,
+      categories,
+      handleSwap,
+    ],
   );
 
   const content = (
@@ -222,52 +245,24 @@ export default function Menu({
       {/* Screen reader announcement for filter changes */}
       <div className="sr-only" aria-live="polite" role="status">
         {activeCategory &&
-          `Mostrando ${displayedItems.length} de ${filteredItems.length} items`}
+          `Mostrando ${filteredItems.length} items`}
       </div>
 
       {/* Item Grid */}
       {activeCategory && (
         <>
-          {displayedItems.length > 0 ? (
-            <div className="mt-6 columns-1 gap-4 sm:columns-2 lg:columns-3">
-              {displayedItems.map((item, i) => {
-                const img = images[item.imagen];
-                const card = (
-                  <MenuItemCard
-                    key={`${item.nombre}-${item.categorias.join("-")}`}
-                    nombre={item.nombre}
-                    thumbnailSrc={img?.thumbnail}
-                    thumbAspectRatio={img?.thumbAspectRatio}
-                    disponible={item.disponible}
-                    staggerDelay={i < config.items_iniciales ? i * 30 : 0}
-                    onClick={() => {
-                      setPopupItem(item);
-                      window.plausible?.("Item Viewed", {
-                        props: { item: item.nombre, category: activeCategory },
-                      });
-                    }}
-                  />
-                );
-                if (isDev && AdminItemOverlay) {
-                  const filename = itemFilenames?.[item.nombre] || "";
-                  return (
-                    <Suspense
-                      key={`${item.nombre}-${item.categorias.join("-")}`}
-                      fallback={card}
-                    >
-                      <AdminItemOverlay
-                        item={item}
-                        filename={filename}
-                        categories={categories}
-                        onSwap={handleSwap}
-                      >
-                        {card}
-                      </AdminItemOverlay>
-                    </Suspense>
-                  );
+          {filteredItems.length > 0 ? (
+            <div className="mt-6">
+              <Masonry
+                items={filteredItems}
+                columnGutter={16}
+                columnWidth={280}
+                overscanBy={2}
+                itemKey={(data: MenuItem) =>
+                  `${data.nombre}-${data.categorias.join("-")}`
                 }
-                return card;
-              })}
+                render={MasonryItem}
+              />
             </div>
           ) : (
             <div className="mt-8 text-center text-text">
@@ -296,9 +291,6 @@ export default function Menu({
               )}
             </>
           )}
-
-          {/* Infinite scroll sentinel */}
-          {hasMore && <div ref={sentinelRef} className="h-1" />}
         </>
       )}
 
