@@ -88,23 +88,17 @@ export default function AdminItemEditor({
 
   const toggleCategory = (catName: string) => {
     if (draft.categorias.includes(catName)) {
-      const cat = categories.find((c) => c.nombre === catName);
-      const subNames = new Set(cat?.subcategorias?.map((s) => s.nombre) || []);
-      setDraft({
-        ...draft,
-        categorias: draft.categorias.filter(
-          (c) => c !== catName && !subNames.has(c),
-        ),
-      });
+      setDraft({ ...draft, categorias: [] });
     } else {
-      setDraft({ ...draft, categorias: [...draft.categorias, catName] });
+      setDraft({ ...draft, categorias: [catName] });
     }
   };
 
   const toggleSubcategory = (subName: string) => {
+    const category = draft.categorias[0];
     const cats = draft.categorias.includes(subName)
-      ? draft.categorias.filter((c) => c !== subName)
-      : [...draft.categorias, subName];
+      ? [category]
+      : [category, subName];
     setDraft({ ...draft, categorias: cats });
   };
 
