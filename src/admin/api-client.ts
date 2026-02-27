@@ -118,12 +118,8 @@ export function gitPull(): Promise<{ result: string }> {
   return request("git/pull", { method: "POST" });
 }
 
-export function gitPush(message: string): Promise<{ result: string }> {
-  return request("git/push", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message }),
-  });
+export function gitPush(): Promise<{ result: string }> {
+  return request("git/push", { method: "POST" });
 }
 
 export function gitReset(): Promise<{ result: string }> {

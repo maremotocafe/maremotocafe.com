@@ -249,10 +249,8 @@ export default function jesusMode(): Plugin {
           }
 
           if (path === "git/push" && method === "POST") {
-            const body = JSON.parse((await readBody(req)).toString("utf-8"));
-            const message = body.message || "Actualización del menú";
             git("add .");
-            git(`commit -m "${message.replace(/"/g, '\\"')}"`);
+            git('commit -m "Actualización del menú"');
             git("push origin master");
             return jsonResponse(res, { result: "ok" });
           }

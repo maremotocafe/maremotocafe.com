@@ -56,10 +56,9 @@ export default function AdminBanner() {
   };
 
   const handlePush = () => {
-    const message = prompt("Mensaje del commit:", "Actualización del menú");
-    if (!message) return;
+    if (!confirm("¿Subir los cambios al servidor?")) return;
     run("Subir", async () => {
-      await gitPush(message);
+      await gitPush();
       showToast("Cambios subidos correctamente", "success");
     });
   };
