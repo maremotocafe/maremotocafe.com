@@ -1,6 +1,5 @@
 export interface MenuItem {
   nombre: string;
-  prioridad?: boolean;
   disponible?: boolean;
   imagen: string;
   imagen_pequenya?: string;

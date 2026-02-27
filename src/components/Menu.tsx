@@ -32,14 +32,12 @@ interface MenuProps {
   itemFilenames?: Record<string, string>;
 }
 
-/** Sort items: priority first, unavailable last, by orden, then alphabetical. */
+/** Sort items: available first, unavailable last, then by orden, then alphabetical. */
 function sortItems(items: MenuItem[]): MenuItem[] {
   return [...items].sort((a, b) => {
-    // Bucket: priority=0, normal=1, unavailable=2
-    const bucketA = a.prioridad ? 0 : a.disponible === false ? 2 : 1;
-    const bucketB = b.prioridad ? 0 : b.disponible === false ? 2 : 1;
+    const bucketA = a.disponible === false ? 1 : 0;
+    const bucketB = b.disponible === false ? 1 : 0;
     if (bucketA !== bucketB) return bucketA - bucketB;
-    // Within bucket: sort by orden (items without orden go after those with it)
     const ordenA = a.orden ?? Infinity;
     const ordenB = b.orden ?? Infinity;
     if (ordenA !== ordenB) return ordenA - ordenB;
@@ -139,6 +137,22 @@ export default function Menu({
     setPopupItem(null);
   }, []);
 
+  // Drag-and-drop swap: exchange orden values between two items (dev only)
+  const handleSwap = useCallback(async (dragFilename: string, dropFilename: string) => {
+    const dragItem = items.find((i) => itemFilenames?.[i.nombre] === dragFilename);
+    const dropItem = items.find((i) => itemFilenames?.[i.nombre] === dropFilename);
+    if (!dragItem || !dropItem) return;
+
+    const dragOrden = dragItem.orden;
+    const dropOrden = dropItem.orden;
+
+    const { updateItem } = await import("../admin/api-client");
+    await Promise.all([
+      updateItem(dragFilename, { ...dragItem, orden: dropOrden }),
+      updateItem(dropFilename, { ...dropItem, orden: dragOrden }),
+    ]);
+  }, [items, itemFilenames]);
+
   // Build category filter options (stable unless categories change)
   const categoryOptions = useMemo(
     () =>
@@ -228,6 +242,7 @@ export default function Menu({
                         item={item}
                         filename={filename}
                         categories={categories}
+                        onSwap={handleSwap}
                       >
                         {card}
                       </AdminItemOverlay>

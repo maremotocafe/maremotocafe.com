@@ -229,19 +229,6 @@ export default function AdminItemEditor({ item, filename, categories, onClose, o
           <label className="flex cursor-pointer items-center gap-1 text-xs text-gray-600">
             <input
               type="checkbox"
-              checked={draft.prioridad || false}
-              onChange={(e) => {
-                const next = { ...draft };
-                if (e.target.checked) next.prioridad = true;
-                else delete (next as Record<string, unknown>).prioridad;
-                save(next);
-              }}
-            />
-            Prioritario
-          </label>
-          <label className="flex cursor-pointer items-center gap-1 text-xs text-gray-600">
-            <input
-              type="checkbox"
               checked={draft.disponible !== false}
               onChange={(e) => {
                 const next = { ...draft };

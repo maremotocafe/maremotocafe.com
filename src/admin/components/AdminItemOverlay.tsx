@@ -10,11 +10,13 @@ interface Props {
   filename: string;
   categories: MenuCategory[];
   children: React.ReactNode;
+  onSwap?: (dragFilename: string, dropFilename: string) => void;
 }
 
-export default function AdminItemOverlay({ item, filename, categories, children }: Props) {
+export default function AdminItemOverlay({ item, filename, categories, children, onSwap }: Props) {
   const { editingFilename, setEditingFilename, showToast } = useAdmin();
   const [hovering, setHovering] = useState(false);
+  const [dragOver, setDragOver] = useState(false);
   const isEditing = editingFilename === filename;
 
   const handleDelete = async () => {
@@ -30,9 +32,29 @@ export default function AdminItemOverlay({ item, filename, categories, children 
 
   return (
     <div
-      className="relative break-inside-avoid"
+      className={`relative break-inside-avoid${dragOver ? " ring-2 ring-amber-400 rounded-xl" : ""}`}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
+      draggable
+      onDragStart={(e) => {
+        e.dataTransfer.setData("text/plain", filename);
+        e.dataTransfer.effectAllowed = "move";
+      }}
+      onDragOver={(e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "move";
+        setDragOver(true);
+      }}
+      onDragLeave={() => setDragOver(false)}
+      onDrop={(e) => {
+        e.preventDefault();
+        setDragOver(false);
+        const dragFilename = e.dataTransfer.getData("text/plain");
+        if (dragFilename && dragFilename !== filename) {
+          onSwap?.(dragFilename, filename);
+        }
+      }}
+      onDragEnd={() => setDragOver(false)}
     >
       {/* Edit button on hover */}
       {hovering && !isEditing && (
