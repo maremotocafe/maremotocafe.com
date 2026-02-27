@@ -1,10 +1,7 @@
 {
   "nombre": "Smoothie Premium Mango & Basil",
   "imagen": "378.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Smoothies"
-  ],
+  "categorias": ["Sin Alcohol", "Smoothies"],
   "ingredientes": "Limonada, Puré de Mango Natural, Albahaca fresca y Hielo",
   "pvp": "6€"
 }

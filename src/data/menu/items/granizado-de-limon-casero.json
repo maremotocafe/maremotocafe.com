@@ -1,10 +1,7 @@
 {
   "nombre": "Granizado de Limón Casero 🍋",
   "imagen": "258.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Granizados"
-  ],
+  "categorias": ["Sin Alcohol", "Granizados"],
   "ingredientes": "Zumo de Limón Natural, Azúcar y Hielo.",
   "txt_temporal": "Disponible todo el año",
   "pvp": "4€"

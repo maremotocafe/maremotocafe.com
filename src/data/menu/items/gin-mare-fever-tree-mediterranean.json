@@ -1,9 +1,7 @@
 {
   "nombre": "Gin Mare & Fever Tree Mediterranean",
   "imagen": "221.jpg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "txt_aclaraciones": "Ginebra española cuya principal caracteristica es el uso de botánicos mediterraneos como la albahaca, romero, tomillo y aceituna arbequina.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "8%",

@@ -83,7 +83,10 @@ export default function AdminNewItemDialog({ categories, onClose }: Props) {
   };
 
   return (
-    <div className="fixed inset-0 z-[10000] flex items-center justify-center bg-black/50" onClick={onClose}>
+    <div
+      className="fixed inset-0 z-[10000] flex items-center justify-center bg-black/50"
+      onClick={onClose}
+    >
       <div
         className="mx-4 max-h-[80vh] w-full max-w-lg overflow-y-auto rounded-xl bg-white p-6 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
@@ -93,14 +96,19 @@ export default function AdminNewItemDialog({ categories, onClose }: Props) {
             <i className="las la-plus-circle mr-1" />
             Nuevo Item
           </h2>
-          <button onClick={onClose} className="text-gray-400 hover:text-gray-600">
+          <button
+            onClick={onClose}
+            className="text-gray-400 hover:text-gray-600"
+          >
             <i className="las la-times text-xl" />
           </button>
         </div>
 
         <div className="grid gap-3">
           <div>
-            <label className="mb-0.5 block text-xs font-medium text-gray-500">Nombre *</label>
+            <label className="mb-0.5 block text-xs font-medium text-gray-500">
+              Nombre *
+            </label>
             <input
               type="text"
               value={draft.nombre}
@@ -111,7 +119,9 @@ export default function AdminNewItemDialog({ categories, onClose }: Props) {
           </div>
 
           <div>
-            <label className="mb-0.5 block text-xs font-medium text-gray-500">Imagen</label>
+            <label className="mb-0.5 block text-xs font-medium text-gray-500">
+              Imagen
+            </label>
             <div className="flex gap-2">
               <input
                 type="text"
@@ -122,13 +132,20 @@ export default function AdminNewItemDialog({ categories, onClose }: Props) {
               />
               <label className="cursor-pointer rounded bg-amber-500 px-3 py-1.5 text-xs font-bold text-black hover:bg-amber-400">
                 {uploading ? "..." : "Subir"}
-                <input type="file" accept="image/*" onChange={handleImageUpload} className="hidden" />
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageUpload}
+                  className="hidden"
+                />
               </label>
             </div>
           </div>
 
           <div>
-            <label className="mb-1 block text-xs font-medium text-gray-500">Categorías *</label>
+            <label className="mb-1 block text-xs font-medium text-gray-500">
+              Categorías *
+            </label>
             <div className="flex flex-wrap gap-1">
               {allCatNames.map((cat) => (
                 <button
@@ -158,7 +175,9 @@ export default function AdminNewItemDialog({ categories, onClose }: Props) {
             { key: "vol_ml" as const, label: "Volumen (ml)" },
           ].map(({ key, label }) => (
             <div key={key}>
-              <label className="mb-0.5 block text-xs font-medium text-gray-500">{label}</label>
+              <label className="mb-0.5 block text-xs font-medium text-gray-500">
+                {label}
+              </label>
               <input
                 type="text"
                 value={(draft[key] as string) || ""}

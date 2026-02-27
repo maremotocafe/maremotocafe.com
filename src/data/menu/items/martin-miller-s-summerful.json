@@ -1,9 +1,7 @@
 {
   "nombre": "Martin Miller´s Summerful",
   "imagen": "martinmillerssummerful.png",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "txt_aclaraciones": "Edición especial de la Mitica ginebra. Se aprecian notas florales; también a hierbas, Lavanda, Salvia, toques de Romero inglés y Tomillo ártico de Islandia",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "8%",

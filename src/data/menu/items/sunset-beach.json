@@ -1,10 +1,7 @@
 {
   "nombre": "Sunset Beach 🌞🥭🆕",
   "imagen": "sunsetbeach.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Gin infusionado con Romero, Gewürztraminer, Itálicus, Sirope de Romero, Zumo de Pomelo y Mango Nat.",
   "txt_aclaraciones": "Cocktail ligero y refrescante que mezcla aromas mediterraneos con otros sabores más tropicales",
   "txt_temporal": "Disponible todo el año.",

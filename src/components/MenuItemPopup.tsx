@@ -5,9 +5,7 @@ import type { MenuItem, MenuConfig } from "../data/types";
 function formatInline(text: string) {
   const parts = text.split(/\*([^*]+)\*/g);
   if (parts.length === 1) return text;
-  return parts.map((part, i) =>
-    i % 2 === 1 ? <em key={i}>{part}</em> : part,
-  );
+  return parts.map((part, i) => (i % 2 === 1 ? <em key={i}>{part}</em> : part));
 }
 
 interface MenuItemPopupProps {
@@ -65,12 +63,11 @@ export default function MenuItemPopup({
 
   // Determine if item is standalone (no data fields)
   const isStandalone = item
-    ? config.nombres_datos.every(
-        (key) => !item[key as keyof MenuItem],
-      )
+    ? config.nombres_datos.every((key) => !item[key as keyof MenuItem])
     : true;
 
-  const aspectRatio = imageWidth && imageHeight ? imageWidth / imageHeight : 4 / 3;
+  const aspectRatio =
+    imageWidth && imageHeight ? imageWidth / imageHeight : 4 / 3;
 
   function handleBackdropClick(e: React.MouseEvent<HTMLDialogElement>) {
     // Close when clicking the backdrop (outside the inner content)
@@ -102,7 +99,15 @@ export default function MenuItemPopup({
               aria-label="Cerrar"
               className="absolute right-3 top-3 flex h-12 w-12 items-center justify-center rounded-full bg-black/70 text-white shadow-lg transition-colors hover:bg-black/90"
             >
-              <svg width="28" height="28" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+              >
                 <line x1="4" y1="4" x2="16" y2="16" />
                 <line x1="16" y1="4" x2="4" y2="16" />
               </svg>
@@ -118,10 +123,16 @@ export default function MenuItemPopup({
               className="w-full"
             >
               <div className="relative">
-                {thumbnailSrc
-                  ? <img src={thumbnailSrc} alt="" className="w-full" style={{ aspectRatio }} />
-                  : <div className="shimmer w-full" style={{ aspectRatio }} />
-                }
+                {thumbnailSrc ? (
+                  <img
+                    src={thumbnailSrc}
+                    alt=""
+                    className="w-full"
+                    style={{ aspectRatio }}
+                  />
+                ) : (
+                  <div className="shimmer w-full" style={{ aspectRatio }} />
+                )}
                 <img
                   src={imageSrc}
                   alt={item.nombre}
@@ -137,10 +148,16 @@ export default function MenuItemPopup({
             <div className="md:flex">
               <div className="md:w-1/2">
                 <div className="relative md:h-full">
-                  {thumbnailSrc
-                    ? <img src={thumbnailSrc} alt="" className="h-full w-full object-cover" style={{ aspectRatio }} />
-                    : <div className="shimmer w-full" style={{ aspectRatio }} />
-                  }
+                  {thumbnailSrc ? (
+                    <img
+                      src={thumbnailSrc}
+                      alt=""
+                      className="h-full w-full object-cover"
+                      style={{ aspectRatio }}
+                    />
+                  ) : (
+                    <div className="shimmer w-full" style={{ aspectRatio }} />
+                  )}
                   <img
                     src={imageSrc}
                     alt={item.nombre}
@@ -172,7 +189,9 @@ export default function MenuItemPopup({
                           {title && (
                             <span className="font-semibold">{title}: </span>
                           )}
-                          <span className="text-text">{formatInline(value)}</span>
+                          <span className="text-text">
+                            {formatInline(value)}
+                          </span>
                         </p>
                       </div>
                     );

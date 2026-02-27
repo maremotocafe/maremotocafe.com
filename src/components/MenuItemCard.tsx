@@ -33,10 +33,7 @@ export default function MenuItemCard({
         {disponible !== false && thumbnailSrc ? (
           <div className="relative overflow-hidden">
             {!loaded && (
-              <div
-                className="shimmer w-full"
-                style={{ aspectRatio }}
-              />
+              <div className="shimmer w-full" style={{ aspectRatio }} />
             )}
             <img
               src={thumbnailSrc}

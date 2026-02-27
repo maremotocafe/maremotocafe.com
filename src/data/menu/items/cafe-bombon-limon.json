@@ -1,10 +1,7 @@
 {
   "nombre": "Café Bombón Limón 🍋",
   "imagen": "301.jpg",
-  "categorias": [
-    "Cafés y Tés",
-    "Cafés sin Alcohol"
-  ],
+  "categorias": ["Cafés y Tés", "Cafés sin Alcohol"],
   "ingredientes": "Café expresso, Leche merengada y Crema de leche.",
   "alergenos": "*Leche*",
   "pvp_local": "2,5€ A partir de las 22.30 3,50€",

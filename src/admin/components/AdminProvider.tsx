@@ -1,4 +1,10 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useCallback,
+  type ReactNode,
+} from "react";
 
 interface Toast {
   id: number;
@@ -26,13 +32,16 @@ export function AdminProvider({ children }: { children: ReactNode }) {
 
   const triggerRefresh = useCallback(() => setRefreshKey((k) => k + 1), []);
 
-  const showToast = useCallback((message: string, type: Toast["type"] = "info") => {
-    const id = ++toastId;
-    setToasts((prev) => [...prev, { id, message, type }]);
-    setTimeout(() => {
-      setToasts((prev) => prev.filter((t) => t.id !== id));
-    }, 4000);
-  }, []);
+  const showToast = useCallback(
+    (message: string, type: Toast["type"] = "info") => {
+      const id = ++toastId;
+      setToasts((prev) => [...prev, { id, message, type }]);
+      setTimeout(() => {
+        setToasts((prev) => prev.filter((t) => t.id !== id));
+      }, 4000);
+    },
+    [],
+  );
 
   return (
     <AdminContext.Provider

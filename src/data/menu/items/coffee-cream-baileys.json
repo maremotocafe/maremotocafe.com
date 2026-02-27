@@ -1,10 +1,7 @@
 {
   "nombre": "Coffee Cream Baileys ☕",
   "imagen": "baileyscream.jpeg",
-  "categorias": [
-    "Cafés y Tés",
-    "Cafés con Alcohol"
-  ],
+  "categorias": ["Cafés y Tés", "Cafés con Alcohol"],
   "ingredientes": "Café espresso con Cacao, Nata y Crema de licor a elegir",
   "alergenos": "*Leche*",
   "grad_alcoholica": "4,10%",

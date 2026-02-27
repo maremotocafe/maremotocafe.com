@@ -1,10 +1,7 @@
 {
   "nombre": "Granizado de Naranja y Menta 🍊",
   "imagen": "198.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Granizados"
-  ],
+  "categorias": ["Sin Alcohol", "Granizados"],
   "ingredientes": "Zumo de Naranja Natural, Menta fresca, Azúcar y Hielo.",
   "txt_temporal": "Disponible todo el año",
   "pvp": "4€"

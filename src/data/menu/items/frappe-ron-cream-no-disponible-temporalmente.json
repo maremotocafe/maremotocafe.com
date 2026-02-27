@@ -1,11 +1,7 @@
 {
   "nombre": "Frappé Rón Cream ❄ (No disponible temporalmente)",
   "imagen": "196.jpg",
-  "categorias": [
-    "Cafés y Tés",
-    "Cafés con Alcohol",
-    "Cafés Fríos"
-  ],
+  "categorias": ["Cafés y Tés", "Cafés con Alcohol", "Cafés Fríos"],
   "ingredientes": "Café, Barceló Cream, Crema de Leche y topping de Caramelo",
   "alergenos": "*Leche*",
   "grad_alcoholica": "3,80%",

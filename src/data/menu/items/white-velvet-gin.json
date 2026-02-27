@@ -1,9 +1,7 @@
 {
   "nombre": "White Velvet Gin 🆕 🍍",
   "imagen": "whitevelvet.jpeg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "ingredientes": "Notas a Piña, Clavo y Canela.",
   "txt_aclaraciones": "Ginebra de Aragón (Inspirada n la Pureza del Pirineo)",
   "txt_temporal": "Disponible todo el año.",

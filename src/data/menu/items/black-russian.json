@@ -1,10 +1,7 @@
 {
   "nombre": "Black Russian",
   "imagen": "369.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Clásicos"
-  ],
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
   "ingredientes": "Vodka Finlandia y Kalhua",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "30%",

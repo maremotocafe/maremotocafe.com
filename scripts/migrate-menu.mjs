@@ -29,8 +29,8 @@ function slugify(str) {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "") // strip accents
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")    // non-alphanum → hyphen
-    .replace(/^-+|-+$/g, "");       // trim leading/trailing hyphens
+    .replace(/[^a-z0-9]+/g, "-") // non-alphanum → hyphen
+    .replace(/^-+|-+$/g, ""); // trim leading/trailing hyphens
 }
 
 /** Strip null/undefined/empty-string values from an object. */
@@ -150,7 +150,9 @@ console.log(`\nMigration summary:`);
 console.log(`  Categories: ${categories.length}`);
 console.log(`  Items:      ${items.length}`);
 console.log(`  Unique slugs: ${slugCounts.size}`);
-console.log(`  Duplicated names: ${[...slugCounts.values()].filter((c) => c > 1).length}`);
+console.log(
+  `  Duplicated names: ${[...slugCounts.values()].filter((c) => c > 1).length}`,
+);
 console.log();
 
 if (dryRun) {
@@ -159,7 +161,9 @@ if (dryRun) {
   // Show first 5 items as sample
   console.log("Sample items:");
   for (const { slug, data } of items.slice(0, 5)) {
-    console.log(`  ${slug}.json → ${data.nombre} [${data.categorias.join(", ")}]`);
+    console.log(
+      `  ${slug}.json → ${data.nombre} [${data.categorias.join(", ")}]`,
+    );
   }
 
   // Show any duplicate names

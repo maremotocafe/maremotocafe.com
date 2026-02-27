@@ -32,8 +32,7 @@ export default function MenuFilterBar({
   return (
     <div className="animate-fade-in mb-4">
       <h3 className="mb-4 text-center text-[25px] font-extrabold">
-        <span className="text-accent">{firstWord}</span>{" "}
-        {restWords}
+        <span className="text-accent">{firstWord}</span> {restWords}
       </h3>
 
       <div className="flex flex-wrap justify-center gap-3">
@@ -45,10 +44,13 @@ export default function MenuFilterBar({
             style={{
               backgroundColor: resetOption.color,
               color: "#1d2024",
-              borderColor: activeValue === resetOption.value ? "#ffffff" : "transparent",
+              borderColor:
+                activeValue === resetOption.value ? "#ffffff" : "transparent",
             }}
           >
-            {resetOption.icon && <i className={`${resetOption.icon} text-lg`} />}
+            {resetOption.icon && (
+              <i className={`${resetOption.icon} text-lg`} />
+            )}
             <span>Todo</span>
           </button>
         )}
@@ -61,7 +63,8 @@ export default function MenuFilterBar({
             style={{
               backgroundColor: opt.color,
               color: "#1d2024",
-              borderColor: activeValue === opt.value ? "#ffffff" : "transparent",
+              borderColor:
+                activeValue === opt.value ? "#ffffff" : "transparent",
             }}
           >
             {opt.icon && <i className={`${opt.icon} text-lg`} />}

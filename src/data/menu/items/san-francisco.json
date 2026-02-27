@@ -1,10 +1,7 @@
 {
   "nombre": "San Francisco",
   "imagen": "317.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Cocktails Sin Alcohol"
-  ],
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
   "ingredientes": "Zumo de Naranja Natural, Zumo de piña, Zumo de Limón y Granadina.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "0%",

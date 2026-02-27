@@ -1,20 +1,28 @@
-{{ if .Site.Params.oldBrowser.enable }}
-{{ with .Site.Params.oldBrowser }}
+{{ if .Site.Params.oldBrowser.enable }} {{ with .Site.Params.oldBrowser }}
 <div id="old-browser" class="old-browser">
   <div class="browser-desc">
     <i class="{{ .icon }}"></i>
     <span>{{ .txt }}</span>
   </div>
   <div class="browser-btns">
-    <a class="btn browser-btn" target="_blank" rel="noopener" href="https://www.mozilla.org/es-ES/firefox/new/">
+    <a
+      class="btn browser-btn"
+      target="_blank"
+      rel="noopener"
+      href="https://www.mozilla.org/es-ES/firefox/new/"
+    >
       <i class="lab la-firefox"></i>
       <span>Firefox</span>
     </a>
-    <a class="btn browser-btn" target="_blank" rel="noopener" href="https://www.google.com/chrome/">
+    <a
+      class="btn browser-btn"
+      target="_blank"
+      rel="noopener"
+      href="https://www.google.com/chrome/"
+    >
       <i class="lab la-chrome"></i>
       <span>Chrome</span>
     </a>
   </div>
 </div>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}

@@ -1,10 +1,7 @@
 {
   "nombre": "Iced Orange Matcha ❄ 🆕",
   "imagen": "icedorangematcha.jpeg",
-  "categorias": [
-    "Cafés y Tés",
-    "Infusiones"
-  ],
+  "categorias": ["Cafés y Tés", "Infusiones"],
   "ingredientes": "Té Matcha, Zumo de Narnja y Menta",
   "txt_temporal": "Disponible todo el año.",
   "edul_gr": "Sin Azúcar",

@@ -1,10 +1,7 @@
 {
   "nombre": "Green Station",
   "imagen": "377.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Long Drinks"
-  ],
+  "categorias": ["Cocktails", "Cocktails Long Drinks"],
   "ingredientes": "Ron Plantation 3 Stars, Zumo de Naranja, Zumo de Limón, Zumo de Piña y Curaçao azul.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "7%",

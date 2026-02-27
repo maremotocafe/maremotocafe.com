@@ -1,10 +1,7 @@
 {
   "nombre": "Cosmopolitan",
   "imagen": "372.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Clásicos"
-  ],
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
   "ingredientes": "Vodka Finlandia, Zumo de Lima, Zumo de Arándanos y Tripe Seco.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "23%",

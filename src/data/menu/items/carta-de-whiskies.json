@@ -2,7 +2,5 @@
   "nombre": "Carta de Whiskies",
   "imagen": "cartadewhiskies.png",
   "imagen_pequenya": "portadadewhiskies_small.png",
-  "categorias": [
-    "Rones, Whiskies y Licores"
-  ]
+  "categorias": ["Rones, Whiskies y Licores"]
 }

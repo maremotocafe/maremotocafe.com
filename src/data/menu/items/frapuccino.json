@@ -1,11 +1,7 @@
 {
   "nombre": "Frapuccino ❄",
   "imagen": "196.jpg",
-  "categorias": [
-    "Cafés y Tés",
-    "Cafés sin Alcohol",
-    "Cafés Fríos"
-  ],
+  "categorias": ["Cafés y Tés", "Cafés sin Alcohol", "Cafés Fríos"],
   "ingredientes": "Café, Chocolate, Crema de Leche y Cacao",
   "alergenos": "*Leche*",
   "txt_aclaraciones": "Refrescante bebida de café con hielo picado. También lo puedes pedir descafeinado!",

@@ -1,10 +1,7 @@
 {
   "nombre": "Mezcalito de Romero",
   "imagen": "274.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Mezcal Joven Alipús, Zumo de Pomelo, Sirope de Romero, Sirope de Ágave y Romero fresco.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "11,25%",

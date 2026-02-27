@@ -1,8 +1,5 @@
-{{ define "main" }}
-
-{{ $errors := (index .Site.Data .Site.Language.Lang).errors }}
-
-{{ partial "navigation.html" . }}
+{{ define "main" }} {{ $errors := (index .Site.Data .Site.Language.Lang).errors
+}} {{ partial "navigation.html" . }}
 
 <section class="section">
   <div class="container">
@@ -10,7 +7,11 @@
       <div class="col-12 text-center">
         <h1>404</h1>
         <h2 class="mb-3">{{ $errors.txt_404 }}</h2>
-        <a class="btn btn-inverse-colors" href="{{ .Site.BaseURL | relLangURL }}">{{ $errors.txt_go_back }}</a>
+        <a
+          class="btn btn-inverse-colors"
+          href="{{ .Site.BaseURL | relLangURL }}"
+          >{{ $errors.txt_go_back }}</a
+        >
       </div>
     </div>
   </div>

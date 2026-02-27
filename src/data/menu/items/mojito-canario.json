@@ -1,10 +1,7 @@
 {
   "nombre": "Mojito Canario 🍌",
   "imagen": "mojitocanario.jpeg",
-  "categorias": [
-    "Cocktails",
-    "Mojitos Caipirinhas y Similares"
-  ],
+  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
   "ingredientes": "Ron Guanche Arehucas, Pure de Plátano, Lima y Hierbabuena",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "10,60%",

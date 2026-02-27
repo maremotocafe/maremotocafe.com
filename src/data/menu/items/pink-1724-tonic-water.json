@@ -1,9 +1,7 @@
 {
   "nombre": "Pink & 1724 tonic water",
   "imagen": "239.jpg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "txt_aclaraciones": "Ginebra londinense de tipo clásico con notas dulces cítricas y especiadas.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "9,40%",

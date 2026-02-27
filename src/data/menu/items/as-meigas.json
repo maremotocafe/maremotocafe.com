@@ -1,10 +1,7 @@
 {
   "nombre": "As Meigas",
   "imagen": "asmeigas.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Nordes Gin, Licor de Flor de Sauco, Zumo de Pomelo, Licor de Chipotle y Mixer de Pomelo",
   "txt_aclaraciones": "Cocktail Floral, Herbal y Ligeramente picante",
   "txt_temporal": "Disponible todo el año.",

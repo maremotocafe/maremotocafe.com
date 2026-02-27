@@ -13,7 +13,13 @@ interface Props {
   onSwap?: (dragFilename: string, dropFilename: string) => void;
 }
 
-export default function AdminItemOverlay({ item, filename, categories, children, onSwap }: Props) {
+export default function AdminItemOverlay({
+  item,
+  filename,
+  categories,
+  children,
+  onSwap,
+}: Props) {
   const { editingFilename, setEditingFilename, showToast } = useAdmin();
   const [hovering, setHovering] = useState(false);
   const [dragOver, setDragOver] = useState(false);
@@ -56,32 +62,39 @@ export default function AdminItemOverlay({ item, filename, categories, children,
           onSwap?.(dragFilename, filename);
         }
       }}
-      onDragEnd={() => { setDragOver(false); setDragging(false); }}
+      onDragEnd={() => {
+        setDragOver(false);
+        setDragging(false);
+      }}
     >
       {/* Edit button on hover */}
       {hovering && !isEditing && (
         <button
-          onClick={(e) => { e.stopPropagation(); setEditingFilename(filename); }}
-          className="absolute top-2 right-2 z-50 cursor-pointer rounded-lg bg-blue-600 px-2.5 py-1.5 text-white shadow-lg hover:bg-blue-500"
+          onClick={(e) => {
+            e.stopPropagation();
+            setEditingFilename(filename);
+          }}
+          className="absolute top-2 right-2 z-50 cursor-pointer rounded-lg bg-amber-500 px-2.5 py-1.5 text-black font-bold shadow-lg hover:bg-amber-400"
           title="Editar"
         >
-          <i className="la la-pen text-base" />
+          <i className="la la-pen text-base" /> Editar
         </button>
       )}
 
       {children}
 
       {/* Modal editor */}
-      {isEditing && createPortal(
-        <AdminItemEditor
-          item={item}
-          filename={filename}
-          categories={categories}
-          onClose={() => setEditingFilename(null)}
-          onDelete={handleDelete}
-        />,
-        document.body,
-      )}
+      {isEditing &&
+        createPortal(
+          <AdminItemEditor
+            item={item}
+            filename={filename}
+            categories={categories}
+            onClose={() => setEditingFilename(null)}
+            onDelete={handleDelete}
+          />,
+          document.body,
+        )}
     </div>
   );
 }

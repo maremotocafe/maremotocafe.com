@@ -1,10 +1,7 @@
 {
   "nombre": "Whale Beach🍍🆕",
   "imagen": "whalebeach.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Ron de Piña Maremoto, Sirope de Jengibre y Clavo, Mermelada de Naranja, Rón y Canela, Hierbabuena, Triple Seco y Soda.",
   "txt_aclaraciones": "Imagina que estás en la maravillosa Playa de Las Ballenas en Noruega disfrutando de un atardecer, y a lo lejos en alta mar puedes ver un grupo de ballenas! Nosotros lo hicimos y nos inspiró este fantástico Cocktail del color del Ocaso.",
   "txt_temporal": "Disponible todo el año.",

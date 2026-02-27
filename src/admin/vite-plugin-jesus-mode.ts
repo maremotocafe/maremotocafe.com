@@ -1,5 +1,13 @@
 import type { Plugin, Connect } from "vite";
-import { readFileSync, writeFileSync, readdirSync, unlinkSync, existsSync, mkdirSync } from "node:fs";
+import type { ServerResponse } from "node:http";
+import {
+  readFileSync,
+  writeFileSync,
+  readdirSync,
+  unlinkSync,
+  existsSync,
+  mkdirSync,
+} from "node:fs";
 import { join, resolve } from "node:path";
 import { execSync } from "node:child_process";
 import { slugify } from "./slugify";
@@ -8,12 +16,12 @@ const ITEMS_DIR = resolve("src/data/menu/items");
 const CATEGORIES_FILE = resolve("src/data/menu/categories.json");
 const IMAGES_DIR = resolve("src/assets/carta");
 
-function jsonResponse(res: Connect.ServerResponse, data: unknown, status = 200) {
+function jsonResponse(res: ServerResponse, data: unknown, status = 200) {
   res.writeHead(status, { "Content-Type": "application/json" });
   res.end(JSON.stringify(data));
 }
 
-function errorResponse(res: Connect.ServerResponse, message: string, status = 400) {
+function errorResponse(res: ServerResponse, message: string, status = 400) {
   jsonResponse(res, { error: message }, status);
 }
 
@@ -27,7 +35,11 @@ function readBody(req: Connect.IncomingMessage): Promise<Buffer> {
 }
 
 function git(cmd: string): string {
-  return execSync(`git ${cmd}`, { cwd: resolve("."), encoding: "utf-8", timeout: 30000 }).trim();
+  return execSync(`git ${cmd}`, {
+    cwd: resolve("."),
+    encoding: "utf-8",
+    timeout: 30000,
+  }).trim();
 }
 
 export default function jesusMode(): Plugin {
@@ -45,7 +57,9 @@ export default function jesusMode(): Plugin {
         try {
           // --- Items ---
           if (path === "items" && method === "GET") {
-            const files = readdirSync(ITEMS_DIR).filter((f) => f.endsWith(".json"));
+            const files = readdirSync(ITEMS_DIR).filter((f) =>
+              f.endsWith(".json"),
+            );
             const items = files.map((f) => ({
               filename: f,
               data: JSON.parse(readFileSync(join(ITEMS_DIR, f), "utf-8")),
@@ -66,7 +80,10 @@ export default function jesusMode(): Plugin {
               counter++;
             }
 
-            writeFileSync(join(ITEMS_DIR, filename), JSON.stringify(body, null, 2) + "\n");
+            writeFileSync(
+              join(ITEMS_DIR, filename),
+              JSON.stringify(body, null, 2) + "\n",
+            );
             return jsonResponse(res, { filename, data: body }, 201);
           }
 
@@ -82,7 +99,8 @@ export default function jesusMode(): Plugin {
             }
 
             if (method === "DELETE") {
-              if (!existsSync(filePath)) return errorResponse(res, "Not found", 404);
+              if (!existsSync(filePath))
+                return errorResponse(res, "Not found", 404);
               unlinkSync(filePath);
               return jsonResponse(res, { deleted: filename });
             }
@@ -96,7 +114,10 @@ export default function jesusMode(): Plugin {
 
           if (path === "categories" && method === "PUT") {
             const body = JSON.parse((await readBody(req)).toString("utf-8"));
-            writeFileSync(CATEGORIES_FILE, JSON.stringify(body, null, 2) + "\n");
+            writeFileSync(
+              CATEGORIES_FILE,
+              JSON.stringify(body, null, 2) + "\n",
+            );
             return jsonResponse(res, body);
           }
 
@@ -118,7 +139,8 @@ export default function jesusMode(): Plugin {
             // Parse multipart manually (simple single-file upload)
             const rawBody = await readBody(req);
             const boundary = contentType.split("boundary=")[1];
-            if (!boundary) return errorResponse(res, "No boundary in content-type");
+            if (!boundary)
+              return errorResponse(res, "No boundary in content-type");
 
             const boundaryBuffer = Buffer.from(`--${boundary}`);
             const parts = splitBuffer(rawBody, boundaryBuffer).filter(
@@ -139,7 +161,9 @@ export default function jesusMode(): Plugin {
                 const ext = filename.substring(filename.lastIndexOf("."));
                 const base = filename.substring(0, filename.lastIndexOf("."));
                 let counter = 2;
-                while (existsSync(join(IMAGES_DIR, `${base}-${counter}${ext}`))) {
+                while (
+                  existsSync(join(IMAGES_DIR, `${base}-${counter}${ext}`))
+                ) {
                   counter++;
                 }
                 filename = `${base}-${counter}${ext}`;
@@ -147,11 +171,15 @@ export default function jesusMode(): Plugin {
 
               // Skip \r\n\r\n header separator, trim trailing \r\n
               let fileData = part.subarray(headerEnd + 4);
-              if (fileData[fileData.length - 2] === 0x0d && fileData[fileData.length - 1] === 0x0a) {
+              if (
+                fileData[fileData.length - 2] === 0x0d &&
+                fileData[fileData.length - 1] === 0x0a
+              ) {
                 fileData = fileData.subarray(0, fileData.length - 2);
               }
 
-              if (!existsSync(IMAGES_DIR)) mkdirSync(IMAGES_DIR, { recursive: true });
+              if (!existsSync(IMAGES_DIR))
+                mkdirSync(IMAGES_DIR, { recursive: true });
               writeFileSync(join(IMAGES_DIR, filename), fileData);
               return jsonResponse(res, { filename }, 201);
             }
@@ -161,10 +189,15 @@ export default function jesusMode(): Plugin {
 
           // --- Git ---
           if (path === "git/status" && method === "POST") {
-            const porcelain = execSync("git status --porcelain", { cwd: resolve("."), encoding: "utf-8", timeout: 30000 });
+            const porcelain = execSync("git status --porcelain", {
+              cwd: resolve("."),
+              encoding: "utf-8",
+              timeout: 30000,
+            });
             const branch = git("rev-parse --abbrev-ref HEAD");
 
-            const changes: { action: string; file: string; label: string }[] = [];
+            const changes: { action: string; file: string; label: string }[] =
+              [];
             for (const line of porcelain.split("\n").filter(Boolean)) {
               const match = line.match(/^(.{2})\s(.+)$/);
               if (!match) continue;
@@ -180,11 +213,18 @@ export default function jesusMode(): Plugin {
 
               let label = fileName;
               // Try to read item name from JSON
-              if (filePath.includes("menu/items/") && fileName.endsWith(".json")) {
+              if (
+                filePath.includes("menu/items/") &&
+                fileName.endsWith(".json")
+              ) {
                 try {
-                  const data = JSON.parse(readFileSync(join(resolve("."), filePath), "utf-8"));
+                  const data = JSON.parse(
+                    readFileSync(join(resolve("."), filePath), "utf-8"),
+                  );
                   label = data.nombre || fileName;
-                } catch { label = fileName.replace(".json", ""); }
+                } catch {
+                  label = fileName.replace(".json", "");
+                }
               } else if (fileName === "categories.json") {
                 label = "Categorías";
               } else if (filePath.includes("assets/carta/")) {
@@ -195,6 +235,12 @@ export default function jesusMode(): Plugin {
             }
 
             return jsonResponse(res, { branch, changes });
+          }
+
+          if (path === "git/check-remote" && method === "POST") {
+            git("fetch origin");
+            const behind = git("rev-list HEAD..origin/master --count");
+            return jsonResponse(res, { behind: parseInt(behind, 10) || 0 });
           }
 
           if (path === "git/pull" && method === "POST") {

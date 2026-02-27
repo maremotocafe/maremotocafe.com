@@ -1,9 +1,7 @@
 {
   "nombre": "Tanqueray Rangpur & Schweppes Premium Toque de Lima 🍋",
   "imagen": "rangpur.jpeg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "txt_aclaraciones": "Ginebra escocesa elaborada con lima Rangpur, una variedad de lima muy aromática que la convierte en una de nuestras favoritas.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "8%",

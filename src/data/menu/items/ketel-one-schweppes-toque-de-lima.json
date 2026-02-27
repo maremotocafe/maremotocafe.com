@@ -1,9 +1,7 @@
 {
   "nombre": "ketel One & Schweppes Toque de Lima.",
   "imagen": "ketelone.jpeg",
-  "categorias": [
-    "Gin Tonics"
-  ],
+  "categorias": ["Gin Tonics"],
   "ingredientes": "Servida con twist de Naranja y Romero",
   "txt_aclaraciones": "Destaca por su inconfundible frescor y por una suavidad que recubre la lengua.",
   "txt_temporal": "Disponible todo el año.",

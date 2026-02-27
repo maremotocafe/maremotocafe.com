@@ -23,9 +23,9 @@ import { banner } from "../data/site";
     }
     <div class="mx-auto max-w-lg space-y-1 text-lg italic text-white/90">
       {
-        banner.content.split("\n\n").map((line) => (
-          <p>{line.replace(/\*/g, "")}</p>
-        ))
+        banner.content
+          .split("\n\n")
+          .map((line) => <p>{line.replace(/\*/g, "")}</p>)
       }
     </div>
     <a

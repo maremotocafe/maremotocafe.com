@@ -1,11 +1,7 @@
 {
   "nombre": "Jugo Verde Detox 🆕",
   "imagen": "jugoverde.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Cocktails Sin Alcohol",
-    "Sin Alcohol"
-  ],
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol", "Sin Alcohol"],
   "ingredientes": "Pepinno, Espinaca, Hierbabuena, Manzana Gran Smith, Jengibre y Lima",
   "txt_temporal": "Disponible todo el año",
   "grad_alcoholica": "0%",

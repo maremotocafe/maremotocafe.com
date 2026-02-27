@@ -1,10 +1,7 @@
 {
   "nombre": "Tiki Beach",
   "imagen": "tikibeach.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Blend de Rones, Zumo de Naranja, Zumo de Lima, Frambuesa, Arandanos y Pimiento Dram.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "3,50%",

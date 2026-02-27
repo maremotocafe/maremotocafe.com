@@ -38,9 +38,7 @@ export default function ContactForm() {
             className={`w-full rounded-lg border bg-white/5 px-4 py-3 text-text placeholder-text/50 outline-none transition-colors focus:border-accent ${
               errors.subject ? "border-error" : "border-white/10"
             }`}
-            onChange={() =>
-              setErrors((prev) => ({ ...prev, subject: false }))
-            }
+            onChange={() => setErrors((prev) => ({ ...prev, subject: false }))}
           />
         </div>
         <div className="mb-4">
@@ -52,9 +50,7 @@ export default function ContactForm() {
             className={`w-full rounded-lg border bg-white/5 px-4 py-3 text-text placeholder-text/50 outline-none transition-colors focus:border-accent ${
               errors.message ? "border-error" : "border-white/10"
             }`}
-            onChange={() =>
-              setErrors((prev) => ({ ...prev, message: false }))
-            }
+            onChange={() => setErrors((prev) => ({ ...prev, message: false }))}
           />
         </div>
         <button

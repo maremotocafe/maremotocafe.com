@@ -22,7 +22,10 @@ export function getItems(): Promise<ItemEntry[]> {
   return request("items");
 }
 
-export function updateItem(filename: string, data: MenuItem): Promise<ItemEntry> {
+export function updateItem(
+  filename: string,
+  data: MenuItem,
+): Promise<ItemEntry> {
   return request(`items/${filename}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
@@ -48,7 +51,9 @@ export function getCategories(): Promise<MenuCategory[]> {
   return request("categories");
 }
 
-export function updateCategories(data: MenuCategory[]): Promise<MenuCategory[]> {
+export function updateCategories(
+  data: MenuCategory[],
+): Promise<MenuCategory[]> {
   return request("categories", {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
@@ -88,6 +93,10 @@ export interface GitStatus {
 
 export function gitStatus(): Promise<GitStatus> {
   return request("git/status", { method: "POST" });
+}
+
+export function gitCheckRemote(): Promise<{ behind: number }> {
+  return request("git/check-remote", { method: "POST" });
 }
 
 export function gitPull(): Promise<{ result: string }> {

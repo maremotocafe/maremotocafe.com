@@ -1,10 +1,7 @@
 {
   "nombre": "Cold Green Chilli Peppers",
   "imagen": "264.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Tequila El Jimador, Licor de Chilli Ancho Reyes, Zumo de Lima, Sirope de Ágave y Ginger Beer.",
   "txt_aclaraciones": "Delicioso Cocktail de carácter picante",
   "txt_temporal": "Disponible todo el año.",

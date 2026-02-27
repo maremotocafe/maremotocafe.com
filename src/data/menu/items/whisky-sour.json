@@ -1,10 +1,7 @@
 {
   "nombre": "Whisky Sour",
   "imagen": "395.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Clásicos"
-  ],
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
   "ingredientes": "Bulleit bourbon, Zumo de Limón, Clara de Huevo pasteurizada, Angostura y Azúcar.",
   "alergenos": "*Huevo*",
   "txt_temporal": "Disponible todo el año.",

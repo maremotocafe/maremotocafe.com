@@ -1,4 +1,12 @@
-import { useState, useMemo, useCallback, useRef, useEffect, lazy, Suspense } from "react";
+import {
+  useState,
+  useMemo,
+  useCallback,
+  useRef,
+  useEffect,
+  lazy,
+  Suspense,
+} from "react";
 import type { MenuItem, MenuCategory, MenuConfig } from "../data/types";
 import MenuFilterBar from "./MenuFilterBar";
 import MenuItemCard from "./MenuItemCard";
@@ -128,7 +136,9 @@ export default function Menu({
         setActiveSubcategory(value);
       }
       setVisibleCount(config.items_iniciales);
-      window.plausible?.("Subcategory Selected", { props: { subcategory: value, category: activeCategory } });
+      window.plausible?.("Subcategory Selected", {
+        props: { subcategory: value, category: activeCategory },
+      });
     },
     [activeCategory, config.items_iniciales],
   );
@@ -138,20 +148,27 @@ export default function Menu({
   }, []);
 
   // Drag-and-drop swap: exchange orden values between two items (dev only)
-  const handleSwap = useCallback(async (dragFilename: string, dropFilename: string) => {
-    const dragItem = items.find((i) => itemFilenames?.[i.nombre] === dragFilename);
-    const dropItem = items.find((i) => itemFilenames?.[i.nombre] === dropFilename);
-    if (!dragItem || !dropItem) return;
+  const handleSwap = useCallback(
+    async (dragFilename: string, dropFilename: string) => {
+      const dragItem = items.find(
+        (i) => itemFilenames?.[i.nombre] === dragFilename,
+      );
+      const dropItem = items.find(
+        (i) => itemFilenames?.[i.nombre] === dropFilename,
+      );
+      if (!dragItem || !dropItem) return;
 
-    const dragOrden = dragItem.orden;
-    const dropOrden = dropItem.orden;
+      const dragOrden = dragItem.orden;
+      const dropOrden = dropItem.orden;
 
-    const { updateItem } = await import("../admin/api-client");
-    await Promise.all([
-      updateItem(dragFilename, { ...dragItem, orden: dropOrden }),
-      updateItem(dropFilename, { ...dropItem, orden: dragOrden }),
-    ]);
-  }, [items, itemFilenames]);
+      const { updateItem } = await import("../admin/api-client");
+      await Promise.all([
+        updateItem(dragFilename, { ...dragItem, orden: dropOrden }),
+        updateItem(dropFilename, { ...dropItem, orden: dragOrden }),
+      ]);
+    },
+    [items, itemFilenames],
+  );
 
   // Build category filter options (stable unless categories change)
   const categoryOptions = useMemo(
@@ -230,14 +247,19 @@ export default function Menu({
                     staggerDelay={i < config.items_iniciales ? i * 30 : 0}
                     onClick={() => {
                       setPopupItem(item);
-                      window.plausible?.("Item Viewed", { props: { item: item.nombre, category: activeCategory } });
+                      window.plausible?.("Item Viewed", {
+                        props: { item: item.nombre, category: activeCategory },
+                      });
                     }}
                   />
                 );
                 if (isDev && AdminItemOverlay) {
                   const filename = itemFilenames?.[item.nombre] || "";
                   return (
-                    <Suspense key={`${item.nombre}-${item.categorias.join("-")}`} fallback={card}>
+                    <Suspense
+                      key={`${item.nombre}-${item.categorias.join("-")}`}
+                      fallback={card}
+                    >
                       <AdminItemOverlay
                         item={item}
                         filename={filename}
@@ -288,7 +310,9 @@ export default function Menu({
         item={popupItem}
         config={config}
         imageSrc={popupItem ? images[popupItem.imagen]?.full : undefined}
-        thumbnailSrc={popupItem ? images[popupItem.imagen]?.thumbnail : undefined}
+        thumbnailSrc={
+          popupItem ? images[popupItem.imagen]?.thumbnail : undefined
+        }
         imageWidth={popupItem ? images[popupItem.imagen]?.width : undefined}
         imageHeight={popupItem ? images[popupItem.imagen]?.height : undefined}
         onClose={handleClosePopup}

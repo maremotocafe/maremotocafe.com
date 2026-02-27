@@ -1,10 +1,7 @@
 {
   "nombre": "Espresso Martini",
   "imagen": "350.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Clásicos"
-  ],
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
   "ingredientes": "Café espresso, Vodka Finlandia, Kalhua y Azúcar",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "14,50%",

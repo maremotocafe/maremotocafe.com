@@ -1,10 +1,7 @@
 {
   "nombre": "Hasta pronto 🆕",
   "imagen": "hastapronto.jpeg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "whitley neill gin Cucumber Sirope de Verde (Manzana, Pepino y Menta), Lima y Ginger beer",
   "txt_aclaraciones": "Refrescante Cocktail con la famosa gin de Pepino (Refrescante y Delicioso)",
   "txt_temporal": "Disponible todo el año.",

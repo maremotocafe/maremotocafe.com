@@ -2,7 +2,5 @@
   "nombre": "Carta de Rones",
   "imagen": "cartaderones.png",
   "imagen_pequenya": "portadaderon_small.png",
-  "categorias": [
-    "Rones, Whiskies y Licores"
-  ]
+  "categorias": ["Rones, Whiskies y Licores"]
 }

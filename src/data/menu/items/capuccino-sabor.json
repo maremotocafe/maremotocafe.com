@@ -1,10 +1,7 @@
 {
   "nombre": "Capuccino Sabor ☕",
   "imagen": "102.jpg",
-  "categorias": [
-    "Cafés y Tés",
-    "Cafés sin Alcohol"
-  ],
+  "categorias": ["Cafés y Tés", "Cafés sin Alcohol"],
   "ingredientes": "Café espresso, Crema de leche, Sirope del sabor que pidas y toque de Cacao.",
   "alergenos": "*Leche y Avellana*",
   "txt_aclaraciones": "Elige entre Avellana*, Vainilla, Canela, Cookie o Tiramisú.\nDisponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja.",

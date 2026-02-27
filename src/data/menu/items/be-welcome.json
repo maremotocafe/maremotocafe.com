@@ -1,10 +1,7 @@
 {
   "nombre": "Be Welcome🍍🆕",
   "imagen": "bewelcome.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails de Autor"
-  ],
+  "categorias": ["Cocktails", "Cocktails de Autor"],
   "ingredientes": "Italicus Rogsolio de Bergamota, Chadornnay infusionado con Té de Jazmín, Gin Saffron, Soda de Piña Asada y Menta.",
   "alergenos": "Sulfitos",
   "txt_aclaraciones": "Cocktail presentado a The Art of Italicus 2023 Challenge.",

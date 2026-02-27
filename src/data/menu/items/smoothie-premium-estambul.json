@@ -1,10 +1,7 @@
 {
   "nombre": "Smoothie Premium Estambul",
   "imagen": "375.jpg",
-  "categorias": [
-    "Sin Alcohol",
-    "Smoothies"
-  ],
+  "categorias": ["Sin Alcohol", "Smoothies"],
   "ingredientes": "Zumo De Naranja, Zumo de Lima, Puré de frambuesa Natural y Hielo.",
   "grad_alcoholica": "0%",
   "pvp": "6€"

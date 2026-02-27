@@ -1,10 +1,7 @@
 {
   "nombre": "Dry Martini",
   "imagen": "374.jpg",
-  "categorias": [
-    "Cocktails",
-    "Cocktails Clásicos"
-  ],
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
   "ingredientes": "Ginebra Tanqueray Ten, Vermout dry y Aceitunas",
   "alergenos": "*Sulfitos*",
   "txt_temporal": "Disponible todo el año.",

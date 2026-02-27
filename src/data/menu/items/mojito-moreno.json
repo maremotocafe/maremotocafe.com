@@ -1,10 +1,7 @@
 {
   "nombre": "Mojito Moreno",
   "imagen": "275.jpg",
-  "categorias": [
-    "Cocktails",
-    "Mojitos Caipirinhas y Similares"
-  ],
+  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
   "ingredientes": "Ron Añejo especiado, Lima, Hierbabuena, Azúcar moreno, Angostura y Soda",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "11,70%",
