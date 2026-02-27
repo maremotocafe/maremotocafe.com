@@ -17,6 +17,7 @@ export default function AdminItemOverlay({ item, filename, categories, children,
   const { editingFilename, setEditingFilename, showToast } = useAdmin();
   const [hovering, setHovering] = useState(false);
   const [dragOver, setDragOver] = useState(false);
+  const [dragging, setDragging] = useState(false);
   const isEditing = editingFilename === filename;
 
   const handleDelete = async () => {
@@ -32,13 +33,14 @@ export default function AdminItemOverlay({ item, filename, categories, children,
 
   return (
     <div
-      className={`relative break-inside-avoid${dragOver ? " ring-2 ring-amber-400 rounded-xl" : ""}`}
+      className={`relative break-inside-avoid transition-all duration-150${dragOver ? " ring-4 ring-amber-400 rounded-xl scale-105 shadow-lg shadow-amber-400/30" : ""}${dragging ? " opacity-40 scale-95" : ""}`}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
       draggable
       onDragStart={(e) => {
         e.dataTransfer.setData("text/plain", filename);
         e.dataTransfer.effectAllowed = "move";
+        setDragging(true);
       }}
       onDragOver={(e) => {
         e.preventDefault();
@@ -54,7 +56,7 @@ export default function AdminItemOverlay({ item, filename, categories, children,
           onSwap?.(dragFilename, filename);
         }
       }}
-      onDragEnd={() => setDragOver(false)}
+      onDragEnd={() => { setDragOver(false); setDragging(false); }}
     >
       {/* Edit button on hover */}
       {hovering && !isEditing && (
