@@ -1,8 +1,9 @@
-import {
+import React, {
   useState,
   useMemo,
   useCallback,
   useRef,
+  useEffect,
   lazy,
   Suspense,
 } from "react";
@@ -13,18 +14,22 @@ import type {
   ResolvedImage,
 } from "../data/types";
 import MenuFilterBar from "./MenuFilterBar";
-import { Masonry } from "masonic";
 import MenuItemCard from "./MenuItemCard";
 import MenuItemPopup from "./MenuItemPopup";
 
 const AdminShell = import.meta.env.DEV
   ? lazy(() => import("../admin/components/AdminShell"))
   : null;
-const AdminItemOverlay = import.meta.env.DEV
-  ? lazy(() => import("../admin/components/AdminItemOverlay"))
-  : null;
 const AdminNewItemDialog = import.meta.env.DEV
   ? lazy(() => import("../admin/components/AdminNewItemDialog"))
+  : null;
+
+// WARNING: Do NOT use lazy()/Suspense for AdminItemOverlay. When Suspense resolves
+// a lazy component, it unmounts the fallback and mounts the real tree — causing every
+// menu item card to visibly flash (appear → disappear → reappear). Instead, we eagerly
+// import the module and store it in component state so cards are never unmounted.
+const adminItemOverlayPromise = import.meta.env.DEV
+  ? import("../admin/components/AdminItemOverlay")
   : null;
 
 interface MenuProps {
@@ -58,11 +63,16 @@ export default function Menu({
   itemFilenames,
 }: MenuProps) {
   const isDev = import.meta.env.DEV;
+  const [AdminItemOverlay, setAdminItemOverlay] = useState<React.ComponentType<any> | null>(null);
+  useEffect(() => {
+    adminItemOverlayPromise?.then((mod) => setAdminItemOverlay(() => mod.default));
+  }, []);
   const [showNewDialog, setShowNewDialog] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [activeSubcategory, setActiveSubcategory] = useState<string | null>(
     null,
   );
+  const [visibleCount, setVisibleCount] = useState(config.items_iniciales);
   const [popupItem, setPopupItem] = useState<MenuItem | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -80,11 +90,33 @@ export default function Menu({
     });
   }, [sortedItems, activeCategory, activeSubcategory]);
 
+  // Items to display (paginated)
+  const displayedItems = filteredItems.slice(0, visibleCount);
+  const hasMore = filteredItems.length > visibleCount;
+
+  // Infinite scroll: load more when sentinel enters viewport
+  const sentinelRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisibleCount((prev) => prev + config.items_incremento);
+        }
+      },
+      { rootMargin: "200px" },
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [config.items_incremento, activeCategory, activeSubcategory]);
+
   // Category selection handler
   const handleCategorySelect = useCallback(
     (value: string) => {
       setActiveCategory(value);
       setActiveSubcategory(null);
+      setVisibleCount(config.items_iniciales);
       window.plausible?.("Category Selected", { props: { category: value } });
       // Scroll to show subcategories/items below the category bar
       requestAnimationFrame(() => {
@@ -95,7 +127,7 @@ export default function Menu({
         }
       });
     },
-    [],
+    [config.items_iniciales],
   );
 
   // Subcategory selection handler
@@ -107,11 +139,12 @@ export default function Menu({
       } else {
         setActiveSubcategory(value);
       }
+      setVisibleCount(config.items_iniciales);
       window.plausible?.("Subcategory Selected", {
         props: { subcategory: value, category: activeCategory },
       });
     },
-    [activeCategory],
+    [activeCategory, config.items_iniciales],
   );
 
   const handleClosePopup = useCallback(() => {
@@ -151,53 +184,6 @@ export default function Menu({
         color: cat.color,
       })),
     [categories],
-  );
-
-  // Masonry render component for each menu item
-  const MasonryItem = useCallback(
-    ({ data: item, index: i }: { data: MenuItem; index: number }) => {
-      const img = images[item.imagen];
-      const card = (
-        <MenuItemCard
-          nombre={item.nombre}
-          thumbnailSrc={img?.thumbnail}
-          thumbAspectRatio={img?.thumbAspectRatio}
-          disponible={item.disponible}
-          staggerDelay={i < config.items_iniciales ? i * 30 : 0}
-          onClick={() => {
-            setPopupItem(item);
-            window.plausible?.("Item Viewed", {
-              props: { item: item.nombre, category: activeCategory },
-            });
-          }}
-        />
-      );
-      if (isDev && AdminItemOverlay) {
-        const filename = itemFilenames?.[item.nombre] || "";
-        return (
-          <Suspense fallback={card}>
-            <AdminItemOverlay
-              item={item}
-              filename={filename}
-              categories={categories}
-              onSwap={handleSwap}
-            >
-              {card}
-            </AdminItemOverlay>
-          </Suspense>
-        );
-      }
-      return card;
-    },
-    [
-      images,
-      config.items_iniciales,
-      activeCategory,
-      isDev,
-      itemFilenames,
-      categories,
-      handleSwap,
-    ],
   );
 
   const content = (
@@ -245,24 +231,48 @@ export default function Menu({
       {/* Screen reader announcement for filter changes */}
       <div className="sr-only" aria-live="polite" role="status">
         {activeCategory &&
-          `Mostrando ${filteredItems.length} items`}
+          `Mostrando ${displayedItems.length} de ${filteredItems.length} items`}
       </div>
 
       {/* Item Grid */}
       {activeCategory && (
         <>
-          {filteredItems.length > 0 ? (
-            <div className="mt-6">
-              <Masonry
-                items={filteredItems}
-                columnGutter={16}
-                columnWidth={280}
-                overscanBy={2}
-                itemKey={(data: MenuItem) =>
-                  `${data.nombre}-${data.categorias.join("-")}`
+          {displayedItems.length > 0 ? (
+            <div className="mt-6 columns-1 gap-4 sm:columns-2 lg:columns-3">
+              {displayedItems.map((item, i) => {
+                const img = images[item.imagen];
+                const card = (
+                  <MenuItemCard
+                    key={`${item.nombre}-${item.categorias.join("-")}`}
+                    nombre={item.nombre}
+                    thumbnailSrc={img?.thumbnail}
+                    thumbAspectRatio={img?.thumbAspectRatio}
+                    disponible={item.disponible}
+                    staggerDelay={i < config.items_iniciales ? i * 30 : 0}
+                    onClick={() => {
+                      setPopupItem(item);
+                      window.plausible?.("Item Viewed", {
+                        props: { item: item.nombre, category: activeCategory },
+                      });
+                    }}
+                  />
+                );
+                if (AdminItemOverlay) {
+                  const filename = itemFilenames?.[item.nombre] || "";
+                  return (
+                    <AdminItemOverlay
+                      key={`${item.nombre}-${item.categorias.join("-")}`}
+                      item={item}
+                      filename={filename}
+                      categories={categories}
+                      onSwap={handleSwap}
+                    >
+                      {card}
+                    </AdminItemOverlay>
+                  );
                 }
-                render={MasonryItem}
-              />
+                return card;
+              })}
             </div>
           ) : (
             <div className="mt-8 text-center text-text">
@@ -291,6 +301,9 @@ export default function Menu({
               )}
             </>
           )}
+
+          {/* Infinite scroll sentinel */}
+          {hasMore && <div ref={sentinelRef} className="h-1" />}
         </>
       )}
 
