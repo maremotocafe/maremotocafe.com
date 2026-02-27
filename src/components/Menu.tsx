@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useRef, lazy, Suspense } from "react";
+import { useState, useMemo, useCallback, useRef, useEffect, lazy, Suspense } from "react";
 import type { MenuItem, MenuCategory, MenuConfig } from "../data/types";
 import MenuFilterBar from "./MenuFilterBar";
 import MenuItemCard from "./MenuItemCard";
@@ -83,6 +83,23 @@ export default function Menu({
   // Items to display (paginated)
   const displayedItems = filteredItems.slice(0, visibleCount);
   const hasMore = filteredItems.length > visibleCount;
+
+  // Infinite scroll: load more when sentinel enters viewport
+  const sentinelRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisibleCount((prev) => prev + config.items_incremento);
+        }
+      },
+      { rootMargin: "200px" },
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [config.items_incremento, activeCategory, activeSubcategory]);
 
   // Category selection handler
   const handleCategorySelect = useCallback(
@@ -246,17 +263,8 @@ export default function Menu({
             </Suspense>
           )}
 
-          {/* Load More */}
-          {hasMore && (
-            <button
-              onClick={() =>
-                setVisibleCount((prev) => prev + config.items_incremento)
-              }
-              className="mx-auto mt-6 block w-full rounded-lg bg-accent py-3 text-lg uppercase text-white transition-[opacity,transform] duration-200 hover:opacity-90 active:scale-[0.98]"
-            >
-              Cargar más
-            </button>
-          )}
+          {/* Infinite scroll sentinel */}
+          {hasMore && <div ref={sentinelRef} className="h-1" />}
         </>
       )}
 

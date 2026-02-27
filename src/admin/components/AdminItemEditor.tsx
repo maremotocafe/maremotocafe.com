@@ -8,6 +8,7 @@ interface Props {
   filename: string;
   categories: MenuCategory[];
   onClose: () => void;
+  onDelete: () => void;
 }
 
 /** All editable text fields on a menu item. */
@@ -25,7 +26,7 @@ const TEXT_FIELDS: { key: keyof MenuItem; label: string }[] = [
   { key: "pvp_terraza", label: "PVP Terraza" },
 ];
 
-export default function AdminItemEditor({ item, filename, categories, onClose }: Props) {
+export default function AdminItemEditor({ item, filename, categories, onClose, onDelete }: Props) {
   const { showToast } = useAdmin();
   const [draft, setDraft] = useState<MenuItem>({ ...item });
   const [uploading, setUploading] = useState(false);
@@ -35,11 +36,11 @@ export default function AdminItemEditor({ item, filename, categories, onClose }:
     getImages().then(setAvailableImages).catch(() => {});
   }, []);
 
-  // All available category names (flattened: categories + subcategories)
-  const allCatNames = categories.flatMap((c) => [
-    c.nombre,
-    ...(c.subcategorias?.map((s) => s.nombre) || []),
-  ]);
+  // Subcategories for enabled categories only
+  const enabledCategories = categories.filter((c) => draft.categorias.includes(c.nombre));
+  const availableSubcategories = enabledCategories.flatMap((c) =>
+    c.subcategorias?.map((s) => s.nombre) || [],
+  );
 
   const save = useCallback(async (next: MenuItem) => {
     setDraft(next);
@@ -68,10 +69,21 @@ export default function AdminItemEditor({ item, filename, categories, onClose }:
     save(next);
   };
 
-  const toggleCategory = (cat: string) => {
-    const cats = draft.categorias.includes(cat)
-      ? draft.categorias.filter((c) => c !== cat)
-      : [...draft.categorias, cat];
+  const toggleCategory = (catName: string) => {
+    if (draft.categorias.includes(catName)) {
+      // Removing: also remove its subcategories
+      const cat = categories.find((c) => c.nombre === catName);
+      const subNames = new Set(cat?.subcategorias?.map((s) => s.nombre) || []);
+      save({ ...draft, categorias: draft.categorias.filter((c) => c !== catName && !subNames.has(c)) });
+    } else {
+      save({ ...draft, categorias: [...draft.categorias, catName] });
+    }
+  };
+
+  const toggleSubcategory = (subName: string) => {
+    const cats = draft.categorias.includes(subName)
+      ? draft.categorias.filter((c) => c !== subName)
+      : [...draft.categorias, subName];
     save({ ...draft, categorias: cats });
   };
 
@@ -172,22 +184,45 @@ export default function AdminItemEditor({ item, filename, categories, onClose }:
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500">Categorías</label>
           <div className="flex flex-wrap gap-1">
-            {allCatNames.map((cat) => (
+            {categories.map((cat) => (
               <button
-                key={cat}
+                key={cat.nombre}
                 type="button"
-                onClick={() => toggleCategory(cat)}
+                onClick={() => toggleCategory(cat.nombre)}
                 className={`cursor-pointer rounded px-2 py-0.5 text-xs transition-colors ${
-                  draft.categorias.includes(cat)
+                  draft.categorias.includes(cat.nombre)
                     ? "bg-amber-500 text-white"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
               >
-                {cat}
+                {cat.nombre}
               </button>
             ))}
           </div>
         </div>
+
+        {/* Subcategories (only for enabled categories) */}
+        {availableSubcategories.length > 0 && (
+          <div>
+            <label className="mb-1 block text-xs font-medium text-gray-500">Subcategorías</label>
+            <div className="flex flex-wrap gap-1">
+              {availableSubcategories.map((sub) => (
+                <button
+                  key={sub}
+                  type="button"
+                  onClick={() => toggleSubcategory(sub)}
+                  className={`cursor-pointer rounded px-2 py-0.5 text-xs transition-colors ${
+                    draft.categorias.includes(sub)
+                      ? "bg-amber-600 text-white"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                >
+                  {sub}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Flags */}
         <div className="flex gap-4">
@@ -241,6 +276,18 @@ export default function AdminItemEditor({ item, filename, categories, onClose }:
             }}
             className="w-24 rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
           />
+        </div>
+
+        {/* Delete */}
+        <div className="mt-2 border-t border-gray-200 pt-3">
+          <button
+            type="button"
+            onClick={onDelete}
+            className="cursor-pointer rounded-lg bg-red-600 px-4 py-1.5 text-sm font-bold text-white hover:bg-red-500"
+          >
+            <i className="la la-trash mr-1" />
+            Eliminar item
+          </button>
         </div>
       </div>
       </div>
