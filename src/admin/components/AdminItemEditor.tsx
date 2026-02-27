@@ -60,13 +60,13 @@ export default function AdminItemEditor({
       .catch(() => {});
   }, []);
 
-  // Warn on tab close with unsaved changes (edit mode only)
+  // Warn on tab close with unsaved changes
   useEffect(() => {
-    if (isNew || !isDirty) return;
+    if (!isDirty) return;
     const handler = (e: BeforeUnloadEvent) => e.preventDefault();
     window.addEventListener("beforeunload", handler);
     return () => window.removeEventListener("beforeunload", handler);
-  }, [isNew, isDirty]);
+  }, [isDirty]);
 
   // Subcategories for enabled categories only
   const enabledCategories = categories.filter((c) =>
@@ -159,7 +159,7 @@ export default function AdminItemEditor({
   };
 
   const handleClose = () => {
-    if (!isNew && isDirty) {
+    if (isDirty) {
       if (!confirm("Hay cambios sin guardar. ¿Descartar cambios?")) return;
     }
     onClose();
