@@ -1,0 +1,13 @@
+{
+  "nombre": "Fernet Sour 🆕",
+  "orden": 73,
+  "imagen": "fernetsour.jpeg",
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
+  "ingredientes": "Fernet Branca, Lima, Cordial de Mandarina, Bitter de Chocolate y Canela y clara de huevo.",
+  "alergenos": "*Huevo*",
+  "txt_aclaraciones": "Cocktail de caracter amargo con base de Fernet (El destilado preferido por los Argentinos)",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "14,40%",
+  "vol_ml": "175 ml",
+  "pvp": "9€"
+}

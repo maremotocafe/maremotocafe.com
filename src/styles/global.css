@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #353b43;
+  --color-bg-section: #2e343b;
+  --color-text: #c4cdd5;
+  --color-accent: #5ce1e6;
+  --color-accent-green: #6cb670;
+  --color-border: #c4cdd5;
+  --color-error: #b10b1f;
+
+  --font-sans: "Rubik", sans-serif;
+}
+
+/* Base styles matching original site */
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+::selection {
+  color: #fff;
+  background: #5ce1e6;
+}
+
+@layer base {
+  a {
+    color: #5ce1e6;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #6cb670;
+  }
+}
+
+/* Dialog backdrop */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  transition:
+    background-color 250ms ease,
+    backdrop-filter 250ms ease,
+    overlay 250ms ease allow-discrete,
+    display 250ms ease allow-discrete;
+}
+
+dialog[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+
+  @starting-style {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+}
+
+/* Dialog open/close animations */
+dialog {
+  opacity: 0;
+  transform: scale(0.95);
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease,
+    overlay 250ms ease allow-discrete,
+    display 250ms ease allow-discrete;
+}
+
+dialog[open] {
+  opacity: 1;
+  transform: scale(1);
+
+  @starting-style {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* Line Awesome icon sizing in our context */
+.field-icon {
+  margin-right: 0.25rem;
+  font-size: 1.1em;
+}
+
+/* Shimmer / skeleton loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.04) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Menu item fade-in animation */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in-up 200ms ease both;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

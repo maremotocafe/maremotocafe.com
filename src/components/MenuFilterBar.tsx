@@ -1,0 +1,77 @@
+interface FilterOption {
+  value: string;
+  label: string;
+  icon?: string;
+  color?: string;
+}
+
+interface MenuFilterBarProps {
+  message: string;
+  options: FilterOption[];
+  activeValue: string;
+  visible: boolean;
+  resetOption?: FilterOption;
+  onSelect: (value: string) => void;
+}
+
+export default function MenuFilterBar({
+  message,
+  options,
+  activeValue,
+  visible,
+  resetOption,
+  onSelect,
+}: MenuFilterBarProps) {
+  if (!visible) return null;
+
+  // Colorize the first word of the message
+  const words = message.split(" ");
+  const firstWord = words[0];
+  const restWords = words.slice(1).join(" ");
+
+  return (
+    <div className="animate-fade-in mb-4">
+      <h3 className="mb-4 text-center text-[25px] font-extrabold">
+        <span className="text-accent">{firstWord}</span> {restWords}
+      </h3>
+
+      <div className="flex flex-wrap justify-center gap-3">
+        {/* Reset/"Todo" button */}
+        {resetOption && (
+          <button
+            onClick={() => onSelect(resetOption.value)}
+            className="flex items-center gap-2 rounded-lg border-2 px-6 py-3 text-base font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
+            style={{
+              backgroundColor: resetOption.color,
+              color: "#1d2024",
+              borderColor:
+                activeValue === resetOption.value ? "#ffffff" : "transparent",
+            }}
+          >
+            {resetOption.icon && (
+              <i className={`${resetOption.icon} text-xl`} />
+            )}
+            <span>Todo</span>
+          </button>
+        )}
+
+        {options.map((opt) => (
+          <button
+            key={opt.value}
+            onClick={() => onSelect(opt.value)}
+            className="flex items-center gap-2 rounded-lg border-2 px-6 py-3 text-base font-normal transition-[border-color,transform] duration-150 active:scale-[0.97]"
+            style={{
+              backgroundColor: opt.color,
+              color: "#1d2024",
+              borderColor:
+                activeValue === opt.value ? "#ffffff" : "transparent",
+            }}
+          >
+            {opt.icon && <i className={`${opt.icon} text-xl`} />}
+            <span>{opt.label}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}

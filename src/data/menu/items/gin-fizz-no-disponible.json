@@ -1,0 +1,12 @@
+{
+  "nombre": "Gin Fizz (No disponible)",
+  "orden": 76,
+  "disponible": false,
+  "imagen": "376.jpg",
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
+  "ingredientes": "Ginebra Gin-Za, Zumo de Limón y Azúcar.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "13,50%",
+  "vol_ml": "150 ml",
+  "pvp": "7,5€"
+}

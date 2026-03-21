@@ -1,0 +1,11 @@
+{
+  "nombre": "San Francisco",
+  "orden": 18,
+  "imagen": "317.jpg",
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
+  "ingredientes": "Zumo de Naranja Natural, Zumo de piña, Zumo de Limón y Granadina.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "0%",
+  "edul_gr": "20gr",
+  "pvp": "6,5€"
+}

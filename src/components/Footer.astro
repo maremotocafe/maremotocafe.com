@@ -1,0 +1,38 @@
+---
+import { siteConfig, social, copyright } from "../data/site";
+---
+
+<footer class="bg-bg-section py-12">
+  <div class="mx-auto max-w-6xl px-4 text-center">
+    <!-- Social Links -->
+    <div class="mb-6 flex items-center justify-center gap-4">
+      {
+        social.map((item) => (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={item.name}
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-xl transition-colors duration-200 hover:bg-accent hover:text-bg"
+          >
+            <i class={item.icon} />
+          </a>
+        ))
+      }
+    </div>
+
+    <!-- Logo -->
+    <a href="/">
+      <img
+        src={siteConfig.logo}
+        alt={siteConfig.title}
+        width="557"
+        height="67"
+        class="mx-auto mb-4 h-12 w-auto"
+      />
+    </a>
+
+    <!-- Copyright -->
+    <p class="text-sm text-text/60" set:html={copyright} />
+  </div>
+</footer>

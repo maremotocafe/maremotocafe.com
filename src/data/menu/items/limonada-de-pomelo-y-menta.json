@@ -1,0 +1,11 @@
+{
+  "nombre": "Limonada de Pomelo y Menta",
+  "orden": 13,
+  "imagen": "272.jpg",
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
+  "ingredientes": "Zumo de Limón, Zumo de Pomelo Natural, Jengibre fresco, Azucar Integral de caña, y Menta fresca.",
+  "txt_temporal": "Disponible todo el año",
+  "grad_alcoholica": "0%",
+  "edul_gr": "15gr de Azúcar Integral de caña",
+  "pvp": "6€"
+}

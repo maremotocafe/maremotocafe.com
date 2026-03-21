@@ -1,0 +1,14 @@
+{
+  "nombre": "The First Cocktail",
+  "orden": 114,
+  "disponible": false,
+  "imagen": "285.jpg",
+  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "ingredientes": "Rón Plantation 3 Stars, Mango Natural, Fresa Natural, Manzana Granny Smith, Sirope de Hierba luisa y jengibre, Falernum, Bitter de Melocotón y Soda.",
+  "alergenos": "*Almendra*",
+  "txt_aclaraciones": "¿Te imaginas como sería el primer cocktail de la historia? Te lo preparamos!",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "8,90%",
+  "vol_ml": "230 ml",
+  "pvp": "12€"
+}

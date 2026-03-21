@@ -1,0 +1,12 @@
+{
+  "nombre": "White Velvet Gin 🆕 🍍",
+  "orden": 131,
+  "imagen": "whitevelvet.jpeg",
+  "categorias": ["Gin Tonics"],
+  "ingredientes": "Notas a Piña, Clavo y Canela.",
+  "txt_aclaraciones": "Ginebra de Aragón (Inspirada en la Pureza del Pirineo)",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "7,5%",
+  "vol_ml": "250 ml",
+  "pvp": "8,5€"
+}

@@ -1,0 +1,19 @@
+---
+interface Props {
+  text: string;
+  class?: string;
+}
+
+const { text, class: className } = Astro.props;
+const words = text.split(" ");
+const firstWord = words[0];
+const rest = words.slice(1).join(" ");
+---
+
+<div class:list={["text-center pb-3", className]}>
+  <h2 class="text-4xl font-bold">
+    {firstWord}
+    {rest && <span class="text-accent">{rest}</span>}
+  </h2>
+  <div class="mx-auto mt-3 h-0.5 w-16 bg-accent"></div>
+</div>

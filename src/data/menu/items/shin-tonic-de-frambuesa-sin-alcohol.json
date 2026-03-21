@@ -1,0 +1,11 @@
+{
+  "nombre": "Shin Tonic de Frambuesa (Sin Alcohol) 🆕",
+  "orden": 19,
+  "imagen": "shintonicframbuesa.jpeg",
+  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
+  "ingredientes": "Tanqueray 0% Alcohol infusionada con frambuesas y Tonica Schweppes",
+  "txt_aclaraciones": "Infusionamos con mucho cariño Tanqueray Sin Alcohol con Frambuesas frescas para darle a tu trago sin Alcohol un toque único.",
+  "txt_temporal": "Disponible todo el año",
+  "grad_alcoholica": "0%",
+  "pvp": "8€"
+}

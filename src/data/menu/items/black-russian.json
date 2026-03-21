@@ -1,0 +1,11 @@
+{
+  "nombre": "Black Russian",
+  "orden": 54,
+  "imagen": "369.jpg",
+  "categorias": ["Cocktails", "Cocktails Clásicos"],
+  "ingredientes": "Vodka Finlandia y Kahlúa",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "30%",
+  "vol_ml": "85 ml",
+  "pvp": "8€"
+}

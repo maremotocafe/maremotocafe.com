@@ -1,0 +1,9 @@
+{
+  "nombre": "Vienés",
+  "orden": 182,
+  "imagen": "281.jpg",
+  "categorias": ["Cafés y Tés", "Cafés sin Alcohol"],
+  "ingredientes": "Café espresso, Nata semimontada y Topping de Chocolate.",
+  "alergenos": "*Leche*",
+  "pvp_local": "5€"
+}

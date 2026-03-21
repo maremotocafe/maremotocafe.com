@@ -1,0 +1,10 @@
+{
+  "nombre": "Smoothies Sabores Combinados",
+  "orden": 30,
+  "imagen": "392.jpg",
+  "categorias": ["Sin Alcohol", "Smoothies"],
+  "ingredientes": "Leche, Puré de Frutas y Hielo.",
+  "alergenos": "*Leche*",
+  "txt_aclaraciones": "A elegir entre; Fresa con Plátano, Frambuesa con Coco, o Coco con Plátano y Menta Disponemos de leche Sin Lactosa, Avena o Soja para la elaboración de su Smoothie.",
+  "pvp": "5,5€"
+}

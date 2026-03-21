@@ -1,0 +1,10 @@
+{
+  "nombre": "Coco Beach 🥥",
+  "orden": 63,
+  "imagen": "cocobeach.jpg",
+  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "ingredientes": "Don Papa Baroko, Sirope Homemade de Coco Tostado, Zumo de Pomelo, Grand Marnier y Orgeat .",
+  "txt_aclaraciones": "Cocktail goloso con notas avainilladas",
+  "txt_temporal": "Disponible todo el año.",
+  "pvp": "9€"
+}

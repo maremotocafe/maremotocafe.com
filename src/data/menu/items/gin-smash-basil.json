@@ -1,0 +1,11 @@
+{
+  "nombre": "Gin Smash Basil",
+  "orden": 78,
+  "imagen": "277.jpg",
+  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
+  "ingredientes": "Tanqueray Ten, Zumo de Limón, Zumo de Pomelo, Albahaca y Azúcar.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "15%",
+  "vol_ml": "150 ml",
+  "pvp": "8,50€"
+}

@@ -1,0 +1,14 @@
+---
+import { map } from "../data/site";
+---
+
+<iframe
+  title="Mapa"
+  width="100%"
+  height="450"
+  class="border-0"
+  loading="lazy"
+  src={`https://maps.google.com/maps?q=${encodeURIComponent(map.place)}&output=embed`}
+  allowfullscreen
+>
+</iframe>

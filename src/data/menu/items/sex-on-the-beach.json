@@ -1,0 +1,11 @@
+{
+  "nombre": "Sex on the Beach",
+  "orden": 111,
+  "imagen": "203.jpg",
+  "categorias": ["Cocktails", "Cocktails Long Drinks"],
+  "ingredientes": "Vodka Finlandia, Licor de Melocotón, Zumo de Naranja y Zumo de Arándanos.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "12,90%",
+  "vol_ml": "155 ml",
+  "pvp": "8€"
+}

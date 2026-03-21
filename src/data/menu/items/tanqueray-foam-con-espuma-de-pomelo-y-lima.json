@@ -1,0 +1,12 @@
+{
+  "nombre": "Tanqueray Foam (Con Espuma de Pomelo y Lima)🍊🆕",
+  "orden": 129,
+  "imagen": "tanquerayfoam.png",
+  "categorias": ["Gin Tonics"],
+  "ingredientes": "Gin Tanqueray Ten, Schweppes Toque de lima y Espuma de Pomelo, Lima, Agua de Azahar y Clara de huevo pasteurizada",
+  "alergenos": "*Huevo*",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "7%",
+  "vol_ml": "290 ml",
+  "pvp": "9€"
+}

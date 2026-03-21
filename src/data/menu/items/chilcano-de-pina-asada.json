@@ -1,0 +1,10 @@
+{
+  "nombre": "Chilcano de Piña Asada 🍍🆕",
+  "orden": 40,
+  "imagen": "chilcanopiña.jpeg",
+  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "ingredientes": "Pisco, Sirope casero de Piña Asada, Lima y Ginger Ale",
+  "txt_aclaraciones": "Nuestra versión del clásico Chilcano Peruano con un toque de Piña Caramelizada",
+  "txt_temporal": "Disponible todo el año.",
+  "pvp": "9€"
+}

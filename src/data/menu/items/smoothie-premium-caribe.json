@@ -1,0 +1,8 @@
+{
+  "nombre": "Smoothie Premium Caribe",
+  "orden": 24,
+  "imagen": "371.jpg",
+  "categorias": ["Sin Alcohol", "Smoothies"],
+  "ingredientes": "Puré de Mango Natural, Puré de Plátano, Zumo de limón y Zumo de Naranja Natural",
+  "pvp": "6€"
+}

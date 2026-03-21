@@ -1,0 +1,9 @@
+{
+  "nombre": "Smoothie de Naranja, Fresa y Menta",
+  "orden": 21,
+  "imagen": "391.jpg",
+  "categorias": ["Sin Alcohol", "Smoothies"],
+  "ingredientes": "Zumo de Naranja Natural, Puré de fresa Natural, Menta fresca y Hielo.",
+  "grad_alcoholica": "0%",
+  "pvp": "5,5€"
+}

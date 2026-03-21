@@ -1,0 +1,11 @@
+{
+  "nombre": "Caipirinha de Naranja y Piña",
+  "orden": 57,
+  "imagen": "267.jpg",
+  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
+  "ingredientes": "Cachaça, Lima, Mermelada de Naranja homemade, Zumo de Piña y Azúcar.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "10,80%",
+  "vol_ml": "140ml",
+  "pvp": "8€"
+}

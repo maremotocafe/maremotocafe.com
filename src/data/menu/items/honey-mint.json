@@ -1,0 +1,11 @@
+{
+  "nombre": "Honey & Mint",
+  "orden": 81,
+  "imagen": "278.jpg",
+  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
+  "ingredientes": "J & B Honey, Lima, Manzana Granny Smith y Azúcar",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "10,30%",
+  "vol_ml": "135 ml",
+  "pvp": "8,5€"
+}

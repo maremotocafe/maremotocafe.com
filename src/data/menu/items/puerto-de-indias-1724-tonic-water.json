@@ -1,0 +1,11 @@
+{
+  "nombre": "Puerto de Indias & 1724 tonic water 🍓",
+  "orden": 151,
+  "imagen": "puertoindias.jpg",
+  "categorias": ["Gin Tonics"],
+  "txt_aclaraciones": "Ginebra sevillana de aromas dulces y salvajes a fresa y enebro.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "7,50%",
+  "vol_ml": "250 ml",
+  "pvp": "8€"
+}

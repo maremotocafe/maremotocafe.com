@@ -1,0 +1,11 @@
+{
+  "nombre": "Singapure Sling",
+  "orden": 112,
+  "imagen": "326.jpg",
+  "categorias": ["Cocktails", "Cocktails Long Drinks"],
+  "ingredientes": "Ginebra Ampersand, Triple Seco, Benedictine, Heering de Cereza, Zumo de Piña, Zumo de Limón y Angostura.",
+  "txt_temporal": "Disponible todo el año.",
+  "grad_alcoholica": "9,60%",
+  "vol_ml": "220 ml",
+  "pvp": "8,5€"
+}

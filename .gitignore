@@ -1,5 +1,18 @@
+# OS
 .DS_Store
-/assets/carta/*.psd
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Astro
+.astro/
+
+# Hugo (legacy, can remove after full migration)
 /.hugo_build.lock
 /resources
-/public
+
+# Image source files
+/src/assets/carta/*.psd
