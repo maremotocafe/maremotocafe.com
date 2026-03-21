@@ -1,0 +1,1 @@
+const o={subjectTxt:"Asunto",messageTxt:"Mensaje",submitTxt:"Enviar",helpTxt:"Se ha producido un error. Por favor, abre tu cliente de correo preferido y mándanos un correo a maremotocafe@hotmail.com",email:"maremotocafe@hotmail.com"},a={where:"#carta",txt:"Ir a Carta",icon:"las la-angle-double-up"};export{o as c,a as s};
