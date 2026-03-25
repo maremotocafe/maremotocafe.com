@@ -1,0 +1,17 @@
+{
+  "nombre": "Fit Choco Energy 🥜",
+  "imagen": "choco Fit Energy.jpeg",
+  "imagen_pequenya": "choco Fit Energy.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Batidos"
+  ],
+  "ingredientes": "Leche Fresca, Platano Natural, Cacahuete en polvo, Cacao puro y Azúcar Moreno",
+  "alergenos": "Lacteos",
+  "txt_aclaraciones": "Puedes pedirlo Con leche de Soja o Sin Lactosa",
+  "txt_temporal": "Disponible todo Año",
+  "grad_alcoholica": "0%",
+  "vol_ml": "300 ml",
+  "edul_gr": "7 gr Azúcar Moreno",
+  "pvp": "6€"
+}

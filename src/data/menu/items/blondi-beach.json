@@ -1,11 +1,14 @@
 {
   "nombre": "Blondi Beach 🏖",
-  "orden": 3,
   "imagen": "blondibeach.jpg",
-  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
   "ingredientes": "Zumo de Limón, Jengibre, Cordial de Pimienta Rue Berry, Angostura y Soda.",
   "txt_aclaraciones": "Version tuneada del famoso cocktail Sin Alcohol Limon, lima & Bitter típico de las maravillosas playas australianas. Blondi Beach es nuestra favorita. Este Cocktail contiene un pequeño porcentaje de alcohol debido a la Angostura de la cual utilizamos 4 gotas.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "Una miaja 0,1%",
-  "pvp": "7€"
+  "pvp": "7€",
+  "orden": 13
 }
