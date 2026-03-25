@@ -84,6 +84,7 @@ export default function jesusMode(): Plugin {
               join(ITEMS_DIR, filename),
               JSON.stringify(body, null, 2) + "\n",
             );
+            server.ws.send({ type: "full-reload" });
             return jsonResponse(res, { filename, data: body }, 201);
           }
 
@@ -102,6 +103,7 @@ export default function jesusMode(): Plugin {
               if (!existsSync(filePath))
                 return errorResponse(res, "Not found", 404);
               unlinkSync(filePath);
+              server.ws.send({ type: "full-reload" });
               return jsonResponse(res, { deleted: filename });
             }
           }

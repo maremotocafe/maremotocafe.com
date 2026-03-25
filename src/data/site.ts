@@ -12,7 +12,7 @@ export const banner = {
   bgImage: "/images/backgrounds/hero-area.jpg",
   title: "Maremoto Beach",
   logoTitle: "/images/logo-text.png",
-  content: "*Cocktail Club*\n\n*Gin club*\n\n*Coffee & Brunch*",
+  content: "*Cocktail Club*\n\n*Gin club*",
   button: {
     label: "¿Qué te apetece?",
     link: "#carta",
@@ -50,7 +50,6 @@ export const navigation = {
   home: "Inicio",
   items: [
     { name: "Carta", url: "#carta" },
-    { name: "Glovo", url: "#glovo" },
     { name: "Contacto", url: "#contact" },
   ],
 } as const;

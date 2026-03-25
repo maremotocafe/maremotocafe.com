@@ -368,7 +368,6 @@ a:hover {
 }
 
 .single-page-header {
-  background-image: url("../images/about/about-header.jpg");
   background-size: cover;
   padding: 140px 0 70px;
   text-align: center;
@@ -634,11 +633,6 @@ a:hover {
   color: #1d2024 !important;
 }
 
-.glovo .btn:hover,
-.glovo .btn:focus {
-  background-color: #ffc245 !important;
-  color: #1d2024 !important;
-}
 
 .intro .btn img {
   width: 25px;

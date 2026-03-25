@@ -1,7 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import type { MenuCategory } from "../../data/types";
 import { useAdmin } from "./AdminProvider";
-import { getCategories, updateCategories } from "../api-client";
+import {
+  getCategories,
+  updateCategories,
+  getItems,
+  type ItemEntry,
+} from "../api-client";
 
 interface Props {
   open: boolean;
@@ -11,6 +16,7 @@ interface Props {
 export default function AdminCategoryEditor({ open, onClose }: Props) {
   const { showToast } = useAdmin();
   const [cats, setCats] = useState<MenuCategory[]>([]);
+  const [items, setItems] = useState<ItemEntry[]>([]);
   const [saving, setSaving] = useState(false);
   const originalCats = useRef<string>("[]");
 
@@ -24,6 +30,7 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
           originalCats.current = JSON.stringify(data);
         })
         .catch((e) => showToast(`Error: ${e.message}`, "error"));
+      getItems().then(setItems).catch(() => {});
     }
   }, [open]);
 
@@ -43,7 +50,17 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
   };
 
   const removeCat = (idx: number) => {
-    if (!confirm(`¿Eliminar la categoría "${cats[idx].nombre}"?`)) return;
+    const name = cats[idx].nombre;
+    const affected = items
+      .filter((it) => it.data.categorias.includes(name))
+      .map((it) => it.data.nombre);
+    if (affected.length > 0) {
+      alert(
+        `No se puede eliminar "${name}" porque tiene ${affected.length} item(s) asignados:\n\n${affected.join(", ")}`,
+      );
+      return;
+    }
+    if (!confirm(`¿Eliminar la categoría "${name}"?`)) return;
     setCats((prev) => prev.filter((_, i) => i !== idx));
   };
 
@@ -73,6 +90,15 @@ export default function AdminCategoryEditor({ open, onClose }: Props) {
   const removeSubcategory = (catIdx: number, subIdx: number) => {
     const name =
       cats[catIdx].subcategorias?.[subIdx]?.nombre || "esta subcategoría";
+    const affected = items
+      .filter((it) => it.data.categorias.includes(name))
+      .map((it) => it.data.nombre);
+    if (affected.length > 0) {
+      alert(
+        `No se puede eliminar "${name}" porque tiene ${affected.length} item(s) asignados:\n\n${affected.join(", ")}`,
+      );
+      return;
+    }
     if (!confirm(`¿Eliminar "${name}"?`)) return;
     setCats((prev) =>
       prev.map((c, i) =>
