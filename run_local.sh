@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # Simple script to run the site locally.
 
 set -ex
