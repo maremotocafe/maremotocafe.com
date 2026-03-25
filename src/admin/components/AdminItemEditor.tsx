@@ -1,7 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import type { MenuItem, MenuCategory } from "../../data/types";
 import { useAdmin } from "./AdminProvider";
 import { createItem, updateItem, uploadImage, getImages } from "../api-client";
+import EmojiPicker, { type EmojiClickData } from "emoji-picker-react";
+// @ts-ignore — no type declarations for the JSON locale data
+import esEmojiData from "emoji-picker-react/dist/data/emojis-es.json";
 
 interface Props {
   item?: MenuItem;
@@ -11,10 +14,14 @@ interface Props {
   onDelete?: () => void;
 }
 
-/** Single-column text fields (rendered as wrapping textareas). */
-const REGULAR_FIELDS: { key: keyof MenuItem; label: string }[] = [
+/** Fields that get an emoji picker button. */
+const EMOJI_FIELDS: { key: keyof MenuItem; label: string }[] = [
   { key: "nombre", label: "Nombre" },
   { key: "ingredientes", label: "Ingredientes" },
+];
+
+/** Single-column text fields (rendered as wrapping textareas). */
+const REGULAR_FIELDS: { key: keyof MenuItem; label: string }[] = [
   { key: "alergenos", label: "Alérgenos" },
   { key: "txt_aclaraciones", label: "Aclaraciones" },
   { key: "txt_temporal", label: "Temporalidad" },
@@ -50,9 +57,52 @@ export default function AdminItemEditor({
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [availableImages, setAvailableImages] = useState<string[]>([]);
+  const [emojiPickerFor, setEmojiPickerFor] = useState<keyof MenuItem | null>(
+    null,
+  );
+  const emojiPickerRef = useRef<HTMLDivElement>(null);
   const original = useRef(JSON.stringify(initialItem));
 
   const isDirty = JSON.stringify(draft) !== original.current;
+
+  const downloadImage = async (imgFilename: string) => {
+    try {
+      const res = await fetch(`/src/assets/carta/${imgFilename}`);
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = imgFilename;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch {
+      showToast("Error descargando imagen", "error");
+    }
+  };
+
+  // Close emoji picker on click outside
+  useEffect(() => {
+    if (!emojiPickerFor) return;
+    const handler = (e: MouseEvent) => {
+      if (
+        emojiPickerRef.current &&
+        !emojiPickerRef.current.contains(e.target as Node)
+      ) {
+        setEmojiPickerFor(null);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, [emojiPickerFor]);
+
+  const handleEmojiClick = useCallback(
+    (emojiData: EmojiClickData) => {
+      if (!emojiPickerFor) return;
+      setLocal(emojiPickerFor, ((draft[emojiPickerFor] as string) || "") + emojiData.emoji);
+      setEmojiPickerFor(null);
+    },
+    [emojiPickerFor, draft],
+  );
 
   useEffect(() => {
     getImages()
@@ -186,6 +236,49 @@ export default function AdminItemEditor({
         </div>
 
         <div className="grid grid-cols-1 gap-3">
+          {/* Fields with emoji picker */}
+          {EMOJI_FIELDS.map(({ key, label }) => (
+            <div key={key} className="relative">
+              <label className="mb-0.5 block text-xs font-medium text-gray-500">
+                {label}
+              </label>
+              <div className="flex items-start gap-1">
+                <textarea
+                  rows={1}
+                  value={(draft[key] as string) || ""}
+                  onChange={(e) => setLocal(key, e.target.value)}
+                  className="field-sizing-content w-full rounded border border-gray-300 px-2 py-1 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
+                  style={{ resize: "none" }}
+                />
+                <button
+                  type="button"
+                  onClick={() =>
+                    setEmojiPickerFor(emojiPickerFor === key ? null : key)
+                  }
+                  className="shrink-0 cursor-pointer rounded border border-gray-300 px-1.5 py-1 text-sm hover:bg-gray-50"
+                  title="Insertar emoji"
+                >
+                  😀
+                </button>
+              </div>
+              {emojiPickerFor === key && (
+                <div
+                  ref={emojiPickerRef}
+                  className="absolute right-0 z-50 mt-1"
+                >
+                  <EmojiPicker
+                    onEmojiClick={handleEmojiClick}
+                    emojiData={esEmojiData as any}
+                    width={300}
+                    height={400}
+                    searchPlaceholder="Buscar emoji..."
+                    previewConfig={{ showPreview: false }}
+                  />
+                </div>
+              )}
+            </div>
+          ))}
+
           {/* Regular text fields (wrapping) */}
           {REGULAR_FIELDS.map(({ key, label }) => (
             <div key={key}>
@@ -242,20 +335,31 @@ export default function AdminItemEditor({
               <label className="mb-0.5 block text-xs font-medium text-gray-500">
                 Imagen principal
               </label>
-              <select
-                value={draft.imagen || ""}
-                onChange={(e) =>
-                  setDraft((d) => ({ ...d, imagen: e.target.value }))
-                }
-                className="w-full cursor-pointer rounded border border-gray-300 bg-white px-2 py-1.5 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
-              >
-                <option value="">— Sin imagen —</option>
-                {availableImages.map((img) => (
-                  <option key={img} value={img}>
-                    {img}
-                  </option>
-                ))}
-              </select>
+              <div className="flex gap-1">
+                <select
+                  value={draft.imagen || ""}
+                  onChange={(e) =>
+                    setDraft((d) => ({ ...d, imagen: e.target.value }))
+                  }
+                  className="min-w-0 flex-1 cursor-pointer rounded border border-gray-300 bg-white px-2 py-1.5 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
+                >
+                  <option value="">— Sin imagen —</option>
+                  {availableImages.map((img) => (
+                    <option key={img} value={img}>
+                      {img}
+                    </option>
+                  ))}
+                </select>
+                <button
+                  type="button"
+                  disabled={!draft.imagen}
+                  onClick={() => draft.imagen && downloadImage(draft.imagen)}
+                  className="shrink-0 cursor-pointer rounded border border-gray-300 px-1.5 py-1 text-sm text-gray-500 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-30"
+                  title="Descargar imagen"
+                >
+                  <i className="la la-download" />
+                </button>
+              </div>
               {draft.imagen && (
                 <img
                   src={`/src/assets/carta/${draft.imagen}`}
@@ -268,27 +372,38 @@ export default function AdminItemEditor({
               <label className="mb-0.5 block text-xs font-medium text-gray-500">
                 Imagen portada (pequeña)
               </label>
-              <select
-                value={draft.imagen_pequenya || ""}
-                onChange={(e) => {
-                  const val = e.target.value;
-                  setDraft((d) => {
-                    const next = { ...d };
-                    if (val) next.imagen_pequenya = val;
-                    else
-                      delete (next as Record<string, unknown>).imagen_pequenya;
-                    return next;
-                  });
-                }}
-                className="w-full cursor-pointer rounded border border-gray-300 bg-white px-2 py-1.5 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
-              >
-                <option value="">— Sin portada —</option>
-                {availableImages.map((img) => (
-                  <option key={img} value={img}>
-                    {img}
-                  </option>
-                ))}
-              </select>
+              <div className="flex gap-1">
+                <select
+                  value={draft.imagen_pequenya || ""}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setDraft((d) => {
+                      const next = { ...d };
+                      if (val) next.imagen_pequenya = val;
+                      else
+                        delete (next as Record<string, unknown>).imagen_pequenya;
+                      return next;
+                    });
+                  }}
+                  className="min-w-0 flex-1 cursor-pointer rounded border border-gray-300 bg-white px-2 py-1.5 text-sm text-gray-700 focus:border-amber-400 focus:outline-none"
+                >
+                  <option value="">— Sin portada —</option>
+                  {availableImages.map((img) => (
+                    <option key={img} value={img}>
+                      {img}
+                    </option>
+                  ))}
+                </select>
+                <button
+                  type="button"
+                  disabled={!draft.imagen_pequenya}
+                  onClick={() => draft.imagen_pequenya && downloadImage(draft.imagen_pequenya)}
+                  className="shrink-0 cursor-pointer rounded border border-gray-300 px-1.5 py-1 text-sm text-gray-500 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-30"
+                  title="Descargar imagen"
+                >
+                  <i className="la la-download" />
+                </button>
+              </div>
               {draft.imagen_pequenya && (
                 <img
                   src={`/src/assets/carta/${draft.imagen_pequenya}`}
