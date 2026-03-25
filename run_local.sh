@@ -12,7 +12,7 @@ cmd_exists() {
 }
 
 # Making sure it's running in the correct directory
-cd "$(dirname "${BASH_SOURCE[0]}")"
+cd "$(dirname "${0}")"
 
 URL="http://localhost:4321"
 
