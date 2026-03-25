@@ -3,6 +3,10 @@
 
 set -ex
 
+# Load nvm (Finder/.command files don't source .zshrc)
+export NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
 cmd_exists() {
     command -v "$1" >/dev/null 2>&1
 }
