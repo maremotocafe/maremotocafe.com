@@ -29,9 +29,13 @@ export default function AdminBanner() {
   const [categories, setCategories] = useState<MenuCategory[]>([]);
 
   useEffect(() => {
-    gitCheckRemote()
-      .then((r) => setBehind(r.behind))
-      .catch(() => {});
+    const check = () =>
+      gitCheckRemote()
+        .then((r) => setBehind(r.behind))
+        .catch(() => {});
+    check();
+    const id = setInterval(check, 15 * 60 * 1000);
+    return () => clearInterval(id);
   }, []);
 
   const run = async (label: string, fn: () => Promise<void>) => {
