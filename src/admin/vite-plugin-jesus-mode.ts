@@ -244,8 +244,20 @@ export default function jesusMode(): Plugin {
           }
 
           if (path === "git/pull" && method === "POST") {
-            const result = git("pull origin master");
-            return jsonResponse(res, { result });
+            // Stash any local changes so pull doesn't fail
+            const dirty =
+              execSync("git status --porcelain", {
+                cwd: resolve("."),
+                encoding: "utf-8",
+                timeout: 10000,
+              }).trim().length > 0;
+            if (dirty) git("stash --include-untracked");
+            try {
+              const result = git("pull --ff-only origin master");
+              return jsonResponse(res, { result });
+            } finally {
+              if (dirty) git("stash pop");
+            }
           }
 
           if (path === "git/push" && method === "POST") {
