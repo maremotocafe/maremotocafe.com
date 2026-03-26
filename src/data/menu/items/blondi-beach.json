@@ -1,5 +1,6 @@
 {
   "nombre": "Blondi Beach 🏖",
+  "disponible": false,
   "imagen": "blondibeach.jpg",
   "categorias": [
     "Sin Alcohol",
