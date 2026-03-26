@@ -1,10 +1,13 @@
 {
   "nombre": "Carmen Beach",
-  "orden": 39,
-  "imagen": "carmenbeach.jpeg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "imagen": "carmenbeach2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Tequila Patron Silver, Sirope de Rooibos, Zumo de lima, Oleo de Kumquat, Bitter de lavanda",
   "txt_aclaraciones": "Delicioso y Original Cocktail Premium inspirado en Mexico y su famosa playa del Carmen.",
   "txt_temporal": "Disponible todo el año",
-  "pvp": "12€"
+  "pvp": "12€",
+  "orden": 39
 }
