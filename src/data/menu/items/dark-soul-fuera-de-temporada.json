@@ -1,13 +1,16 @@
 {
-  "nombre": "Dark Soul (fuera de temporada)",
-  "orden": 69,
+  "nombre": "Dark Soul (No disponible)",
   "disponible": false,
   "imagen": "308.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Bulleit Bourbon, Puré de Melocotón en vino, Zumo de Naranja y Bitter de Melocotón.",
   "alergenos": "*Sulfitos*",
   "txt_aclaraciones": "Delicioso Cocktail con base de bourbon que incorpora sabores de postres típicos aragoneses.",
   "txt_temporal": "Disponible todo el año.",
   "vol_ml": "12,50%",
-  "pvp": "9€"
+  "pvp": "9€",
+  "orden": 69
 }
