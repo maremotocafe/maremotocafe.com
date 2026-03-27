@@ -1,0 +1,12 @@
+{
+  "nombre": "Engine Gin 🏁",
+  "imagen": "engine2026.jpeg",
+  "categorias": [
+    "Gin Tonics"
+  ],
+  "txt_aclaraciones": " Gin orgánica Italiana que destaca por los sabores balsámicos del enebro que se completan por notas frescas de cascara de limón y el intenso aroma de la salvia, todo ello sobre un elegante fondo floral",
+  "txt_temporal": "Disponible todo el año",
+  "grad_alcoholica": "8%",
+  "vol_ml": "250 ml",
+  "pvp": "9,5€"
+}
