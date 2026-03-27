@@ -1,8 +1,9 @@
 {
   "nombre": "Pink Velvet Gin 🍓",
-  "orden": 127,
   "imagen": "pinkvelvet.png",
-  "categorias": ["Gin Tonics"],
+  "categorias": [
+    "Gin Tonics"
+  ],
   "ingredientes": "Notas de Fresa, Frambuesa y Pétalos de Rosa",
   "txt_aclaraciones": "¡La ginebra de frutos rojos de Aragón! (Sin edulcorantes artificiales)",
   "txt_temporal": "Disponible todo el año.",

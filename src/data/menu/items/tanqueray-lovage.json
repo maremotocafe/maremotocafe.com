@@ -1,8 +1,9 @@
 {
   "nombre": "Tanqueray Lovage 🆕",
-  "orden": 130,
   "imagen": "tanqueraylovage.png",
-  "categorias": ["Gin Tonics"],
+  "categorias": [
+    "Gin Tonics"
+  ],
   "ingredientes": "Inspirada en una receta original creada por Tanqueray en 1832, la nueva expresión es un “giro salado” en la expresión clásica de Tanqueray, gracias a la adición de la hierba de jardín inglesa, lovage.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "9,5%",
