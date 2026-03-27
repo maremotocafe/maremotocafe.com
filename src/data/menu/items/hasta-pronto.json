@@ -1,10 +1,13 @@
 {
-  "nombre": "Hasta pronto 🆕",
-  "orden": 45,
-  "imagen": "hastapronto.jpeg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "nombre": "Hasta pronto 🆕🍏🥒",
+  "imagen": "hastapronto2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "whitley neill gin Cucumber Sirope de Verde (Manzana, Pepino y Menta), Lima y Ginger beer",
   "txt_aclaraciones": "Refrescante Cocktail con la famosa gin de Pepino (Refrescante y Delicioso)",
   "txt_temporal": "Disponible todo el año.",
-  "pvp": "8,5€"
+  "pvp": "8,5€",
+  "orden": 45
 }
