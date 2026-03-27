@@ -1,11 +1,13 @@
 {
   "nombre": "Gin Za & Schweppes Toque de Lima 🍑 🍋",
-  "orden": 142,
   "imagen": "ginza.png",
-  "categorias": ["Gin Tonics"],
+  "categorias": [
+    "Gin Tonics"
+  ],
   "txt_aclaraciones": "Ginebra Zaragozana que fusiona a la perfección sabores de la tierra como el melocotón de Calanda con cítricos japoneses (Yuzu y Mano de Buda) y Té Matcha",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "8%",
   "vol_ml": "250 ml",
-  "pvp": "8,5€"
+  "pvp": "8,5€",
+  "orden": 145
 }
