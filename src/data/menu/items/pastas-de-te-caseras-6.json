@@ -1,9 +1,14 @@
 {
-  "nombre": "Pastas de Té Caseras",
-  "orden": 106,
-  "imagen": "pastasdete.jpeg",
-  "categorias": ["Cocktails", "Cocktails Clásicos"],
+  "nombre": "Pastas de Té Caseras🍪",
+  "imagen": "pastasdete2026-4.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
+  "ingredientes": "(Elige entre 3 Cookies Clásicas, 3 Cookies de Limón, 3 Cookiies Doble Choco Coco y Nueces o el Pack mixto con 1 de Cada sabor)",
+  "alergenos": "Gluten, Frutos secos, Huevo",
   "txt_aclaraciones": "Acompaña tu Cocktail con estas ricas Pastas de Té Caseras",
   "txt_temporal": "Disponible todo el año.",
-  "pvp": "2,5€"
+  "pvp": "2,5€",
+  "orden": 103
 }
