@@ -1,10 +1,14 @@
 {
-  "nombre": "Sunset Beach 🌞🥭🆕",
-  "orden": 47,
-  "imagen": "sunsetbeach.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "nombre": "Sunset Beach 🥭",
+  "imagen": "sunset2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Gin infusionado con Romero, Gewürztraminer, Itálicus, Sirope de Romero, Zumo de Pomelo y Mango Nat.",
+  "alergenos": "sulfitos",
   "txt_aclaraciones": "Cocktail ligero y refrescante que mezcla aromas mediterraneos con otros sabores más tropicales",
   "txt_temporal": "Disponible todo el año.",
-  "pvp": "8,5€"
+  "pvp": "8,5€",
+  "orden": 47
 }

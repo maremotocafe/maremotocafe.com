@@ -1,5 +1,6 @@
 {
   "nombre": "Frappé Rón Cream ❄ (No disponible temporalmente)",
+  "disponible": false,
   "imagen": "196.jpg",
   "categorias": [
     "Cafés y Tés",
@@ -9,5 +10,5 @@
   "alergenos": "*Leche*",
   "grad_alcoholica": "3,80%",
   "pvp": "6€",
-  "orden": 103
+  "orden": 170
 }

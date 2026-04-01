@@ -1,10 +1,14 @@
 {
   "nombre": "Frappé Mozart ❄ (No disponible temporalmente)",
-  "orden": 169,
+  "disponible": false,
   "imagen": "196.jpg",
-  "categorias": ["Cafés y Tés", "Cafés Fríos"],
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés Fríos"
+  ],
   "ingredientes": "Café, Licor Mozart, Cacao, Crema de Leche y topping de Chocolate",
   "alergenos": "*Leche*",
   "grad_alcoholica": "3,80%",
-  "pvp": "6€"
+  "pvp": "6€",
+  "orden": 169
 }

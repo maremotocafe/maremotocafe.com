@@ -1,9 +1,13 @@
 {
   "nombre": "Grazie Mille",
-  "orden": 79,
+  "disponible": false,
   "imagen": "362.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Whisky J&B Rare, Zumo de Piña, Zumo de Pomelo, Zumo de Limón, Licor de Frambuesas y Moras y Azúcar.",
   "txt_temporal": "Disponible todo el año.",
-  "pvp": "8,5€"
+  "pvp": "8,5€",
+  "orden": 79
 }
