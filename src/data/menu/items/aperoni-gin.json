@@ -1,11 +1,14 @@
 {
   "nombre": "Aperoni Gin",
-  "orden": 53,
-  "imagen": "367.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "imagen": "aperoni2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Tanqueray Ten, Aperol, Zumo de Pomelo y Azúcar.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "13%",
   "vol_ml": "150 ml",
-  "pvp": "8,5€"
+  "pvp": "8,5€",
+  "orden": 53
 }
