@@ -1,10 +1,15 @@
 {
-  "nombre": "Té de Frutas del Bosque ☕",
-  "orden": 181,
-  "imagen": "192.jpg",
-  "categorias": ["Cafés y Tés", "Infusiones"],
+  "nombre": "Té de Frutas del Bosque 🌺 🌿",
+  "imagen": "tefrutosrojos2026.jpeg",
+  "categorias": [
+    "Cafés y Tés",
+    "Infusiones"
+  ],
   "ingredientes": "Hibiscus, Frutas del bosque, Escaramujo, Rosas y Enebro",
+  "txt_temporal": "Disponible todo el año",
   "grad_alcoholica": "0%",
-  "vol_ml": "200ml",
-  "pvp": "4€"
+  "vol_ml": "200 ml",
+  "edul_gr": "9 gr",
+  "pvp": "4€",
+  "orden": 181
 }
