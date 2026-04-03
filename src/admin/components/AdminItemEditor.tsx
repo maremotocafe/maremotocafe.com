@@ -145,10 +145,9 @@ export default function AdminItemEditor({
   };
 
   const toggleSubcategory = (subName: string) => {
-    const category = draft.categorias[0];
     const cats = draft.categorias.includes(subName)
-      ? [category]
-      : [category, subName];
+      ? draft.categorias.filter((c) => c !== subName)
+      : [...draft.categorias, subName];
     setDraft({ ...draft, categorias: cats });
   };
 
