@@ -145,10 +145,13 @@ export default function AdminItemEditor({
   };
 
   const toggleSubcategory = (subName: string) => {
-    const cats = draft.categorias.includes(subName)
-      ? draft.categorias.filter((c) => c !== subName)
-      : [...draft.categorias, subName];
-    setDraft({ ...draft, categorias: cats });
+    if (draft.categorias.includes(subName)) {
+      const cats = draft.categorias.filter((c) => c !== subName);
+      // Ensure at least one subcategory remains selected
+      if (cats.length > 1) setDraft({ ...draft, categorias: cats });
+    } else {
+      setDraft({ ...draft, categorias: [...draft.categorias, subName] });
+    }
   };
 
   const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
