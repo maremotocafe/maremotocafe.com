@@ -42,6 +42,14 @@ function git(cmd: string): string {
   }).trim();
 }
 
+function invalidateGlobModules(server: import("vite").ViteDevServer) {
+  for (const mod of server.moduleGraph.getModulesByFile(
+    resolve("src/pages/index.astro"),
+  ) ?? []) {
+    server.moduleGraph.invalidateModule(mod);
+  }
+}
+
 export default function jesusMode(): Plugin {
   return {
     name: "jesus-mode",
@@ -84,6 +92,7 @@ export default function jesusMode(): Plugin {
               join(ITEMS_DIR, filename),
               JSON.stringify(body, null, 2) + "\n",
             );
+            invalidateGlobModules(server);
             server.ws.send({ type: "full-reload" });
             return jsonResponse(res, { filename, data: body }, 201);
           }
@@ -103,6 +112,7 @@ export default function jesusMode(): Plugin {
               if (!existsSync(filePath))
                 return errorResponse(res, "Not found", 404);
               unlinkSync(filePath);
+              invalidateGlobModules(server);
               server.ws.send({ type: "full-reload" });
               return jsonResponse(res, { deleted: filename });
             }
