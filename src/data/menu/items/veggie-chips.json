@@ -1,9 +1,14 @@
 {
   "nombre": "Veggie Chips",
-  "orden": 32,
   "imagen": "vegechips.png",
-  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
+  "categorias": [
+    "Promociones y Ofertas",
+    "Tarde",
+    "Noche",
+    "Día"
+  ],
   "ingredientes": "Aperitivo saludable a base de Yuca, Batata, Zanahoria, Remolacha y Aceite de oliva",
   "txt_temporal": "Disponible todo el año.",
-  "pvp": "2€"
+  "pvp": "2€",
+  "orden": 184
 }
