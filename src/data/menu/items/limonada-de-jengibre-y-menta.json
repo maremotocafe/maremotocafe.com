@@ -1,0 +1,12 @@
+{
+  "nombre": "Limonada de Jengibre y Menta 🆕",
+  "imagen": "limonadajenjibre.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
+  "ingredientes": "Z. Limon Nat, Jengibre fresco, Menta y Agua con gas",
+  "txt_temporal": "Disponible todo el año",
+  "vol_ml": "200 ml",
+  "pvp": "6€"
+}
