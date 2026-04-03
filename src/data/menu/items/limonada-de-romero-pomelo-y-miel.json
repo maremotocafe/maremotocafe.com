@@ -1,0 +1,13 @@
+{
+  "nombre": "Limonada de Romero, Pomelo Y Miel 🍯",
+  "imagen": "limonadaromero.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
+  "ingredientes": "Zumo de Pomelo, Zumo de Limón, Sirope de Romero y Miel",
+  "txt_temporal": "Disponible todo el año",
+  "grad_alcoholica": "0%",
+  "vol_ml": "200 ml",
+  "pvp": "6€"
+}

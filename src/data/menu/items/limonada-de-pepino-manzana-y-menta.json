@@ -1,0 +1,12 @@
+{
+  "nombre": "Limonada de Pepino Manzana y Menta🍏🥒",
+  "imagen": "limonadapepino.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
+  "ingredientes": "Zumo de Limón, Manzana, Pepino Menta y Azúcar",
+  "txt_temporal": "Disponible todo el año",
+  "grad_alcoholica": "0%",
+  "pvp": "6€"
+}
