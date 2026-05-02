@@ -1,12 +1,16 @@
 {
   "nombre": "Chestnut Touch",
-  "orden": 62,
   "imagen": "307.jpg",
-  "categorias": ["Cocktails", "Cocktails Frozeen"],
+  "categorias": [
+    "Cocktails",
+    "Cocktails Frozeen",
+    "Cocktails Frozen"
+  ],
   "ingredientes": "Bulleit Bourbon, Curaçao, Puré de Plátano, Sirope de Castaña y Angostura de Naranja.",
   "alergenos": "*Frutos Secos*",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "8,50%",
   "vol_ml": "315 ml",
-  "pvp": "9€"
+  "pvp": "9€",
+  "orden": 62
 }

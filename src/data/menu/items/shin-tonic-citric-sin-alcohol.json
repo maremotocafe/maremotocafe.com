@@ -1,0 +1,14 @@
+{
+  "nombre": "Shin Tonic Citric (Sin Alcohol) 🍋",
+  "imagen": "shintoniccitric.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
+  "ingredientes": "Tanqueray Sin Alcohol infusionada con cortezas de Lima y Limón",
+  "txt_aclaraciones": "Explosion Citrica y refrescante sin alcohol",
+  "txt_temporal": "Disponible todo el año",
+  "grad_alcoholica": "0%",
+  "vol_ml": "250 ml",
+  "pvp": "8€"
+}

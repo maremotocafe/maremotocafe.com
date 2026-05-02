@@ -1,11 +1,14 @@
 {
   "nombre": "Mojito Clásico",
-  "orden": 97,
-  "imagen": "201.jpg",
-  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
-  "ingredientes": "Rón blanco Plantation, Lima, Hierbabuena, Azúcar y Soda.",
+  "imagen": "mojito2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
+  "ingredientes": "Ron Plantation 3 Stars, Lima, Hierbabuena, Azúcar y Soda.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "13,70%",
   "vol_ml": "135 ml aprox.",
-  "pvp": "7,5€"
+  "pvp": "7,5€",
+  "orden": 97
 }
