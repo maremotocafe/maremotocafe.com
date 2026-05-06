@@ -1,11 +1,15 @@
 {
   "nombre": "Mint Julep",
-  "orden": 93,
-  "imagen": "279.jpg",
-  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
+  "imagen": "mintjulep2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
   "ingredientes": "Bulleit bourbon, Menta fresca, Azúcar y Soda.",
+  "txt_aclaraciones": "El Mint Julep es el cocktail más consumido en el famoso Derby de kentucky llegando a consumirse 125 000 de estos cocktails en una semana ¡Algo tendra! 😃",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "20,50%",
   "vol_ml": "110 ml",
-  "pvp": "9€"
+  "pvp": "9€",
+  "orden": 93
 }

@@ -1,9 +1,12 @@
 {
   "nombre": "Lynchburg Lemonade",
-  "orden": 85,
-  "imagen": "276.jpg",
-  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
+  "imagen": "linchburg2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
   "ingredientes": "Jack Daniels, Zumo de Limón, Triple Seco, Azúcar y Sprite.",
   "txt_temporal": "Disponible todo el año.",
-  "pvp": "9€"
+  "pvp": "9€",
+  "orden": 85
 }

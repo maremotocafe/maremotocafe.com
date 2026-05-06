@@ -1,11 +1,15 @@
 {
   "nombre": "Mojito Canario 🍌",
-  "orden": 96,
-  "imagen": "mojitocanario.jpeg",
-  "categorias": ["Cocktails", "Mojitos Caipirinhas y Similares"],
-  "ingredientes": "Ron Guanche Arehucas, Pure de Plátano, Lima y Hierbabuena",
+  "imagen": "mojitocanario2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Mojitos Caipirinhas y Similares"
+  ],
+  "ingredientes": "Ron Guanche Arehucas, Pure de Plátano, Lima y Hierbabuena 🍌",
+  "txt_aclaraciones": "Inspirado en nuestras queridas Islas Canarias y elaborado con Ron Arehucas producido en la isla de Las Palmas de gran Canaria",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "10,60%",
   "vol_ml": "135 ml",
-  "pvp": "8€"
+  "pvp": "8€",
+  "orden": 96
 }
