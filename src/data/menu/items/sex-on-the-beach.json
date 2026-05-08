@@ -1,11 +1,14 @@
 {
-  "nombre": "Sex on the Beach",
-  "orden": 111,
-  "imagen": "203.jpg",
-  "categorias": ["Cocktails", "Cocktails Long Drinks"],
-  "ingredientes": "Vodka Finlandia, Licor de Melocotón, Zumo de Naranja y Zumo de Arándanos.",
+  "nombre": "Sex on the Beach 🍑🍊",
+  "imagen": "sexonthebeach2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Long Drinks"
+  ],
+  "ingredientes": "Vodka Skyy, Licor de Melocotón, Zumo de Naranja y Sirope de Arándanos.",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "12,90%",
   "vol_ml": "155 ml",
-  "pvp": "8€"
+  "pvp": "8€",
+  "orden": 111
 }
