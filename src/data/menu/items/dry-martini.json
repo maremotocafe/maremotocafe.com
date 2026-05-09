@@ -1,12 +1,16 @@
 {
-  "nombre": "Dry Martini",
-  "orden": 71,
-  "imagen": "374.jpg",
-  "categorias": ["Cocktails", "Cocktails Clásicos"],
+  "nombre": "Dry Martini🫒",
+  "imagen": "drymartin2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Clásicos"
+  ],
   "ingredientes": "Ginebra Tanqueray Ten, Vermout dry y Aceitunas",
   "alergenos": "*Sulfitos*",
+  "txt_aclaraciones": "El Dry Martini es un cocktail para amantes de los clásicos pero no apto para todos públicos por su alta graduación alcohólica en poco volumen ",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "28,40%",
   "vol_ml": "115 ml",
-  "pvp": "9€"
+  "pvp": "9€",
+  "orden": 71
 }

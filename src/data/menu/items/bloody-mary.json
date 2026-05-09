@@ -1,12 +1,16 @@
 {
-  "nombre": "Bloody Mary",
-  "orden": 55,
-  "imagen": "259.jpg",
-  "categorias": ["Cocktails", "Cocktails Clásicos"],
-  "ingredientes": "Zumo de Tomate, Vodka Finlandia, Zumo de Limón, Tabasco, Sal de Apio, Pimienta y Salsa Perrins.",
+  "nombre": "Bloody Mary🌶️ 🍅",
+  "imagen": "blodymary2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails Clásicos"
+  ],
+  "ingredientes": "Zumo de Tomate, Clamato, Vodka SKYY, Zumo de Limón, Tabasco, Sal de Apio, Pimienta y Salsa Perrins.",
   "alergenos": "*Apio*",
+  "txt_aclaraciones": "Dinos tu tolerancia al picante y lo ajustaremos a tu gusto 😉",
   "txt_temporal": "Disponible todo el año.",
   "grad_alcoholica": "7,50%",
   "vol_ml": "215 ml",
-  "pvp": "8€"
+  "pvp": "8€",
+  "orden": 55
 }

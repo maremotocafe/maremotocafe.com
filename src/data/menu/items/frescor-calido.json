@@ -1,5 +1,6 @@
 {
   "nombre": "Frescor Cálido",
+  "disponible": false,
   "imagen": "frescorcalido.jpeg",
   "categorias": [
     "Sin Alcohol",
