@@ -1,10 +1,13 @@
 {
-  "nombre": "Jugo Verde Detox 🆕",
-  "orden": 12,
-  "imagen": "jugoverde.jpg",
-  "categorias": ["Sin Alcohol", "Cocktails Sin Alcohol"],
+  "nombre": "Jugo Verde Detox 🥒🍏🍋",
+  "imagen": "jugoverde2026.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Cocktails Sin Alcohol"
+  ],
   "ingredientes": "Pepino, Espinaca, Hierbabuena, Manzana Granny Smith, Jengibre y Lima",
   "txt_temporal": "Disponible todo el año",
   "grad_alcoholica": "0%",
-  "pvp": "6,5€"
+  "pvp": "6,5€",
+  "orden": 12
 }
