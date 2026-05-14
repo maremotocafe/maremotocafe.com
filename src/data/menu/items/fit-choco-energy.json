@@ -1,14 +1,14 @@
 {
-  "nombre": "Fit Choco Energy 🥜",
-  "imagen": "choco Fit Energy.jpeg",
-  "imagen_pequenya": "choco Fit Energy.jpeg",
+  "nombre": "Fit Choco Energy 🥜🍫🥛",
+  "imagen": "fitchocoenergy2026.jpeg",
+  "imagen_pequenya": "fitchocoenergy2026.jpeg",
   "categorias": [
     "Sin Alcohol",
     "Batidos"
   ],
   "ingredientes": "Leche Fresca, Platano Natural, Cacahuete en polvo, Cacao puro y Azúcar Moreno",
-  "alergenos": "Lacteos",
-  "txt_aclaraciones": "Puedes pedirlo Con leche de Soja o Sin Lactosa",
+  "alergenos": "Lacteos*",
+  "txt_aclaraciones": "Puedes pedirlo con leche de Soja o Sin Lactosa",
   "txt_temporal": "Disponible todo Año",
   "grad_alcoholica": "0%",
   "vol_ml": "300 ml",

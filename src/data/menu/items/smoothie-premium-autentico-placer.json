@@ -1,10 +1,13 @@
 {
-  "nombre": "Smoothie Premium Auténtico Placer",
-  "orden": 23,
-  "imagen": "368.jpg",
-  "categorias": ["Sin Alcohol", "Smoothies"],
+  "nombre": "Smoothie Premium Auténtico Placer 🍫🍌🥛",
+  "imagen": "autenticoplacer2026.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Smoothies"
+  ],
   "ingredientes": "Plátano, Cacao 100%, Nata, Cardamomo, Azucar y Hielo.",
   "alergenos": "*Leche*",
   "grad_alcoholica": "0%",
-  "pvp": "6€"
+  "pvp": "6€",
+  "orden": 23
 }

@@ -1,7 +1,10 @@
 {
-  "nombre": "Carta de Infusiones",
-  "orden": 164,
-  "imagen": "cartadeinfusiones.jpg",
+  "nombre": "Carta de Infusiones 🫖",
+  "imagen": "cartadetés2026.png",
   "imagen_pequenya": "portadates_small.png",
-  "categorias": ["Cafés y Tés", "Infusiones"]
+  "categorias": [
+    "Cafés y Tés",
+    "Infusiones"
+  ],
+  "orden": 164
 }

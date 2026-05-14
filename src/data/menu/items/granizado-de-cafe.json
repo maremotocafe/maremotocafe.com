@@ -1,9 +1,12 @@
 {
   "nombre": "Granizado de Café",
-  "orden": 8,
-  "imagen": "197.jpg",
-  "categorias": ["Sin Alcohol", "Granizados"],
+  "imagen": "granizadocafe2026.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Granizados"
+  ],
   "ingredientes": "Sirope de Café y Hielo.",
   "txt_temporal": "Disponible todo el año",
-  "pvp": "4€"
+  "pvp": "4€",
+  "orden": 8
 }

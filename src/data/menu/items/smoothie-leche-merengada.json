@@ -1,9 +1,12 @@
 {
-  "nombre": "Smoothie Leche Merengada",
-  "orden": 22,
-  "imagen": "390.jpg",
-  "categorias": ["Sin Alcohol", "Smoothies"],
+  "nombre": "Smoothie Leche Merengada🍋🥛",
+  "imagen": "lechemerengada2026.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Smoothies"
+  ],
   "ingredientes": "Leche, Limón, Canela, Azúcar y Hielo",
   "txt_temporal": "Disponible todo el año.",
-  "pvp": "5,5€"
+  "pvp": "5,5€",
+  "orden": 22
 }

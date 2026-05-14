@@ -1,9 +1,12 @@
 {
-  "nombre": "Smoothie Premium Paradis",
-  "orden": 27,
-  "imagen": "383.jpg",
-  "categorias": ["Sin Alcohol", "Smoothies"],
+  "nombre": "Smoothie Premium Paradis🍓🫐🍋",
+  "imagen": "paradis2026.jpeg",
+  "categorias": [
+    "Sin Alcohol",
+    "Smoothies"
+  ],
   "ingredientes": "Zumo de Piña, Zumo de Limón, Puré de Fresa Natural, Arandanos, Granadina y Hielo.",
   "grad_alcoholica": "0%",
-  "pvp": "6€"
+  "pvp": "6€",
+  "orden": 27
 }
