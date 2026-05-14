@@ -1,11 +1,14 @@
 {
-  "nombre": "Bombón Licor Limón 🍋 ☕",
-  "orden": 159,
-  "imagen": "302.jpg",
-  "categorias": ["Cafés y Tés", "Cafés con Alcohol"],
-  "ingredientes": "Café espresso con Leche merengada y Licor a elegir.",
+  "nombre": "Merenguito Licor 🍋 ☕",
+  "imagen": "merenguitolicor2026.jpeg",
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés con Alcohol"
+  ],
+  "ingredientes": "Café espresso con Leche merengada, Crema de Leche y Licor a elegir.",
   "alergenos": "*Leche*",
-  "txt_aclaraciones": "Elige entre Whisky, Rón, Cognac o Gran Marnier Rouge.",
+  "txt_aclaraciones": "Elige entre Whisky, Rón, Cognac o Cointreau",
   "grad_alcoholica": "10,50%",
-  "pvp": "4,50€"
+  "pvp": "5€",
+  "orden": 159
 }
