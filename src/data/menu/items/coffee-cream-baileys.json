@@ -1,10 +1,13 @@
 {
   "nombre": "Coffee Cream Baileys ☕",
-  "orden": 165,
-  "imagen": "baileyscream.jpeg",
-  "categorias": ["Cafés y Tés", "Cafés con Alcohol"],
-  "ingredientes": "Café espresso con Cacao, Nata y Crema de licor a elegir",
+  "imagen": "coffeebaileys.jpeg",
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés con Alcohol"
+  ],
+  "ingredientes": "Café espresso, Nata  Montada, Baileys y Cacao en polvo",
   "alergenos": "*Leche*",
   "grad_alcoholica": "4,10%",
-  "pvp": "6€"
+  "pvp": "6€",
+  "orden": 165
 }

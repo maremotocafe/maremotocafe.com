@@ -1,9 +1,12 @@
 {
-  "nombre": "Mocaccino",
-  "orden": 176,
-  "imagen": "mocaccino.jpeg",
-  "categorias": ["Cafés y Tés", "Cafés sin Alcohol"],
+  "nombre": "Mocaccino🍫☕",
+  "imagen": "mocaccino2026.jpeg",
+  "categorias": [
+    "Cafés y Tés",
+    "Cafés sin Alcohol"
+  ],
   "ingredientes": "Café espresso, Nata semimontada y Sirope de Chocolate.",
   "alergenos": "*Leche*",
-  "pvp_local": "5,5€"
+  "pvp_local": "5,5€",
+  "orden": 176
 }
