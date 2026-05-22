@@ -1,0 +1,16 @@
+{
+  "nombre": "Promoción Arehucas 7 combinado",
+  "imagen": "promoareucas.jpeg",
+  "categorias": [
+    "Promociones y Ofertas",
+    "Tarde",
+    "Noche",
+    "Día"
+  ],
+  "ingredientes": "Combínalo a tu gusto: Cola, Naranja...",
+  "txt_aclaraciones": "Excelente Ron Canario de 7 Años a precio Especial",
+  "txt_temporal": "Disponible todo el año",
+  "vol_ml": "250ml",
+  "pvp_local": "Mixer premium. o Red bull+1€",
+  "pvp": "8€"
+}

@@ -1,0 +1,14 @@
+{
+  "nombre": "Promoción Macaronesian Gin & Tonic",
+  "imagen": "promomacaronesian.jpeg",
+  "categorias": [
+    "Promociones y Ofertas",
+    "Día",
+    "Tarde",
+    "Noche"
+  ],
+  "txt_aclaraciones": "Gin Canario Premium a precio especial  ",
+  "txt_temporal": "Disponible todo el año",
+  "pvp_local": "Con mixer premium +1€",
+  "pvp": "8€"
+}
