@@ -25,7 +25,13 @@ const itemModules = import.meta.glob<MenuItem>("../data/menu/items/*.json", {
   eager: true,
   import: "default",
 });
-const items: MenuItem[] = Object.values(itemModules);
+// Normalize image filenames to NFC: the JSON may store accented characters
+// (e.g. "ñ") decomposed (NFD), while files on disk are precomposed (NFC).
+const items: MenuItem[] = Object.values(itemModules).map((item) => ({
+  ...item,
+  imagen: item.imagen.normalize("NFC"),
+  imagen_pequenya: item.imagen_pequenya?.normalize("NFC"),
+}));
 
 // Build filename-to-item mapping for admin mode
 const itemFilenames: Record<string, string> = {};
@@ -45,7 +51,7 @@ const imageModules = import.meta.glob<{ default: ImageMetadata }>(
 const imageMap: Record<string, ResolvedImage> = {};
 
 for (const [path, mod] of Object.entries(imageModules)) {
-  const filename = path.split("/").pop()!;
+  const filename = path.split("/").pop()!.normalize("NFC");
   const meta = mod.default;
 
   // Generate optimized thumbnail
