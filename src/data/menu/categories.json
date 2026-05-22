@@ -54,17 +54,7 @@
     "nombre": "Promociones y Ofertas",
     "icono": "las la-certificate",
     "color": "#dbd9a7",
-    "subcategorias": [
-      {
-        "nombre": "Día"
-      },
-      {
-        "nombre": "Tarde"
-      },
-      {
-        "nombre": "Noche"
-      }
-    ]
+    "subcategorias": []
   },
   {
     "nombre": "Cafés y Tés",
