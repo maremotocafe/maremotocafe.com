@@ -1,9 +1,13 @@
 {
-  "nombre": "Espresso MarTiki 🆕",
-  "orden": 43,
-  "imagen": "espressomartiki.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "nombre": "Espresso MarTiki 🌶️",
+  "imagen": "espressomartiki2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Vodka de Tamarindo, Puré Maracuyá, Espresso, Licor Café y Falernum",
+  "txt_aclaraciones": "Nuestra versión tiki del Clásico Espresso Martini con un toque picante y tropical",
   "txt_temporal": "Disponible todo el año",
-  "pvp": "8€"
+  "pvp": "8€",
+  "orden": 43
 }

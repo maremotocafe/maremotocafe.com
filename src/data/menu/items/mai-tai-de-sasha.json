@@ -1,9 +1,13 @@
 {
-  "nombre": "Mai Tai de Sasha",
-  "orden": 87,
-  "imagen": "maitaidesasha.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
+  "nombre": "Mai Tai de Sasha🥛🍋",
+  "imagen": "maitaisasha2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
   "ingredientes": "Vodka de Leche Merengada, Don Papa Masskara, Zumo de Naranja, Triple Seco, Falernum y Angostura.",
+  "alergenos": "leche* Almendras*",
   "txt_temporal": "Disponible todo el año.",
-  "pvp": "9€"
+  "pvp": "9€",
+  "orden": 87
 }

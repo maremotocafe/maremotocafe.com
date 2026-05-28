@@ -1,6 +1,7 @@
 {
   "nombre": "Tropea Beach",
-  "imagen": "tropea2026.jpeg",
+  "disponible": false,
+  "imagen": "tropeabeach2026.jpeg",
   "categorias": [
     "Cocktails",
     "Cocktails de Autor"

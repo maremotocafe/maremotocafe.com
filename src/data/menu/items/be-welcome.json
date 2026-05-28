@@ -1,11 +1,14 @@
 {
-  "nombre": "Be Welcome🍍🆕",
-  "orden": 37,
-  "imagen": "bewelcome.jpg",
-  "categorias": ["Cocktails", "Cocktails de Autor"],
-  "ingredientes": "Italicus Rosolio de Bergamota, Chardonnay infusionado con Té de Jazmín, Gin Saffron, Soda de Piña Asada y Menta.",
-  "alergenos": "Sulfitos",
+  "nombre": "Be Welcome🍍",
+  "imagen": "bewelcome2026.jpeg",
+  "categorias": [
+    "Cocktails",
+    "Cocktails de Autor"
+  ],
+  "ingredientes": "Italicus Rosolio de Bergamota, Chardonnay infusionado con fresas y Romero, Gin Saffron, Sirope de Piña Asada y Menta.",
+  "alergenos": "Sulfitos*",
   "txt_aclaraciones": "Cocktail presentado a The Art of Italicus 2023 Challenge.",
   "txt_temporal": "Disponible todo el año.",
-  "pvp": "9€"
+  "pvp": "9€",
+  "orden": 37
 }
