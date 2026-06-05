@@ -1,0 +1,12 @@
+{
+  "nombre": "El Cocktail de Autor de la semana",
+  "imagen": "promo maitai sasha.jpeg",
+  "categorias": [
+    "Promociones y Ofertas"
+  ],
+  "ingredientes": "Vodka casero de Leche Merengada, Don Papa Maskkara, Zumo de Naranja, Falernum y Angostura",
+  "alergenos": "Leche* Almendra*",
+  "txt_aclaraciones": "Divertida interpretación del Mai tai  de mi abuela Rusa Sasha",
+  "txt_temporal": "Disponible todo el año",
+  "pvp": "9€"
+}
