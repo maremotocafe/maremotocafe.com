@@ -1,0 +1,10 @@
+{
+  "nombre": "Recomendación Sin Alcohol de la semana",
+  "imagen": "promo sin pepino.jpeg",
+  "categorias": [
+    "Promociones y Ofertas"
+  ],
+  "ingredientes": "Gin Tanqueray 0% Alcohol infusionada con Manzana Pepino y Menta",
+  "vol_ml": "250 ml",
+  "pvp": "8€"
+}

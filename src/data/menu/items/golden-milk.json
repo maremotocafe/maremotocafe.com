@@ -1,5 +1,6 @@
 {
   "nombre": "Golden Milk ☕",
+  "disponible": false,
   "imagen": "goldenmilk2026.jpeg",
   "categorias": [
     "Cafés y Tés",

@@ -1,0 +1,9 @@
+{
+  "nombre": "Limonada Destacada del día",
+  "imagen": "promo limon.sandia.jpeg",
+  "categorias": [
+    "Promociones y Ofertas"
+  ],
+  "ingredientes": "Sandía, Lima, Azúcar y Sprite",
+  "pvp": "6€"
+}
