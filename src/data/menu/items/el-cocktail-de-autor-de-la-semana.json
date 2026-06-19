@@ -1,5 +1,6 @@
 {
   "nombre": "El Cocktail de Autor de la semana",
+  "disponible": false,
   "imagen": "promo maitai sasha.jpeg",
   "categorias": [
     "Promociones y Ofertas"

@@ -1,0 +1,11 @@
+{
+  "nombre": "Cocktail de Temporada",
+  "imagen": "promo gewestraminer.jpeg",
+  "categorias": [
+    "Promociones y Ofertas"
+  ],
+  "ingredientes": "Cereza Natural, Romero, Lima, Gewurztraminer",
+  "txt_temporal": "Disponible en temporada de Cereza",
+  "grad_alcoholica": "Low Alcohol",
+  "pvp": "8€"
+}

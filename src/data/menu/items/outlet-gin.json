@@ -1,0 +1,10 @@
+{
+  "nombre": "Outlet Gin",
+  "imagen": "promo lovage.jpeg",
+  "categorias": [
+    "Promociones y Ofertas"
+  ],
+  "ingredientes": "Tanqueray Lovage",
+  "txt_aclaraciones": " La nueva expresión es un \"giro salado\" en la expresión clásica de Tanqueray, gracias a la adición de la hierba de jardín inglesa, Lovage",
+  "pvp": "8€"
+}
