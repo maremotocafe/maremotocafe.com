@@ -1,5 +1,6 @@
 {
   "nombre": "Cóctel de Cóctel 🥜🌽🆕",
+  "disponible": false,
   "imagen": "cocteldecoctel20226.jpeg",
   "categorias": [
     "Cocktails",

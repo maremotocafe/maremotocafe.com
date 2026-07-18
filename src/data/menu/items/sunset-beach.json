@@ -1,5 +1,6 @@
 {
   "nombre": "Sunset Beach 🥭",
+  "disponible": false,
   "imagen": "sunset2026.jpeg",
   "categorias": [
     "Cocktails",
