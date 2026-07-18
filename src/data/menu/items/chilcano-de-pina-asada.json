@@ -1,5 +1,6 @@
 {
   "nombre": "Chilcano de Piña Asada 🍍",
+  "disponible": false,
   "imagen": "chilcano2026.jpeg",
   "categorias": [
     "Cocktails",

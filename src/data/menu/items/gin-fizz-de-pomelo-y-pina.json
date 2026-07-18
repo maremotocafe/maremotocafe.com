@@ -1,6 +1,7 @@
 {
   "nombre": "Gin Fizz de Pomelo y Piña 🍍",
-  "imagen": "ginfizzpomeloypiña2026.jpeg",
+  "disponible": false,
+  "imagen": "ginfizzpomeloypiña2026.jpeg",
   "categorias": [
     "Cocktails",
     "Cocktails de Autor"

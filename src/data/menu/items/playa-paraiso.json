@@ -1,5 +1,6 @@
 {
   "nombre": "Playa Paraiso 🍍",
+  "disponible": false,
   "imagen": "playaparaiso2026.jpeg",
   "categorias": [
     "Sin Alcohol",
