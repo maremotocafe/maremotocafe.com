@@ -1,5 +1,6 @@
 {
-  "nombre": "Coco Beach 🥥",
+  "nombre": "Coco Beach 🥥 No disponible )",
+  "disponible": false,
   "imagen": "cocobech20226.jpeg",
   "categorias": [
     "Cocktails",

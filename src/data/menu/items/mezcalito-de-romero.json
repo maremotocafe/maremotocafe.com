@@ -1,5 +1,6 @@
 {
-  "nombre": "Mezcalito de Romero",
+  "nombre": "Mezcalito de Romero (No disponible temporalmente)",
+  "disponible": false,
   "imagen": "mezcalitoderomero2026.jpeg",
   "categorias": [
     "Cocktails",
