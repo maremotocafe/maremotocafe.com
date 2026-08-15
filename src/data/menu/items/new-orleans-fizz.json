@@ -1,5 +1,6 @@
 {
-  "nombre": "New Orleans Fizz",
+  "nombre": "New Orleans Fizz ( No disponible)",
+  "disponible": false,
   "imagen": "neworleans2026.jpeg",
   "categorias": [
     "Cocktails",

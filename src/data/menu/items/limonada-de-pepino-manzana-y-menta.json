@@ -1,5 +1,6 @@
 {
-  "nombre": "Limonada de Pepino Manzana y Menta🍏🥒🆕",
+  "nombre": "Limonada de Pepino Manzana y Menta🍏🥒🆕 ( No disponible)",
+  "disponible": false,
   "imagen": "limonadapepino.jpeg",
   "categorias": [
     "Sin Alcohol",
