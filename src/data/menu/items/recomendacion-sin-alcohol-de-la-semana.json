@@ -1,5 +1,6 @@
 {
   "nombre": "Recomendación Sin Alcohol de la semana",
+  "disponible": false,
   "imagen": "promo sin pepino.jpeg",
   "categorias": [
     "Promociones y Ofertas"

@@ -1,5 +1,6 @@
 {
   "nombre": "Mai Tai 🍧",
+  "disponible": false,
   "imagen": "maitai2026.jpeg",
   "categorias": [
     "Cocktails",

@@ -1,5 +1,6 @@
 {
   "nombre": "Fernet Sour 🍊",
+  "disponible": false,
   "imagen": "fernetsour-2.jpeg",
   "categorias": [
     "Cocktails",

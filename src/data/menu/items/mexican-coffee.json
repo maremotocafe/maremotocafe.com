@@ -1,5 +1,6 @@
 {
   "nombre": "Mexican Coffee ☕",
+  "disponible": false,
   "imagen": "mexicancoffee2026.jpeg",
   "categorias": [
     "Cafés y Tés",

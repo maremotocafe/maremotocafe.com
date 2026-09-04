@@ -1,5 +1,6 @@
 {
   "nombre": "Vienés☕",
+  "disponible": false,
   "imagen": "vienes2026.jpeg",
   "categorias": [
     "Cafés y Tés",
