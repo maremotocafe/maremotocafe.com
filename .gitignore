@@ -10,9 +10,5 @@ dist/
 # Astro
 .astro/
 
-# Hugo (legacy, can remove after full migration)
-/.hugo_build.lock
-/resources
-
 # Image source files
 /src/assets/carta/*.psd

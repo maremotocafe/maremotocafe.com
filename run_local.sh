@@ -1,29 +1,19 @@
 #!/bin/zsh
-# Simple script to run the site locally.
+# Runs the menu editor locally (Mac/Linux). On Windows use "Editar carta.cmd".
 
-set -ex
+set -e
 
 # Load nvm (Finder/.command files don't source .zshrc)
 export NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-cmd_exists() {
-    command -v "$1" >/dev/null 2>&1
-}
-
 # Making sure it's running in the correct directory
 cd "$(dirname "${0}")"
 
-URL="http://localhost:4321"
-
-# Opening a tab in the browser with the URL
-echo ">> Opening browser at $URL"
-if cmd_exists xdg-open; then
-    xdg-open "$URL"
-elif cmd_exists open; then
-    open "$URL"
+if [ ! -d node_modules ]; then
+    echo ">> First run: installing dependencies..."
+    npm ci
 fi
 
-# Starting the server at the end
-echo ">> Starting server"
-npm run dev
+echo ">> Starting the editor. The browser will open at http://localhost:4321"
+npm run dev -- --open

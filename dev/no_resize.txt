@@ -1,9 +1,0 @@
-static/images/carta/1c.jpg
-static/images/carta/a1.jpg
-static/images/carta/al.jpg
-static/images/carta/1z.jpg
-static/images/carta/1d.jpg
-static/images/carta/1b.jpg
-static/images/carta/1s.jpg
-static/images/carta/1f.jpg
-static/images/carta/r1.jpg

@@ -8,17 +8,17 @@ Cocktail bar website (Maremoto Beach, Zaragoza). Mobile-first, SEO-focused, stat
 - **Tailwind CSS 4** (Vite plugin, no config file)
 - **TypeScript** (strict mode)
 - Deployed to **GitHub Pages** via `peaceiris/actions-gh-pages` on push to `master`
-- Analytics: **Plausible** (cloud, script snippet)
+- No analytics, no backend, no third-party services besides Google Maps embed and Google Fonts
 
 ## Commands
 
-| Command | What it does |
-|---------|-------------|
-| `npm run dev` | Dev server |
-| `npm run build` | Production build |
-| `npm run check` | `astro check && tsc --noEmit` |
-| `npm run format` | Prettier (write) |
-| `npm run format:check` | Prettier (check only) |
+| Command                | What it does                  |
+| ---------------------- | ----------------------------- |
+| `npm run dev`          | Dev server                    |
+| `npm run build`        | Production build              |
+| `npm run check`        | `astro check && tsc --noEmit` |
+| `npm run format`       | Prettier (write)              |
+| `npm run format:check` | Prettier (check only)         |
 
 ## Linting & formatting
 
@@ -34,11 +34,13 @@ Menu data lives in `src/data/menu/` as static JSON:
 - `config.json` — menu display config
 - `items/*.json` — one file per menu item
 
-The admin UI (`src/admin/`) provides CRUD for these JSON files at runtime via a custom Vite plugin (`vite-plugin-jesus-mode`). Changes are written directly to disk and committed via the admin interface. Each item belongs to **one category** and optionally **one subcategory** (enforced in the editor).
+The admin UI (`src/admin/`, "Modo edición") provides CRUD for these JSON files at runtime via a custom Vite plugin (`vite-plugin-admin.ts`, dev server only). Changes are written directly to disk and committed/pushed via the admin interface, so the machine running `npm run dev` needs `git` on PATH and push access to the repo. Each item belongs to **one category** and optionally **one subcategory** (enforced in the editor).
 
 ## Key directories
 
 ```
+Editar carta.cmd    # Windows launcher for the owner (installs deps, runs dev server)
+scripts/setup-windows.ps1  # One-line Windows setup (Git, Node, clone, shortcut)
 src/admin/          # Admin panel (React components + API client)
 src/components/     # Site components (Menu, ContactForm, etc.)
 src/data/menu/      # Menu JSON data (source of truth)

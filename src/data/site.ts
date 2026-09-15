@@ -2,7 +2,6 @@ export const siteConfig = {
   title: "Maremoto Beach",
   baseUrl: "https://maremotocafe.com",
   language: "es",
-  author: "Mario Ortiz Manero",
   description: "Maremoto Beach en Zaragoza",
   tags: "bar,pub,copas,cafeteria,cocktails,zaragoza,cafes,desayunos,brunch,zumos,reposteria,bocadillos,centro,aragon",
   logo: "/images/logo.png",
@@ -76,6 +75,3 @@ export const scrollToTop = {
   txt: "Ir a Carta",
   icon: "las la-angle-double-up",
 } as const;
-
-export const copyright =
-  'Página desarrollada por <a href="https://nullderef.com" target="_blank" rel="noreferrer">Mario Ortiz Manero</a>.';

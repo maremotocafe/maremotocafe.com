@@ -1,5 +1,5 @@
 ---
-import { siteConfig, social, copyright } from "../data/site";
+import { siteConfig, social } from "../data/site";
 ---
 
 <footer class="bg-bg-section py-12">
@@ -28,11 +28,8 @@ import { siteConfig, social, copyright } from "../data/site";
         alt={siteConfig.title}
         width="557"
         height="67"
-        class="mx-auto mb-4 h-12 w-auto"
+        class="mx-auto h-12 w-auto"
       />
     </a>
-
-    <!-- Copyright -->
-    <p class="text-sm text-text/60" set:html={copyright} />
   </div>
 </footer>

@@ -127,8 +127,6 @@ export default function Menu({
   const [visibleCount, setVisibleCount] = useState(config.items_iniciales);
   const [popupItem, setPopupItem] = useState<MenuItem | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const activeCategoryRef = useRef(activeCategory);
-  activeCategoryRef.current = activeCategory;
 
   // Sorted items (stable)
   const sortedItems = useMemo(() => sortItems(items), [items]);
@@ -186,7 +184,6 @@ export default function Menu({
       setActiveCategory(value);
       setActiveSubcategory(null);
       setVisibleCount(config.items_iniciales);
-      window.plausible?.("Category Selected", { props: { category: value } });
       // Scroll to show subcategories/items below the category bar
       requestAnimationFrame(() => {
         const el = scrollRef.current;
@@ -209,9 +206,6 @@ export default function Menu({
         setActiveSubcategory(value);
       }
       setVisibleCount(config.items_iniciales);
-      window.plausible?.("Subcategory Selected", {
-        props: { subcategory: value, category: activeCategory },
-      });
     },
     [activeCategory, config.items_iniciales],
   );
@@ -243,12 +237,9 @@ export default function Menu({
     [items, itemFilenames],
   );
 
-  // Item click handler (stable via ref for activeCategory)
+  // Item click handler
   const onItemClick = useCallback((item: MasonryItem) => {
     setPopupItem(item);
-    window.plausible?.("Item Viewed", {
-      props: { item: item.nombre, category: activeCategoryRef.current },
-    });
   }, []);
 
   // Card context (for stable masonry render component)

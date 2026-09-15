@@ -1,3 +1,5 @@
 dist/
 node_modules/
 .astro/
+# Menu data is written by the admin plugin (JSON.stringify), not hand-formatted
+src/data/menu/

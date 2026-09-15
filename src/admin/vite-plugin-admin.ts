@@ -34,12 +34,40 @@ function readBody(req: Connect.IncomingMessage): Promise<Buffer> {
   });
 }
 
-function git(cmd: string): string {
+// Network operations get a long timeout: on first use, Git Credential
+// Manager opens a browser login and the user may take a while.
+const NETWORK_TIMEOUT = 5 * 60 * 1000;
+
+function git(cmd: string, timeout = 30000): string {
   return execSync(`git ${cmd}`, {
     cwd: resolve("."),
     encoding: "utf-8",
-    timeout: 30000,
+    timeout,
   }).trim();
+}
+
+function gitStatusPorcelain(): string {
+  // core.quotepath=false keeps non-ASCII filenames (e.g. "ñ") readable
+  // instead of octal-escaped and quoted.
+  return execSync("git -c core.quotepath=false status --porcelain", {
+    cwd: resolve("."),
+    encoding: "utf-8",
+    timeout: 30000,
+  });
+}
+
+/** Set a repo-local git identity if the machine has none configured. */
+function ensureGitIdentity() {
+  try {
+    git("config user.name");
+  } catch {
+    git('config user.name "Editor de la carta"');
+  }
+  try {
+    git("config user.email");
+  } catch {
+    git('config user.email "carta@maremotocafe.com"');
+  }
 }
 
 function invalidateGlobModules(server: import("vite").ViteDevServer) {
@@ -50,9 +78,9 @@ function invalidateGlobModules(server: import("vite").ViteDevServer) {
   }
 }
 
-export default function jesusMode(): Plugin {
+export default function adminMode(): Plugin {
   return {
-    name: "jesus-mode",
+    name: "admin-mode",
     apply: "serve",
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
@@ -201,11 +229,7 @@ export default function jesusMode(): Plugin {
 
           // --- Git ---
           if (path === "git/status" && method === "POST") {
-            const porcelain = execSync("git status --porcelain", {
-              cwd: resolve("."),
-              encoding: "utf-8",
-              timeout: 30000,
-            });
+            const porcelain = gitStatusPorcelain();
             const branch = git("rev-parse --abbrev-ref HEAD");
 
             const changes: { action: string; file: string; label: string }[] =
@@ -250,22 +274,20 @@ export default function jesusMode(): Plugin {
           }
 
           if (path === "git/check-remote" && method === "POST") {
-            git("fetch origin");
+            git("fetch origin", NETWORK_TIMEOUT);
             const behind = git("rev-list HEAD..origin/master --count");
             return jsonResponse(res, { behind: parseInt(behind, 10) || 0 });
           }
 
           if (path === "git/pull" && method === "POST") {
             // Stash any local changes so pull doesn't fail
-            const dirty =
-              execSync("git status --porcelain", {
-                cwd: resolve("."),
-                encoding: "utf-8",
-                timeout: 10000,
-              }).trim().length > 0;
+            const dirty = gitStatusPorcelain().trim().length > 0;
             if (dirty) git("stash --include-untracked");
             try {
-              const result = git("pull --ff-only origin master");
+              const result = git(
+                "pull --ff-only origin master",
+                NETWORK_TIMEOUT,
+              );
               return jsonResponse(res, { result });
             } finally {
               if (dirty) git("stash pop");
@@ -273,14 +295,15 @@ export default function jesusMode(): Plugin {
           }
 
           if (path === "git/push" && method === "POST") {
+            ensureGitIdentity();
             git("add .");
             git('commit -m "Actualización del menú"');
-            git("push origin master");
+            git("push origin master", NETWORK_TIMEOUT);
             return jsonResponse(res, { result: "ok" });
           }
 
           if (path === "git/reset" && method === "POST") {
-            git("fetch origin");
+            git("fetch origin", NETWORK_TIMEOUT);
             git("reset --hard origin/master");
             return jsonResponse(res, { result: "ok" });
           }
@@ -289,7 +312,7 @@ export default function jesusMode(): Plugin {
           errorResponse(res, "Not found", 404);
         } catch (err: unknown) {
           const message = err instanceof Error ? err.message : String(err);
-          console.error("[jesus-mode]", message);
+          console.error("[admin-mode]", message);
           errorResponse(res, message, 500);
         }
       });

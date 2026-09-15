@@ -90,7 +90,7 @@ export default function AdminBanner() {
   return (
     <>
       <div className="fixed top-0 right-0 left-0 z-[9999] flex items-center justify-between bg-amber-500 px-4 py-1.5 text-sm font-bold text-black shadow-md">
-        <span className="text-base tracking-wide">MODO JESÚS ACTIVADO</span>
+        <span className="text-base tracking-wide">MODO EDICIÓN ACTIVADO</span>
 
         <div className="flex items-center gap-2">
           <button
