@@ -48,12 +48,6 @@
     ]
   },
   {
-    "nombre": "Promociones y Ofertas",
-    "icono": "las la-certificate",
-    "color": "#dbd9a7",
-    "subcategorias": []
-  },
-  {
     "nombre": "Cafés y Tés",
     "icono": "las la-coffee",
     "color": "#cea389",
